@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{site.lang}}">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>{{page.title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{site.assets}}/css/style.css"}}">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.assets }}/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.assets }}/images/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.assets }}/images/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.assets }}/images/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.assets }}/images/apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" href="{{ site.assets }}/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" href="{{ site.assets }}/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.assets }}/images/favicon.ico" />
+</head>
+<body>
+<div id="main-content" role="main" class="pure-g-r">
+    <aside id="main-sidebar" class="pure-u-1-2" style="background-image:url({{site.cover}})">
+        {% include aside.html %}
+    </aside>
+    <section id="main" class="pure-u-1-2">
+        {{ content }}
+    </section>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="{{ site.assets }}/js/plugins/jquery.fitvids.js"></script>
+<script src="{{ site.assets }}/js/script.js"></script>
+
+{{#if post.date}}
+    <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
+{{/if}}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<section class="sidebar-data-holder">
+    <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>
+    <nav class="main-nav">
+        <button class="nav-control"><i class="icon-hamburguer"></i></button>
+        {{include nav.html}}
+    </nav>
+    <div class="logo"><a href="/" title="Back to home">{{site.name}}</a></div>
+
+    <!-- Author info -->
+    {% if page.author %}
+        {% include author.html %}
+        {{/post}}
+    {% else %}
+        {% for post in paginator.posts %}
+            {% if post.author %}
+                {% include author.html author=post.author %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <!-- Social media badges -->
+    {{include social-media.html}}
+
+    <footer id="main-footer"><p>Theme designed by <a href="https://twitter.com/damianmuti" title="Go to @damianmuti's Twitter" rel="external">@damianmuti</a>. Code by @octplane.</p></footer>
+</section>
