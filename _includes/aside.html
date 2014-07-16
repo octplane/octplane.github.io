@@ -13,7 +13,7 @@
     {% else %}
         {% for post in paginator.posts %}
             {% if post.author %}
-                {% include author.html author=post.author %}
+                {% include author.html %}
             {% endif %}
         {% endfor %}
     {% endif %}
