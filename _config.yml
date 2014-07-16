@@ -10,17 +10,11 @@ lang: fr
 
 assets:         '/assets'
 
+source: .
+
 # Details for the RSS feed generator
 url:            'http://oct.zoy.org'
 author:         'Pierre Baillet'
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-
 
 authors:
   octplane:
