@@ -10,7 +10,7 @@ about: 'about.html'
         <h1><a href="{{ post.url }}" title="Read &quot;{{ post.title }}&quot;">{{ post.title }}</a></h1>
     </header>
     <div class="post-content">
-        <p>{{ post.excerpt }}&hellip;</p>
+        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>'}}&hellip;</p>
     </div>
     <a href="{{post.url}}" class="button button-default button-keep-reading" title="Read &quot;{{post.title}}&quot;">Keep reading &rarr;</a>
 </article>

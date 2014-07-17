@@ -1,6 +1,6 @@
 ---
 title:  "Where does this nick come from ?"
-date:   2014-02-14 13:24:00
+date: 2014-02-14 13:24:00
 categories: 36-15-my-life
 author: octplane
 layout: page

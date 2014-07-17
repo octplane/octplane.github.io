@@ -3,10 +3,10 @@
 <article class="post">
 
     <header class="post-header">
-        <h1>{{post.title}}</h1>
+        <h1>{{page.title}}</h1>
 
         <!-- Post meta -->
-        {{> post-meta}}
+        {% include post-meta.html %}
     </header>
 
     <div class="post-content">
@@ -14,10 +14,17 @@
     </div>
 
 </article>
+    <footer><!-- <3 Neuro --><p>Une information, une correction ou un complément à ajouter en privé ? &Eacute;crivez moi à <a href="mailto:oct@zoy.org">oct@zoy.org</a>.</footer>
+
     <!-- Google+ Comments -->
     <section class="comments">
-    <div id="post_{{id}}_comments"></div>
-    {{> gplus-comment-form}}
-    {{!> disqus-comment-form}}
+
+<a class="moot"
+   href="https://moot.it/i/oct-zoy-org/discussions/{{page.id}}"
+   data-pageTitle="{{title}}"
+   data-show_title="true"
+   data-show_online="true">
+  Commentaires
+</a>
     </section>
 {% include after.html %}
