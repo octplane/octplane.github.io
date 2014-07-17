@@ -21,5 +21,11 @@
     <!-- Social media badges -->
     {{include social-media.html}}
 
-    <footer id="main-footer"><p>Theme designed by <a href="https://twitter.com/damianmuti" title="Go to @damianmuti's Twitter" rel="external">@damianmuti</a>. Code by @octplane.</p></footer>
+    <footer id="main-footer"><p>
+        {% if page.cover_credit %}
+        Image credit: {{page.cover_credit}}
+        {% else %}
+        Theme designed by <a href="https://twitter.com/damianmuti" title="Go to @damianmuti's Twitter" rel="external">@damianmuti</a>. Code by @octplane. 
+        {% endif %}
+    </p></footer>
 </section>
