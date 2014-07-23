@@ -8,6 +8,12 @@ about: 'about.html'
 <article class="post">
     <header class="post-header">
         <h1><a href="{{ post.url }}" title="Read &quot;{{ post.title }}&quot;">{{ post.title }}</a></h1>
+        <menu class="post-meta">
+            <div class="post-meta-data"><i class="icon-datetime"></i>
+                <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+            </div>
+            {% if post.tags %}<div class="post-meta-data"><i class="icon-tags"></i>{{post.tags | join(",") }}</div>{% endif %}
+        </menu>
     </header>
     <div class="post-content">
         <p>{{ post.excerpt | remove: '<p>' | remove: '</p>'}}&hellip;</p>

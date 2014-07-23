@@ -5,6 +5,9 @@ layout: post
 moot_legacy_id: 8
 cover_image: http://nodejs.org/images/logos/nodejs-1280x1024.png
 cover_credit: Node js project
+tags:
+- node.js
+- code
 ---
 Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.
 
@@ -15,7 +18,7 @@ Dans cet article, je vous explique comment tester rapidement du code javascript 
 [ La programmation, c'est parfois un peu expérimental. ][1]
 </center>
 #### Installation
-Installez node.js sur votre ordinateur (oui, j'suis comme ça, je dis encore ordinateur et pas machine) : Allez sur la page de [téléchargement de node.js][2] et téléchargez la version adaptée à votre système d'exploitation.
+Installez node.js sur votre ordinateur (oui, j'suis comme ça, je dis encore ordinateur et pas machine) : Allez sur la page de [téléchargement de node.js][1] et téléchargez la version adaptée à votre système d'exploitation.
 
 A la fin de l'installation, vous devez pouvoir lancer ce genre de commande en console :
 
@@ -61,7 +64,4 @@ Et c'est tout, maintenant, vous êtes assez fort pour commencer à développer d
 
 Codez bien !
 
-[1]:	http://www.flickr.com/photos/argonne/8534552636/
-[2]:	http://nodejs.org/download/
-
-[image-1]:	http://farm9.staticflickr.com/8388/8534552636_0d0d357b15.jpg "Plop"
+[1]:	http://nodejs.org/download/

@@ -7,17 +7,7 @@
     <div class="logo"><a href="/" title="Back to home">{{site.name}}</a></div>
 
     <!-- Author info -->
-    {% if page.author %}
-        {% include author.html %}
-        {{/post}}
-    {% else %}
-        {% for post in paginator.posts %}
-            {% if post.author %}
-                {% include author.html %}
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-
+    {% include author.html %}
     <!-- Social media badges -->
     {{include social-media.html}}
 
