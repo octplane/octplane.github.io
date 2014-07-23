@@ -1,0 +1,65 @@
+---
+title: "Démarrer Node.js en 8 secondes"
+date: 2014-03-07 09:00:00
+layout: post
+moot_legacy_id: 8
+---
+Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.
+
+Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu'est node.js. Les pré-requis sont **un cerveau**, **un ordinateur**, **une connexion internet** et une tout petite connaissance de **javascript**.
+
+<center>
+![][image-1]
+[ La programmation, c'est parfois un peu expérimental. ][1]
+</center>
+#### Installation
+Installez node.js sur votre ordinateur (oui, j'suis comme ça, je dis encore ordinateur et pas machine) : Allez sur la page de [téléchargement de node.js][2] et téléchargez la version adaptée à votre système d'exploitation.
+
+A la fin de l'installation, vous devez pouvoir lancer ce genre de commande en console :
+
+	#node -e "console.log('pouet');"
+	pouet
+	#
+
+
+#### Programmation
+
+Editez un fichier qui s'appelle `prems.js` et mettez dedans, par exemple : 
+
+	console.log('Salut le monde !');
+
+#### Execution
+
+C'est prêt :
+
+	# node prems.js
+	Salut le monde !
+	#
+#### Extension
+
+Maintenant, vous êtes prêt à développer du javascript à vous en faire péter la sous-ventrière ! Si jamais vous voulez installer des paquets pour les utiliser dans votre programme, vous pouvez invoquer `npm`, et lui faire installer des paquets globalement :
+
+*(par exemple)*
+
+	npm install -g underscore
+
+Et ensuite dans votre petit script : 
+
+	var _ = require("underscore");
+
+plus tard du code qui utilise :
+
+	_.map(arr, function(it) {....
+	
+	...
+
+#### Conclusion
+
+Et c'est tout, maintenant, vous êtes assez fort pour commencer à développer du node.js. Evidemment, si vous aimeriez faire ca plus proprement, je vous encourage à aller lire des tutoriels sur **npm** et son format de paquet qui permet l'installation locale de paquets pour votre application, ainsi que les système de gestion de tâches tels que **Grunt** qui vous permettront de préparer votre application ou bibliothèque à un entrée fracassante dans le monde node.js.
+
+Codez bien !
+
+[1]:	http://www.flickr.com/photos/argonne/8534552636/
+[2]:	http://nodejs.org/download/
+
+[image-1]:	http://farm9.staticflickr.com/8388/8534552636_0d0d357b15.jpg "Plop"
