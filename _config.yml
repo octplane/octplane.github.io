@@ -15,6 +15,14 @@ source: .
 # Details for the RSS feed generator
 url:            'http://oct.zoy.org'
 author:         'Pierre Baillet'
+exclude:
+    - "Gemfile"
+    - "Gemfile.lock"
+    - "LICENSE.txt"
+    - "README.md"
+    - "jekyll"
+    - "Rakefile"
+
 
 authors:
   octplane:
