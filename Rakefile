@@ -8,15 +8,8 @@ task :deploy do
   system "jekyll build"
 
   cd "_site" do
-    system "git add -A"
+    system "rsync -az --exclude='.git/' . oct@zoy.org:/var/www/org/zoy/oct/htdocs/"
 
     message = "Site updated at #{Time.now.utc}"
-    puts "## Commiting: #{message}"
-    system "git commit -m \"#{message}\""
-
-    puts "## Pushing generated site"
-    system "git push"
-
-    puts "## Deploy Complete!"
   end
 end
