@@ -3,6 +3,8 @@ title: "Démarrer Node.js en 8 secondes"
 date: 2014-03-07 09:00:00
 layout: post
 moot_legacy_id: 8
+cover_image: http://nodejs.org/images/logos/nodejs-1280x1024.png
+cover_credit: Node js project
 ---
 Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.
 
