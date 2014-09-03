@@ -1,6 +1,8 @@
 ---
-layout: default
-title: About me
+layout: post
+title: About this site.
 ---
 
-This is where you could put your "About me" page.
+Webside built using Jekyll with a custom theme, inspired from [https://github.com/holman/left][1] .
+
+[1]:	https://github.com/holman/left

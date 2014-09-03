@@ -1,4 +1,4 @@
-name: The Assembly Line
+name: OCT PLANE
 description: Le site de Pierre Baillet (octplane)
 meta_description: "On y fabrique des choses inutiles,<br/>On y parle, mais pour râler,<br/>On y entend que du bruit,<br/> voit que de la poussière,<br/> et des machines incroyables..."
 
@@ -23,18 +23,6 @@ exclude:
     - "jekyll"
     - "Rakefile"
 
-
-authors:
-  octplane:
-    display_name: Pierre Baillet
-    bio: "Développeur, Administrateur, Comédien, Danseur."
-    gravatar: 91deb51572c5b27f88444ded473f5726
-    email: oct@zoy.org
-    location: "Paris, France"
-  geoff:
-    display_name: Geoff Blair
-    gravatar: 76dbcc74021b8039f14c7b583978b56d
-    email: geoff@lostdecadegames.com
-    web: http://www.geoffblair.com/
-    twitter: geoffblair
-    github: geoffb
+owner_url: https://github.com/octplane
+gravatar: 91deb51572c5b27f88444ded473f5726
+twitter: octplane
