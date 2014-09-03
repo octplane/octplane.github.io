@@ -3,6 +3,8 @@ description: Le site de Pierre Baillet (octplane)
 meta_description: "On y fabrique des choses inutiles,<br/>On y parle, mais pour râler,<br/>On y entend que du bruit,<br/> voit que de la poussière,<br/> et des machines incroyables..."
 
 markdown: redcarpet
+redcarpet:
+  extensions: ["footnotes"]
 highlighter: true
 logo: false
 paginate: 15

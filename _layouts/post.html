@@ -19,11 +19,21 @@ layout: layout
   <!-- TODO: bio here -->
   <section class="meta">
     <h3>Discussion, links, and tweets</h3>
+    <section class="comments">
+          <a class="moot"
+       href="https://moot.it/i/oct-zoy-org/discussions/{{page.title | strip | replace: ' ', '_' }}"
+       data-pageTitle="{{post.title}}"
+       data-show_title="true"
+       data-show_online="true">
+        Commentaires
+      </a>
+    </section>
     <section class="copy">
       <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
         <img src="http://www.gravatar.com/avatar/{{ site.gravatar }}?s=142" height="50" width="50" />
       </a>
       I am Pierre Baillet, senior software engineer. I write here mostly on games, computer and server stuff.
+    </section>
 
 {{#if page.date}}
     <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>

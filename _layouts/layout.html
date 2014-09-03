@@ -22,7 +22,10 @@
   <link media="only screen and (device-width: 768px)" href="{{ site.github.url }}/css/mobile.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <link rel="apple-touch-icon" href="{{ site.github.url }}/apple-touch-icon.png" />
-
+  <!-- 1. Moot style -->
+   <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css">
+   <!-- 3. Moot application -->
+   <script src="//cdn.moot.it/1/moot.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.github.url }}/js/application.js"></script>
 </head>
@@ -57,6 +60,15 @@
   </section>
 
   {{ content }}
+  {{#if post.date}}
+    <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
+{{/if}}
+<script type="text/javascript">
+window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8",
+window.analytics.load("l7ivj5g9sc");
+window.analytics.page();
+</script>
+
 </body>
 
 </html>
