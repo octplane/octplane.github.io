@@ -8,6 +8,8 @@ cover_credit: Orangepixel.net
 tags:
 - ios
 - gaming
+lang: fr
+
 ---
 
 Heroes of Loot, un peu le Gauntlet des années 2010. Meurtres, projectiles et petits démons à la pelle.

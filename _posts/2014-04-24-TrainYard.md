@@ -8,6 +8,8 @@ tags:
 moot_legacy_id: 10
 cover_image: https://farm5.staticflickr.com/4150/5028432487\_d461ccd14c\_b\_d.jpg
 cover_credit: Trains Stresa-Mottarone (Italie) by Alain GAVILLET @ Flickr
+lang: fr
+
 ---
 
 Des trains, des gares et déraillent.

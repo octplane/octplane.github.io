@@ -8,15 +8,12 @@ cover_credit: Node js project
 tags:
 - node.js
 - code
+lang: fr
 ---
 Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.
 
 Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu'est node.js. Les pré-requis sont **un cerveau**, **un ordinateur**, **une connexion internet** et une tout petite connaissance de **javascript**.
 
-<center>
-![][image-1]
-[ La programmation, c'est parfois un peu expérimental. ][1]
-</center>
 #### Installation
 Installez node.js sur votre ordinateur (oui, j'suis comme ça, je dis encore ordinateur et pas machine) : Allez sur la page de [téléchargement de node.js][1] et téléchargez la version adaptée à votre système d'exploitation.
 

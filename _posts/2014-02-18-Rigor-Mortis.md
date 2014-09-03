@@ -6,6 +6,8 @@ tags:
 - "36-15 my life"
 - gna-gna
 moot_legacy_id: 3
+lang: fr
+
 ---
 
 Vous avez pas parfois l’impression qu’on se fout de vous ?
