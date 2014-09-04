@@ -3,7 +3,7 @@ title: "Monoprix, tu abuses  "
 date: 2014-09-03 09:00:00
 layout: post
 tags:
-- gna-gna-gna
+- gna-gna
 lang: fr
 ---
 
