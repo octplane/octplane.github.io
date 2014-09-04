@@ -28,11 +28,13 @@ Le petit bonhomme me fait signer son bon de livraison et repart aussitôt. Et mo
 
 Civil et correct, je m’empresse de tout mettre au frigo pour éviter que les aliments ne se périment. J’appelle la hot-line et après deux tentatives, ça répond. J’explique mon problème et le monsieur du service client me dit qu’il va contacter le magasin et qu’il me rappelle. Il me rappelle effectivement et me dit que le livreur va repasser pour m’amener ma livraison et qu’il va m’appeler avant. Bah. Il est environ **21h** et j’aurais bien été courir. Mais bon. J’attends.
 
-**ça sonne !** Bon il aurait pu appeler comme prévu, mais bon. Il arrive. Il a l’air encore plus épuisé que tout à l’heure et il commence à m’expliquer qu’une des bière a explosé dans le sac ou elle a été transporté. Et là il sort (enfin, je l’aide parce qu’il a l’air manifestement démuni devant une bière crevée) les bières une par une et effectivement, au fond, y a une bière qui a éclaté. Visiblement, ils ont du jouer au baseball avec les bières pour les ranger dans les espèces de bac où ils transportent.
+**ça sonne !** Bon il aurait pu appeler comme prévu, mais bon. Il arrive. Il a l’air encore plus épuisé que tout à l’heure et il commence à m’expliquer qu’une des bière a explosé dans le sac ou elle a été transporté. Et là il sort (enfin, je l’aide parce qu’il a l’air manifestement démuni devant une bière crevée) les bières une par une et effectivement, au fond, y a une bière qui a éclaté. Visiblement, ils ont du jouer au baseball avec les bières pour les ranger dans les espèces de bac où ils transportent (parce qu’à part [le chanteur de Airbourne][1], je connais peu de gens qui cassent des cannettes de bières pour le fun)…
 
-Et je redonne la mauvaise livraison au livreur qui sans contrôler repart pour l’amener à son acheteur original (oui, on s’assoit sur la chaîne du froid, **et alors  ?**).
+Et je redonne la mauvaise livraison au livreur qui repart sans la contrôler pour l’amener à son acheteur original (oui, on s’assoit sur la chaîne du froid, **et alors  ?**).
 
 # Livraison numéro 2
+
+{% imgcap https://farm2.staticflickr.com/1356/808187848_f1609b79e3.jpg https://www.flickr.com/photos/totallygenius/808187848 A password key? by Dev.Arka, on Flickr %}
 
 Alors bon, vous savez comment c’est la vie. Une fois n’est pas coutume. Alors je décide de recommander. Rebelote sur le site et… oh mais non. En fait, j’ai oublié mon mot de passe. Alors je clique sur le bouton « j’ai oublié mon mot de passe » et le site m’envoie joli email dans lequel je trouve **le mot de passe que j’ai choisi à la création de mon compte**. Alors, je ne sais pas vous, mais moi qui suis informaticien, je sais que c’est quelque chose qui ne doit **JAMAIS** et permettez moi d’insister
 
@@ -40,7 +42,7 @@ Alors bon, vous savez comment c’est la vie. Une fois n’est pas coutume. Alor
 
 arriver. 
 
-S’ensuit une [petite escarmouche sur twitter][1] dans laquelle, et pour résumer, le community manager (le responsable Relations Publiques sur Internet en bon français) est maladroit et se fait bacher de toutes parts. Ca arrive parfois, c’est pour ça que ces gens-là sont payés.
+S’ensuit une [petite escarmouche sur twitter][2] dans laquelle, et pour résumer, le community manager (le responsable Relations Publiques sur Internet en bon français) est maladroit et se fait bacher de toutes parts. Ca arrive parfois, c’est pour ça que ces gens-là sont payés.
 
 Bref je change mon mot de passe, je passe commande et nous voilà il y a quelques heures.
 
@@ -64,4 +66,5 @@ Ha oui, mais quand même, c’est la dernière fois qu’on commande chez toi Mo
 
 [^2]:	et moi, et moi et moi ?
 
-[1]:	https://twitter.com/octplane/status/506101314821320704
+[1]:	https://www.youtube.com/watch?v=TcAobABwe-E
+[2]:	https://twitter.com/octplane/status/506101314821320704
