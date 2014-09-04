@@ -54,7 +54,7 @@ Genre ouais, **IL M’A AUTORISÉ À PARTIR**. Trop merci.
 
 Je me suis barré furax. Et devinez quoi ? Le livreur s’est pointé vers 20h05. Sans excuse. Heuseument que ma douce était là pour receptionner la livraison, sinon…
 
-Par contre, cette fois-ci ni bière crevée, ni échange de livraison.
+Par contre, cette fois-ci, ni bière crevée, ni échange de livraison.
 
 Ha oui, mais quand même, c’est la dernière fois qu’on commande chez toi Monoprix, parce que franchement, tu abuses.
 
