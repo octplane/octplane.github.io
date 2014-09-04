@@ -24,11 +24,11 @@ Alors je me mets devant mon ordi (comment ça, comme toujours ??), et je geeke d
 
 Arrivé 20h30, je commence à être un peu, comment dire agacé. Mais bon, on est encore dans le créneau alors, hein. Ho, **ça sonne !**. J’ouvre, le livreur arrive, petit esclave des temps modernes. Il a l’air épuisé et il déballe les gros sacs de ma livraison. Dans le tas, j’aperçois un sac avec une bouteille de vin. Curieux, parce que je sais que je n’ai pas commandé de vin et un moment, j’**AVOUE**, je crois que c’est un cadeau, un peu comme les chinois et mexicains vous offrent du coca ou une bouteille de rosé quand vous commandez chez eux (vous voyez quoi)…
 
-Le petit bonhomme me fait signer son bon de livraison et repart aussitôt. Et moi, je déballe mes produits tout doucement. Et là, curieusement, y a du saumon (j’ai pas commandé ça moi !), du taboulé (mais j’ai **pas** commandé ça non plus !)…. Bref, je vous la fait presque courte (ou presque), mais en fait on m’a livré la LIVRAISON D’UN AUTRE !!! 
+Le petit bonhomme me fait signer son bon de livraison et repart aussitôt. Et moi, je déballe mes produits tout doucement. Et là, curieusement, y a du saumon (j’ai pas commandé ça moi !), du taboulé (mais j’ai **pas** commandé ça non plus !)…. Bref, je vous la fait courte (ou presque), mais en fait on m’a livré la LIVRAISON D’UN AUTRE !!! 
 
 Civil et correct, je m’empresse de tout mettre au frigo pour éviter que les aliments ne se périment. J’appelle la hot-line et après deux tentatives, ça répond. J’explique mon problème et le monsieur du service client me dit qu’il va contacter le magasin et qu’il me rappelle. Il me rappelle effectivement et me dit que le livreur va repasser pour m’amener ma livraison et qu’il va m’appeler avant. Bah. Il est environ **21h** et j’aurais bien été courir. Mais bon. J’attends.
 
-**ça sonne !** Bon il aurait pu appeler comme prévu, mais bon. Il arrive. Il a l’air encore plus épuisé que tout à l’heure et il commence à m’expliquer qu’une des bière a explosé dans le sac ou elle a été transporté. Et là il sort (enfin, je l’aide parce qu’il a l’air manifestement démuni devant une bière crevée) les bières une par une et effectivement, au fond, y a une bière qui a éclaté. Visiblement, ils ont du jouer au baseball avec les bières pour les ranger dans les espèces de bac où ils transportent (parce qu’à part [le chanteur de Airbourne][1], je connais peu de gens qui cassent des cannettes de bières pour le fun)…
+**ça sonne !** Bon il aurait pu appeler comme prévu, mais bon. Il arrive. Il a l’air encore plus épuisé que tout à l’heure et il commence à m’expliquer qu’une des bière a explosé dans le sac ou elle a été transporté. Et là il sort (enfin, je l’aide parce qu’il a l’air manifestement démuni devant une bière crevée) les bières une par une et effectivement, au fond, y a une bière qui a éclaté. Visiblement, ils ont du jouer au baseball avec les bières pour les ranger dans les espèces de bac où ils transportent (parce qu’à part [le chanteur de Airbourne][1], je connais peu de gens qui cassent des canettes de bière pour le fun)…
 
 Et je redonne la mauvaise livraison au livreur qui repart sans la contrôler pour l’amener à son acheteur original (oui, on s’assoit sur la chaîne du froid, **et alors  ?**).
 
@@ -42,11 +42,11 @@ Alors bon, vous savez comment c’est la vie. Une fois n’est pas coutume. Alor
 
 arriver. 
 
-S’ensuit une [petite escarmouche sur twitter][2] dans laquelle, et pour résumer, le community manager (le responsable Relations Publiques sur Internet en bon français) est maladroit et se fait bacher de toutes parts. Ca arrive parfois, c’est pour ça que ces gens-là sont payés.
+S’ensuit une [petite escarmouche sur twitter][2] dans laquelle, et pour résumer, le community manager (le responsable Relations Publiques sur Internet en bon français) est maladroit et se fait bâcher de toutes parts. Ca arrive parfois, c’est pour ça que ces gens-là sont payés.
 
 Bref je change mon mot de passe, je passe commande et nous voilà il y a quelques heures.
 
-Je suis re-assis devant mon ordinateur. J’irais bien faire un footing après même si je ne me fais pas d’illusions sur l’heure de livraison, hein. Alors qu’on entre dans le creneau 17-19h, je m’attelle à la rédaction d’un autre article. 18h, pas de sonnette. 18h45, ma pression arterielle monte doucement.
+Je suis re-assis devant mon ordinateur. J’irais bien faire un footing après même si je ne me fais pas d’illusions sur l’heure de livraison, hein. Alors qu’on entre dans le créneau 17-19h, je m’attelle à la rédaction d’un autre article. 18h, pas de sonnette. 18h45, ma pression artérielle monte doucement.
 
 19h. rien. nada. nichts.
 
@@ -56,7 +56,7 @@ Je suis furax. Ça fait deux heures que j’ai envie de faire pipi, envie d’al
 
 Genre ouais, **IL M’A AUTORISÉ À PARTIR**. Trop merci.
 
-Je me suis barré furax. Et devinez quoi ? Le livreur s’est pointé vers 20h05. Sans excuse. Heuseument que ma douce était là pour receptionner la livraison, sinon…
+Je me suis barré furax. Et devinez quoi ? Le livreur s’est pointé vers 20h05. Sans excuse. Heureusement que ma douce était là pour réceptionner la livraison, sinon…
 
 Par contre, cette fois-ci, ni bière crevée, ni échange de livraison.
 
