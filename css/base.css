@@ -9,6 +9,27 @@ body {
 a {
   color: #227ce8; }
 
+.caption-wrapper {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+}
+
+.caption-wrapper .caption {
+  border: 0px;
+}
+
+.caption-wrapper .caption-text {
+    background: #fff;
+    text-align: center;
+    font-size: .8em;
+    color: #666;
+    display: block;
+}
+
 .sidebar {
   position: fixed;
   left: 15px;

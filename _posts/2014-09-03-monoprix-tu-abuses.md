@@ -7,6 +7,8 @@ tags:
 lang: fr
 ---
 
+{% imgcap https://farm3.staticflickr.com/2106/5787003804_fa51729b4b.jpg https://www.flickr.com/photos/polycart/5787003804 Plastic supermarket carts. by Polycart, on Flickr %} 
+
 # Non sérieux, Monoprix, tu abuses…
 
 Au début, c’était comme une belle histoire d’amour. Tu avais un joli site ouaib, avec de belles couleurs, plein de produits à commander, un moteur de recherche performant, des délais de livraison pas bien longs, des tarifs oui-peut-être-un-peu-élevés-mais-bon.
