@@ -1,6 +1,6 @@
 ---
 title: "Redundancy in Amazon EC2"
-date: 2014-09-03 09:00:00
+date: 2014-09-15 09:00:00
 layout: post
 tags:
 - AWS
