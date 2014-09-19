@@ -3,9 +3,10 @@ title: "Introducing the Flickr Attributor "
 date: 2014-09-08 09:00:00
 layout: post
 tags:
-- techno
-lang: en
-draft: true
+- flickr
+- play
+- opensource
+lang: us
 ---
 
 ## Share and respect the license !
@@ -32,9 +33,9 @@ Displaying the license information on the media brings a simple solution to that
 
 **And so** was born the *Flickr Attributor* !
 
-This web-application generates photos that contain the attribution and details of the licence at the bottom of it
+This web-application generates photos that contain the attribution and details of the licence at the bottom of it.
 
-Just. Like. This.
+Just. Like. This:
 
 <center>
 ![A Puppy !](/images/8165495019.jpg)
@@ -44,7 +45,7 @@ Of course, there is no link, and not full identifier of the picture in the gener
 
 ## How do I use this ?
 
-Well, this is a webservice, so there is no interface. To get a given image, and its flickr identifier (such as _2696912806_), just create the url
+Flickr Attributor is a Web service which means it has no user interface. To generate a picture with attribution, you just need its Flickr identifier.
 
     http://fa.oct.zoy.org/flickr/2696912806
 
