@@ -270,6 +270,5 @@ pre {
         background:#FAFAFA;
         font-family:monospace;
         overflow:auto;
-        font-size:0.8em;
-        padding:0.5em;
+        padding: 10px;
 }
