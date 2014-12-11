@@ -25,23 +25,17 @@ Unfortunately, your photos might not be good enough to illustrate your point, so
 
 But sharing a creative commons usually requires [attribution of the work you use][2] and in some context, it means losing some precious characters.
 
-Yes, Twitter, I’m looking at you.
-
 Displaying the license information on the media brings a simple solution to that problem.
 
-### And so ?
+### And so was born the *Flickr Attributor*
 
-**And so** was born the *Flickr Attributor* !
-
-This web-application generates photos that contain the attribution and details of the licence at the bottom of it.
-
-Just. Like. This:
+This webapp generates photos that contain the attribution and details of the licence at the bottom of it. Such as this picture:
 
 <center>
 ![A Puppy !](/images/8165495019.jpg)
 </center>
 
-Of course, there is no link, and not full identifier of the picture in the generated legend, and as specified the [Creative Commons guidelines][3], "_There is no one right way; just make sure your attribution is reasonable and suited to the medium you're working with._" I'm including the CC icon, the author and Flickr mention and the photo title (in this very order, because if this get cropped, I want to keep the information in this order).
+Of course, there is no link, and not full identifier of the picture in the generated legend, and as specified the [Creative Commons guidelines][3], "_There is no one right way; just make sure your attribution is reasonable and suited to the medium you're working with._" I'm including the CC icon, the author and Flickr mention and the photo title.
 
 ## How do I use this ?
 
@@ -49,7 +43,7 @@ Flickr Attributor is a Web service which means it has no user interface. To gene
 
     http://fa.oct.zoy.org/flickr/2696912806
 
-And you can get the image with its license.
+And you can get the image with its license. You can also use this bookmarklet <a href="javascript:(function(){var%20l=window.location.href;l=%22http://fa.oct.zoy.org/flickr/%22+l.replace(/https:\/\/www.flickr.com\/photos\/[^\/]+\//,%22%22).replace(/\/.*/,%22%22),window.open(l);})()">Flickr Attribute</a> on any flickr Photo page.
 
 <center>
 ![A tree](http://fa.oct.zoy.org/flickr/2696912806)
