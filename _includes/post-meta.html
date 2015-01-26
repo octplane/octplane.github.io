@@ -2,5 +2,5 @@
     <div class="post-meta-data"><i class="icon-datetime"></i> {{ page.date | date_to_string }}</div>
     <!--<div class="post-meta-data"><i class="icon-shortlink"></i> <a href="#">BIT.LY/1ES1TCF</a></div>-->
     {{!tags prefix="on "}}
-    {% if page.tags %}<div class="post-meta-data"><i class="icon-tags"></i> {{page.tags | join(",") }}</div>{% endif %}
+    {% if page.tags %}<div class="post-meta-data"><i class="icon-tags"></i> {{page.tags | join(",")  }}</div>{% endif %}
 </menu>

@@ -10,15 +10,15 @@ layout: layout
   <section class="byline">
     {{ page.date | date: "%B %e, %Y" }}
     {{!tags prefix="on "}}
-    {% if page.tags %}<i class="icon-tags"></i> {{page.tags | join(",") }}{% endif %}
+    {% if page.tags %}<i class="icon-tags"></i> {{page.tags | join(",") | replace: "code", "<i class='fa fa-code'></i>" }}{% endif %}
 </menu>
   </section>
 
   {{ content }}
-
-  <!-- TODO: bio here -->
   <section class="meta">
-    <h3>Discussion, links, and tweets</h3>
+    <h3>Contact? Question?
+    <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></h3>
+    <h3>Comments</h3>
     <section class="comments">
           <a class="moot"
        href="https://moot.it/i/oct-zoy-org/discussions/{{page.title | handleize }}"
@@ -32,7 +32,7 @@ layout: layout
       <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
         <img src="http://www.gravatar.com/avatar/{{ site.gravatar }}?s=142" height="50" width="50" />
       </a>
-      I am Pierre Baillet, senior software engineer. I write here mostly on games, computer and server stuff.
+      I am Pierre Baillet, senior software engineer. I write here mostly on computers and code, games, life and server stuff.
     </section>
 
 {{#if page.date}}
