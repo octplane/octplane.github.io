@@ -25,7 +25,7 @@ De mon côté, j’ai attaqué Rust pour jouer un peu avec tout ses concepts sul
 
 Si vous êtes curieux, le résultat est sur mon [Github][3] et sur celui d’un [autre gars][4], parce que, oui, j’ai fait des PRs.
 
-Mon projet à termet est d’arriver à influencer suffisament Cargo pour qu’il puisse aider les développeurs Web dans leur développement (en particulier, le cycle rebuild-restart-refresh). Ce qui est chouette avec Rust, c’est que tout est à faire, comme disait un de mes amis, quand la version 1.0 va sortir, ça va être la fête du slip.
+Mon projet à terme est d’arriver à influencer suffisament Cargo pour qu’il puisse aider les développeurs Web dans leur développement (en particulier, le cycle rebuild-restart-refresh). Ce qui est chouette avec Rust, c’est que tout est à faire, comme disait un de mes amis, quand la version 1.0 va sortir, ça va être la fête du slip.
 
 D’ici là, jouez avec et continuez à coder, mes p’tits geeks.
 
