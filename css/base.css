@@ -65,6 +65,7 @@ a {
     .sidebar .meta a:hover {
       color: #227ce8; }
   .sidebar .meta {
+    text-align: center;
     margin-left: 4px; }
   .sidebar .meta .icon {
     margin-right: 6px; }

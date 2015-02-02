@@ -10,7 +10,7 @@ layout: layout
   <section class="byline">
     {{ page.date | date: "%B %e, %Y" }}
     {{!tags prefix="on "}}
-    {% if page.tags %}<i class="icon-tags"></i> {{page.tags | join(",") | replace: "code", "<i class='fa fa-code'></i>" }}{% endif %}
+    {% if page.tags %}<i class="icon-tags"></i> {{page.tags | tagelize | join(",") |  }}{% endif %}
 </menu>
   </section>
 

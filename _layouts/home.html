@@ -1,9 +1,10 @@
 ---
 layout: layout
-title: "Posts"
 ---
 
+
 <section class="content">
+  {{ content }}
   <ul class="listing">
     {% for post in site.posts %}
       {% unless post.draft %}
