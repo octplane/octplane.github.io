@@ -3,7 +3,7 @@ title: "Rigor Mortis"
 date: 2014-02-18 09:00:00
 layout: post
 tags:
-- "36-15 my life"
+- users
 - gna-gna
 moot_legacy_id: 3
 lang: fr
@@ -21,4 +21,3 @@ La rigueur, c'est pourtant pas très difficile. Dans un contexte économique, c'
 
 
 En tous cas, force est de constater que beaucoup de gens considèrent la rigueur dans leur travail comme un caractère secondaire de celui-ci, plus que comme quelque chose d'indispensable. C'est un peu comme faire un faute d'accord dans un courrier ou un email d'affaire. Une fois, ça va, mais quand ça commence à être visible, c'est dérangeant, voir même effrayant. Je n'ai que trop rarement l'occasion de rencontrer de vrais professionnels dans ma vie quotidienne. Ni le plombier, ni l'agence immobilière, ni le loueur ne sont capables de vous considérer sérieusement même quand vous leur donnez de l'argent. Est-ce que c'est une maladie française ?
-

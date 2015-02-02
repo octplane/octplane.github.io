@@ -4,13 +4,13 @@ date: 2014-09-15 09:00:00
 layout: post
 tags:
 - AWS
-- High Availability
+- HA
 lang: us
 ---
 
 *This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.*
 
----- 
+----
 <center>
 ![][image-1]
 </center>

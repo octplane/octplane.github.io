@@ -6,7 +6,6 @@ moot_legacy_id: 8
 cover_image: http://nodejs.org/images/logos/nodejs-1280x1024.png
 cover_credit: Node js project
 tags:
-- node.js
 - code
 lang: fr
 ---
@@ -26,7 +25,7 @@ A la fin de l'installation, vous devez pouvoir lancer ce genre de commande en co
 
 #### Programmation
 
-Editez un fichier qui s'appelle `prems.js` et mettez dedans, par exemple : 
+Editez un fichier qui s'appelle `prems.js` et mettez dedans, par exemple :
 
 	console.log('Salut le monde !');
 
@@ -45,14 +44,14 @@ Maintenant, vous êtes prêt à développer du javascript à vous en faire péte
 
 	npm install -g underscore
 
-Et ensuite dans votre petit script : 
+Et ensuite dans votre petit script :
 
 	var _ = require("underscore");
 
 plus tard du code qui utilise :
 
 	_.map(arr, function(it) {....
-	
+
 	...
 
 #### Conclusion

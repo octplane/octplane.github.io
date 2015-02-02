@@ -7,10 +7,7 @@ guid: "tag:blogger.com,1999:blog-5365176712784435549.post-7203413174712314813"
 date: "2012-04-02 16:03:00"
 updated: "2012-04-02 16:03:51"
 tags:
-- rubygems
 - ruby
-- chef
-- rbenv
 lang: us
 ---
 
@@ -21,7 +18,7 @@ We're trying to use <code>rbenv</code> in our infrastructure in order to achieve
 - Switch to Ruby 1.9 for chef
 - Prepare the migration to rails 3 and Ruby 1.9 for the main web application
 
-So far, I've managed to install rbenv system wide on the servers using <a href="https://github.com/RiotGames/rbenv-cookbook">Riot Games excellent cookbook</a>. A simple: 
+So far, I've managed to install rbenv system wide on the servers using <a href="https://github.com/RiotGames/rbenv-cookbook">Riot Games excellent cookbook</a>. A simple:
 
 ```
 require_recipe "rbenv"

@@ -1,8 +1,7 @@
 require "rubygems"
 
-desc "Deploy to Github Pages"
+desc "Deploy to Zoy"
 task :deploy do
-  puts "## Deploying to Github Pages"
 
   puts "## Generating site"
   system "jekyll build"
