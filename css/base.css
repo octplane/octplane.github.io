@@ -77,6 +77,9 @@ a {
       font-weight: bold;
       font-size: 12px;
       display: block; }
+      .sidebar .sections h3 {
+        margin: 0px;
+      }
       .sidebar .sections a:hover {
         color: #227ce8; }
     .sidebar .sections ul {
