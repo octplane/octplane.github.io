@@ -6,21 +6,21 @@ module Jekyll
     end
 
     MAP = {
-    	"code" => "code",
-      "ruby" => "code",
-      "play" => "code",
-      "node.js" => "code",
-      "joke" => "smile-o",
-      "users" => "users",
-    	"AWS" => "cloud",
-      "HA" =>  "power-off",
-    	"gaming" => "gamepad",
-    	"jeu" => "gamepad",
-    	"ios" => "mobile",
-      "rant" => "frown-o",
-      "gna-gna" => "frown-o",
-      "flickr" => "flickr",
-      "opensource" => "code-fork"
+        "code" => "code",
+        "ruby" => "code",
+        "play" => "code",
+        "node.js" => "code",
+        "joke" => "smile-o",
+        "users" => "users",
+        "AWS" => "cloud",
+        "HA" =>  "power-off",
+        "gaming" => "gamepad",
+        "jeu" => "gamepad",
+        "ios" => "mobile",
+        "rant" => "frown-o",
+        "gna-gna" => "frown-o",
+        "flickr" => "flickr",
+        "opensource" => "code-fork"
     }
     def tagelize(content)
     	content.map do|t|

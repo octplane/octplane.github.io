@@ -7,7 +7,9 @@ tags:
 lang: fr
 ---
 
-{% imgcap https://farm3.staticflickr.com/2106/5787003804_fa51729b4b.jpg https://www.flickr.com/photos/polycart/5787003804 Plastic supermarket carts. by Polycart, on Flickr %} 
+<center>
+![Chariots pas de feu...](/images/5787003804.jpg)
+</center>
 
 # Non sérieux, Monoprix, tu abuses…
 
@@ -34,7 +36,10 @@ Et je redonne la mauvaise livraison au livreur qui repart sans la contrôler pou
 
 # Livraison numéro 2
 
-{% imgcap https://farm2.staticflickr.com/1356/808187848_f1609b79e3.jpg https://www.flickr.com/photos/totallygenius/808187848 A password key? by Dev.Arka, on Flickr %}
+
+<center>
+![Passe le mot](/images/808187848.jpg)
+</center>
 
 Alors bon, vous savez comment c’est la vie. Une fois n’est pas coutume. Alors je décide de recommander. Rebelote sur le site et… oh mais non. En fait, j’ai oublié mon mot de passe. Alors je clique sur le bouton « j’ai oublié mon mot de passe » et le site m’envoie joli email dans lequel je trouve **le mot de passe que j’ai choisi à la création de mon compte**. Alors, je ne sais pas vous, mais moi qui suis informaticien, je sais que c’est quelque chose qui ne doit **JAMAIS** et permettez moi d’insister
 
