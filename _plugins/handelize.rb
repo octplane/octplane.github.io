@@ -20,7 +20,11 @@ module Jekyll
         "rant" => "frown-o",
         "gna-gna" => "frown-o",
         "flickr" => "flickr",
-        "opensource" => "code-fork"
+        "opensource" => "code-fork",
+        "python" => "terminal",
+        "admin" => "building-o",
+        "wikipedia" => "wikipedia-w",
+        "devoxx" => "microphone"
     }
     def tagelize(content)
     	content.map do|t|
