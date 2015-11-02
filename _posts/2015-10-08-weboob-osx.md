@@ -9,7 +9,7 @@ lang: fr
 ---
 # Le Catchup, c'est chouette
 
-*Cet article explique comment installer facilement Weboob sur OSX et s'en servir pour télécharger vos émissions préférées facilement en différé.*
+*Cet article explique comment installer facilement Weboob sur OSX et s'en servir pour télécharger vos émissions préférées en différé.*
 
 La télé publique contient parfois des émissions intéressantes. Pas plus tard qu'hier matin, je m'aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l'ai raté. J'aimerai bien le revoir, voir même avoir l'enregistrement de l'émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.
 
@@ -35,11 +35,16 @@ Récupérez les sources de dev de Weboob
 git clone git://git.symlink.me/pub/weboob/devel.git
 ```
 
+Installer virtualenv (normalement, juste) `brew install virtualenv` mais ça peut être plus compliqué, donc je vous colle ce petit lien qui a servi
+à Bernardo pour se déplanter (merci à lui): 
+
+[http://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv](http://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv)
+
 Puis créez un environnement virtualenv par là :
 
 ```
 cd devel
-virtual env venv
+virtualenv venv
 ```
 
 Activez le et installez weboob :
@@ -52,7 +57,6 @@ python setup.py install
 Un fois tout installé, vous pouvez lancer videoob par exemple :
 
 ```
-rehash
 videoob
 (venv)14:24:58 Tirlipinpon:~/src/devel > videoob
 Welcome to videoob v1.1
