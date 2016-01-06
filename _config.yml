@@ -1,7 +1,7 @@
 name: OCT PLANE
 wname: "Pierre Baillet's Website, posts, opinions and technical stuff"
-meta_description: "Le site de Pierre Baillet, aussi connu comme Octplane. On y fabrique des choses inutiles.On y parle, mais pour râler. On y entend que du bruit, oit que de la poussière, et des machines incroyables..."
-meta_keywords: "french, blog, engineer, geek, ruby, scala, golang, infrastructure"
+meta_description: "Le site de Pierre Baillet, aussi connu comme Octplane. On y fabrique des choses inutiles.On y parle, mais pour râler. On y entend que du bruit, voit beaucoup de poussière, et des machines incroyables..."
+meta_keywords: "french, blog, engineer, devops, geek, ruby, scala, rust, infrastructure"
 markdown: redcarpet
 redcarpet:
   extensions: ["footnotes"]

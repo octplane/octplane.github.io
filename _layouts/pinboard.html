@@ -1,0 +1,56 @@
+---
+layout: layout
+---
+
+<section class="content">
+  <h1>
+    <a target="_blank" href="{{ page.reference }}">{{ page.title }}</a>
+  </h1>
+
+  <section class="byline">
+    {{ page.date | date: "%B %e, %Y" }}
+    {{!tags prefix="on "}}
+    {% if page.tags %}<i class="icon-tags"></i> {{page.tags | tagelize | join(",") |  }}{% endif %}
+</menu>
+  </section>
+  <p class="content">
+    <img src="{{page.image}}">
+  </p>
+
+  {{ content }}
+  <p class="remote-link">
+      Visit this link at <a target="_blank" href="{{ page.reference }}">{{page.reference}}</a>.
+  </p>
+  <section class="meta">
+    <h3>Contact? Question?
+    <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></h3>
+    <h3>Comments</h3>
+    <section class="comments">
+          <a class="moot"
+       href="https://moot.it/i/oct-zoy-org/discussions/{{page.title | handleize }}"
+       data-pageTitle="{{post.title}}"
+       data-show_title="true"
+       data-show_online="true">
+        Commentaires
+      </a>
+    </section>
+    <section class="copy">
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
+        <img src="http://www.gravatar.com/avatar/{{ site.gravatar }}?s=142" height="50" width="50" />
+      </a>
+      I am Pierre Baillet, senior software engineer. I write here mostly on computers and code, games, life and server stuff.
+    </section>
+
+{{#if page.date}}
+    <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
+{{/if}}
+<script type="text/javascript">
+window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8",
+window.analytics.load("l7ivj5g9sc");
+window.analytics.page();
+</script>
+
+
+    </section>
+  </section>
+</section>
