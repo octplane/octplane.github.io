@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem "jekyll"
-
+gem "jekyll", "2.1.1"
+gem "safe_yaml"
