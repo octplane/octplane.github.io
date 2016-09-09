@@ -7,7 +7,8 @@ I'm also an occasional technical speaker. I've spoken about MongoDB in [MongoDB 
 
 Feel [free to contact me](mailto:speech@contact.baillet.name) to setup talks about any subject I know about. This will be a pleasure!
 
-- 2016-08-26: [Git pour les nuls](/presentations/git/) at Ingenico, Paris
+- 2016-09-09: [Git pour les nuls](/presentations/git/) at Prima Solutions, Paris
+- 2016-08-26: *Git pour les nuls* at Ingenico, Paris
 - 2016-06-01: [The 12 factors Apps](/presentations/12-factors) at IPPON Technologies
 - 2016-04-15: *Git pour les nuls* at Kantar Media
 - 2016-04-05: *Vagrant* at BRED
