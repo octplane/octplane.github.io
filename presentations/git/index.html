@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Git - Une formation sur le pouce</title>
+
+		<meta name="description" content="Un petit BBL sur Git avec Pierre Baillet">
+		<meta name="author" content="Pierre Baillet">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown
+					data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+# Git
+une présentation sur le pouce par **Pierre Baillet**
+
+*@octplane* sur twitter
+
+pierre@baillet.name
+
+Septembre 2014-Janvier 2017
+
+
+## Présentation
+- Pierre Baillet @octplane,  pierre@baillet.name
+- Manager technique et Consultant Senior chez IPPON Technologies
+- DevOps chez fotopedia pendant 4 ans et demi
+- Directeur du développement puis de la production chez IDM pendant 8 ans
+- Utilise des SCMs depuis 1998 seul ou à plusieurs
+
+
+# Au menu
+*en vous souhaitant un bel appétit*
+
+- petit historique
+- qu’est Git ?
+- ses outils
+- en local
+- à distance
+- interlude
+- gestion des branches
+- limites de l’outil
+- pour aller plus loin
+
+
+
+# Historique
+*Back to the future*
+
+- SCM ? Software configuration management
+- Ancêtre et Concurrents : 
+	- Microsoft Sourcesafe
+	- RCS
+	- CVS
+	- Subversion
+	- Perforce, Bitkeeper
+	- baazar, mercurial, arch
+
+
+## Subversion
+
+- crée en 2000
+- écrit pour corriger quelques bugs de CVS
+- commit atomique
+- support du `rm`, `mv`
+- support des permissions
+
+
+## Subversion - Limites
+- forcément client/serveur
+- branche/tags/répertoires, tous a la meme enseigne
+- gestion du binaire/pas-binaire parfois un peu difficile, $Id$ 
+- line-ending délicats suivant les plateformes
+- diff compliqué à effectuer entre plusieurs branches/tags/autres
+- pas décentralisé
+- dès qu’on commite, **le code part sur le repository**
+- parfois un peu poussif
+- externals pas très pratique
+
+
+
+# Git
+*guitte*
+
+
+## Git qu’est-ce donc ?
+- Linus Torvald
+- pour maintenir les sources du noyau linux à la place de Bitkeeper (propriétaire)
+- nom : « personnage déplaisant »
+- gérer les patchs par email
+- décentralisable
+- plus « bas-niveau » que svn (design opposé à CVS)
+
+
+## Les outils
+- git en CLI
+- Sourcetree par Atlassian
+- Github, Bitbucket
+- Gitlab, Gitosis… 
+
+
+
+
+# En local
+*dans son garage*
+
+
+## Les indispensables
+- `git help truc` # indispensable et très complet
+- `git diff` # grand classique
+- `git status` # informations sur l’état de la copie locale
+- `git add` # ajout d’un fichier à l’index
+- `git rm` # :-)
+- `git log` # très configurable
+
+
+## Les indispensables… 
+- `commit -a`
+- dans SVN, on dit souvent qu’il faut commiter quand « tout compile »
+- dans git, c’est moins important parce qu’on peut commiter n fois avant de transmettre ses changements à distance
+- **COMMITER SOUVENT**
+- peut sauver la carrière d’un imprudent
+
+
+## Workflow - version 0
+
+	git init .                        # crée un repository vide ici
+	git add fichier.txt     # ajoute fichier.txt à l'index 
+	vim fichier.txt           # on modifie le fichier
+	git status                   # on affiche le status du repository
+	git diff
+	touch fichier2.txt
+	git add fichier2.txt
+	git commit .
+	git rm fichier2.txt
+	git status
+	git commit .
+	git log
+
+
+
+
+# À distance
+*a deux ou plus, c’est mieux*
+
+
+## À distance
+
+- ssh
+- git
+- webdav
+- http
+
+
+## La décentralisation
+- l’origin
+
+
+# En pratique
+*en théorie, il n’y a pas de différence entre la théorie et la pratique.*
+
+
+## svn checkout…
+
+	git clone user@host:path/to/repository.git
+
+- clone un repository distant. Par défaut, une seule branche est complètement clonée, mais les autres références de branches sont récupérées également
+- peut prendre un temps certain
+
+
+## svn update 
+
+	git pull (--rebase)
+
+- fait avancer la référence locale à la dernière version présente dans l’index pour la référence courante (fetch puis merge)
+- si des commits existent en local et pas encore à distance, joue les nouveaux commits par dessus, sauf si `--rebase` où les commits sont rejoués suivant l’ordre temporel.
+
+
+## svn revert .
+
+	git reset --hard
+
+- remet à zéro une partie de l’index ou du répertoire de travail
+
+
+## mkdir -p repo/branches/mabranche
+
+	git branch mabranche
+
+Branch crée des références dans l’arbre des commits. Une référence pointe vers un commit et peut :
+
+- être *déplacée*  (push d’une branche locale avec des commits à distance)
+- être *supprimée* (push de "" vers la branche distante)
+- être *copiée* dans une autre référence (push de la branche vers autre une autre référence) 
+
+
+## cd branches/mabranche 
+
+	git checkout -b mabranche --track origin/mabranche
+
+
+## svn update -r 121212
+
+	git checkout 121212
+
+
+## svn revert fichier.php
+
+	git checkout fichier.php
+
+
+## git checkout
+
+- Altère la copie de travail pour la version pointée par le commit donné
+- Re-extrait de l’index un fichier qui a été modifié dans l’index
+
+
+## svn blame
+
+	git blame fichier_pourri.php
+
+Idéal pour trouver le coup^C^C responsable du comportement intéressant d’un morceau de code.
+
+
+## push
+
+	git push origin
+
+- opération sur un remote à partir de données locales
+- transmet les données au serveur
+- Avec `-f`, peut être dangereux 
+
+
+## Workflow - version 1
+
+	git clone git@github.com:user/repository.git
+	git fetch
+	git checkout branch
+	vim fichier.php
+	git diff
+	git blame fichier.php
+	git commit .
+	git pull —rebase
+	git push origin
+
+
+
+# Encore plus fort
+
+
+## git tag
+les tags tels qu’on les connaît
+
+	git tag prod-2014-08-01
+
+
+## git cherry-pick *sha1*
+( y compris des commits « plus ou moins disparus »)
+
+
+## git revert (-n) *sha1*
+annule un commit en le rejouant (sans le commiter).
+
+
+## git stash
+Prend les changements du répertoire de travail et les stocke dans un « stash ».
+
+Super diff stockable et qu’on peut ensuite re-appliquer :
+
+	vim source.js
+	git stash
+	checkout testing
+	git stash pop
+
+
+## git  merge
+	git merge origin/production
+- applique les commits sur le working directory propre dans l’ordre où ils ont été commités sur une référence passée en paramètre. 
+- on se retrouve parfois avec des conflits à gérer et il faut bien lire les messages de git pour éviter de s’énerver (peut aussi arriver dans un pull)
+- on peut toujours s’enfuir d’un merge qui présente un conflit avec `--abort`…
+- la résolution de conflit se fait via edition, `add` et `commit`.
+
+
+## rebase ( -i )
+- applique tous les changements locaux dans une branche dans une nouvelle branche.
+- l’usage commun est souvent avec `-i`
+- permet la ré-écriture de l’historique local pour le modifier ou le simplifier.
+- utilisation plus puissante sans le `-i`
+
+
+## bisect
+- idée simple pour application brillante
+- pour trouver des bugs
+- nécessite d’avoir beaucoup de commits
+- start, good, bad, skip
+- peut même executer une commande pour faire le test à votre place
+
+
+## pull-request
+- permet à un developpeur de demander l’intégration de son code dans un remote dont il n’a pas le contrôle.
+- usage par email (kernel)
+- via une interface web (Github)
+
+
+## reflog
+- dans les logs techniques de git, tous les évènements loggés
+- permet de récupérer des commits désormais inaccessibles
+
+
+## Workflow - version 3
+	git log origin/testing
+	git cherry-pick -n af23c4
+	git stash
+	git checkout baillet_test_profiling
+	git stash pop
+	git commit . -m "Cherry Pick from testing"
+	vim file.php
+	git commit . -m "Added debug flag to this class"
+	git rebase -i origin/baillet_test_profiling
+	git push origin
+
+
+
+# Gestion des branches
+*Michel le jardinier informatique*
+
+
+### Features Branches
+
+&lt;div style="height:500px;"&gt;
+![](./assets/git-workflow-feature-branch-1.png)
+&lt;/div&gt;
+
+- nouvelles fonctionnalités
+- bugfix
+- une seule branche **principale** à distance
+
+
+### Gitflow workflow
+![](/./assets/git-workflow-release-cycle-2feature.png)
+
+- branches par version/environnement
+- branches par niveau de développement
+- branches pour le support des vieilles versions
+
+
+## La décentralisation (bis)
+- plusieurs origin
+- github
+- test/prod
+
+
+
+# Limites de l’outil
+*Attention: script méchant*
+
+
+## Limites
+- pas de tracking fichier par fichier : si un fichier est renommé, le suivre dans toute sa vie est difficile. 
+- pas de numéro de version « simple », un SHA1, et trouver l’ancêtre commun entre deux commits peut être difficile (bissect peut donner des résultats curieux)
+- pas de centralisation par défaut (donc comprendre les origins est indispensable)
+
+Note: On considère que le « groupe » de code forme un tout « opaque » dans lequel ce genre d’interaction est un détail.
+
+
+## Limites - suite
+- apprentissage (un peu) plus complexe : fonctionnalités complexes et difficiles à maîtriser
+- Partie server side : ACL assez techniques à mettre en oeuvre (utilisation d’un service tiers indispensable)
+- Authentification souvent par SSH, nécessite une formation supplémentaire sur SSH (clefs privés avec mot de passe, agent…)
+- submodules difficiles à utiliser
+
+
+
+# Pour aller plus loin
+
+
+## Sur l’internet
+ - [http://git-scm.com/book/fr](http://git-scm.com/book/fr)
+ - [https://www.atlassian.com/fr/git/](https://www.atlassian.com/fr/git/)
+ - StackOverflow 
+
+
+## Sous le capot
+- **index** qui contient les changements non encore commités
+- base **clef-valeurs** (clef: SHA1)
+- des **arbres** avec des listes d’objet + permissions
+	- un noeud de l’arbre étant juste un fichier qui contient ses propriétés (parent…) et ses sous-noeuds.
+- des **commits** avec des arbres, des parents en termes de commit + un auteur et un message
+- notion d’ancêtre importante dans git pour déterminer la possibilité d’appliquer des changements dans le code
+- commit: **b375ec**0ff5d11aeca0f47c5bce313b9ae4b627ad
+- reflog
+
+Note: expliquer le contenu de l’index, d’un commit. Différence entre le Working directory et l’état interne de git.
+
+
+
+## Derniers rappels
+![](http://people.zoy.org/~oct/public/svn-git-hints.png)
+
+
+# Questions ?
+## et merci :-)
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-824762-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>

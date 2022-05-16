@@ -1,0 +1,11 @@
+#lang pollen
+ 
+◊blog{
+	01.2017-12-28-4-links.html
+	2017-02-27-ansible-tips-and-tricks-2.html
+	2017-04-14.html
+	2017-04-21-five-short-links.html
+	2017-12-28-4-links.html
+}
+
+home.html

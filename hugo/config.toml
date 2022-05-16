@@ -1,0 +1,38 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'oct.zoy.org'
+theme = 'PaperMod'
+
+[params.profileMode]
+enabled = true
+title = "Oct.zoy.org"
+subtitle = "Pierre's Baillet Homepage"
+imageUrl = "https://avatars.githubusercontent.com/u/22177?v=4"
+imageTitle = "It's a-me!"
+imageWidth = 120
+imageHeight = 120
+
+  [[params.profileMode.buttons]]
+  name = "About"
+  url = "/about"
+
+  [[params.profileMode.buttons]]
+  name = "Speaker"
+  url = "/as-a-speaker"
+
+  [[params.profileMode.buttons]]
+  name = "Posts"
+  url = "/posts"
+
+
+  [[params.profileMode.buttons]]
+  name = "Archive"
+  url = "/archive"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/octplane"
+
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com/octplane"
