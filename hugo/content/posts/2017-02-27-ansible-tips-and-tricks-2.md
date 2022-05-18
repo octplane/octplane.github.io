@@ -19,7 +19,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
 
 It is possible to run `Playbooks` or `Tasks` without ever naming them:
 
-```
+```yaml
 ---
 - hosts: local
   tasks:
@@ -31,7 +31,7 @@ It is possible to run `Playbooks` or `Tasks` without ever naming them:
 
 Gives:
 
-```
+```yaml
 PLAY ***************************************************************************
 TASK [user] *******************************************************************
 [...]
@@ -41,7 +41,7 @@ This log is not particularly interesting. We can probably do better.
 
 For example:
 
-```
+```yaml
 ---
 - name: "Prepare localhost"
   hosts: local
@@ -56,7 +56,7 @@ For example:
 
 Will print out:
 
-```
+```yaml
 PLAY [Prepare localhost] ******************************************************
 TASK [Create testuser1] *******************************************************
 [...]
@@ -80,7 +80,7 @@ As always, the message should contain as much information as possible to allow t
 
 With Ansible, you can use a mix of two syntax when writing code. Either pure YAML:
 
-```
+```yaml
 - name: add user testuser1
   user:
 	name: testuser1
@@ -135,7 +135,7 @@ I tend to use use group and roles variable as much as possible before resorting 
 
 I also try to document these settings (for example, with a real life file):
 
-```
+```yaml
 ---
 # file: group_vars/all
 # For data synchronisation from the server to localhost
@@ -171,7 +171,7 @@ This way, when I'll come back on this code, or if anybody (such as you) reads it
 
 With the documentation you've just written, you can check the parameters before using them and avoid many pitfalls. Not running things that will break down is a good thing to do.
 
-```
+```yaml
 	- name: "Validate version is a number, > 0"
 	  assert:
 		that:
@@ -228,7 +228,7 @@ And still, there is a way to write re-usable role easily, including different un
 
 Using a variable to decide which action to perform, you can have a small operation router inside your role:
 
-```
+```yaml
 ---
 # roles/service/vars/main.yml
 # by default, we ensure that service is present, configured and running.
@@ -236,13 +236,13 @@ Using a variable to decide which action to perform, you can have a small operati
 state: present
 ```
 
-```
+```yaml
 ---
 # roles/service/tasks/main.yml
 - include: "{{ state }}.yml"
 ```
 
-```
+```yaml
 ---
 # roles/service/tasks/present.yml
 - include: "install.yml"
@@ -250,7 +250,7 @@ state: present
 - include: "start.yml"
 ```
 
-```
+```yaml
 ---
 # roles/service/tasks/install.yml
 - name: add user testuser1
@@ -293,7 +293,7 @@ In the end, I strongly encourage you to use the routing system presented higher.
 
 Thanks to a very simple overloading model, it's possible to give Ansible an `ansible.cfg` in which you can reconfigure parts of Ansible according to your needs: for an alternative `hostfile` (no need to `-i myhosts` in CLI every time), to remove the useless `.retry` files, or anything else, you can just create an `ansible.cfg` file where you run your playbooks so that Ansible can **automatically** fetch and merge its content with the global configuration. The precedence order is as follow:
 
-```
+```yaml
 * ANSIBLE_CONFIG (an environment variable)
 * ansible.cfg (in the current directory)
 * .ansible.cfg (in the home directory)
