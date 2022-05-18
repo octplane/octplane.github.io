@@ -5,8 +5,7 @@ cover:
 ---
 
 I'm an occasional technical speaker.
-![](herzouzou_2017-Mar-03.jpg?w=300&h=300)
-![](obazoud_2017-Jan-06.jpg?w=300&h=300)
+
 I speak for the French organization [Brown Bag Lunch](http://www.brownbaglunch.fr/). Feel [free to contact me](mailto:speech@contact.baillet.name) to setup talks about any subject I know about. This will be a pleasure!
 
 - 2020-11-20 Datadog, from Rake to CNAB, a history of deploy tools at [CloudNord](cloudnord.fr/), thanks to the selection committee!  

@@ -1,7 +1,18 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://oct.zoy.org/'
 languageCode = 'en-us'
 title = 'oct.zoy.org'
 theme = 'PaperMod'
+
+
+
+[imaging]
+  anchor = 'Smart'
+  bgColor = '#ffffff'
+  hint = 'photo'
+  quality = 75
+  resampleFilter = 'Box'
+
+hideFooter = true
 
 [params.profileMode]
 enabled = true
@@ -36,3 +47,4 @@ url = "https://twitter.com/octplane"
 [[params.socialIcons]]
 name = "Github"
 url = "https://github.com/octplane"
+
