@@ -30,7 +30,7 @@ I speak for the French organization [Brown Bag Lunch](http://www.brownbaglunch.f
 - 2016-03-03: [Scraping's in'](/archive/2016/03/04/2016-03-04-09-03) at IPPON Technologies
 - 2016-01-13: *Devops, trenches and trolls* at IPPON Technologies
 - 2015-07-09: *Devops, trenches and trolls* at Invivoo
-- 2015-04-08: [Rust, most exciting language since Scala](/archive/2015/04/10/2015-04-10-rust-devoxx), Devoxx France
+- 2015-04-08: [Rust, most exciting language since Scala](/archive/2015/04/10/37.2015-04-10-rust-devoxx/default/), Devoxx France
 - 2015-03-19: IPPEvent: *Rust, most exciting language since Scala* at IPPON Technologies
 - 2015-03-12: *Devops, trenches and trolls* at Transatel
 - 2015-03-13: *Devops, trenches and trolls* at Meetic

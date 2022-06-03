@@ -6,12 +6,12 @@ taxonomy:
     tag: [backup]
 lang: us
 layout: pinboard
-reference: https://www.macstories.net/roundups/my-must-have-ios-apps-2015-edition/
+reference: 
 tags:
 - ios
 title: Must-Have iOS Apps, 2015 Edition
 ---
 
-This article made me buy Workflow and Pythonista. There are numerous very useful tools for your iDevices. 
+[This article](https://www.macstories.net/roundups/my-must-have-ios-apps-2015-edition/) made me buy Workflow and Pythonista. There are numerous very useful tools for your iDevices. 
 
-What are your essential applications ?
+What are your essential applications?

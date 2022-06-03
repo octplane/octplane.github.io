@@ -3,8 +3,6 @@ languageCode = 'en-us'
 title = 'oct.zoy.org'
 theme = 'PaperMod'
 
-
-
 [imaging]
   anchor = 'Smart'
   bgColor = '#ffffff'
@@ -13,6 +11,8 @@ theme = 'PaperMod'
   resampleFilter = 'Box'
 
 hideFooter = true
+showBreadCrumbs = true
+showReadingTime = true
 
 [params.profileMode]
 enabled = true

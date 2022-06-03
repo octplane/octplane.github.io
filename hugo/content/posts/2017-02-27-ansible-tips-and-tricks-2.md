@@ -1,11 +1,8 @@
 ---
-title: Ansible Tips and Tricks
+title: 🎯 Ansible Tips and Tricks
 date: 2017-02-27
 lang: en
 ShowReadingTime: true
-cover:
-  image: "/tiro-160574_640.png"
-  caption: In french, Ansible can be pronounced as "en cible", "in target".
 ---
 
 
