@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ruby on oct.zoy.org</title>
+    <link>https://oct.zoy.org/tags/ruby/</link>
+    <description>Recent content in ruby on oct.zoy.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bundler, oh, I hate thou</title>
+      <link>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
+      <description>Another merry joke from my bundler friend. If you ever switch to deployment mode (using the bundle install &amp;ndash;deploymentcommand), do not come and cry if bundler starts saying:When you have :
+gem list *** LOCAL GEMS *** gemname (version) Instead remove the lock:
+bundle install --no-deployment And voilà.
+Short post, but this issue made me mad for half an hour.</description>
+    </item>
+    
+    <item>
+      <title>Rbenv, chef and bundler</title>
+      <link>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</guid>
+      <description>What we aim We&amp;rsquo;re trying to use rbenvin our infrastructure in order to achieve the following multiple goals:
+ Use the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application  So far, I&amp;rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:
+require_recipe &amp;#34;rbenv&amp;#34; # Setup the rubies PICOR_RUBY=&amp;#34;ree-1.</description>
+    </item>
+    
+  </channel>
+</rss>

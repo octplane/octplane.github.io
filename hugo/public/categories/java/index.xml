@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>java on oct.zoy.org</title>
+    <link>https://oct.zoy.org/categories/java/</link>
+    <description>Recent content in java on oct.zoy.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oct.zoy.org/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The velocity engine</title>
+      <link>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</guid>
+      <description>We&amp;rsquo;re about to use the velocity enginesoon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</description>
+    </item>
+    
+  </channel>
+</rss>

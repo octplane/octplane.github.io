@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on oct.zoy.org</title>
+    <link>https://oct.zoy.org/tags/</link>
+    <description>Recent content in Tags on oct.zoy.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Dec 2015 13:12:42 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ios</title>
+      <link>https://oct.zoy.org/tags/ios/</link>
+      <pubDate>Tue, 29 Dec 2015 13:12:42 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://oct.zoy.org/tags/code/</link>
+      <pubDate>Mon, 02 Feb 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rant</title>
+      <link>https://oct.zoy.org/tags/rant/</link>
+      <pubDate>Mon, 02 Feb 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/rant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gna-gna</title>
+      <link>https://oct.zoy.org/tags/gna-gna/</link>
+      <pubDate>Wed, 03 Sep 2014 09:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/gna-gna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>admin</title>
+      <link>https://oct.zoy.org/tags/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://oct.zoy.org/tags/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bundler</title>
+      <link>https://oct.zoy.org/tags/bundler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/bundler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flickr</title>
+      <link>https://oct.zoy.org/tags/flickr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/flickr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fun</title>
+      <link>https://oct.zoy.org/tags/fun/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/fun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gaming</title>
+      <link>https://oct.zoy.org/tags/gaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HA</title>
+      <link>https://oct.zoy.org/tags/ha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/ha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jeu</title>
+      <link>https://oct.zoy.org/tags/jeu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/jeu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>joke</title>
+      <link>https://oct.zoy.org/tags/joke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/joke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opensource</title>
+      <link>https://oct.zoy.org/tags/opensource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oracle</title>
+      <link>https://oct.zoy.org/tags/oracle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>play</title>
+      <link>https://oct.zoy.org/tags/play/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/play/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://oct.zoy.org/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://oct.zoy.org/tags/ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>users</title>
+      <link>https://oct.zoy.org/tags/users/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/users/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wikipedia</title>
+      <link>https://oct.zoy.org/tags/wikipedia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/tags/wikipedia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

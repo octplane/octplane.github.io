@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>🚨 Git GPG and notifications | oct.zoy.org</title>
+<meta name="keywords" content="">
+<meta name="description" content="This article is pretty old, so be careful as its information could be out of date!
+ this article is for macOS only.
+If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
+Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.">
+<meta name="author" content="">
+<link rel="canonical" href="https://oct.zoy.org/posts/git-gpg-and-notifications/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.dfe7f61e1736c0cf15b14635cdbf1f3f52278aeb8d615d79df0fc09dcf92d7b0.css" integrity="sha256-3&#43;f2Hhc2wM8VsUY1zb8fP1IniuuNYV153w/Anc&#43;S17A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="🚨 Git GPG and notifications" />
+<meta property="og:description" content="This article is pretty old, so be careful as its information could be out of date!
+ this article is for macOS only.
+If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
+Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oct.zoy.org/posts/git-gpg-and-notifications/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-30T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-30T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="🚨 Git GPG and notifications"/>
+<meta name="twitter:description" content="This article is pretty old, so be careful as its information could be out of date!
+ this article is for macOS only.
+If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
+Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://oct.zoy.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🚨 Git GPG and notifications",
+      "item": "https://oct.zoy.org/posts/git-gpg-and-notifications/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "🚨 Git GPG and notifications",
+  "name": "🚨 Git GPG and notifications",
+  "description": "This article is pretty old, so be careful as its information could be out of date!\n this article is for macOS only.\nIf you use git and gpg to sign your commits, then you\u0026rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.",
+  "keywords": [
+    
+  ],
+  "articleBody": " This article is pretty old, so be careful as its information could be out of date!\n this article is for macOS only.\nIf you use git and gpg to sign your commits, then you’re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.\nerror: gpg failed to sign the data fatal: failed to write commit object To work around that, I wrote this small Rust application that watches git invoking GPG and sends a nice notification when it’s time for you to click.\n  That’s pretty useful, but you have to build the binary, run it and it’s still a bit of a hack.\nThere is actually a much nicer way to do that and here is how you can do that too:\n create a small shell script somewhere in your home  #!/bin/bash  osascript -e 'display notification \"Git wants to sign a commit!\" with title \"Click on your Yubikey\"' gpg \"$@\" Change this script executable bit\nchmod +x ~/bin/git-gpg.sh And reconfigure git to use this script instead of gpg:\ngit config --add gpg.program /Users/$USER/bin/git-gpg.sh And that’s all! Next time you commit something and your key is needed, you’ll see this notification pop:\n  If you want to furthermore configure the icon, you can edit the script using the macOS script editor and then export the script as an application and change its icon manually. Grab the app I did myself here: git-gpg-notification.app.zip.\nThe final version of the script:\n#!/bin/bash  open ~/bin/git-gpg-notification.app gpg \"$@\"   This is much nicer and more difficult to miss!\n",
+  "wordCount" : "292",
+  "inLanguage": "en",
+  "datePublished": "2021-03-30T00:00:00Z",
+  "dateModified": "2021-03-30T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/posts/git-gpg-and-notifications/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">oct.zoy.org</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      🚨 Git GPG and notifications
+    </h1>
+    <div class="post-meta"><span title='2021-03-30 00:00:00 +0000 UTC'>March 30, 2021</span>
+
+</div>
+  </header> 
+  <div class="post-content">
+<div class="notices warning" >
+<img class="floating-label" src="/warning.svg"/>
+	<p>This article is pretty old, so be careful as its information could be out of date!</p>
+
+</div>
+<p><em>this article is for macOS only.</em></p>
+<p>If you use <code>git</code> and <code>gpg</code> to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.</p>
+<p>Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.</p>
+<pre tabindex="0"><code>error: gpg failed to sign the data
+fatal: failed to write commit object
+</code></pre><p>To work around that, I wrote this <a href="https://github.com/octplane/yubikey-gpg-watcher">small Rust application</a> that watches git invoking GPG and sends a nice notification when it&rsquo;s time for you to click.</p>
+<figure>
+    <img loading="lazy" src="/CleanShot%202021-03-30%20at%2011.15.50.png"/> 
+</figure>
+
+<p>That&rsquo;s pretty useful, but you have to build the binary, run it and it&rsquo;s still a bit of a hack.</p>
+<p>There is actually a much nicer way to do that and here is how you can do that too:</p>
+<ul>
+<li>create a small shell script somewhere in your home</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>osascript -e <span style="color:#e6db74">&#39;display notification &#34;Git wants to sign a commit!&#34; with title &#34;Click on your Yubikey&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>gpg <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Change this script executable bit</p>
+<pre tabindex="0"><code>chmod +x ~/bin/git-gpg.sh
+</code></pre><p>And reconfigure git to use this script instead of gpg:</p>
+<pre tabindex="0"><code>git config --add gpg.program /Users/$USER/bin/git-gpg.sh
+</code></pre><p>And that&rsquo;s all! Next time you commit something and your key is needed, you&rsquo;ll see this notification pop:</p>
+<figure>
+    <img loading="lazy" src="/CleanShot%202021-03-30%20at%2011.32.28.png"/> 
+</figure>
+
+<p>If you want to furthermore configure the icon, you can edit the script using the macOS script editor and then export the script as an application and change its icon manually. Grab the app I did myself here: <a href="git-gpg-notification.app.zip">git-gpg-notification.app.zip</a>.</p>
+<p>The final version of the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>open ~/bin/git-gpg-notification.app
+</span></span><span style="display:flex;"><span>gpg <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><figure>
+    <img loading="lazy" src="/CleanShot%202021-03-30%20at%2011.47.06.png"/> 
+</figure>
+
+<p>This is much nicer and more difficult to miss!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

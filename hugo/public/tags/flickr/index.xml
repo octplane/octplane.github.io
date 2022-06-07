@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>flickr on oct.zoy.org</title>
+    <link>https://oct.zoy.org/tags/flickr/</link>
+    <description>Recent content in flickr on oct.zoy.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/flickr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing the Flickr Attributor </title>
+      <link>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</guid>
+      <description>Share and respect the license ! What&amp;rsquo;s wrong with Creative Commons picture sharing ? Since twitter started supporting images in post, most clients now have the ability to display these pictures along with the post.
+Adding a picture to a tweet increases clicks, retweets and favorites and will improve your social communication!
+Unfortunately, your photos might not be good enough to illustrate your point, so you might want to use other people&amp;rsquo;s photos.</description>
+    </item>
+    
+  </channel>
+</rss>

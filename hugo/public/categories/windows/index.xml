@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>windows on oct.zoy.org</title>
+    <link>https://oct.zoy.org/categories/windows/</link>
+    <description>Recent content in windows on oct.zoy.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oct.zoy.org/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IIS fails and &#34;the service did not return an error&#34;</title>
+      <link>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
+      <description>If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.
+Made my day.
+Kudos to the databaseforumfor the fix I was looking for in the internet.</description>
+    </item>
+    
+    <item>
+      <title>Tools I use</title>
+      <link>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</guid>
+      <description>List of software I use daily at work :
+ AutoHotkey: Autohotkey provides a scriptable way to automate most of the management of my Windows XP. I currently use one script that enable X-Windows style window dragging/resizing. Thunderbird Firefox Google Calendar Sync QuickMonth Calendar Putty SuperCopier Launchy  </description>
+    </item>
+    
+  </channel>
+</rss>

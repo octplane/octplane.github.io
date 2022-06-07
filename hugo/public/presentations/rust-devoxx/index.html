@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Rust. Devoxx.fr</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <style>
+            div.slide {
+                background-image: url("img/rust.png");
+                background-size: 100%;
+                background-position: center; 
+                background-color: #282828;
+            }
+        </style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+               <section data-markdown
+                                 data-separator="\n---\n"
+                                 data-separator-vertical="\n--\n"
+                                 data-separator-notes="^Note:"
+                                 data-charset="utf-8">
+
+# Rust
+<blockquote style="font-size: 98%">“GC ? Where we're going, we don't need GC.”<br><i><small>Doc Emmett Brown</small></i></blockquote>
+<small><a href="http://www.poumeyrol.fr/">Mathieu Poumeyrol</a> @kalizoy<br>
+<a href="http://oct.zoy.org/">Pierre Baillet</a> @octplane</small>
+--
+## Who are we ?
+
+<img src="./img/serie-sherlock-holmes.jpg" style="width: 35%; float:left;">
+
+- Mathieu Poumeyrol, <i>backend</i>
+- Pierre Baillet, <i>devops</i>
+- Ex-<i>fotopedia</i>
+- Ex-<i>IDM</i>
+- classmate in school
+
+
+Note:
+https://www.google.fr/search?q=coll%C3%A8gues&espv=2&biw=1745&bih=1005&source=lnms&tbm=isch&sa=X&ei=bK8GVc7WLoqsU8vtgMAH&ved=0CAYQ_AUoAQ#tbm=isch&q=cat+dog+friendship ou autre chose ?
+
+--
+## Outline
+
+- Rust, another language ?
+- Rust in the languages landscape
+- Rust in action
+- Rust and its ecosystem
+
+---
+## Rust, another language&nbsp;?
+<img src="./img/xkcd-standards.png">
+
+Note:
+- Looking for a C++ replacement
+- Industry backed and Open-source
+- I love it when a plan comes together
+
+--
+### Looking for a C++ replacement
+
+- Used in various part of the industry: performance, embedded, portable
+- Numerous recent improvements: lambda closure, local type inference
+
+<h3>But !</h3>
+
+- C++ is now 32 years old: older than most of you
+- Complex language with very tricky resource management issues
+- <b>Very</b> difficult to learn when coming from a "modern world": java, ruby, python, even perl
+
+Note:
+Il fait peur ce slide (bouh!)
+
+--
+### Industry backed and Open-source
+
+- Created by Graydon Hoare in 2009, then sponsored by Mozilla
+- Fully Open-source, MIT License
+- Backed by the Mozilla Foundation, known for its openness
+
+Note:
+Par opposition aux langages à BDFL (benevolent dictator for life) comme
+							python, ruby, perl et aux languages enterprise-backed mais "fermés ou presque" : Go, Java.
+--
+
+### I love it when a plan comes together
+
+- LLVM allowed huge progress in language compilation
+- Scala showed that hybrid functional languages were Business ready
+- Now was the right time to create a more modern language
+
+Note:
+Le titre est un clin d'oeil a l'agence tout risque.
+LLVM et sa conception modulaire ont encouragés le développement
+de compilateurs basés sur le même socle. Scala et son approche functionnelle ont montré
+à l'industrie qu'il était possible de construire du code dans ces langages plus fonctionnels
+tout en étant business (par opposition a universitaire pour Haskell et ses cousins).
+Now was: Le bon moment pour faire cela était il y a 2 ans, et ça a été fait par Mozilla. Sans troller,
+on peut quand meme souligner que Go n'est pas fondamentalement plus moderne comme langage.
+
+---
+## Rust in the language landscape
+
+<img src="./img/xkcd-sigil_cycle.png">
+
+Note:
+
+- Target Environments
+- Traditional Features
+- Functional Features
+- Ownership and lifetime management
+
+--
+
+### Target Environments
+
+- Rust generates machine code, like C, C++, or Go.
+- Rust references are translated to <b>plain pointers</b>.
+- Cross-platform implementations.
+<p>From kernel drivers to datacenter-wide distribution...</p>
+
+--
+
+### Traditional Features
+
+- imperative programming
+- functions, return types
+- loops, iterators, arrays
+- object-oriented: traits, generics
+- packages, dependencies
+- base types for string, numbers,...
+- concurrency
+- stdlib
+
+--
+### Functional Features
+
+- closures
+- immutability
+- local type inference
+- pattern matching
+- procedural macros
+
+--
+### Ownership and lifetime management
+
+<img src="./img/xkcd-pointers.png">
+
+--
+
+### Ownership and lifetime management
+#### Raw pointers : what could go wrong ?
+
+- overrun and underrun
+- access to freed memory
+- access to invalid memory
+- use of unitialized value
+- missing free
+- double free
+- malloc/free VS new/delete
+- ...
+
+--
+#### Strategies for Resource Management
+<table>
+<thead><tr><th>Technique</th><th>Environment</th></tr></thead>
+<tbody>
+<tr><td>Malloc and free</td><td>Standard libc</td></tr>
+<tr><td>Smart pointer support</td><td>Standard libc++</td></tr>
+<tr><td>ARC</td><td>Apple Objective-C</td></tr>
+<tr><td>Garbage Collector</td><td>JVM, Go, Ruby, ... </td></tr>
+<tr><td><b>Borrow Checking</b></td><td><b>Rust</b></td></tr>
+</tbody>
+</table>
+
+--
+#### Rust compromise
+- ask the developper to go halfway
+- make sure the compiler do the rest
+- generate code as efficient as C
+
+
+---
+## Rust in action
+
+<img src="./img/xkcd-goto.png">
+
+Note:
+- Hello world
+- Traditional features
+- Functional features
+- Safety features
+
+
+--
+
+### Hello world
+
+```rust
+fn main() {
+    println!("Hi future rustaceans!");
+}
+```
+
+```rust
+Hi future rustaceans!
+```
+
+--
+### Structs are concrete objects
+
+<pre><code data-trim contenteditable class="rust">
+use std::num::Float;
+
+struct Point {
+    x:f64, y:f64
+}
+
+fn  main()  {
+    let a = Point { x:3.0, y:4.0 };
+    let dist = (a.x*a.x + a.y*a.y).sqrt();
+    println!("{} {} {}", a.x, a.y, dist);
+}
+</code></pre>
+<pre><code data-trim contenteditable class="rust">3 4 5</code></pre>
+
+--
+### Structs have methods
+
+```rust
+use std::f64::consts::PI;
+use std::num::Float;
+
+struct Circle { x:f64, y:f64, radius:f64 }
+impl Circle {
+    fn area(&self) -> f64 { PI*self.radius*self.radius } 
+}
+
+fn  main()  {
+    let c = Circle { x:3.0, y:3.0, radius:2.0 };
+    println!("{:?}", c.area());
+}
+```
+
+```rust
+12.566371
+```
+
+--
+### Traits for abstraction
+
+<pre><code data-trim contenteditable class="rust">
+trait HasArea { fn area(&self) -> f64; }
+
+struct Circle { x:f64, y:f64, radius:f64 }
+impl HasArea for Circle {
+    fn area(&self) -> f64 { PI*self.radius*self.radius }
+}
+
+struct Rect { x1:f64, y1:f64, x2:f64, y2:f64 }
+impl HasArea for Rect {
+    fn area(&self) -> f64 { (self.x2-self.x1).abs()*(self.y2-self.y1).abs() }
+}
+
+fn  main()  {
+    let r = Rect { x1:3.0, y1:3.0, x2:10.0, y2: 7.0};
+    let c = Circle { x:3.0, y:3.0, radius:2.0 };
+    println!("{:?} {:?}", r.area(), c.area());
+}
+</code></pre>
+<pre><code data-trim contenteditable class="rust">28 12.566371</code></pre>
+
+--
+## Functional features
+
+<img src="./img/xkcd-functionnal.png">
+
+--
+### Abstract collections, closures
+<pre><code data-trim contenteditable class="rust">
+fn  main()  {
+    let r = Rect { x1:3.0, y1:3.0, x2:10.0, y2: 7.0};
+    let c = Circle { x:3.0, y:3.0, radius:2.0 };
+
+    let shapes:Vec&lt;&HasArea&gt; = vec!(&r, &c);
+
+    let areas:Vec&lt;String&gt; =
+        shapes.iter().map(|s| s.area().to_string()).collect();
+
+    println!("{}", areas.connect(" "));
+}
+</code></pre>
+<pre><code data-trim contenteditable class="rust">28 12.566371</code></pre>
+
+--
+### Enumeration and pattern matching
+<pre><code data-trim contenteditable class="rust">
+enum Shape {
+    Circle { x:f64, y:f64, radius:f64 },
+    Rect { x1:f64, y1:f64, x2:f64, y2:f64 },
+}
+
+impl HasArea for Shape {
+    fn area(&self) -> f64 {
+        match self {
+            &Shape::Circle { radius:r,  .. } => PI*r*r,
+            &Shape::Rect { x1:x1, x2:x2, y1:y1, y2:y2 } =>
+                (x2-x1).abs()*(y2-y1).abs()
+        }
+    }
+}
+</code></pre>
+<pre><code data-trim contenteditable class="rust">28 12.566371</code></pre>
+
+--
+### Safety features - Ownership
+
+<table><tr><td style="width :50%">
+<pre><code data-trim class="C">
+{
+  int \*x = malloc(sizeof(int));
+
+  *x = 5;
+
+  free(x);
+</code></pre>
+</td><td>
+<pre><code data-trim class="rust">
+{
+  let x = Box::new(5);
+}
+</code></pre>
+</td></tr></table>
+
+Note:
+- Box is the heap allocator
+- pattern works for any kind of resource
+
+--
+### Safety features - Ownership rule
+Each allocated resource is owned by a unique owning handle.
+When the handle goes out of scope, the resource is destroyed.
+
+--
+### Safety features - Transferring ownership
+
+<pre><code data-trim class="rust">
+fn add_one(mut num: Box&lt;i32>) {
+    *num += 1;
+}
+
+fn main() {
+    let x = Box::new(5);
+
+    add_one(x);
+
+    println!("{}", x);
+}
+
+</code></pre>
+<pre><code data-trim class="C">
+error: use of moved value: `x`
+</code></pre>
+
+Note:
+Ownership has been transferred to add_one, x is dead in main.
+
+--
+### Safety features - Transferring ownership fixed
+
+<pre><code data-trim class="rust">
+fn add_one(mut num: Box&lt;i32>) -> Box&lt;i32> {
+    *num += 1;
+    num
+}
+
+fn main() {
+    let x = Box::new(5);
+
+    let y = add_one(x);
+
+    println!("{}", y);
+}
+
+</code></pre>
+
+<pre><code data-trim class="C">
+6
+</code></pre>
+
+Note:
+Ownership is transferred back to main through return value.
+
+--
+### Safety features - Borrowing
+
+Rust allow the owner of a handle to lend out:
+
+- exactly one mutable reference
+- one or more immutable references
+
+
+--
+### Safety features - Borrowing
+<pre><code data-trim class="rust">
+fn add_one(mut num: &Box&lt;i32>) {
+    *num += 1;
+}
+
+fn main() {
+    let x = Box::new(5);
+
+    add_one(&mut x);
+
+    println!("{}", x);
+}
+
+</code></pre>
+
+<pre><code data-trim class="C">
+6
+</code></pre>
+
+Note:
+Ownership of the box stays to the variable x.
+Only a mutable reference is lend to add_one.
+
+--
+## What's new here ?
+
+- Ownership and borrowing are not new patterns...
+- but now they are enforced by the compiler.
+
+--
+## Safer API design
+
+- No exception (but a handful of method can "panic")
+- Pervasive use of `Option<>` and `Result<>`
+
+--
+## `Option<>` example
+
+```rust
+fn main() {
+    fn compute(x: Option<i32>) -> String {
+        match x {
+            Some(a) => format!("The value is: {}", a),
+            None    => format!("No value")
+        }
+    }
+
+    println!("{}", compute(Some(42))); // The value is: 42
+    println!("{}", compute(None)); // No value
+}
+```
+
+--
+## `Result<>` example
+
+```rust
+fn parse_version(header: &[u8]) -> Result<Version, ParseError> {
+    ...
+}
+
+let version = parse_version(&[1, 2, 3, 4]);
+match version {
+    Ok(v) => {
+        println!("working with version: {}", v);
+    }
+    Err(e) => {
+        println!("error parsing header: {}", e);
+    }
+}
+```
+
+---
+## Rust and its ecosystem
+
+<img src="./img/xkcd-fastest-growing.png">
+
+Note:
+
+- Release plan
+- Practical experience
+- Cross-platform, cross-paradigm, cross-industry
+
+--
+### Release plan
+
+- Rust 1.0-alpha2 – Feb 20
+- All 1.0 modules stable on nightly – around Mar 9
+- Rust 1.0-beta – Mar 31
+- Rust 1.0 – May 15
+
+--
+### Release plan &mdash; What's in 1.0 ?
+
+- after years of fumbling, the language now "feels" right
+- but a lot of efforts in reducing the 1.0-commited surface
+  - no procedural macros (aka compiler plugin)
+  - minimal collection footprint (no "Map" or "List" trait)
+- and big features just left for later
+  - async io
+  - higher kind types
+  - opt-in GC
+
+--
+### Practical experience &mdash; How does Rust feel ?
+
+- big language
+- young language
+- new concepts
+- unforgiving compiler
+
+--
+### Practical experience &mdash; How fast is it ?
+
+<a href="http://benchmarksgame.alioth.debian.org/u32/rust.php"><img src="./img/rust-vs-gcc.png"/></a>
+
+- busy beaver: in the ballpark of C (3 times faster than go and java)
+- rumblebars: 3 or 4 times faster than java
+
+
+--
+### Cross-platform
+
+- arduino: pending work on LLVM-AVR
+- small ARM boards: odroid and rpi raspbian bootstrapping
+- mesos bindings
+
+--
+
+### Cross-industry &mdash; Server side
+
+- *hyper*: the de facto standard client and server HTTP library
+- *Iron*: web service framework
+- *nickel.rs*: kind of the same, with mustache view
+- *conduit*: not sure what it is...
+- *rumblebars*: handlebars evaluation library
+- *rust-serialize* offers JSON ser/deser
+
+--
+
+### Cross-industry &mdash; Client side
+- *servo*: web rendering engine
+- GLFW bindings
+- *piston*: A user friendly game engine written in Rust
+- kiss3d: Keep It Simple, Stupid 3d graphics engine for Rust
+
+---
+### Conclusion
+
+- real-life micro-project: the deployer.
+- language almost ready for prime time
+- try it, it's free !
+
+
+--
+
+# Questions ?
+## and thank you !
+
+
+
+	            </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return true; }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Redundancy in Amazon EC2 | oct.zoy.org</title>
+<meta name="keywords" content="AWS, HA">
+<meta name="description" content="Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.
+ AWS is the branch of a company everybody knows.
+Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world.">
+<meta name="author" content="">
+<link rel="canonical" href="https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.dfe7f61e1736c0cf15b14635cdbf1f3f52278aeb8d615d79df0fc09dcf92d7b0.css" integrity="sha256-3&#43;f2Hhc2wM8VsUY1zb8fP1IniuuNYV153w/Anc&#43;S17A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Redundancy in Amazon EC2" />
+<meta property="og:description" content="Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.
+ AWS is the branch of a company everybody knows.
+Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/" /><meta property="article:section" content="archive" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Redundancy in Amazon EC2"/>
+<meta name="twitter:description" content="Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.
+ AWS is the branch of a company everybody knows.
+Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Archives",
+      "item": "https://oct.zoy.org/archive/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Redundancy in Amazon EC2",
+      "item": "https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Redundancy in Amazon EC2",
+  "name": "Redundancy in Amazon EC2",
+  "description": "Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.\n AWS is the branch of a company everybody knows.\nAmazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world.",
+  "keywords": [
+    "AWS", "HA"
+  ],
+  "articleBody": "Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.\n AWS is the branch of a company everybody knows.\nAmazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world. In each region, they own several data-centers connected together by high speed links, and to the internet via different peers. Their electric connectivity is also different and AWS calls that availability zones. A given zone can communicate with its neighbors, but Amazon guarantees you that no two zones should break at the same time (although such issue has already arrived in the past).\nBecause each zone contains vastly different hardware depending on the time they were built, Amazon cloaks the zone names and gives to the customer only a single letter to identify it: for example, in US-EAST1, you have a, b, c, d and e. These letters are randomized for each customer so that a might be d for another, in order to prevent you from trying to abuse the AZ that contains the most recent hardware.\nSome mad people have managed to identify the zones uniquely, but this is usually useless. What really matters is: how healthy is a given zone ?\nWhen a representative sends you an email informing you that a some zone is about to close, you sometimes wish you’d known that earlier so that you started abandonning the zone before it started creating problems in your monitoring or something else. Apart from the dying hardware, dying zones can mess your connectivity, DNS, and other curious stuff. So if you see something curious, ask the support, or your representative, it can save hours of headaches…\nHowever, these stories about broken underlying infrastructure are not really important on a day-to-day basis. Usually, traffice between the AZ is smooth and fast and everything.\nExcept when there is…\nan AWS outage ! There are all sorts of AWS outages. Because this system is using hundreds of different technologies, there are a lot of places to crash, burn, lose power or connectivity.\nSometimes a thunderstorm will knock out an AZ, or a flood, or some catastrophic failure somewhere in the virtual disk routing and your servers (or other’s servers) that will inevitably strike your servers out after a while. You can know when this happens, because Netflix, Pinterest and others big players break badly and all the press cries OMG ! Why is Amazon selling servers although its core business is to sell books !!!!.\nIf you are lucky, you can escape these nasty consequences.\nVertical AZ stacking Missing image :’( my stack looks nicer.\nIn order to be resilient in case of a missing zone, redundancy must be organized between each of these. In a given zone, you must be able to run your application inside the zone. With no interaction with the outside world.\nThis implies several things:\n your frontend should be using an external load-balancer or an ELB (Elastic Load Balancer, provided by AWS). Using the ELB ties you even more to AWS (and some think this is a bad thing), but its usefulness is quite high as we will see later Every database should be reachable from the given zone and be hosted in this zone.  If you deploy a simple service without paying attention to this, you can end up in this configuration: everything in a single zone, with no dependency on the outside world. If the zone breaks, your application will stop working.\nCross-AZ databases If you manage to deploy everything in another zone, you have two identical services on two zones, but with two distinct databases. And this is probably not what you want.\nSo you have to replicate your database in each zone, and possibly setup some complex failover schemes. At fotopedia, we were using Multi-AZ RDS instances and a replicated MongoDB cluster.\nMySQL Multi-AZ RDS instances are MySQL servers running in pair, one master and one slave, on two distinct AZs. This way, if one AZ becomes unreachable, the slave can become master quickly enough for your service to be still available. The switch is performed by AWS when it detects a failure, and takes few minutes. Over the course of more than 4 years of usage in production, we had issues once with a slow switch between the master and the slave. And never when the rest of AWS zones was broken (the EBS episode didn’t affect them for example)\nMongoDB Our MongoDB cluster was a « simple » tri-replicated cluster. Because we had some sharded tables, we had also config servers and supervisors on the grid. The MongoDB recommendation regarding config server is to have either 1 of 3. Conveniently, we were using 3 zones on AWS and we had one config server in each zone.\nIf one or two config servers become unavailable, the cluster’s metadata becomes read only and you cannot move data between the servers. If all three config servers are unavailable, you can still use the cluster if you do not restart the mongos supervisor. This is what’s written in the official MongoDB documentation.\nThe use of supervisors and 3 replicas meant that our data were propagated on the three zones we were using and if a master would disappear, another master would quickly take the relay. A nice thing with the mongos is that you don’t really have to know who is the master to talk to him or to one of the slave. All the communications goes through the mongos itself.\nOnce you have performed this step, you have a setup that allows you to have the same service running on different zones, while sharing the same database.\nSome other stuff need to be taken in account if your application is a website: sessions should be persisted in a shared database, uploaded assets must be sent on a CDN to be available from anywhere… But you probably already do that, don’t you ?\nCross-AZ Networking Network packets and cables.\nIn front or your frontends, you should have some kind of proxy that is very very resilient. It should be able to load-balance your traffic, deal with broken frontends automatically and be pretty much invulnerable to most network attacks. The AWS ELBs do fulfil this quite well and its integration with the rest of the AWS services makes it a very good product. During all the outages that Fotopedia had to cope with, it was never something due to the ELBs. YMMV and you could want do run this outside EC2, but with a probable higher complexity…\nFrontends must have the ability to connect to any zone and cope with local zones difficulties. For example, if your local connectivity is bad (for some reason), you might want to allow all your HTTP middleware to use alternate routes by using other zones. For example, you can configure nginx to send errors to another proxy by using proxy_next_upstream_error.\nYou need to carefully configure the various connect and read timeout, but this allows you to divert requests to other zones from a fronted that’s inside a broken one.\nHAProxy, my favorite piece of software for the Internet will also help you spreading requests to the servers which are faster, or less busy. You can use Option redispatch, the very nice leastconn parameter and another set of timeout. Redispatch will run again requests that can be replayed (should be GETs/HEADs but no POSTs), while leastconn is a very efficient parameter to balance the load properly on slow backends and almost detect faulty backends naturally.\nLikewise, if you use Varnish, the round-robin director will ensure your requests are spread on all backends.\nConclusion The idea is to create some kind of internal mesh between your servers layers. Be it in 3 availability zones, or 3 servers, or 3 continents. The scale is up to you, and these examples are just the foundation of what could be tomorrow, your 100% uptime infrastructure. The timeout settings are very important here, because they will have a direct impact on how your infrastructure reacts in case of emergency. Low timeouts means great reactivity, but more false positives. And higher timeouts will endanger your uptime… As usual, it’s a tradeoff you’ll have to make.\nFurther readings  The Netflix chaos Monkey is a brillant example of how to design your infrastructure and its surrounding to withstand any external issue. The High Scalability blog is also filled with a lot of interesting articles and techniques.  ",
+  "wordCount" : "1447",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">oct.zoy.org</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Redundancy in Amazon EC2
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="redundancy-in-aws-ec2">Redundancy in AWS EC2<a hidden class="anchor" aria-hidden="true" href="#redundancy-in-aws-ec2">#</a></h1>
+<p><em>This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.</em></p>
+<hr>
+<!-- raw HTML omitted -->
+<p>AWS is the branch of a company everybody knows.</p>
+<p>Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">around the world</a>. In each region, they own several data-centers connected together by high speed links, and to the internet via different peers. Their electric connectivity is also different and AWS calls that <strong>availability zones</strong>. A given zone can communicate with its neighbors, but Amazon guarantees you that no two zones should break at the same time (although such issue has already arrived in the past).</p>
+<p>Because each zone contains vastly different hardware depending on the time they were built, Amazon cloaks the zone names and gives to the customer only a single letter to identify it: for example, in <em>US-EAST1</em>, you have <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em> and <em>e</em>. These letters are  randomized for each customer so that <em>a</em> might be <em>d</em> for another, in order to prevent you from trying to abuse the AZ that contains the most recent hardware.</p>
+<p>Some <a href="http://alestic.com/2009/07/ec2-availability-zones">mad people have managed</a> to identify the zones uniquely, but this is usually useless. What really matters is: how <strong>healthy</strong> is a given zone ?</p>
+<p>When a representative sends you an email informing you that a some zone is about to close, you sometimes wish you’d known that earlier so that you started abandonning the zone before it started creating problems in your monitoring or something else. Apart from the dying hardware, dying zones can mess your connectivity, DNS, and other curious stuff. So if you see something curious, ask the support, or your representative, it can save hours of headaches…</p>
+<p>However, these stories about broken underlying infrastructure are not really important on a day-to-day basis. Usually, traffice between the AZ is smooth and fast and everything.</p>
+<p>Except when there is…</p>
+<h3 id="an-aws-outage-">an AWS outage !<a hidden class="anchor" aria-hidden="true" href="#an-aws-outage-">#</a></h3>
+<!-- raw HTML omitted -->
+<p>There are all sorts of AWS outages. Because this system is using hundreds of different technologies, there are a lot of places to crash, burn, lose power or connectivity.</p>
+<p>Sometimes a thunderstorm will knock out an AZ, or a flood, or some catastrophic failure somewhere in the virtual disk routing and your servers (or other’s servers) that will inevitably strike your servers out after a while.
+You <a href="http://aws.amazon.com/fr/message/67457/">can know when this happens</a>, because Netflix, Pinterest and others big players break badly and all the press cries <em>OMG ! Why is Amazon selling servers although its core business is to sell books !!!!</em>.</p>
+<p>If you are lucky, you can escape these nasty consequences.</p>
+<h2 id="vertical-az-stacking">Vertical AZ stacking<a hidden class="anchor" aria-hidden="true" href="#vertical-az-stacking">#</a></h2>
+<p><strong>Missing image :&rsquo;(</strong>
+<em>my stack looks nicer.</em></p>
+<p>In order to be resilient in case of a missing zone, redundancy must be organized between each of these. In a given zone, you must be able to run your application inside the zone. With no interaction with the outside world.</p>
+<p>This implies several things:</p>
+<ul>
+<li>your frontend should be using an external load-balancer or an ELB (Elastic Load Balancer, provided by AWS). Using the ELB ties you even more to AWS (and some think this is a <a href="http://www.rightscale.com/blog/cloud-management-best-practices/aws-outage-lessons-learned-if-netflix-can-suffer-so-can-you">bad thing</a>), but its usefulness is quite high as we will see later</li>
+<li>Every database should be reachable from the given zone and be hosted in this zone.</li>
+</ul>
+<p>If you deploy a simple service without paying attention to this, you can end up in this configuration: everything in a <strong>single zone</strong>, with no dependency on the outside world. If the zone breaks, your application will <strong>stop working</strong>.</p>
+<h2 id="cross-az-databases">Cross-AZ databases<a hidden class="anchor" aria-hidden="true" href="#cross-az-databases">#</a></h2>
+<!-- raw HTML omitted -->
+<p>If you manage to deploy everything in another zone, you have two identical services on two zones, but with <strong>two</strong> distinct databases. And this is probably not what you want.</p>
+<p>So you have to replicate your database in each zone, and possibly setup some complex failover schemes. At fotopedia, we were using <strong>Multi-AZ RDS</strong> instances and a <strong>replicated MongoDB</strong> cluster.</p>
+<h3 id="mysql">MySQL<a hidden class="anchor" aria-hidden="true" href="#mysql">#</a></h3>
+<p>Multi-AZ RDS instances are MySQL servers running in pair, one master and one slave, on two distinct AZs. This way, if one AZ becomes unreachable, the slave can become master quickly enough for your service to be still available. The switch is performed by AWS when it detects a failure, and takes  few minutes. Over the course of more than 4 years of usage in production, we had issues once with a slow switch between the master and the slave. And never when the rest of AWS zones was broken (<strong>the EBS episode</strong> didn’t affect them for example)</p>
+<h3 id="mongodb">MongoDB<a hidden class="anchor" aria-hidden="true" href="#mongodb">#</a></h3>
+<p>Our MongoDB cluster was a « simple » tri-replicated cluster. Because we had some sharded tables, we had also config servers and supervisors on the grid. The MongoDB recommendation regarding config server is to have either 1 of 3. Conveniently, we were using 3 zones on AWS and we had one config server in each zone.</p>
+<p>If one or two config servers become unavailable, the cluster’s metadata becomes read only and you cannot move data between the servers. If all three config servers are unavailable, you can still use the cluster if you do not restart the mongos supervisor. This is what’s written in the official <a href="http://docs.mongodb.org/manual/core/sharded-cluster-config-servers/">MongoDB documentation</a>.</p>
+<p>The use of supervisors and 3 replicas meant that our data were propagated on the three zones we were using and if a master would disappear, another master would quickly take the relay. A <em>nice thing</em> with the mongos is that you don’t really have to know who is the master to talk to him or to one of the slave. All the communications goes through the mongos itself.</p>
+<p>Once you have performed this step, you have a setup that allows you to have the same service running on different zones, while sharing the same database.</p>
+<p>Some other stuff need to be taken in account if your application is a website: sessions should be persisted in a shared database, uploaded assets must be sent on a CDN to be available from anywhere… But you probably already do that, don’t you ?</p>
+<h2 id="cross-az-networking">Cross-AZ Networking<a hidden class="anchor" aria-hidden="true" href="#cross-az-networking">#</a></h2>
+<!-- raw HTML omitted -->
+<p><img loading="lazy" src="474313512.jpg" alt=""  />
+
+<!-- raw HTML omitted -->
+<em>Network packets and cables.</em></p>
+<!-- raw HTML omitted -->
+<p>In front or your frontends, you should have some kind of proxy that is very very resilient. It should be able to load-balance your traffic, deal with broken frontends automatically and be pretty much  invulnerable to most network attacks. The AWS ELBs do fulfil this quite well and its integration with the rest of the AWS services makes it a very good product. During all the outages that Fotopedia had to cope with, it was never something due to the ELBs. YMMV and you could want do run this outside EC2, but with a probable higher complexity&hellip;</p>
+<p>Frontends must have the ability to connect to any zone and cope with local zones difficulties. For example, if your local connectivity is bad (for some reason), you might want to allow all your HTTP middleware to use alternate routes by using other zones. For example, you can configure nginx to <a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_next_upstream">send errors to another proxy</a> by using <strong>proxy_next_upstream_error</strong>.</p>
+<p>You need to carefully configure the various connect and read timeout, but this allows you to divert requests to other zones from a fronted that’s inside a broken one.</p>
+<p><a href="http://www.haproxy.org/">HAProxy</a>, my favorite piece of software for the Internet will also help you spreading requests to the servers which are faster, or less busy.  You can use <a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#option%20redispatch">Option redispatch</a>, the very nice <a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#4.2-balance">leastconn</a> parameter and another set of timeout. Redispatch will run again requests that can be replayed (should be GETs/HEADs but no <strong>POSTs</strong>), while leastconn is a very efficient parameter to balance the load properly on slow backends and almost detect faulty backends naturally.</p>
+<p>Likewise, if you use <a href="https://www.varnish-cache.org/trac/wiki/LoadBalancing">Varnish</a>, the <strong>round-robin director</strong> will ensure your requests are spread on all backends.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>The idea is to create some kind of internal mesh between your servers layers. Be it in 3 availability zones, or 3 servers, or 3 continents. The scale is up to you, and these examples are just the foundation of what could be tomorrow, your 100% uptime infrastructure. The timeout settings are very important here, because they will have a direct impact on how your infrastructure reacts in case of emergency. Low timeouts means great reactivity, but more false positives. And higher timeouts will endanger your uptime… As usual, it’s a tradeoff you’ll have to make.</p>
+<h2 id="further-readings">Further readings<a hidden class="anchor" aria-hidden="true" href="#further-readings">#</a></h2>
+<!-- raw HTML omitted -->
+<ul>
+<li>The <a href="https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey">Netflix chaos Monkey</a> is a brillant example of how to design your infrastructure and its surrounding to withstand any external issue.</li>
+<li>The <a href="http://highscalability.com/">High Scalability blog</a> is also filled with a lot of interesting articles and techniques.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://oct.zoy.org/tags/aws/">AWS</a></li>
+      <li><a href="https://oct.zoy.org/tags/ha/">HA</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

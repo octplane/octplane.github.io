@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Catchup TV sous OSX (ou comment faire du replay facile) | oct.zoy.org</title>
+<meta name="keywords" content="python, code">
+<meta name="description" content="Le Catchup, c&rsquo;est chouette Cet article explique comment installer facilement Weboob sur OSX et s&rsquo;en servir pour télécharger vos émissions préférées en différé.
+La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&rsquo;hier matin, je m&rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&rsquo;ai raté. J&rsquo;aimerai bien le revoir, voir même avoir l&rsquo;enregistrement de l&rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.">
+<meta name="author" content="">
+<link rel="canonical" href="https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.dfe7f61e1736c0cf15b14635cdbf1f3f52278aeb8d615d79df0fc09dcf92d7b0.css" integrity="sha256-3&#43;f2Hhc2wM8VsUY1zb8fP1IniuuNYV153w/Anc&#43;S17A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Catchup TV sous OSX (ou comment faire du replay facile)" />
+<meta property="og:description" content="Le Catchup, c&rsquo;est chouette Cet article explique comment installer facilement Weboob sur OSX et s&rsquo;en servir pour télécharger vos émissions préférées en différé.
+La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&rsquo;hier matin, je m&rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&rsquo;ai raté. J&rsquo;aimerai bien le revoir, voir même avoir l&rsquo;enregistrement de l&rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/" /><meta property="article:section" content="archive" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Catchup TV sous OSX (ou comment faire du replay facile)"/>
+<meta name="twitter:description" content="Le Catchup, c&rsquo;est chouette Cet article explique comment installer facilement Weboob sur OSX et s&rsquo;en servir pour télécharger vos émissions préférées en différé.
+La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&rsquo;hier matin, je m&rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&rsquo;ai raté. J&rsquo;aimerai bien le revoir, voir même avoir l&rsquo;enregistrement de l&rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Archives",
+      "item": "https://oct.zoy.org/archive/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Catchup TV sous OSX (ou comment faire du replay facile)",
+      "item": "https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Catchup TV sous OSX (ou comment faire du replay facile)",
+  "name": "Catchup TV sous OSX (ou comment faire du replay facile)",
+  "description": "Le Catchup, c\u0026rsquo;est chouette Cet article explique comment installer facilement Weboob sur OSX et s\u0026rsquo;en servir pour télécharger vos émissions préférées en différé.\nLa télé publique contient parfois des émissions intéressantes. Pas plus tard qu\u0026rsquo;hier matin, je m\u0026rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l\u0026rsquo;ai raté. J\u0026rsquo;aimerai bien le revoir, voir même avoir l\u0026rsquo;enregistrement de l\u0026rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.",
+  "keywords": [
+    "python", "code"
+  ],
+  "articleBody": "Le Catchup, c’est chouette Cet article explique comment installer facilement Weboob sur OSX et s’en servir pour télécharger vos émissions préférées en différé.\nLa télé publique contient parfois des émissions intéressantes. Pas plus tard qu’hier matin, je m’aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l’ai raté. J’aimerai bien le revoir, voir même avoir l’enregistrement de l’émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.\nMalheureusement, les sites de catchup français imposent bien souvent d’être connecté à internet, de se taper des publicités avant les émissions qui nous intéressent et d’autres limitations assez insupportables. Pourtant, la fonctionnalité de “magnétoscope” qui permet de faire une copie à usage privé nous intéresserait bien, mais visiblemenent, ca excite moins les ayant-droits (au cas où par exemple, on irait se faire de l’argent sur leur dos, ou même pire, dire du bien de leur production et diffuser la culture, mébon).\nWeboob est un projet libre, dont le but est de permettre aux utilisateurs d’internet de s’affranchir de l’interface graphique des sites internets pour en extraire la substantifique moëlle structurée. Adieu les cookies à accepter, les pubs à se taper, les claviers virtuels à cliquer ! Weboob essaye via l’intermédiaire d’une liste de plugins de vous faciliter la vie, le tout dans une interface en mode texte relativement utilisable.\nLa doc officielle de weboob ne dit pas vraiment comment installer ces outils sous OSX et donc, voici la notice.\nPré-requis Un mac, Xcode installé quelque part et 5 minutes.\nInstallez les outils xcode (nécessaire pour avoir zlib dans les parages)\nxcode-select --install Récupérez les sources de dev de Weboob\ngit clone git://git.symlink.me/pub/weboob/devel.git Installer virtualenv (normalement, juste) brew install virtualenv mais ça peut être plus compliqué, donc je vous colle ce petit lien qui a servi à Bernardo pour se déplanter (merci à lui):\nhttp://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv\nPuis créez un environnement virtualenv par là :\ncd devel virtualenv venv Activez le et installez weboob :\nsource venv/bin/activate python setup.py install Un fois tout installé, vous pouvez lancer videoob par exemple :\nvideoob (venv)14:24:58 Tirlipinpon:~/src/devel  videoob Welcome to videoob v1.1 Copyright(C) 2010-2015 Christophe Benz, Romain Bignon, John Obbele This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. Type \"help\" to display available commands. Loaded backends: allocine, arretsurimages, arte, canalplus, cappedtv, dailymotion, europarl, francetelevisions, gdcvault, ina, jacquieetmichel, nolifetv, quvi, rmll, trictractv, vimeo, vine, youjizz, youporn, youtube videoob Les commandes search et download devraient vous aider à démarrer. Y a plus qu’a profiter ! Enjoy ☺\n",
+  "wordCount" : "453",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">oct.zoy.org</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Catchup TV sous OSX (ou comment faire du replay facile)
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="le-catchup-cest-chouette">Le Catchup, c&rsquo;est chouette<a hidden class="anchor" aria-hidden="true" href="#le-catchup-cest-chouette">#</a></h1>
+<p><em>Cet article explique comment installer facilement Weboob sur OSX et s&rsquo;en servir pour télécharger vos émissions préférées en différé.</em></p>
+<p>La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&rsquo;hier matin, je m&rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&rsquo;ai raté. J&rsquo;aimerai bien le revoir, voir même avoir l&rsquo;enregistrement de l&rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.</p>
+<p>Malheureusement, les sites de catchup français imposent bien souvent d&rsquo;être connecté à internet, de se taper des publicités avant les émissions qui nous intéressent et d&rsquo;autres limitations assez insupportables. Pourtant, la fonctionnalité de &ldquo;magnétoscope&rdquo; qui permet de faire une copie à usage privé nous intéresserait bien, mais visiblemenent, ca excite moins les ayant-droits (au cas où par exemple, on irait se faire de l&rsquo;argent sur leur dos, ou même pire, dire du bien de leur production et diffuser la culture, mébon).</p>
+<p><a href="http://weboob.org/">Weboob</a> est un projet libre, dont le but est de permettre aux utilisateurs d&rsquo;internet de s&rsquo;affranchir de l&rsquo;interface graphique des sites internets pour en extraire la substantifique moëlle structurée. Adieu les cookies à accepter, les pubs à se taper, les claviers virtuels à cliquer ! Weboob essaye via l&rsquo;intermédiaire d&rsquo;une liste de plugins de vous faciliter la vie, le tout dans une interface en mode texte relativement utilisable.</p>
+<p>La doc officielle de weboob ne dit pas vraiment comment installer ces outils sous OSX et donc, voici la notice.</p>
+<h2 id="pré-requis">Pré-requis<a hidden class="anchor" aria-hidden="true" href="#pré-requis">#</a></h2>
+<p>Un mac, Xcode installé quelque part et 5 minutes.</p>
+<p>Installez les outils xcode (nécessaire pour avoir zlib dans les parages)</p>
+<pre tabindex="0"><code>xcode-select --install
+</code></pre><p>Récupérez les sources de dev de Weboob</p>
+<pre tabindex="0"><code>git clone git://git.symlink.me/pub/weboob/devel.git
+</code></pre><p>Installer virtualenv (normalement, juste) <code>brew install virtualenv</code> mais ça peut être plus compliqué, donc je vous colle ce petit lien qui a servi
+à Bernardo pour se déplanter (merci à lui):</p>
+<p><a href="http://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv">http://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv</a></p>
+<p>Puis créez un environnement virtualenv par là :</p>
+<pre tabindex="0"><code>cd devel
+virtualenv venv
+</code></pre><p>Activez le et installez weboob :</p>
+<pre tabindex="0"><code>source venv/bin/activate
+python setup.py install
+</code></pre><p>Un fois tout installé, vous pouvez lancer videoob par exemple :</p>
+<pre tabindex="0"><code>videoob
+(venv)14:24:58 Tirlipinpon:~/src/devel &gt; videoob
+Welcome to videoob v1.1
+
+Copyright(C) 2010-2015 Christophe Benz, Romain Bignon, John Obbele
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Type &#34;help&#34; to display available commands.
+
+Loaded backends: allocine, arretsurimages, arte, canalplus, cappedtv, dailymotion, europarl, francetelevisions, gdcvault, ina, jacquieetmichel, nolifetv, quvi, rmll, trictractv, vimeo, vine, youjizz, youporn, youtube
+
+videoob&gt;
+</code></pre><p>Les commandes <code>search</code> et <code>download</code> devraient vous aider à démarrer. Y a plus qu&rsquo;a profiter ! Enjoy ☺</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://oct.zoy.org/tags/python/">python</a></li>
+      <li><a href="https://oct.zoy.org/tags/code/">code</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

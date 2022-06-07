@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>fun on oct.zoy.org</title>
+    <link>https://oct.zoy.org/tags/fun/</link>
+    <description>Recent content in fun on oct.zoy.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crowded room.</title>
+      <link>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</guid>
+      <description>The archive room where one of our poor intern is just trying to sort 4 years of MSDNCDs.
+We plan to keep only a few of these, but before, we need to know what we have here. It&amp;rsquo;s an interesting thing to do. At least on the organization point of view (Note the small tables under the main one :D).</description>
+    </item>
+    
+  </channel>
+</rss>

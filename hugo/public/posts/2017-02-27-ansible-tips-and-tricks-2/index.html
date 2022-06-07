@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>🎯 Ansible Tips and Tricks | oct.zoy.org</title>
+<meta name="keywords" content="">
+<meta name="description" content="If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
+I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.">
+<meta name="author" content="">
+<link rel="canonical" href="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.dfe7f61e1736c0cf15b14635cdbf1f3f52278aeb8d615d79df0fc09dcf92d7b0.css" integrity="sha256-3&#43;f2Hhc2wM8VsUY1zb8fP1IniuuNYV153w/Anc&#43;S17A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="🎯 Ansible Tips and Tricks" />
+<meta property="og:description" content="If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
+I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2017-02-27T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2017-02-27T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="🎯 Ansible Tips and Tricks"/>
+<meta name="twitter:description" content="If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
+I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://oct.zoy.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🎯 Ansible Tips and Tricks",
+      "item": "https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "🎯 Ansible Tips and Tricks",
+  "name": "🎯 Ansible Tips and Tricks",
+  "description": "If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.\nI assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.",
+  "keywords": [
+    
+  ],
+  "articleBody": "If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.\nI assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.\n1 - Always name everything. It is possible to run Playbooks or Tasks without ever naming them:\n--- - hosts: local  tasks:  - user: \tname: testuser1 \tstate: present \tgroups: wheel Gives:\nPLAY *************************************************************************** TASK [user] ******************************************************************* [...] This log is not particularly interesting. We can probably do better.\nFor example:\n--- - name: \"Prepare localhost\"  hosts: local  tasks:  - name: \"Create testuser1\" \tuser: \tname: testuser1 \tstate: present \tgroups: wheel Will print out:\nPLAY [Prepare localhost] ****************************************************** TASK [Create testuser1] ******************************************************* [...] It’s much more readable. To to even better, you can add more DEBUG informations in the Tasks names, such as:\n- name: \"Create folder {{ target_folder }}\" file: path: \"{{ target_folder }}\" recurse: yes state: directory As always, the message should contain as much information as possible to allow the developer to DEBUG in case of error. I always try to do that so that future analysis is easier to do. You never know: you might really be in a hurry next time you want to understand why your code fails.\nAlways name your Ansible Tasks.\n2 - Use the YAML syntax, not the Ansible one With Ansible, you can use a mix of two syntax when writing code. Either pure YAML:\n- name: add user testuser1  user: \tname: testuser1 \tstate: present \tgroups: wheel Or the hybrid YAML/Ansible syntax:\n- name: add user testuser1 user: name=testuser1 state=present groups=wheel These two examples are identical in terms of Ansible description. In the first case, Ansible will parse the YAML document and then run the code. In the second case, Ansible will also parse name=testuser1 state=present groups=wheel before running the task user. This syntax is useful but forces you to do some intellectual work (= or :, YAML or inline, …) before being able to write working code, especially when it is complex.\nMy suggestion is to use the YAML syntax every time, avoiding the = syntax. It will help you detect errors earlier, and a make your Ansible code easier to read.\nWith some practise, it also becomes easier to write than the usual Ansible/YAML mix\nAlways use the YAML syntax.\n3 - Document your variables Ansible supports variable overriding according to where it finds their declaration. In the official documentation, the priority of these declarations is as follow:\n\trole defaults inventory vars inventory group_vars inventory host_vars playbook group_vars playbook host_vars host facts play vars play vars_prompt play vars_files registered vars set_facts role and include vars block vars (only for tasks in block) task vars (only for the task) extra vars (always win precedence) As you can see, the list is rather long and allows you to override a variable almost anywhere. This means that you have to be careful:\n not to spread your variable in your code too much. If you are the only author/use of your code, it’s easier to do than if you use someone’s code (roles from Galaxy, for example) to document all the variables you use, wherever you declare them.  I tend to use use group and roles variable as much as possible before resorting to other declaration levels.\nI also try to document these settings (for example, with a real life file):\n--- # file: group_vars/all # For data synchronisation from the server to localhost local_source_folder: /Users/octplane/src/wiseman_r remote_production_folder: /home/oct/prod  # app name to look for in the local registry app_name: wiseman # image name to search for in the local image registry image_name: \"octplane/{{ app_name }}\" # version to search for in the local image registry version: 4 # where to export the docker image export_folder: /tmp # Exported file from docker after zipping artefact_name: \"{{ app_name }}-{{ version }}.docker.gz\"  # where to copy the data on the remote server # where is deployed the test application remote: \tlanding_folder: /home/oct/tmp \ttest_folder: /home/oct/data/wiseman.test/ This way, when I’ll come back on this code, or if anybody (such as you) reads it, it’s easier to understand how it’s working rather than switching between roles and variables all the time.\nAlways document your variables.\nTry to minimise where you declare your variables.\n4 - Use asserts to validate the parameters With the documentation you’ve just written, you can check the parameters before using them and avoid many pitfalls. Not running things that will break down is a good thing to do.\n\t- name: \"Validate version is a number,  0\" \tassert: \tthat: \t- \"{{ version | int }}  0\" \tmsg: \"'version' must be a number and  0, is \\\"{{version}}\\\"\" As always, write meaningful error messages. There is a huge difference between a generic error message printed by Ansible and something you might have written yourself such as: 'version' must be a number and  0, got \"coucou\".\nUse assert to bail early in case of error.\nWrite meaningful error messages.\n5 - Change the stdout default logger The default stdout Ansible logger kinda sucks. It lacks useful timing information, takes a lot of screen estate. That’s why I’d like to suggest you try an alternate logger:\nhttps://github.com/octplane/ansible_stdout_compact_logger\nI am the author of this logger and here are some of its features:\n its output is more compact by default it displays the execution duration and current time in verbose mode, it displays the tasks content in a structure and readable way (indented YAML and \\n in text are actually converted to carriage returns…) important fields are displayed first (stdout, stderr, to name a few) if you use a higher verbosity, the regular ansible logger is used instead it contains bugs, but it is open-source!  Don’t forget to see what’s new on the internet\nIf you use open-source code, contribute back, please.\n6 - Write roles in a product-oriented way As soon as you start writing an Ansible role, it’s very tempting to put everything inside the same role in order to have some kind of reusable toolbox.\nYou actually need to separate role content by technical object: one role for MongoDB, one for HAProxy, another for Tomcat, and then use the playbook-provided glue to assemble and describe the behaviour you are looking for.\nThis segregation allows you to merge together all the administrative tasks you might need for a given component: installation, configuration, startup, halt, update, maintenance… and only for this component.\nIf you code needs to act on another technical component, try to move it to another role as soon as possible. If you really really need to orchestrate these tasks from a role, write a role whose sole purpose is to call others roles’ actions.\nThe goal of this separation is to lower the dependency between the roles and the technical products, lowering the number of needed variable to run it. In the end, this will allows you to reuse roles much more quickly, which is really what we are looking for.\nA role must only handle a single technical component.\nWrite abstract role to call the technical ones when needed.\n7 - Use the same role for several operations Technically, a role presents a single entry point, its tasks/main.yml. Because of this design, one might think it’s difficult to have a role accomplish several actions (without using tags, cf below, or includes).\nAnd still, there is a way to write re-usable role easily, including different unrelated operations.\nUsing a variable to decide which action to perform, you can have a small operation router inside your role:\n--- # roles/service/vars/main.yml # by default, we ensure that service is present, configured and running. # allowed values: present, absent, install, configure, start, stop state: present --- # roles/service/tasks/main.yml - include: \"{{ state }}.yml\" --- # roles/service/tasks/present.yml - include: \"install.yml\" - include: \"configure.yml\" - include: \"start.yml\" --- # roles/service/tasks/install.yml - name: add user testuser1  user: \tname: testuser1 \tstate: present \tgroups: wheel Extend role so that they can fulfil several tasks.\n8 - Be careful with set_fact set_fact creates variable in your Ansible script, at runtime, to have a mode dynamic behaviour. It’s very useful. However, these on-the-fly-created variables have several drawbacks, and you need to carefully think about it before creating one:\n its priority is rather high it’s created dynamically: you must ensure its creation won’t fail and give a curious result (for example, shell might sometimes give you something unexpected) it’s created dynamically: it doesn’t exist until you create it. This might seem obvious but most other Ansible variables are available during the whole run. your code user might not be able to override it, even when she absolutely needs it.  Moral of the story: be careful with there set_fact that can, like the proverbial poisoned apple, explode at your face at the worst time.\nLimit the set_fact to where they are absolutely necessary.\n9 - Use tag with moderation As soon as you write a role with several uses, it’s very tempting to use tags to filter out some tasks at runtime. It works in most case and allows you to run your deployments using the -t option (or --skip-tags to ignore them).\nHowever, at least two problems can rise when using these in Ansible:\n the same tag can be used over and over in many role and collide, preventing you from using exactly the tag you want to use this dispersal of tags makes it difficult to understand exactly what they do  In the end, I strongly encourage you to use the routing system presented higher. It does not use another functionality in Ansible and forces the role developer to clearly separate its role functionalities. Tags will be reserved for the interactive use of Ansible in CLI, by opposition to the one driven though a script or an orchestrator.\nUse the tags, but wisely.\n10 - Don’t hesitate to reconfigure Ansible Thanks to a very simple overloading model, it’s possible to give Ansible an ansible.cfg in which you can reconfigure parts of Ansible according to your needs: for an alternative hostfile (no need to -i myhosts in CLI every time), to remove the useless .retry files, or anything else, you can just create an ansible.cfg file where you run your playbooks so that Ansible can automatically fetch and merge its content with the global configuration. The precedence order is as follow:\n* ANSIBLE_CONFIG (an environment variable) * ansible.cfg (in the current directory) * .ansible.cfg (in the home directory) * /etc/ansible/ansible.cfg (source http://docs.ansible.com/ansible/intro_configuration.html)\nCustomise your Ansible experience.\nWrap-up We saw together that the regular use of Ansible allows the emergence of good practices that will make the use of this tool easier every day. These tips are obviously extracted from my own personal experience and chats with developers. I probably over-simplified some of these things and forgotten others. Let’s recap’ together:\n Always name your Ansible Tasks. Always use the YAML syntax. Always document your variables. Try to minimise where you declare your variables. Use assert to bail early in case of error. Write meaningful error messages. Don’t forget to see what’s new on the internet If you use open-source code, contribute back, please. A role must only handle a single technical component. Write abstract roles to call the technical ones when needed. Extend roles so that they can fulfil several tasks. Limit the set_fact to where they are absolutely necessary. Use the tags, but wisely. Customise your Ansible experience using ansible.cfg  And you? How do you use Ansible? Got any tip to share? Now is your turn!\n",
+  "wordCount" : "1959",
+  "inLanguage": "en",
+  "datePublished": "2017-02-27T00:00:00Z",
+  "dateModified": "2017-02-27T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">oct.zoy.org</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      🎯 Ansible Tips and Tricks
+    </h1>
+    <div class="post-meta"><span title='2017-02-27 00:00:00 +0000 UTC'>February 27, 2017</span>&nbsp;·&nbsp;10 min
+
+</div>
+  </header> 
+  <div class="post-content"><p>If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.</p>
+<p>I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.</p>
+<h3 id="1---always-name-everything">1 - Always name everything.<a hidden class="anchor" aria-hidden="true" href="#1---always-name-everything">#</a></h3>
+<p>It is possible to run <code>Playbooks</code> or <code>Tasks</code> without ever naming them:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">hosts</span>: <span style="color:#ae81ff">local</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tasks</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">user</span>:
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">testuser1</span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">groups</span>: <span style="color:#ae81ff">wheel</span>
+</span></span></code></pre></div><p>Gives:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">PLAY ***************************************************************************</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">TASK [user] *******************************************************************</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">...]</span>
+</span></span></code></pre></div><p>This log is not particularly interesting. We can probably do better.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Prepare localhost&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">hosts</span>: <span style="color:#ae81ff">local</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tasks</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Create testuser1&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">user</span>:
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">testuser1</span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">groups</span>: <span style="color:#ae81ff">wheel</span>
+</span></span></code></pre></div><p>Will print out:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">PLAY [Prepare localhost] ******************************************************</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">TASK [Create testuser1] *******************************************************</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">...]</span>
+</span></span></code></pre></div><p>It&rsquo;s much more readable. To to even better, you can add more <code>DEBUG</code> informations in the <code>Tasks</code> names, such as:</p>
+<pre tabindex="0"><code>- name: &#34;Create folder {{ target_folder }}&#34;
+  file:
+	path: &#34;{{ target_folder }}&#34;
+	recurse: yes
+	state: directory
+</code></pre><p>As always, the message should contain as much information as possible to allow the developer to <code>DEBUG</code> in case of error. I always try to do that so that future analysis is easier to do. You never know: you might really be in a hurry next time you want to understand why your code fails.</p>
+<p><strong>Always name your Ansible Tasks.</strong></p>
+<h3 id="2---use-the-yaml-syntax-not-the-ansible-one">2 - Use the YAML syntax, not the Ansible one<a hidden class="anchor" aria-hidden="true" href="#2---use-the-yaml-syntax-not-the-ansible-one">#</a></h3>
+<p>With Ansible, you can use a mix of two syntax when writing code. Either pure YAML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">add user testuser1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">user</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">name</span>: <span style="color:#ae81ff">testuser1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">groups</span>: <span style="color:#ae81ff">wheel</span>
+</span></span></code></pre></div><p>Or the hybrid YAML/Ansible syntax:</p>
+<pre tabindex="0"><code>- name: add user testuser1
+  user: name=testuser1 state=present groups=wheel
+</code></pre><p>These two examples are identical in terms of Ansible description. In the first case, Ansible will parse the YAML document and then run the code. In the second case, Ansible will also parse <code>name=testuser1 state=present groups=wheel</code> before running the task <code>user</code>. This syntax is useful but forces you to do some intellectual work (= or :, YAML or inline, &hellip;) before being able to write working code, especially when it is complex.</p>
+<p>My suggestion is to use the YAML syntax every time, avoiding the <code>=</code> syntax. It will help you detect errors earlier, and a make your Ansible code easier to read.</p>
+<p>With some practise, it also becomes easier to write than the usual Ansible/YAML mix</p>
+<p><strong>Always use the YAML syntax.</strong></p>
+<h3 id="3---document-your-variables">3 - Document your variables<a hidden class="anchor" aria-hidden="true" href="#3---document-your-variables">#</a></h3>
+<p>Ansible supports variable overriding according to where it finds their declaration. In the official documentation, the <a href="http://docs.ansible.com/ansible/playbooks_variables.html">priority</a> of these declarations is as follow:</p>
+<pre tabindex="0"><code>		role defaults
+		inventory vars
+		inventory group_vars
+		inventory host_vars
+		playbook group_vars
+		playbook host_vars
+		host facts
+		play vars
+		play vars_prompt
+		play vars_files
+		registered vars
+		set_facts
+		role and include vars
+		block vars (only for tasks in block)
+		task vars (only for the task)
+		extra vars (always win precedence)
+</code></pre><p>As you can see, the list is rather long and allows you to override a variable almost anywhere. This means that you have to be careful:</p>
+<ul>
+<li>not to spread your variable in your code too much. If you are the only author/use of your code, it&rsquo;s easier to do than if you use someone&rsquo;s code (roles from <a href="https://galaxy.ansible.com/">Galaxy</a>, for example)</li>
+<li>to document all the variables you use, wherever you declare them.</li>
+</ul>
+<p>I tend to use use group and roles variable as much as possible before resorting to other declaration levels.</p>
+<p>I also try to document these settings (for example, with a real life file):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># file: group_vars/all</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># For data synchronisation from the server to localhost</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">local_source_folder</span>: <span style="color:#ae81ff">/Users/octplane/src/wiseman_r</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">remote_production_folder</span>: <span style="color:#ae81ff">/home/oct/prod</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># app name to look for in the local registry</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">app_name</span>: <span style="color:#ae81ff">wiseman</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># image name to search for in the local image registry</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">image_name</span>: <span style="color:#e6db74">&#34;octplane/{{ app_name }}&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># version to search for in the local image registry</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># where to export the docker image</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">export_folder</span>: <span style="color:#ae81ff">/tmp</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exported file from docker after zipping</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">artefact_name</span>: <span style="color:#e6db74">&#34;{{ app_name }}-{{ version }}.docker.gz&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># where to copy the data on the remote server</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># where is deployed the test application</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">remote</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">landing_folder</span>: <span style="color:#ae81ff">/home/oct/tmp</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">test_folder</span>: <span style="color:#ae81ff">/home/oct/data/wiseman.test/</span>
+</span></span></code></pre></div><p>This way, when I&rsquo;ll come back on this code, or if anybody (such as you) reads it, it&rsquo;s easier to understand how it&rsquo;s working rather than switching between roles and variables all the time.</p>
+<p><strong>Always document your variables.</strong></p>
+<p><strong>Try to minimise where you declare your variables.</strong></p>
+<h3 id="4---use-asserts-to-validate-the-parameters">4 - Use asserts to validate the parameters<a hidden class="anchor" aria-hidden="true" href="#4---use-asserts-to-validate-the-parameters">#</a></h3>
+<p>With the documentation you&rsquo;ve just written, you can check the parameters before using them and avoid many pitfalls. Not running things that will break down is a good thing to do.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Validate version is a number, &gt; 0&#34;</span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#f92672">assert</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">that</span>:
+</span></span><span style="display:flex;"><span>		  - <span style="color:#e6db74">&#34;{{ version | int }} &gt; 0&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">msg</span>: <span style="color:#e6db74">&#34;&#39;version&#39; must be a number and &gt; 0, is \&#34;{{version}}\&#34;&#34;</span>
+</span></span></code></pre></div><p>As always, write <strong>meaningful error messages</strong>. There is a huge difference between a generic error message printed by Ansible and something you might have written yourself such as: <code>'version' must be a number and &gt; 0, got &quot;coucou&quot;</code>.</p>
+<p><strong>Use assert to bail early in case of error.</strong></p>
+<p><strong>Write meaningful error messages.</strong></p>
+<h3 id="5---change-the-stdout-default-logger">5 - Change the <em>stdout</em> default logger<a hidden class="anchor" aria-hidden="true" href="#5---change-the-stdout-default-logger">#</a></h3>
+<p>The default stdout Ansible logger kinda sucks. It lacks useful timing information, takes a lot of screen estate. That&rsquo;s why I&rsquo;d like to suggest you try an alternate logger:</p>
+<p><a href="https://github.com/octplane/ansible_stdout_compact_logger">https://github.com/octplane/ansible_stdout_compact_logger</a></p>
+<p>I am the author of this logger and here are some of its features:</p>
+<ul>
+<li>its output is more compact by default</li>
+<li>it displays the execution duration and current time</li>
+<li>in verbose mode, it displays the tasks content in a structure and readable way (indented YAML and \n in text are actually converted to carriage returns&hellip;)</li>
+<li>important fields are displayed first (stdout, stderr, to name a few)</li>
+<li>if you use a higher verbosity, the regular ansible logger is used instead</li>
+<li>it contains bugs, but it is open-source!</li>
+</ul>
+<p><strong>Don&rsquo;t forget to see what&rsquo;s new on the internet</strong></p>
+<p><strong>If you use open-source code, contribute back, please.</strong></p>
+<h3 id="6---write-roles-in-a-product-oriented-way">6 - Write roles in a product-oriented way<a hidden class="anchor" aria-hidden="true" href="#6---write-roles-in-a-product-oriented-way">#</a></h3>
+<p>As soon as you start writing an Ansible role, it&rsquo;s very tempting to put everything inside the same role in order to have some kind of reusable toolbox.</p>
+<p>You actually need to separate role content by technical object: one role for <em>MongoDB</em>, one for <em>HAProxy</em>, another for <em>Tomcat</em>, and then use the playbook-provided glue to assemble and describe the behaviour you are looking for.</p>
+<p>This segregation allows you to merge together all the administrative tasks you might need for a given component: installation, configuration, startup, halt, update, maintenance&hellip; and only for this component.</p>
+<p>If you code needs to act on another technical component, try to move it to another role as soon as possible. If you really really need to orchestrate these tasks from a role, write a role whose sole purpose is to call others roles&rsquo; actions.</p>
+<p>The goal of this separation is to lower the dependency between the roles and the technical products, lowering the number of needed variable to run it. In the end, this will allows you to reuse roles much more quickly, which is really what we are looking for.</p>
+<p><strong>A role must only handle a single technical component.</strong></p>
+<p><strong>Write abstract role to call the technical ones when needed.</strong></p>
+<h3 id="7---use-the-same-role-for-several-operations">7 - Use the same role for several operations<a hidden class="anchor" aria-hidden="true" href="#7---use-the-same-role-for-several-operations">#</a></h3>
+<p>Technically, a role presents a single entry point, its <code>tasks/main.yml</code>. Because of this design, one might think it&rsquo;s difficult to have a role accomplish several actions (without using tags, cf below, or <code>includes</code>).</p>
+<p>And still, there is a way to write re-usable role easily, including different unrelated operations.</p>
+<p>Using a variable to decide which action to perform, you can have a small operation router inside your role:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># roles/service/vars/main.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># by default, we ensure that service is present, configured and running.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># allowed values: present, absent, install, configure, start, stop</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># roles/service/tasks/main.yml</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">include</span>: <span style="color:#e6db74">&#34;{{ state }}.yml&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># roles/service/tasks/present.yml</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">include</span>: <span style="color:#e6db74">&#34;install.yml&#34;</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">include</span>: <span style="color:#e6db74">&#34;configure.yml&#34;</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">include</span>: <span style="color:#e6db74">&#34;start.yml&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># roles/service/tasks/install.yml</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">add user testuser1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">user</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">name</span>: <span style="color:#ae81ff">testuser1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">groups</span>: <span style="color:#ae81ff">wheel</span>
+</span></span></code></pre></div><p><strong>Extend role so that they can fulfil several tasks.</strong></p>
+<h3 id="8---be-careful-with-set_fact">8 - Be careful with <strong>set_fact</strong><a hidden class="anchor" aria-hidden="true" href="#8---be-careful-with-set_fact">#</a></h3>
+<p><code>set_fact</code> creates variable in your Ansible script, at runtime, to have a mode dynamic behaviour. It&rsquo;s very useful. However, these on-the-fly-created variables have several drawbacks, and you need to carefully think about it before creating one:</p>
+<ul>
+<li>its priority is rather high</li>
+<li>it&rsquo;s created dynamically: you must ensure its creation won&rsquo;t fail and give a curious result (for example, <code>shell</code> might sometimes give you something unexpected)</li>
+<li>it&rsquo;s created dynamically: it doesn&rsquo;t exist until you create it. This might seem obvious but most other Ansible variables are available during the whole run.</li>
+<li>your code user might not be able to override it, even when she absolutely needs it.</li>
+</ul>
+<p>Moral of the story: be careful with there <code>set_fact</code> that can, like the proverbial poisoned apple, explode at your face at the worst time.</p>
+<p><strong>Limit the <code>set_fact</code> to where they are absolutely necessary.</strong></p>
+<h3 id="9---use-tag-with-moderation">9 - Use tag with moderation<a hidden class="anchor" aria-hidden="true" href="#9---use-tag-with-moderation">#</a></h3>
+<p>As soon as you write a role with several uses, it&rsquo;s very tempting to use tags to filter out some tasks at runtime. It works in most case and allows you to run your deployments using the <code>-t</code> option (or <code>--skip-tags</code> to ignore them).</p>
+<p>However, at least two problems can rise when using these in Ansible:</p>
+<ul>
+<li>the same tag can be used over and over in many role and collide, preventing you from using exactly the tag you want to use</li>
+<li>this dispersal of tags makes it difficult to understand exactly what they do</li>
+</ul>
+<p>In the end, I strongly encourage you to use the routing system presented higher. It does not use another functionality in Ansible and forces the role developer to clearly separate its role functionalities. Tags will be reserved for the interactive use of Ansible in CLI, by opposition to the one driven though a script or an orchestrator.</p>
+<p><strong>Use the tags, but wisely.</strong></p>
+<h3 id="10---dont-hesitate-to-reconfigure-ansible">10 - Don&rsquo;t hesitate to reconfigure Ansible<a hidden class="anchor" aria-hidden="true" href="#10---dont-hesitate-to-reconfigure-ansible">#</a></h3>
+<p>Thanks to a very simple overloading model, it&rsquo;s possible to give Ansible an <code>ansible.cfg</code> in which you can reconfigure parts of Ansible according to your needs: for an alternative <code>hostfile</code> (no need to <code>-i myhosts</code> in CLI every time), to remove the useless <code>.retry</code> files, or anything else, you can just create an <code>ansible.cfg</code> file where you run your playbooks so that Ansible can <strong>automatically</strong> fetch and merge its content with the global configuration. The precedence order is as follow:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>* <span style="color:#ae81ff">ANSIBLE_CONFIG (an environment variable)</span>
+</span></span><span style="display:flex;"><span>* <span style="color:#ae81ff">ansible.cfg (in the current directory)</span>
+</span></span><span style="display:flex;"><span>* <span style="color:#ae81ff">.ansible.cfg (in the home directory)</span>
+</span></span><span style="display:flex;"><span>* <span style="color:#ae81ff">/etc/ansible/ansible.cfg</span>
+</span></span></code></pre></div><p>(source <a href="http://docs.ansible.com/ansible/intro_configuration.html">http://docs.ansible.com/ansible/intro_configuration.html</a>)</p>
+<p><strong>Customise your Ansible experience.</strong></p>
+<h3 id="wrap-up">Wrap-up<a hidden class="anchor" aria-hidden="true" href="#wrap-up">#</a></h3>
+<p>We saw together that the regular use of Ansible allows the emergence of good practices that will make the use of this tool easier every day. These tips are obviously extracted from my own personal experience and chats with developers. I probably over-simplified some of these things and forgotten others. Let&rsquo;s recap&rsquo; together:</p>
+<ul>
+<li>Always <strong>name</strong> your Ansible Tasks.</li>
+<li>Always use the <strong>YAML</strong> syntax.</li>
+<li>Always <strong>document</strong> your variables.</li>
+<li>Try to <strong>minimise</strong> where you declare your variables.</li>
+<li>Use assert to bail <strong>early</strong> in case of error.</li>
+<li>Write <strong>meaningful</strong> error messages.</li>
+<li>Don&rsquo;t forget to see what&rsquo;s <strong>new</strong> on the internet</li>
+<li>If you use open-source code, <strong>contribute</strong> back, please.</li>
+<li>A role must only handle a <strong>single</strong> technical component.</li>
+<li>Write <strong>abstract</strong> roles to call the technical ones when needed.</li>
+<li>Extend roles so that they can fulfil <strong>several</strong> tasks.</li>
+<li><strong>Limit</strong> the <code>set_fact</code> to where they are absolutely necessary.</li>
+<li>Use the tags, but <strong>wisely</strong>.</li>
+<li><strong>Customise</strong> your Ansible experience using <code>ansible.cfg</code></li>
+</ul>
+<p>And you? How do you use Ansible? Got any tip to share? Now is your turn!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
