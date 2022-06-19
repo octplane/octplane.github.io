@@ -1,0 +1,10 @@
+h1 {
+  border-image: conic-gradient(var(--code-bg) 0 0) fill 0//0 100vmax;
+  padding: 10px 0
+}
+
+
+.hljs {
+  border-image: conic-gradient(var(--hljs-darker) 0 0) fill 0//0 100vmax;
+  padding: -3px 0px 0px 0px
+}
