@@ -16,12 +16,12 @@ showReadingTime = true
 
 [params.profileMode]
 enabled = true
-title = "Oct.zoy.org"
-subtitle = "Pierre's Baillet Homepage"
-imageUrl = "https://avatars.githubusercontent.com/u/22177?v=4"
+title = "oct.zoy.org"
+subtitle = "Pierre Baillet's Homepage"
+imageUrl = "/mugshot.png"
 imageTitle = "It's a-me!"
-imageWidth = 120
-imageHeight = 120
+imageWidth = 144
+imageHeight = 144
 
   [[params.profileMode.buttons]]
   name = "About"
