@@ -6,7 +6,16 @@
     <description>Recent content in Posts on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🏢 Hiring at Datadog</title>
+      <link>https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/</guid>
+      <description>Hiring is tough. This article describes my interviewer&amp;rsquo;s experience at Datadog.</description>
+    </item>
+    
     <item>
       <title>🚮 The Ad Blocking Problem</title>
       <link>https://oct.zoy.org/posts/the-ad-blocking-problem/</link>

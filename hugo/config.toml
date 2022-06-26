@@ -10,9 +10,12 @@ theme = 'PaperMod'
   quality = 75
   resampleFilter = 'Box'
 
-hideFooter = true
+[params]
+
+hideFooter = false
 showBreadCrumbs = true
 showReadingTime = true
+ShowCodeCopyButtons = true
 
 [params.profileMode]
 enabled = true
