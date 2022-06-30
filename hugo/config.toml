@@ -12,10 +12,14 @@ theme = 'PaperMod'
 
 [params]
 
+
 hideFooter = false
 showBreadCrumbs = true
 showReadingTime = true
 ShowCodeCopyButtons = true
+
+[params.label]
+  icon = "/bandana.png"
 
 [params.profileMode]
 enabled = true

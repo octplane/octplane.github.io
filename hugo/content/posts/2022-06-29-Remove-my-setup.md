@@ -7,7 +7,7 @@ summary: Just like The Setup, but more amateur.
 
 I've worked as a full remote since mid-2017 when I joined Datadog. Ever since I've slowly upgraded my setup to ease my work from home and I also tried to adapt and find the best ways to communicate and work with remote coworkers. In my current team, only 2 teammates are regularly going to the office and the 5 others are mostly remote, even for those who live close to the office.
 
-Let's have a look at my current setup at Home!
+Let's have a look at my current setup at home!
 
 _This article contains affiliate links. So click with care 💌._
 
@@ -19,11 +19,13 @@ On the **software** side of things, I bought the [ultimate podcast bundle from R
 
 I have a pair of [Bose Companion](https://amzn.to/3NpUhiI) to **play music** directly from my laptop. They are ok but I did not find any small-sized alternative.  I use them mostly to play music and plug my wired headphones in the jack output. Of course, there are some [Sonos One](https://amzn.to/3QZGAd8) and [Roams](https://amzn.to/3HZHlPs) not too far for a better quality sound.
 
-Another amazing accessory I have, and this was bought by chance, is a [warming cup from Ember](https://amzn.to/3nttNlK). I pour my long coffee at 9:30 in the morning and I can slowly drink it until 11h, sipping and savoring an always hot coffee. The Bluetooth interface is a gadget, but you need it to set the correct temperature. After this, you can remove the app to rely on its front-facing LED.
-
-On the desk-side of things, I have a [Jarvis Fully](https://www.fully.com/en-eu/standing-desks/jarvis/jarvis-adjustable-height-desk-bamboo.html) **standing desk** and it's very nice to be able to stand a couple of hours.
-
 My **camera** is a repurposed [Sony Alpha-5000](https://www.lesnumeriques.com/reflex-hybride/sony-alpha-5000-p18552/test.html) that I have flashed to remove the HUD in HDMI mode. I plugged it in an Elgato HD60 S+ to do the capture of the HDMI stream (it's also the origin story of my short twitch career). The lens I use provides a nice Bokeh out of the box!
+
+On the desk-side of things, I have a [Jarvis Fully](https://www.fully.com/en-eu/standing-desks/jarvis/jarvis-adjustable-height-desk-bamboo.html) **standing desk** and it's very nice to be able to stand a couple of hours. I also bought [their monitor arm](https://www.fully.com/en-eu/accessories/monitor-arms/jarvis-monitor-arm.html) because I wanted to optimize the space I have on the desk.
+
+My **display** is a [DELL S3221QS Display](https://amzn.to/3I32IiQ), a 32" UHD curved monitor. I'm pretty happy with it. It's not a Retina Display, only UDH but the confort is very good!
+
+I also got an amazing accessory as a gift. I use it several time a day! It's a [warming cup from Ember](https://amzn.to/3nttNlK). I pour my long **coffee** at 9:30 in the morning and I can slowly drink it until 11h, sipping and savoring an always hot coffee. The Bluetooth interface is a gadget, but you need it to set the correct temperature. After this, you can remove the app to rely on its front-facing LED.
 
 Finally, I have some gadgets: An [Elgato Stream Deck XL](https://amzn.to/3y4pYZh) wired on [Hammerspoon](https://www.hammerspoon.org/), a [Matmos Lava lamp](https://www.mathmos.fr/mathmos-astro-baby-lava-lampe-1287-0.html#bleu-rose), some Hue lights here and there and many keyboards.
 
