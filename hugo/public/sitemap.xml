@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+    <loc>https://oct.zoy.org/posts/2022-06-29-remote-1-my-setup/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/posts/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/posts/the-ad-blocking-problem/</loc>

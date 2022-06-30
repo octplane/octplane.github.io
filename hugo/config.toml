@@ -2,6 +2,7 @@ baseURL = 'https://oct.zoy.org/'
 languageCode = 'en-us'
 title = 'oct.zoy.org'
 theme = 'PaperMod'
+Copyright = "&copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)"
 
 [imaging]
   anchor = 'Smart'
