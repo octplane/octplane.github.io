@@ -18,6 +18,8 @@ showBreadCrumbs = true
 showReadingTime = true
 ShowCodeCopyButtons = true
 
+cover.hiddenInList = true
+
 [params.label]
   icon = "/bandana.png"
 
