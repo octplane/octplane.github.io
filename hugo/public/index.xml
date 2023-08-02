@@ -6,14 +6,13 @@
     <description>Recent content on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright>
     <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🚘 Remote: my setup</title>
-      <link>https://oct.zoy.org/posts/2022-06-29-remote-1-my-setup/</link>
+      <link>https://oct.zoy.org/posts/2022-06-29-remove-my-setup/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://oct.zoy.org/posts/2022-06-29-remote-1-my-setup/</guid>
+      <guid>https://oct.zoy.org/posts/2022-06-29-remove-my-setup/</guid>
       <description>Just like The Setup, but more amateur.</description>
     </item>
     
@@ -43,7 +42,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
       
       <guid>https://oct.zoy.org/posts/git-gpg-and-notifications/</guid>
       <description>This article is pretty old, so be careful as its information could be out of date!
- this article is for macOS only.
+this article is for macOS only.
 If you use git and gpg to sign your commits, then you&amp;rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.</description>
     </item>
@@ -54,7 +53,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/posts/2017-12-28-4-links/</guid>
-      <description>4 noteworthy links from this week:  Let your code type-hint itself: introducing open source MonkeyType: an excellent occasion to revisit type hinting in Python cats 1.0.0: for Scala-f-ists! Why TLS 1.3 isn&amp;rsquo;t in browsers yet: a big in-depth article about TLS Questions about Chatbots: a nice overview of this technology that is supposed to change the world ;)  </description>
+      <description>4 noteworthy links from this week: Let your code type-hint itself: introducing open source MonkeyType: an excellent occasion to revisit type hinting in Python cats 1.0.0: for Scala-f-ists! Why TLS 1.3 isn&amp;rsquo;t in browsers yet: a big in-depth article about TLS Questions about Chatbots: a nice overview of this technology that is supposed to change the world ;) </description>
     </item>
     
     <item>
@@ -75,8 +74,8 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
       <guid>https://oct.zoy.org/archive/2016/03/04/40.2016-03-04-09-03/default/</guid>
       <description>Mes slides sur la présentation scraping que j&amp;rsquo;ai faite hier chez Ippon Technologies, avec Fabien Vauchelles.
 Elle a été suivie de la présentation du framework Scrappy :
- http://bit.ly/ippeventscrapy  Puis un Workshop :
- https://github.com/fabienvauchelles/scraping-challenge-workshop  Tous les participants étaient contents et on a bien travaillé sur le workshop de Fabien. Ça donne envie de scraper !</description>
+http://bit.ly/ippeventscrapy Puis un Workshop :
+https://github.com/fabienvauchelles/scraping-challenge-workshop Tous les participants étaient contents et on a bien travaillé sur le workshop de Fabien. Ça donne envie de scraper !</description>
     </item>
     
     <item>
@@ -96,8 +95,7 @@ What are your essential applications?</description>
       
       <guid>https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
       <description>Something’s going wrong.
-I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:
-WHICH ONE AM I TO USE ?</description>
+I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:</description>
     </item>
     
     <item>
@@ -134,7 +132,7 @@ Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/posts/2017-04-21-five-short-links/</guid>
-      <description>Tech  remote attack on an ODB dongle, follow-up of last week links: It was obvious this will lead to some dirty exploitation. on Recursion, Continuations and Trampolines, an excellent in-depth article that speaks about tail call optimization and all these way to avoid exhausting the stack. how r/places  was built for reddit 1st of April event. Technical and inspiring. Real life challenges :)  Culture  a simple RPG rule system you can use anywhere.</description>
+      <description>Tech remote attack on an ODB dongle, follow-up of last week links: It was obvious this will lead to some dirty exploitation. on Recursion, Continuations and Trampolines, an excellent in-depth article that speaks about tail call optimization and all these way to avoid exhausting the stack. how r/places was built for reddit 1st of April event. Technical and inspiring. Real life challenges :) Culture a simple RPG rule system you can use anywhere.</description>
     </item>
     
     <item>
@@ -143,7 +141,7 @@ Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/posts/2017-04-14/</guid>
-      <description>Tech  Ellie is a nice webapp that allows prototyping of Elm-lang based applications. Elm is a javascript alternative, looks a lot like Haskell. Track your vehicle using using a ODB dongle, nice way to have a connected car. an iOS alternative that can probably do the job at last for some prototyping, or connected self: SensorLog by Bernd Thomas. I just need a PaaS to store the data and render them.</description>
+      <description>Tech Ellie is a nice webapp that allows prototyping of Elm-lang based applications. Elm is a javascript alternative, looks a lot like Haskell. Track your vehicle using using a ODB dongle, nice way to have a connected car. an iOS alternative that can probably do the job at last for some prototyping, or connected self: SensorLog by Bernd Thomas. I just need a PaaS to store the data and render them.</description>
     </item>
     
     <item>
@@ -152,7 +150,7 @@ Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -197,8 +195,8 @@ Wikiquote ? Si vous l&amp;rsquo;ignoriez encore, wikiquote est un des projets Wi
       <guid>https://oct.zoy.org/as-a-speaker/</guid>
       <description>I&amp;rsquo;m an occasional technical speaker.
 I speak for the French organization Brown Bag Lunch. Feel free to contact me to setup talks about any subject I know about. This will be a pleasure!
-Datadog, from Rake to CNAD, a history of deploy tools  presented at CloudNord on 2020-11-201  A Server&amp;rsquo;s Journey A presentation about companies, innovation and the serverless trend.
- at TIAD Camp, on 2017-04-272  Devops, trenches and trolls A presentation about the difference between Dev and Ops and the eternal trolls that loom in these places.</description>
+Datadog, from Rake to CNAD, a history of deploy tools presented at CloudNord on 2020-11-201 A Server&amp;rsquo;s Journey A presentation about companies, innovation and the serverless trend.
+at TIAD Camp, on 2017-04-272 Devops, trenches and trolls A presentation about the difference between Dev and Ops and the eternal trolls that loom in these places.</description>
     </item>
     
     <item>
@@ -207,7 +205,7 @@ Datadog, from Rake to CNAD, a history of deploy tools  presented at CloudNord on
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/28/20.2012-03-28-blog-styling/default/</guid>
-      <description>This article describes the way I style things in this blog.BlockquotesI use the following CSS styles for my blockquotes. Final result is:blockquote:before{ color:#808080; content:open-quote; font-size:4em; line-height:.1em; margin-right:.25em; vertical-align:-.4em; }
+      <description>This article describes the way I style things in this blog. Blockquotes I use the following CSS styles for my blockquotes. Final result is: blockquote:before{ color:#808080; content:open-quote; font-size:4em; line-height:.1em; margin-right:.25em; vertical-align:-.4em; }
 blockquote :first-child{display:inline;} blockquote :last-child{margin-bottom:0;} pre { border:1px dashed #E1E1E1; color:#333344; background:#FAFAFA; font-family:monospace; overflow:auto; font-size:11px; padding:0.5em; } </description>
     </item>
     
@@ -217,8 +215,11 @@ blockquote :first-child{display:inline;} blockquote :last-child{margin-bottom:0;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</guid>
-      <description>How to build shell-fm on DS 210J Needed PackageCheckout shell-fm sourcesgit clone git://github.com/jkramer/shell-fm.git shell-fm&amp;lt;
-Commands to runalias cc=gcc cd shell-fm/source&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c&amp;lt; cc -Os -Wall -MD -W -I.</description>
+      <description>How to build shell-fm on DS 210J Needed Package
+Checkout shell-fm sources
+git clone git://github.com/jkramer/shell-fm.git shell-fm&amp;lt;
+Commands to run
+alias cc=gcc cd shell-fm/source&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&amp;lt; cc -Os -Wall -MD -W -I./include/ -c -o getln.</description>
     </item>
     
     <item>
@@ -227,7 +228,8 @@ Commands to runalias cc=gcc cd shell-fm/source&amp;lt; cc -Os -Wall -MD -W -I./i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
-      <description>Another merry joke from my bundler friend. If you ever switch to deployment mode (using the bundle install &amp;ndash;deploymentcommand), do not come and cry if bundler starts saying:When you have :
+      <description>Another merry joke from my bundler friend. If you ever switch to deployment mode (using the bundle install &amp;ndash;deployment command), do not come and cry if bundler starts saying:
+When you have :
 gem list *** LOCAL GEMS *** gemname (version) Instead remove the lock:
 bundle install --no-deployment And voilà.
 Short post, but this issue made me mad for half an hour.</description>
@@ -268,7 +270,7 @@ La télé publique contient parfois des émissions intéressantes. Pas plus tard
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</guid>
-      <description>The archive room where one of our poor intern is just trying to sort 4 years of MSDNCDs.
+      <description>The archive room where one of our poor intern is just trying to sort 4 years of MSDN CDs.
 We plan to keep only a few of these, but before, we need to know what we have here. It&amp;rsquo;s an interesting thing to do. At least on the organization point of view (Note the small tables under the main one :D).</description>
     </item>
     
@@ -291,8 +293,7 @@ Dans cet article, je vous explique comment tester rapidement du code javascript 
       <description>Présentation faite par @kalizoy et moi-même chez Ippon, lors de l&amp;rsquo;un IPEvent, et à l&amp;rsquo;occasion de la quatrième édition de Devoxx France.
 La vidéo de notre intervention filmée chez Ippon est disponible sur Youtube.
 La présentation est visible sur au bout de ce lien.
-Les images HD utilisées pour nos t-shirts:
-    </description>
+Les images HD utilisées pour nos t-shirts:</description>
     </item>
     
     <item>
@@ -313,7 +314,7 @@ Encore un jeu que j&amp;rsquo;ai gardé dans mon radar toucharcade pendant longt
       <guid>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
       <description>If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.
 Made my day.
-Kudos to the databaseforumfor the fix I was looking for in the internet.</description>
+Kudos to the databaseforum for the fix I was looking for in the internet.</description>
     </item>
     
     <item>
@@ -353,7 +354,8 @@ J&amp;rsquo;avais raison et à 9:30, il a sonné pour déposer un paquet. Le tem
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default.fr/</guid>
-      <description>Hej,J&amp;rsquo;ai lu hier l&amp;rsquo;articlede Bruno Michelqui parle des espaces insécables pour les développeurs et je me suis rappelé de l&amp;rsquo;horreur qu&amp;rsquo;il y a à taper sous OSX, avec un clavier français les commandes suivantes:ps aux | grep toto En général, on relache les touches alt+shift un tout petit peu trop tard et le clavier OSX nous colle alors un joli espace insécable à la place de l&amp;rsquo;espace classique juste après le pipe :ps auxw | grep window zsh: command not found: grep C&amp;rsquo;est vraiment très embêtant et rageant, surtout quand on est pressé&amp;hellip;Pour contourner le problème, j&amp;rsquo;ai téléchargé Ukeleleet j&amp;rsquo;ai modifié la méthode de saisie française pour que cette séquence de frappe génère une espace classique.</description>
+      <description>Hej, J&amp;rsquo;ai lu hier l&amp;rsquo;article de Bruno Michel qui parle des espaces insécables pour les développeurs et je me suis rappelé de l&amp;rsquo;horreur qu&amp;rsquo;il y a à taper sous OSX, avec un clavier français les commandes suivantes:
+ps aux | grep toto En général, on relache les touches alt+shift un tout petit peu trop tard et le clavier OSX nous colle alors un joli espace insécable à la place de l&amp;rsquo;espace classique juste après le pipe :</description>
     </item>
     
     <item>
@@ -374,7 +376,7 @@ We have now opted for XFS local disks (instead of 8 RAID-1 EBS disks in Ext3). X
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default.fr/</guid>
-      <description>We are now in the process of switching to Mongo DB 1.6.1 in order to use Sharding and Replicat Sets.Yesterday, I found out that when Mongo was printing:</description>
+      <description>We are now in the process of switching to Mongo DB 1.6.1 in order to use Sharding and Replicat Sets. Yesterday, I found out that when Mongo was printing: </description>
     </item>
     
     <item>
@@ -393,7 +395,7 @@ Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
-      <description>Because it assumes it&amp;rsquo;s insecure. That&amp;rsquo;s quite annoying and should be configurable.def OpenURI.redirectable?(uri1, uri2) true end This monkey-patch fixes the issue and remove the check.A bug exists for the stdlib http://bugs.ruby-lang.org/issues/859but fixes just the other way round.</description>
+      <description>Because it assumes it&amp;rsquo;s insecure. That&amp;rsquo;s quite annoying and should be configurable. def OpenURI.redirectable?(uri1, uri2) true end This monkey-patch fixes the issue and remove the check. A bug exists for the stdlib http://bugs.ruby-lang.org/issues/859 but fixes just the other way round.</description>
     </item>
     
     <item>
@@ -422,7 +424,7 @@ Let&amp;rsquo;s wait until this go in production (first website is http://www.ma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
-      <description>MegaCLI (LSI) PERC Command line client is herein case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The cheats sheet you can find on the internetis rather ok, except for the download link I just wrote down.</description>
+      <description>MegaCLI (LSI) PERC Command line client is here in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The cheats sheet you can find on the internet is rather ok, except for the download link I just wrote down.</description>
     </item>
     
     <item>
@@ -431,8 +433,8 @@ Let&amp;rsquo;s wait until this go in production (first website is http://www.ma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</guid>
-      <description>What we aim We&amp;rsquo;re trying to use rbenvin our infrastructure in order to achieve the following multiple goals:
- Use the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application  So far, I&amp;rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:
+      <description>What we aim We&amp;rsquo;re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:
+Use the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I&amp;rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:
 require_recipe &amp;#34;rbenv&amp;#34; # Setup the rubies PICOR_RUBY=&amp;#34;ree-1.</description>
     </item>
     
@@ -443,7 +445,7 @@ require_recipe &amp;#34;rbenv&amp;#34; # Setup the rubies PICOR_RUBY=&amp;#34;re
       
       <guid>https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/</guid>
       <description>Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.
- AWS is the branch of a company everybody knows.
+AWS is the branch of a company everybody knows.
 Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world.</description>
     </item>
     
@@ -454,7 +456,7 @@ Amazon, not only selling books, DVDs and shoes has also one of the greatest numb
       
       <guid>https://oct.zoy.org/archive/2014/02/18/25.2014-02-18-rigor-mortis/default.fr/</guid>
       <description>Vous avez pas parfois l’impression qu’on se fout de vous ?
- Cela fait une grosse dizaine d&amp;rsquo;années que je suis sur le marché du travail, et que j&amp;rsquo;ai donc l&amp;rsquo;occasion, en tant qu&amp;rsquo;adulte responsable, de payer mes impôts et d&amp;rsquo;avoir des interactions avec des gens qui m&amp;rsquo;appellent Monsieur (et que j&amp;rsquo;appelle aussi Monsieur ou Madame, parce que je suis poli). Chacune de ces intéractions montre comment les gens vous jugent, vous apprécient, ou vous ignorent et sont toujours très intéressantes au point de vue ethnologique.</description>
+Cela fait une grosse dizaine d&amp;rsquo;années que je suis sur le marché du travail, et que j&amp;rsquo;ai donc l&amp;rsquo;occasion, en tant qu&amp;rsquo;adulte responsable, de payer mes impôts et d&amp;rsquo;avoir des interactions avec des gens qui m&amp;rsquo;appellent Monsieur (et que j&amp;rsquo;appelle aussi Monsieur ou Madame, parce que je suis poli). Chacune de ces intéractions montre comment les gens vous jugent, vous apprécient, ou vous ignorent et sont toujours très intéressantes au point de vue ethnologique.</description>
     </item>
     
     <item>
@@ -463,7 +465,7 @@ Amazon, not only selling books, DVDs and shoes has also one of the greatest numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</guid>
-      <description>Well, sort of. Today, after patching one of my oracle database serveragainst a migration issue that prevented it from shutting down clean. I finally managed to runthe magic command:
+      <description>Well, sort of. Today, after patching one of my oracle database server against a migration issue that prevented it from shutting down clean. I finally managed to run the magic command:
 alter database archivelog; That would enable me to backup the database. Unfortunately, the disk space on this server is too low to allow two full backups of the database. I wanted to delete the old backup before doing the new one in rman but rman is too clever: You cannot delete the last remaining backup!</description>
     </item>
     
@@ -474,7 +476,7 @@ alter database archivelog; That would enable me to backup the database. Unfortun
       
       <guid>https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</guid>
       <description>The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.
-As usual, the gem is available from: https://rubygems.</description>
+As usual, the gem is available from: https://rubygems.org/gems/io-tail</description>
     </item>
     
     <item>
@@ -493,7 +495,7 @@ Rust a plusieurs caractéristiques intéressantes, outre le fait qu’il est enc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</guid>
-      <description>Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMailwith the Random Signature Appender lab feature.
+      <description>Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.
 It doesn&amp;rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.
 Published under the WTFPL.
 ´´´ import lxml.etree as et import sys import StringIO import codecs</description>
@@ -515,7 +517,7 @@ Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</guid>
-      <description>We&amp;rsquo;re about to use the velocity enginesoon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</description>
+      <description>We&amp;rsquo;re about to use the velocity engine soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</description>
     </item>
     
     <item>
@@ -525,7 +527,7 @@ Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo
       
       <guid>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</guid>
       <description>List of software I use daily at work :
- AutoHotkey: Autohotkey provides a scriptable way to automate most of the management of my Windows XP. I currently use one script that enable X-Windows style window dragging/resizing. Thunderbird Firefox Google Calendar Sync QuickMonth Calendar Putty SuperCopier Launchy  </description>
+AutoHotkey: Autohotkey provides a scriptable way to automate most of the management of my Windows XP. I currently use one script that enable X-Windows style window dragging/resizing. Thunderbird Firefox Google Calendar Sync QuickMonth Calendar Putty SuperCopier Launchy </description>
     </item>
     
     <item>
@@ -555,7 +557,7 @@ Le petit train dans l&amp;rsquo;écran Train Yard par Matt Rix, au départ, on s
       
       <guid>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</guid>
       <description>Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:
- démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu&amp;rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée  Bref, ça à l&amp;rsquo;air cool.</description>
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu&amp;rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l&amp;rsquo;air cool.</description>
     </item>
     
   </channel>

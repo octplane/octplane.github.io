@@ -6,7 +6,6 @@
     <description>Recent content in ubuntu on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright>
     <lastBuildDate>Wed, 18 Aug 2010 15:21:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upstart, rc et Ubuntu 9.10</title>
@@ -24,7 +23,7 @@
       
       <guid>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</guid>
       <description>Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:
- démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu&amp;rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée  Bref, ça à l&amp;rsquo;air cool.</description>
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu&amp;rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l&amp;rsquo;air cool.</description>
     </item>
     
   </channel>

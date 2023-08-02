@@ -6,7 +6,6 @@
     <description>Recent content in rant on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright>
     <lastBuildDate>Mon, 02 Feb 2015 18:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/rant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Provisioning made more complex</title>
@@ -15,8 +14,7 @@
       
       <guid>https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
       <description>Something’s going wrong.
-I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:
-WHICH ONE AM I TO USE ?</description>
+I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:</description>
     </item>
     
   </channel>

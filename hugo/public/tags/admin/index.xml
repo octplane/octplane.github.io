@@ -5,15 +5,14 @@
     <link>https://oct.zoy.org/tags/admin/</link>
     <description>Recent content in admin on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright><atom:link href="https://oct.zoy.org/tags/admin/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/admin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crowded room.</title>
       <link>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</guid>
-      <description>The archive room where one of our poor intern is just trying to sort 4 years of MSDNCDs.
+      <description>The archive room where one of our poor intern is just trying to sort 4 years of MSDN CDs.
 We plan to keep only a few of these, but before, we need to know what we have here. It&amp;rsquo;s an interesting thing to do. At least on the organization point of view (Note the small tables under the main one :D).</description>
     </item>
     
@@ -23,7 +22,7 @@ We plan to keep only a few of these, but before, we need to know what we have he
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</guid>
-      <description>Well, sort of. Today, after patching one of my oracle database serveragainst a migration issue that prevented it from shutting down clean. I finally managed to runthe magic command:
+      <description>Well, sort of. Today, after patching one of my oracle database server against a migration issue that prevented it from shutting down clean. I finally managed to run the magic command:
 alter database archivelog; That would enable me to backup the database. Unfortunately, the disk space on this server is too low to allow two full backups of the database. I wanted to delete the old backup before doing the new one in rman but rman is too clever: You cannot delete the last remaining backup!</description>
     </item>
     

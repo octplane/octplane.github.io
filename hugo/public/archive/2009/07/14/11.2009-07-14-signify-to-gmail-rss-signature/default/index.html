@@ -7,14 +7,14 @@
 <meta name="robots" content="index, follow">
 <title>Signify to GMail RSS signature Converter | oct.zoy.org</title>
 <meta name="keywords" content="">
-<meta name="description" content="Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMailwith the Random Signature Appender lab feature.
+<meta name="description" content="Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.
 It doesn&rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.
 Published under the WTFPL.
 ´´´ import lxml.etree as et import sys import StringIO import codecs">
 <meta name="author" content="map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]">
 <link rel="canonical" href="https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -59,9 +59,8 @@ Published under the WTFPL.
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
-<meta property="og:title" content="Signify to GMail RSS signature Converter" />
-<meta property="og:description" content="Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMailwith the Random Signature Appender lab feature.
+</noscript><meta property="og:title" content="Signify to GMail RSS signature Converter" />
+<meta property="og:description" content="Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.
 It doesn&rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.
 Published under the WTFPL.
 ´´´ import lxml.etree as et import sys import StringIO import codecs" />
@@ -72,7 +71,7 @@ Published under the WTFPL.
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Signify to GMail RSS signature Converter"/>
-<meta name="twitter:description" content="Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMailwith the Random Signature Appender lab feature.
+<meta name="twitter:description" content="Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.
 It doesn&rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.
 Published under the WTFPL.
 ´´´ import lxml.etree as et import sys import StringIO import codecs"/>
@@ -104,12 +103,12 @@ Published under the WTFPL.
   "@type": "BlogPosting",
   "headline": "Signify to GMail RSS signature Converter",
   "name": "Signify to GMail RSS signature Converter",
-  "description": "Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMailwith the Random Signature Appender lab feature.\nIt doesn\u0026rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.\nPublished under the WTFPL.\n´´´ import lxml.etree as et import sys import StringIO import codecs",
+  "description": "Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.\nIt doesn\u0026rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.\nPublished under the WTFPL.\n´´´ import lxml.etree as et import sys import StringIO import codecs",
   "keywords": [
     
   ],
-  "articleBody": "Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMailwith the Random Signature Appender lab feature.\nIt doesn’t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.\nPublished under the WTFPL.\n´´´ import lxml.etree as et import sys import StringIO import codecs\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2, December 2004  Copyright (C) 2004 Sam Hocevar 14 rue de Plaisance, 75014 Paris, France Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.  DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION  0. You just DO WHAT THE FUCK YOU WANT TO. take first command line parameter as input file f = codecs.open( sys.argv[1], “r”, “utf-8” )\nsigns = [] current_signature = \"\"\npreamble = \"\"\"  Signify converted signatures en-us   \"\"\"\ntree = et.parse(StringIO.StringIO(preamble)) channelNode = tree.xpath(’/rss/channel’)[0] count = 0\nfor line in f: line = line.rstrip() if line.find(\"#\") == 0: line = line\ndo nothing elif line.find(’%’) == 0: if len(current_signature)  0: signs.append(current_signature)\nitem = et.Element(“item”) title = et.Element(“title”) title.text = current_signature\nitem.append(title) channelNode.append(item)\ncount += 1 current_signature = \"\" else:\ncurrent_signature += line + \" \"\nprint et.tostring(tree, xml_declaration=True, encoding=“utf-8”) ´´´ {% endraw %}\n",
-  "wordCount" : "253",
+  "articleBody": "Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.\nIt doesn’t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.\nPublished under the WTFPL.\n´´´ import lxml.etree as et import sys import StringIO import codecs\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2, December 2004 Copyright (C) 2004 Sam Hocevar 14 rue de Plaisance, 75014 Paris, France Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed. DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 0. You just DO WHAT THE FUCK YOU WANT TO. take first command line parameter as input file f = codecs.open( sys.argv[1], “r”, “utf-8” )\nsigns = [] current_signature = \"\"\npreamble = \"\"\" Signify converted signatures en-us \"\"\"\ntree = et.parse(StringIO.StringIO(preamble)) channelNode = tree.xpath(’/rss/channel’)[0] count = 0\nfor line in f: line = line.rstrip() if line.find(\"#\") == 0: line = line\ndo nothing elif line.find(’%’) == 0: if len(current_signature) \u003e 0: signs.append(current_signature)\nitem = et.Element(“item”) title = et.Element(“title”) title.text = current_signature\nitem.append(title) channelNode.append(item)\ncount += 1 current_signature = \"\" else:\ncurrent_signature += line + \" \"\nprint et.tostring(tree, xml_declaration=True, encoding=“utf-8”) ´´´ {% endraw %}\n",
+  "wordCount" : "254",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -175,6 +174,31 @@ Published under the WTFPL.
             </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://oct.zoy.org/about" title="🪞 about">
+                    <span>🪞 about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                    <span>📢 speaker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                    <span>🕰️ Post Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                    <span>🔖 tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                    <span>🕸️ old stuff</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -261,7 +285,7 @@ else:</p>
     </main>
     
 <footer class="footer">
-    <span>© oct.zoy.org, questions, comments, critics <a href="https://twitter.com/octplane">@octplane</a></span>
+    <span>&copy; 2023 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

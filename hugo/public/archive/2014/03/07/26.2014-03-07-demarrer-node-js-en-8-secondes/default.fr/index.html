@@ -12,7 +12,7 @@ Dans cet article, je vous explique comment tester rapidement du code javascript 
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/archive/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default.fr/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -57,8 +57,7 @@ Dans cet article, je vous explique comment tester rapidement du code javascript 
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
-<meta property="og:title" content="Démarrer Node.js en 8 secondes" />
+</noscript><meta property="og:title" content="Démarrer Node.js en 8 secondes" />
 <meta property="og:description" content="Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.
 Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu&rsquo;est node.js. Les pré-requis sont un cerveau, un ordinateur, une connexion internet et une tout petite connaissance de javascript." />
 <meta property="og:type" content="article" />
@@ -102,7 +101,7 @@ Dans cet article, je vous explique comment tester rapidement du code javascript 
   "keywords": [
     "code"
   ],
-  "articleBody": "Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.\nDans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu’est node.js. Les pré-requis sont un cerveau, un ordinateur, une connexion internet et une tout petite connaissance de javascript.\nInstallation Installez node.js sur votre ordinateur (oui, j’suis comme ça, je dis encore ordinateur et pas machine) : Allez sur la page de téléchargement de node.js et téléchargez la version adaptée à votre système d’exploitation.\nA la fin de l’installation, vous devez pouvoir lancer ce genre de commande en console :\n#node -e \"console.log('pouet');\" pouet #  Programmation Editez un fichier qui s’appelle prems.js et mettez dedans, par exemple :\nconsole.log('Salut le monde !');  Execution C’est prêt :\n# node prems.js Salut le monde ! #  Extension Maintenant, vous êtes prêt à développer du javascript à vous en faire péter la sous-ventrière ! Si jamais vous voulez installer des paquets pour les utiliser dans votre programme, vous pouvez invoquer npm, et lui faire installer des paquets globalement :\n(par exemple)\nnpm install -g underscore  Et ensuite dans votre petit script :\nvar _ = require(\"underscore\");  plus tard du code qui utilise :\n_.map(arr, function(it) {.... ...  Conclusion Et c’est tout, maintenant, vous êtes assez fort pour commencer à développer du node.js. Evidemment, si vous aimeriez faire ca plus proprement, je vous encourage à aller lire des tutoriels sur npm et son format de paquet qui permet l’installation locale de paquets pour votre application, ainsi que les système de gestion de tâches tels que Grunt qui vous permettront de préparer votre application ou bibliothèque à un entrée fracassante dans le monde node.js.\nCodez bien !\n",
+  "articleBody": "Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.\nDans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu’est node.js. Les pré-requis sont un cerveau, un ordinateur, une connexion internet et une tout petite connaissance de javascript.\nInstallation Installez node.js sur votre ordinateur (oui, j’suis comme ça, je dis encore ordinateur et pas machine) : Allez sur la page de téléchargement de node.js et téléchargez la version adaptée à votre système d’exploitation.\nA la fin de l’installation, vous devez pouvoir lancer ce genre de commande en console :\n#node -e \"console.log('pouet');\" pouet # Programmation Editez un fichier qui s’appelle prems.js et mettez dedans, par exemple :\nconsole.log('Salut le monde !'); Execution C’est prêt :\n# node prems.js Salut le monde ! # Extension Maintenant, vous êtes prêt à développer du javascript à vous en faire péter la sous-ventrière ! Si jamais vous voulez installer des paquets pour les utiliser dans votre programme, vous pouvez invoquer npm, et lui faire installer des paquets globalement :\n(par exemple)\nnpm install -g underscore Et ensuite dans votre petit script :\nvar _ = require(\"underscore\"); plus tard du code qui utilise :\n_.map(arr, function(it) {.... ... Conclusion Et c’est tout, maintenant, vous êtes assez fort pour commencer à développer du node.js. Evidemment, si vous aimeriez faire ca plus proprement, je vous encourage à aller lire des tutoriels sur npm et son format de paquet qui permet l’installation locale de paquets pour votre application, ainsi que les système de gestion de tâches tels que Grunt qui vous permettront de préparer votre application ou bibliothèque à un entrée fracassante dans le monde node.js.\nCodez bien !\n",
   "wordCount" : "308",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
@@ -165,6 +164,31 @@ Dans cet article, je vous explique comment tester rapidement du code javascript 
             </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://oct.zoy.org/about" title="🪞 about">
+                    <span>🪞 about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                    <span>📢 speaker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                    <span>🕰️ Post Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                    <span>🔖 tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                    <span>🕸️ old stuff</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -228,7 +252,7 @@ Salut le monde !
     </main>
     
 <footer class="footer">
-    <span>© oct.zoy.org, questions, comments, critics <a href="https://twitter.com/octplane">@octplane</a></span>
+    <span>&copy; 2023 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

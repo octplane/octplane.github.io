@@ -12,7 +12,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/posts/the-ad-blocking-problem/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -57,8 +57,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
-<meta property="og:title" content="🚮 The Ad Blocking Problem" />
+</noscript><meta property="og:title" content="🚮 The Ad Blocking Problem" />
 <meta property="og:description" content="How I&rsquo;m currently blocking Ads at home, and why? In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
 Pi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint." />
 <meta property="og:type" content="article" />
@@ -102,7 +101,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
   "keywords": [
     
   ],
-  "articleBody": "How I’m currently blocking Ads at home, and why? In this article, I’m writing about the various solutions I’ve recently explored to block ads and I also describe the solution I’m currently using!\nPi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.\nThis failed for me because it requires a running Pi somewhere and I did not had the space and time to set that up (akin to setting up a Unifi controller on a dedicate Pi, but this is another story). I trie to setup the app on a Synology, with the Docker bridging, port-forwarding annoying setup and the fact that my Orange box does not provide network wide DNS override, probably because they don’t want us to access the Pirate Bay made the setup clunky. I also encountered slow response times, which are when you want to reach a site, extremely annoying. So this is a NO ⛔.\nAdlock It’s one of these services that remains on sale forever, and makes you immediately suspicious of it. I bought a 5 years/5 devices licence to them for a very cheap price (around 50€). Adlock comes with an nice-ish iOS application. In some places, the 🇫🇷 translation is slightly broken and often, it just feels like you’re staring at an embedded WebView. They implement the standard filtering mechanism available on iOS and this works well. For laptops and if you want the advanced protection they also provide a VPN that is used to tunnel, I think, all the traffic from your device to the internet.\nThat’s a working way to filter all ads system-wide but it comes with some horrible privacy and performance concerns that quickly made the use of this product very difficult for me. The performance hit, although it seems that the VPN is just going to localhost was atrocious, so I quickly stopped using the tool. ⛔\nNextDNS This tool arrived in my Twitter stream and I was immediately interested. This is a 3rd party DNS, which is certainly a bit annoying on the privacy standpoint, but certainly not really worse than using Orange’s DNS.\nNextDNS setup is very easy on a macOS laptop as they provide a dedicate App that will use a VPN profile to setup their custom DNS configuration.\nIf you don’t want to use the, and if you have ipv6. You can start using them without any account by just going to their setup page. They’ll give you ipv6 DNS server names you can add to your network panel in a few clicks and keys and off you go! The UI will immediately refresh to indicate you are using the correct Setup. The same also exists with ipv4 and DNS over HTTP. In all cases, their documentation is extensive and pretty good.\nAfter that, they provide a nice view of your blocked traffic with many statistics directly on their website.\n  The reporting UI   On iOS, they also provide a DNS provider app that will allow you to enable NextDNS globally.\nThey offer a generous quota of 300k requests per month and their paid plans seem reasonable. If you ever want to try it, this affiliated link might or might not be useful.\nSo far, this is a yes! ✅\n",
+  "articleBody": "How I’m currently blocking Ads at home, and why? In this article, I’m writing about the various solutions I’ve recently explored to block ads and I also describe the solution I’m currently using!\nPi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.\nThis failed for me because it requires a running Pi somewhere and I did not had the space and time to set that up (akin to setting up a Unifi controller on a dedicate Pi, but this is another story). I trie to setup the app on a Synology, with the Docker bridging, port-forwarding annoying setup and the fact that my Orange box does not provide network wide DNS override, probably because they don’t want us to access the Pirate Bay made the setup clunky. I also encountered slow response times, which are when you want to reach a site, extremely annoying. So this is a NO ⛔.\nAdlock It’s one of these services that remains on sale forever, and makes you immediately suspicious of it. I bought a 5 years/5 devices licence to them for a very cheap price (around 50€). Adlock comes with an nice-ish iOS application. In some places, the 🇫🇷 translation is slightly broken and often, it just feels like you’re staring at an embedded WebView. They implement the standard filtering mechanism available on iOS and this works well. For laptops and if you want the advanced protection they also provide a VPN that is used to tunnel, I think, all the traffic from your device to the internet.\nThat’s a working way to filter all ads system-wide but it comes with some horrible privacy and performance concerns that quickly made the use of this product very difficult for me. The performance hit, although it seems that the VPN is just going to localhost was atrocious, so I quickly stopped using the tool. ⛔\nNextDNS This tool arrived in my Twitter stream and I was immediately interested. This is a 3rd party DNS, which is certainly a bit annoying on the privacy standpoint, but certainly not really worse than using Orange’s DNS.\nNextDNS setup is very easy on a macOS laptop as they provide a dedicate App that will use a VPN profile to setup their custom DNS configuration.\nIf you don’t want to use the, and if you have ipv6. You can start using them without any account by just going to their setup page. They’ll give you ipv6 DNS server names you can add to your network panel in a few clicks and keys and off you go! The UI will immediately refresh to indicate you are using the correct Setup. The same also exists with ipv4 and DNS over HTTP. In all cases, their documentation is extensive and pretty good.\nAfter that, they provide a nice view of your blocked traffic with many statistics directly on their website.\nThe reporting UI On iOS, they also provide a DNS provider app that will allow you to enable NextDNS globally.\nThey offer a generous quota of 300k requests per month and their paid plans seem reasonable. If you ever want to try it, this affiliated link might or might not be useful.\nSo far, this is a yes! ✅\n",
   "wordCount" : "601",
   "inLanguage": "en",
   "datePublished": "2022-01-23T00:00:00Z",
@@ -165,6 +164,31 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
             </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://oct.zoy.org/about" title="🪞 about">
+                    <span>🪞 about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                    <span>📢 speaker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                    <span>🕰️ Post Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                    <span>🔖 tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                    <span>🕸️ old stuff</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -215,7 +239,7 @@ They implement the standard filtering mechanism available on iOS and this works 
     </main>
     
 <footer class="footer">
-    <span>© oct.zoy.org, questions, comments, critics <a href="https://twitter.com/octplane">@octplane</a></span>
+    <span>&copy; 2023 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

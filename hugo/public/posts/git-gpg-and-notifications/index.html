@@ -8,13 +8,13 @@
 <title>🚨 Git GPG and notifications | oct.zoy.org</title>
 <meta name="keywords" content="">
 <meta name="description" content="This article is pretty old, so be careful as its information could be out of date!
- this article is for macOS only.
+this article is for macOS only.
 If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.">
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/posts/git-gpg-and-notifications/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -59,10 +59,9 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
-<meta property="og:title" content="🚨 Git GPG and notifications" />
+</noscript><meta property="og:title" content="🚨 Git GPG and notifications" />
 <meta property="og:description" content="This article is pretty old, so be careful as its information could be out of date!
- this article is for macOS only.
+this article is for macOS only.
 If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these." />
 <meta property="og:type" content="article" />
@@ -73,7 +72,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="🚨 Git GPG and notifications"/>
 <meta name="twitter:description" content="This article is pretty old, so be careful as its information could be out of date!
- this article is for macOS only.
+this article is for macOS only.
 If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these."/>
 
@@ -104,11 +103,11 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
   "@type": "BlogPosting",
   "headline": "🚨 Git GPG and notifications",
   "name": "🚨 Git GPG and notifications",
-  "description": "This article is pretty old, so be careful as its information could be out of date!\n this article is for macOS only.\nIf you use git and gpg to sign your commits, then you\u0026rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.",
+  "description": "This article is pretty old, so be careful as its information could be out of date!\nthis article is for macOS only.\nIf you use git and gpg to sign your commits, then you\u0026rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.",
   "keywords": [
     
   ],
-  "articleBody": " This article is pretty old, so be careful as its information could be out of date!\n this article is for macOS only.\nIf you use git and gpg to sign your commits, then you’re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.\nerror: gpg failed to sign the data fatal: failed to write commit object To work around that, I wrote this small Rust application that watches git invoking GPG and sends a nice notification when it’s time for you to click.\n  That’s pretty useful, but you have to build the binary, run it and it’s still a bit of a hack.\nThere is actually a much nicer way to do that and here is how you can do that too:\n create a small shell script somewhere in your home  #!/bin/bash  osascript -e 'display notification \"Git wants to sign a commit!\" with title \"Click on your Yubikey\"' gpg \"$@\" Change this script executable bit\nchmod +x ~/bin/git-gpg.sh And reconfigure git to use this script instead of gpg:\ngit config --add gpg.program /Users/$USER/bin/git-gpg.sh And that’s all! Next time you commit something and your key is needed, you’ll see this notification pop:\n  If you want to furthermore configure the icon, you can edit the script using the macOS script editor and then export the script as an application and change its icon manually. Grab the app I did myself here: git-gpg-notification.app.zip.\nThe final version of the script:\n#!/bin/bash  open ~/bin/git-gpg-notification.app gpg \"$@\"   This is much nicer and more difficult to miss!\n",
+  "articleBody": " This article is pretty old, so be careful as its information could be out of date!\nthis article is for macOS only.\nIf you use git and gpg to sign your commits, then you’re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.\nerror: gpg failed to sign the data fatal: failed to write commit object To work around that, I wrote this small Rust application that watches git invoking GPG and sends a nice notification when it’s time for you to click.\nThat’s pretty useful, but you have to build the binary, run it and it’s still a bit of a hack.\nThere is actually a much nicer way to do that and here is how you can do that too:\ncreate a small shell script somewhere in your home #!/bin/bash osascript -e 'display notification \"Git wants to sign a commit!\" with title \"Click on your Yubikey\"' gpg \"$@\" Change this script executable bit\nchmod +x ~/bin/git-gpg.sh And reconfigure git to use this script instead of gpg:\ngit config --add gpg.program /Users/$USER/bin/git-gpg.sh And that’s all! Next time you commit something and your key is needed, you’ll see this notification pop:\nIf you want to furthermore configure the icon, you can edit the script using the macOS script editor and then export the script as an application and change its icon manually. Grab the app I did myself here: git-gpg-notification.app.zip.\nThe final version of the script:\n#!/bin/bash open ~/bin/git-gpg-notification.app gpg \"$@\" This is much nicer and more difficult to miss!\n",
   "wordCount" : "292",
   "inLanguage": "en",
   "datePublished": "2021-03-30T00:00:00Z",
@@ -171,6 +170,31 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
             </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://oct.zoy.org/about" title="🪞 about">
+                    <span>🪞 about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                    <span>📢 speaker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                    <span>🕰️ Post Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                    <span>🔖 tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                    <span>🕸️ old stuff</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -243,7 +267,7 @@ fatal: failed to write commit object
     </main>
     
 <footer class="footer">
-    <span>© oct.zoy.org, questions, comments, critics <a href="https://twitter.com/octplane">@octplane</a></span>
+    <span>&copy; 2023 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

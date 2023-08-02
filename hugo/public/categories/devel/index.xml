@@ -5,8 +5,7 @@
     <link>https://oct.zoy.org/categories/devel/</link>
     <description>Recent content in devel on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright><atom:link href="https://oct.zoy.org/categories/devel/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://oct.zoy.org/categories/devel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sortie de ruby io tail</title>
       <link>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</link>
@@ -23,7 +22,7 @@ Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</guid>
-      <description>We&amp;rsquo;re about to use the velocity enginesoon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</description>
+      <description>We&amp;rsquo;re about to use the velocity engine soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</description>
     </item>
     
   </channel>

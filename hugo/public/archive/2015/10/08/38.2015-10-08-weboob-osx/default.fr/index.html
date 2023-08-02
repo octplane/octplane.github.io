@@ -12,7 +12,7 @@ La télé publique contient parfois des émissions intéressantes. Pas plus tard
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default.fr/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -57,8 +57,7 @@ La télé publique contient parfois des émissions intéressantes. Pas plus tard
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
-<meta property="og:title" content="Catchup TV sous OSX (ou comment faire du replay facile)" />
+</noscript><meta property="og:title" content="Catchup TV sous OSX (ou comment faire du replay facile)" />
 <meta property="og:description" content="Le Catchup, c&rsquo;est chouette Cet article explique comment installer facilement Weboob sur OSX et s&rsquo;en servir pour télécharger vos émissions préférées en différé.
 La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&rsquo;hier matin, je m&rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&rsquo;ai raté. J&rsquo;aimerai bien le revoir, voir même avoir l&rsquo;enregistrement de l&rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train." />
 <meta property="og:type" content="article" />
@@ -102,7 +101,7 @@ La télé publique contient parfois des émissions intéressantes. Pas plus tard
   "keywords": [
     "python", "code"
   ],
-  "articleBody": "Le Catchup, c’est chouette Cet article explique comment installer facilement Weboob sur OSX et s’en servir pour télécharger vos émissions préférées en différé.\nLa télé publique contient parfois des émissions intéressantes. Pas plus tard qu’hier matin, je m’aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l’ai raté. J’aimerai bien le revoir, voir même avoir l’enregistrement de l’émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.\nMalheureusement, les sites de catchup français imposent bien souvent d’être connecté à internet, de se taper des publicités avant les émissions qui nous intéressent et d’autres limitations assez insupportables. Pourtant, la fonctionnalité de “magnétoscope” qui permet de faire une copie à usage privé nous intéresserait bien, mais visiblemenent, ca excite moins les ayant-droits (au cas où par exemple, on irait se faire de l’argent sur leur dos, ou même pire, dire du bien de leur production et diffuser la culture, mébon).\nWeboob est un projet libre, dont le but est de permettre aux utilisateurs d’internet de s’affranchir de l’interface graphique des sites internets pour en extraire la substantifique moëlle structurée. Adieu les cookies à accepter, les pubs à se taper, les claviers virtuels à cliquer ! Weboob essaye via l’intermédiaire d’une liste de plugins de vous faciliter la vie, le tout dans une interface en mode texte relativement utilisable.\nLa doc officielle de weboob ne dit pas vraiment comment installer ces outils sous OSX et donc, voici la notice.\nPré-requis Un mac, Xcode installé quelque part et 5 minutes.\nInstallez les outils xcode (nécessaire pour avoir zlib dans les parages)\nxcode-select --install Récupérez les sources de dev de Weboob\ngit clone git://git.symlink.me/pub/weboob/devel.git Installer virtualenv (normalement, juste) brew install virtualenv mais ça peut être plus compliqué, donc je vous colle ce petit lien qui a servi à Bernardo pour se déplanter (merci à lui):\nhttp://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv\nPuis créez un environnement virtualenv par là :\ncd devel virtualenv venv Activez le et installez weboob :\nsource venv/bin/activate python setup.py install Un fois tout installé, vous pouvez lancer videoob par exemple :\nvideoob (venv)14:24:58 Tirlipinpon:~/src/devel  videoob Welcome to videoob v1.1 Copyright(C) 2010-2015 Christophe Benz, Romain Bignon, John Obbele This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. Type \"help\" to display available commands. Loaded backends: allocine, arretsurimages, arte, canalplus, cappedtv, dailymotion, europarl, francetelevisions, gdcvault, ina, jacquieetmichel, nolifetv, quvi, rmll, trictractv, vimeo, vine, youjizz, youporn, youtube videoob Les commandes search et download devraient vous aider à démarrer. Y a plus qu’a profiter ! Enjoy ☺\n",
+  "articleBody": "Le Catchup, c’est chouette Cet article explique comment installer facilement Weboob sur OSX et s’en servir pour télécharger vos émissions préférées en différé.\nLa télé publique contient parfois des émissions intéressantes. Pas plus tard qu’hier matin, je m’aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l’ai raté. J’aimerai bien le revoir, voir même avoir l’enregistrement de l’émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.\nMalheureusement, les sites de catchup français imposent bien souvent d’être connecté à internet, de se taper des publicités avant les émissions qui nous intéressent et d’autres limitations assez insupportables. Pourtant, la fonctionnalité de “magnétoscope” qui permet de faire une copie à usage privé nous intéresserait bien, mais visiblemenent, ca excite moins les ayant-droits (au cas où par exemple, on irait se faire de l’argent sur leur dos, ou même pire, dire du bien de leur production et diffuser la culture, mébon).\nWeboob est un projet libre, dont le but est de permettre aux utilisateurs d’internet de s’affranchir de l’interface graphique des sites internets pour en extraire la substantifique moëlle structurée. Adieu les cookies à accepter, les pubs à se taper, les claviers virtuels à cliquer ! Weboob essaye via l’intermédiaire d’une liste de plugins de vous faciliter la vie, le tout dans une interface en mode texte relativement utilisable.\nLa doc officielle de weboob ne dit pas vraiment comment installer ces outils sous OSX et donc, voici la notice.\nPré-requis Un mac, Xcode installé quelque part et 5 minutes.\nInstallez les outils xcode (nécessaire pour avoir zlib dans les parages)\nxcode-select --install Récupérez les sources de dev de Weboob\ngit clone git://git.symlink.me/pub/weboob/devel.git Installer virtualenv (normalement, juste) brew install virtualenv mais ça peut être plus compliqué, donc je vous colle ce petit lien qui a servi à Bernardo pour se déplanter (merci à lui):\nhttp://hackercodex.com/guide/python-development-environment-on-mac-osx/#virtualenv\nPuis créez un environnement virtualenv par là :\ncd devel virtualenv venv Activez le et installez weboob :\nsource venv/bin/activate python setup.py install Un fois tout installé, vous pouvez lancer videoob par exemple :\nvideoob (venv)14:24:58 Tirlipinpon:~/src/devel \u003e videoob Welcome to videoob v1.1 Copyright(C) 2010-2015 Christophe Benz, Romain Bignon, John Obbele This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. Type \"help\" to display available commands. Loaded backends: allocine, arretsurimages, arte, canalplus, cappedtv, dailymotion, europarl, francetelevisions, gdcvault, ina, jacquieetmichel, nolifetv, quvi, rmll, trictractv, vimeo, vine, youjizz, youporn, youtube videoob\u003e Les commandes search et download devraient vous aider à démarrer. Y a plus qu’a profiter ! Enjoy ☺\n",
   "wordCount" : "453",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
@@ -165,6 +164,31 @@ La télé publique contient parfois des émissions intéressantes. Pas plus tard
             </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://oct.zoy.org/about" title="🪞 about">
+                    <span>🪞 about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                    <span>📢 speaker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                    <span>🕰️ Post Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                    <span>🔖 tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                    <span>🕸️ old stuff</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -232,7 +256,7 @@ videoob&gt;
     </main>
     
 <footer class="footer">
-    <span>© oct.zoy.org, questions, comments, critics <a href="https://twitter.com/octplane">@octplane</a></span>
+    <span>&copy; 2023 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

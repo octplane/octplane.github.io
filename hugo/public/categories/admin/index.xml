@@ -5,8 +5,7 @@
     <link>https://oct.zoy.org/categories/admin/</link>
     <description>Recent content in admin on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright><atom:link href="https://oct.zoy.org/categories/admin/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://oct.zoy.org/categories/admin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IIS fails and &#34;the service did not return an error&#34;</title>
       <link>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
@@ -15,7 +14,7 @@
       <guid>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
       <description>If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.
 Made my day.
-Kudos to the databaseforumfor the fix I was looking for in the internet.</description>
+Kudos to the databaseforum for the fix I was looking for in the internet.</description>
     </item>
     
     <item>
@@ -34,7 +33,7 @@ Let&amp;rsquo;s wait until this go in production (first website is http://www.ma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
-      <description>MegaCLI (LSI) PERC Command line client is herein case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The cheats sheet you can find on the internetis rather ok, except for the download link I just wrote down.</description>
+      <description>MegaCLI (LSI) PERC Command line client is here in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The cheats sheet you can find on the internet is rather ok, except for the download link I just wrote down.</description>
     </item>
     
   </channel>

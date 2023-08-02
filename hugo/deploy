@@ -3,6 +3,8 @@ USER=root
 HOST=ovh1.le-tresor-de-la-langue.fr
 DIR=/var/www/oct.zoy.org
 
+rm -rf public
+
 hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
 
 exit 0

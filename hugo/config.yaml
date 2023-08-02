@@ -1,0 +1,58 @@
+baseURL: 'https://oct.zoy.org/'
+languageCode: en-us
+title: oct.zoy.org
+theme: PaperMod
+menu:
+  main:
+    - identifier: archives
+      name: 🕰️ Post Archive
+      url: /archives/
+      weight: 10
+    - identifier: tags
+      name: 🔖 tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: 🪞 about
+      url: /about
+      weight: 1
+    - identifier: speaker
+      name: 📢 speaker
+      url: /as-a-speaker
+      weight: 2
+    - identifier: oldies
+      name: 🕸️ old stuff
+      url: /archive/
+      weight: 50
+imaging:
+  anchor: Smart
+  bgColor: '#ffffff'
+  hint: photo
+  quality: 75
+  resampleFilter: Box
+params:
+  hideFooter: false
+  showBreadCrumbs: true
+  showReadingTime: true
+  ShowCodeCopyButtons: true
+  mainSections:
+    - posts
+  label:
+    icon: /bandana.png
+  homeInfoParams:
+    title: Welcome to my site!
+    content: | 
+      Hello,
+      This is _Pierre Baillet_'s homepage. A place where I write less often than I would like. I'm an old programmer that's been coding since he was young (started on Atari ST with GFA-Basic) and still loves coding. This inner fire is still burning and pushes me to write a lot of unfinished and slightly broken projects that run in production for my use or tend to die after a while.
+  profileMode:
+    buttons:
+
+      - name: Posts
+        url: /posts
+      - name: Archive
+        url: /archive
+  socialIcons:
+    - name: mastodon
+      url: "https://mastodon.xyz/@octplane"
+    - name: Github
+      url: 'https://github.com/octplane'

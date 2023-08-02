@@ -12,7 +12,7 @@ Wikiquote ? Si vous l&rsquo;ignoriez encore, wikiquote est un des projets Wikime
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/archive/2014/07/01/29.2014-07-01-wikquote1/default.fr/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -57,8 +57,7 @@ Wikiquote ? Si vous l&rsquo;ignoriez encore, wikiquote est un des projets Wikime
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
-<meta property="og:title" content="Analyse de fr.wikiquote.org" />
+</noscript><meta property="og:title" content="Analyse de fr.wikiquote.org" />
 <meta property="og:description" content="Cet article évoque l&rsquo;analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.
 Wikiquote ? Si vous l&rsquo;ignoriez encore, wikiquote est un des projets Wikimedia qui contient entre autres la très connue Wikipedia, l&rsquo;encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème." />
 <meta property="og:type" content="article" />
@@ -102,7 +101,7 @@ Wikiquote ? Si vous l&rsquo;ignoriez encore, wikiquote est un des projets Wikime
   "keywords": [
     "code", "wikipedia"
   ],
-  "articleBody": "Cet article évoque l’analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.\nWikiquote ? Si vous l’ignoriez encore, wikiquote est un des projets Wikimedia qui contient entre autres la très connue Wikipedia, l’encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.\nDans le cadre de mes projets personnels, j’avais besoin de voir s’il était possible de parser les données Wikiquote pour en extraire les citations de manière aussi structurée que possible.\nEt alors ? Après quelques expériences, le format de fr.wikiquote.org est relativement structuré, les citations sont dans des modèles {{{citation}}} et les références dans des {{{Réf livre|série|article|film ...}}. J’ai finalement fini par écrire un parser simple du format du markup utilisé dans fr.wikiquote.org, il est disponible ici, pour les curieux et il vous faudra un dump de wikiquote, ou le lancer sur l’échantillon qui est dans le projet.\nDes stats ! Alors voilà les statistiques livrées par la machine. Pour chaque balise, j’ai listé les attributs les plus fréquement utilisés (avec leur % d’adoption). On voit ici que la variabilité est assez considérable, et qu’en particulier, les citations ne sont probablement pas toutes sourcées (vu l’écart entre les Réf  et les Citation).\nNéanmoins, il devrait être possible d’extraire un sacré paquet de citations de manière automatisée et d’avoir quelque chose d’exploitable. Prochaine étape, faire un mini site qui permet de naviguer dans ces citations de manière structurée.\ncitation (42883 occ.)  citation (68%) précisions (14%) taxonomy: tag: [backup] langue (11%) original (9%)  réf livre (28186 occ.)  page (96%) titre (88%) auteur (88%) éditeur (86%) année (85%) isbn (40%) année d’origine (36%) collection (33%) section (24%) chapitre (22%) traducteur (18%) partie (16%) référence (11%)  personnage (13531 occ.) w (6410 occ.) réf film (4791 occ.)  titre (99%) auteur (98%) date (95%) acteur (91%)  interprojet (3650 occ.)  w (82%) wikt (24%) commons (14%) s (11%)  réf article (3314 occ.)  titre (99%) auteur (99%) publication (96%) date (67%) page (63%) numéro (51%) issn (13%) url (12%)  réf série (3083 occ.)  acteur (97%) auteur (96%) série (93%) saison (93%) épisode (93%) diffusion (23%) diffuseur (23%) date (21%) traducteur (19%)  defaultsort (2717 occ.) date (1788 occ.) réf pub (1755 occ.)  nom (99%) date (97%) source (83%) auteur (66%) parution (61%) lieu (51%) précision (11%)  choisie citation du jour (1502 occ.)  mois (100%) année (100%) jour (100%) puce (95%) commentaire (81%)  Je n’ai mis que le début des stats (tout les modèles présents plus de 1000 fois), parce qu’il y en a un petit paquet et que c’est pas forcément très trépidant. N’hésitez pas à me faire du retour sur ces données si vous avez des choses à dire :)\n(relecture par Alexis)\n",
+  "articleBody": "Cet article évoque l’analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.\nWikiquote ? Si vous l’ignoriez encore, wikiquote est un des projets Wikimedia qui contient entre autres la très connue Wikipedia, l’encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.\nDans le cadre de mes projets personnels, j’avais besoin de voir s’il était possible de parser les données Wikiquote pour en extraire les citations de manière aussi structurée que possible.\nEt alors ? Après quelques expériences, le format de fr.wikiquote.org est relativement structuré, les citations sont dans des modèles {{{citation}}} et les références dans des {{{Réf livre|série|article|film ...}}. J’ai finalement fini par écrire un parser simple du format du markup utilisé dans fr.wikiquote.org, il est disponible ici, pour les curieux et il vous faudra un dump de wikiquote, ou le lancer sur l’échantillon qui est dans le projet.\nDes stats ! Alors voilà les statistiques livrées par la machine. Pour chaque balise, j’ai listé les attributs les plus fréquement utilisés (avec leur % d’adoption). On voit ici que la variabilité est assez considérable, et qu’en particulier, les citations ne sont probablement pas toutes sourcées (vu l’écart entre les Réf et les Citation).\nNéanmoins, il devrait être possible d’extraire un sacré paquet de citations de manière automatisée et d’avoir quelque chose d’exploitable. Prochaine étape, faire un mini site qui permet de naviguer dans ces citations de manière structurée.\ncitation (42883 occ.) citation (68%) précisions (14%) taxonomy: tag: [backup] langue (11%) original (9%) réf livre (28186 occ.) page (96%) titre (88%) auteur (88%) éditeur (86%) année (85%) isbn (40%) année d’origine (36%) collection (33%) section (24%) chapitre (22%) traducteur (18%) partie (16%) référence (11%) personnage (13531 occ.) w (6410 occ.) réf film (4791 occ.) titre (99%) auteur (98%) date (95%) acteur (91%) interprojet (3650 occ.) w (82%) wikt (24%) commons (14%) s (11%) réf article (3314 occ.) titre (99%) auteur (99%) publication (96%) date (67%) page (63%) numéro (51%) issn (13%) url (12%) réf série (3083 occ.) acteur (97%) auteur (96%) série (93%) saison (93%) épisode (93%) diffusion (23%) diffuseur (23%) date (21%) traducteur (19%) defaultsort (2717 occ.) date (1788 occ.) réf pub (1755 occ.) nom (99%) date (97%) source (83%) auteur (66%) parution (61%) lieu (51%) précision (11%) choisie citation du jour (1502 occ.) mois (100%) année (100%) jour (100%) puce (95%) commentaire (81%) Je n’ai mis que le début des stats (tout les modèles présents plus de 1000 fois), parce qu’il y en a un petit paquet et que c’est pas forcément très trépidant. N’hésitez pas à me faire du retour sur ces données si vous avez des choses à dire :)\n(relecture par Alexis)\n",
   "wordCount" : "472",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
@@ -165,6 +164,31 @@ Wikiquote ? Si vous l&rsquo;ignoriez encore, wikiquote est un des projets Wikime
             </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://oct.zoy.org/about" title="🪞 about">
+                    <span>🪞 about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                    <span>📢 speaker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                    <span>🕰️ Post Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                    <span>🔖 tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                    <span>🕸️ old stuff</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -289,7 +313,7 @@ langue (11%)</li>
     </main>
     
 <footer class="footer">
-    <span>© oct.zoy.org, questions, comments, critics <a href="https://twitter.com/octplane">@octplane</a></span>
+    <span>&copy; 2023 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

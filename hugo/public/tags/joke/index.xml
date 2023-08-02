@@ -5,15 +5,15 @@
     <link>https://oct.zoy.org/tags/joke/</link>
     <description>Recent content in joke on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright><atom:link href="https://oct.zoy.org/tags/joke/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/joke/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bundler, oh, I hate thou</title>
       <link>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
-      <description>Another merry joke from my bundler friend. If you ever switch to deployment mode (using the bundle install &amp;ndash;deploymentcommand), do not come and cry if bundler starts saying:When you have :
+      <description>Another merry joke from my bundler friend. If you ever switch to deployment mode (using the bundle install &amp;ndash;deployment command), do not come and cry if bundler starts saying:
+When you have :
 gem list *** LOCAL GEMS *** gemname (version) Instead remove the lock:
 bundle install --no-deployment And voilà.
 Short post, but this issue made me mad for half an hour.</description>

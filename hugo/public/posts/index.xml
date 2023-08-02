@@ -6,14 +6,13 @@
     <description>Recent content in Posts on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright>
     <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🚘 Remote: my setup</title>
-      <link>https://oct.zoy.org/posts/2022-06-29-remote-1-my-setup/</link>
+      <link>https://oct.zoy.org/posts/2022-06-29-remove-my-setup/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://oct.zoy.org/posts/2022-06-29-remote-1-my-setup/</guid>
+      <guid>https://oct.zoy.org/posts/2022-06-29-remove-my-setup/</guid>
       <description>Just like The Setup, but more amateur.</description>
     </item>
     
@@ -43,7 +42,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
       
       <guid>https://oct.zoy.org/posts/git-gpg-and-notifications/</guid>
       <description>This article is pretty old, so be careful as its information could be out of date!
- this article is for macOS only.
+this article is for macOS only.
 If you use git and gpg to sign your commits, then you&amp;rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.</description>
     </item>
@@ -54,7 +53,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/posts/2017-12-28-4-links/</guid>
-      <description>4 noteworthy links from this week:  Let your code type-hint itself: introducing open source MonkeyType: an excellent occasion to revisit type hinting in Python cats 1.0.0: for Scala-f-ists! Why TLS 1.3 isn&amp;rsquo;t in browsers yet: a big in-depth article about TLS Questions about Chatbots: a nice overview of this technology that is supposed to change the world ;)  </description>
+      <description>4 noteworthy links from this week: Let your code type-hint itself: introducing open source MonkeyType: an excellent occasion to revisit type hinting in Python cats 1.0.0: for Scala-f-ists! Why TLS 1.3 isn&amp;rsquo;t in browsers yet: a big in-depth article about TLS Questions about Chatbots: a nice overview of this technology that is supposed to change the world ;) </description>
     </item>
     
     <item>
@@ -73,7 +72,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/posts/2017-04-21-five-short-links/</guid>
-      <description>Tech  remote attack on an ODB dongle, follow-up of last week links: It was obvious this will lead to some dirty exploitation. on Recursion, Continuations and Trampolines, an excellent in-depth article that speaks about tail call optimization and all these way to avoid exhausting the stack. how r/places  was built for reddit 1st of April event. Technical and inspiring. Real life challenges :)  Culture  a simple RPG rule system you can use anywhere.</description>
+      <description>Tech remote attack on an ODB dongle, follow-up of last week links: It was obvious this will lead to some dirty exploitation. on Recursion, Continuations and Trampolines, an excellent in-depth article that speaks about tail call optimization and all these way to avoid exhausting the stack. how r/places was built for reddit 1st of April event. Technical and inspiring. Real life challenges :) Culture a simple RPG rule system you can use anywhere.</description>
     </item>
     
     <item>
@@ -82,7 +81,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/posts/2017-04-14/</guid>
-      <description>Tech  Ellie is a nice webapp that allows prototyping of Elm-lang based applications. Elm is a javascript alternative, looks a lot like Haskell. Track your vehicle using using a ODB dongle, nice way to have a connected car. an iOS alternative that can probably do the job at last for some prototyping, or connected self: SensorLog by Bernd Thomas. I just need a PaaS to store the data and render them.</description>
+      <description>Tech Ellie is a nice webapp that allows prototyping of Elm-lang based applications. Elm is a javascript alternative, looks a lot like Haskell. Track your vehicle using using a ODB dongle, nice way to have a connected car. an iOS alternative that can probably do the job at last for some prototyping, or connected self: SensorLog by Bernd Thomas. I just need a PaaS to store the data and render them.</description>
     </item>
     
   </channel>

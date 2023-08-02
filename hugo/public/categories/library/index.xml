@@ -5,8 +5,7 @@
     <link>https://oct.zoy.org/categories/library/</link>
     <description>Recent content in library on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; oct.zoy.org, questions, comments, critics [@octplane](https://twitter.com/octplane)</copyright><atom:link href="https://oct.zoy.org/categories/library/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://oct.zoy.org/categories/library/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruby-io-tail at version 0.0.3</title>
       <link>https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</link>
@@ -14,7 +13,7 @@
       
       <guid>https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</guid>
       <description>The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.
-As usual, the gem is available from: https://rubygems.</description>
+As usual, the gem is available from: https://rubygems.org/gems/io-tail</description>
     </item>
     
     <item>
