@@ -1,6 +1,6 @@
 #!/bin/sh
 USER=root
-HOST=ovh1.le-tresor-de-la-langue.fr
+HOST=www.le-tresor-de-la-langue.fr
 DIR=/var/www/oct.zoy.org
 
 rm -rf public

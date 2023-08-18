@@ -45,6 +45,7 @@ params:
       Hello,
       This is _Pierre Baillet_'s homepage. A place where I write less often than I would like. I'm an old programmer that's been coding since he was young (started on Atari ST with GFA-Basic) and still loves coding. This inner fire is still burning and pushes me to write a lot of unfinished and slightly broken projects that run in production for my use or tend to die after a while.
   profileMode:
+    enabled: false
     buttons:
 
       - name: Posts
