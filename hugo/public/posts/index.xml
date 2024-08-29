@@ -6,7 +6,25 @@
     <description>Recent content in Posts on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zorro d&#39;entre les morts</title>
+      <link>https://oct.zoy.org/posts/2024-08-29-zorro/2024-08-29-zorro-dentre-les-morts/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/posts/2024-08-29-zorro/2024-08-29-zorro-dentre-les-morts/</guid>
+      <description>Un Zorro modernisé&amp;hellip; mais sans le sergent Garcia.</description>
+    </item>
+    
+    <item>
+      <title>📚 Lecture d&#39;été</title>
+      <link>https://oct.zoy.org/posts/2023-08-18-lecture-dete/</link>
+      <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/posts/2023-08-18-lecture-dete/</guid>
+      <description>Ce que je lis en ce moment</description>
+    </item>
+    
     <item>
       <title>🔆 Summer 2023 - links</title>
       <link>https://oct.zoy.org/posts/2023-08-02-links/</link>
@@ -14,6 +32,15 @@
       
       <guid>https://oct.zoy.org/posts/2023-08-02-links/</guid>
       <description>A few links for the summer</description>
+    </item>
+    
+    <item>
+      <title>🏴‍☠️ Anna&#39;s Archive</title>
+      <link>https://oct.zoy.org/posts/2023-07-01-annas-archive/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/posts/2023-07-01-annas-archive/</guid>
+      <description>Où l&amp;rsquo;on découvre avec émerveillement Anna&amp;rsquo;s Archive</description>
     </item>
     
     <item>
@@ -73,6 +100,15 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
       <guid>https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/</guid>
       <description>If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
 I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oct.zoy.org/posts/2024-08-28-more-books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/posts/2024-08-28-more-books/</guid>
+      <description>draft: true A la gorge - Max Monnehay Seuil Date de parution: 09/02/2024 20 € 9782021541823 L&amp;rsquo;homme aux mille visages - Sonia Kronlund Grasset Et Fasquelle Date de parution: 03/01/2024 19 € 9782246831891 Stella et l&amp;rsquo;Amérique - Joseph Incardona Finitude Date de parution: 05/01/2024 21 € 9782363392015 Upgrade - Blake Crouch Gallmeister Date de parution: 05/10/2023 24.9 € 9782351783191 Wayward Pines Tome 1 : Révélation - Blake Crouch Gallmeister Date de parution: 18/01/2024 7.</description>
     </item>
     
     <item>

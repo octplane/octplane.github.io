@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://oct.zoy.org/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://oct.zoy.org/posts/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://oct.zoy.org/posts/2024-08-29-zorro/2024-08-29-zorro-dentre-les-morts/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://oct.zoy.org/posts/2023-08-18-lecture-dete/</loc>
+    <lastmod>2023-08-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://oct.zoy.org/posts/2023-08-02-links/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://oct.zoy.org/posts/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+    <loc>https://oct.zoy.org/posts/2023-07-01-annas-archive/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/posts/2022-06-29-remote-my-setup/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
@@ -73,6 +82,8 @@
   </url><url>
     <loc>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</loc>
     <lastmod>2010-08-18T15:21:00+00:00</lastmod>
+  </url><url>
+    <loc>https://oct.zoy.org/posts/2024-08-28-more-books/</loc>
   </url><url>
     <loc>https://oct.zoy.org/posts/2017-04-21-five-short-links/</loc>
   </url><url>
