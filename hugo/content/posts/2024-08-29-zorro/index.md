@@ -13,5 +13,8 @@ Zorro, d'entre les morts, est une bande dessinée du dessinateur Sean Murphy qui
 
 C'est bien dessiné, c'est coloré, c'est peut-être un peu violent, mais c'est assez jouissif à lire. Sans être une lecture inoubliable, c'est agréable de lire ce mélange entre Zorro et Narcos. On retrouve presque la folie de [Il faut flinguer Ramirez](https://www.babelio.com/livres/Petrimaux-Il-faut-flinguer-Ramirez-tome-1/1040219). Un poil court, mais peut-être avec une suite...
 
-- [Chez Urban Comics](https://www.urban-comics.com/zorro-dentre-les-morts/)
+- Paru le: 21/06/2024
+- Prix: 20 €
+- ISBN: 9791026826101
+- [Chez Urban Comics](https://www.urban-comics.com/zorro-dentre-les-morts/), 
 - Sur [babelio](https://www.babelio.com/livres/Murphy-Zorro--Dentre-les-morts/1628482)
