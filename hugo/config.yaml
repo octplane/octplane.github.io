@@ -31,6 +31,8 @@ imaging:
   quality: 75
   resampleFilter: Box
 params:
+  analytics:
+    googlesiteVerificationTag: y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo
   hideFooter: false
   showBreadCrumbs: true
   showReadingTime: true
