@@ -16,5 +16,5 @@ C'est bien dessiné, c'est coloré, c'est peut-être un peu violent, mais c'est 
 - Paru le: 21/06/2024
 - Prix: 20 €
 - ISBN: 9791026826101
-- [404 editions](https://www.lisez.com/ebook/arca-ou-la-nouvelle-eden/9791032408926), 
+- [Chez Urban Comics](https://www.urban-comics.com/zorro-dentre-les-morts/), 
 - Sur [babelio](https://www.babelio.com/livres/Murphy-Zorro--Dentre-les-morts/1628482)
