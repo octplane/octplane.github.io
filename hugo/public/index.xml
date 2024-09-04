@@ -6,7 +6,19 @@
     <description>Recent content on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📙 Rebuilding Computer Lib</title>
+      <link>https://oct.zoy.org/posts/2024-09-04-computer-lib/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/posts/2024-09-04-computer-lib/</guid>
+      <description>Computer Lib - Dream Machines is a book by Ted Nelson.
+After I was introduced to the book, I became obsessed by the amazing layout and style of the book, that reminded me a bit of the style of why the lucky stiff&amp;rsquo;s Poignant Guide.
+I have pulled the PDF, reordered it to have to two parts correctly. And extracted all text with a simple OCR engine.
+A Scanned text sample Bad scanned text can be partially rebuilt using ChatGPT gpt before final proofing:</description>
+    </item>
+    
     <item>
       <title>🚀 Arca ou la nouvelle Eden</title>
       <link>https://oct.zoy.org/posts/2024-09-01-arca/</link>
