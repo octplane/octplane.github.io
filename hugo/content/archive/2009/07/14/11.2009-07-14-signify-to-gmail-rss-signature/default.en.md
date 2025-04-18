@@ -1,6 +1,7 @@
 ---
 title: 'Signify to GMail RSS signature Converter'
-date: '2009-07-14 19:58'
+type: blog
+date: '2009-07-14'
 layout: post
 permalink: /2009/07/signify-to-gmail-rss-signature.html
 uuid: '7512566651567661520'

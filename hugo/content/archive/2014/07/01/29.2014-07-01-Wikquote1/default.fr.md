@@ -1,6 +1,7 @@
 ---
 title: 'Analyse de fr.wikiquote.org'
-date: '2014-07-01 09:00'
+type: blog
+date: '2014-07-01'
 layout: post
 moot_legacy_id: 11
 cover_image: 'http://upload.wikimedia.org/wikipedia/commons/8/81/Wikimedia-logo.svg'
@@ -16,15 +17,18 @@ lang: fr
 Cet article évoque l'analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.
 
 ## Wikiquote ?
+
 Si vous l'ignoriez encore, [wikiquote](http://fr.wikiquote.org) est un des projets Wikimedia qui contient entre autres la très connue [Wikipedia](http://fr.wikipedia.org), l'encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.
 
 Dans le cadre de mes projets personnels, j'avais besoin de voir s'il était possible de parser les données Wikiquote pour en extraire les citations de manière aussi structurée que possible.
 
 ## Et alors ?
+
 Après quelques expériences, le format de fr.wikiquote.org est relativement structuré, les citations sont dans des [modèles](http://fr.wikiquote.org/wiki/Cat%C3%A9gorie:Mod%C3%A8le:Racine)  `{{{citation}}}` et les références dans des `{{{Réf livre|série|article|film ...}}`. J'ai finalement fini par écrire un parser simple du format du markup utilisé dans fr.wikiquote.org, il est disponible [ici, pour les curieux](https://github.com/octplane/wikiquote-parser) et il vous faudra un dump de wikiquote, ou le lancer sur l'échantillon qui est dans le projet.
 
-## Des stats !
-Alors voilà les statistiques livrées par la machine. Pour chaque balise, j'ai listé les attributs les plus fréquement utilisés (avec leur % d'adoption). On voit ici que la variabilité est assez considérable, et qu'en particulier, les citations ne sont probablement pas toutes sourcées (vu l'écart entre les `Réf ` et les `Citation`).
+## Des stats
+
+Alors voilà les statistiques livrées par la machine. Pour chaque balise, j'ai listé les attributs les plus fréquement utilisés (avec leur % d'adoption). On voit ici que la variabilité est assez considérable, et qu'en particulier, les citations ne sont probablement pas toutes sourcées (vu l'écart entre les `Réf` et les `Citation`).
 
 Néanmoins, il devrait être possible d'extraire un sacré paquet de citations de manière automatisée et d'avoir quelque chose d'exploitable. Prochaine étape, faire un mini site qui permet de naviguer dans ces citations de manière structurée.
 
@@ -36,7 +40,6 @@ Néanmoins, il devrait être possible d'extraire un sacré paquet de citations d
     tag: [backup]
 langue (11%)
 - original (9%)
-
 
 ### [réf livre](http://fr.wikiquote.org/wiki/Modèle:réf_livre) (28186 occ.)
 
@@ -53,7 +56,7 @@ langue (11%)
 - traducteur (18%)
 - partie (16%)
 - référence (11%)
- 
+
 ### [personnage](http://fr.wikiquote.org/wiki/Modèle:personnage) (13531 occ.)
 
 ### [w](http://fr.wikiquote.org/wiki/Modèle:w) (6410 occ.)

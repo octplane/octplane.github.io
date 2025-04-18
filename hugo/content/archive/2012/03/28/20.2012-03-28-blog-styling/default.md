@@ -4,7 +4,8 @@ layout: "post"
 permalink: "/2012/03/blog-styling.html"
 uuid: "7353438691744615084"
 guid: "tag:blogger.com,1999:blog-5365176712784435549.post-7353438691744615084"
-date: "2012-03-28 09:30:00"
+type: blog
+date: "2012-03-28"
 updated: "2012-03-28 09:30:52"
 taxonomy:
     tag: [backup]

@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ubuntu on oct.zoy.org</title>
+    <title>Ubuntu on oct.zoy.org</title>
     <link>https://oct.zoy.org/categories/ubuntu/</link>
-    <description>Recent content in ubuntu on oct.zoy.org</description>
+    <description>Recent content in Ubuntu on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Aug 2010 15:21:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upstart, rc et Ubuntu 9.10</title>
       <link>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
-      <pubDate>Wed, 18 Aug 2010 15:21:00 +0000</pubDate>
+      <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
-      <description>{% raw %}</description>
-    </item>
-    
-    <item>
-      <title>Upstart, rc et Ubuntu 9.10</title>
-      <link>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</guid>
-      <description>Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:
-démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu&amp;rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l&amp;rsquo;air cool.</description>
+      <description>&lt;p&gt;Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;)&lt;/li&gt;
+&lt;li&gt;parallélisme du démarrage des démons  (lié au premier point)&lt;/li&gt;
+&lt;li&gt;monitoring des démons et respawn lorsqu&amp;rsquo;ils meurent&lt;/li&gt;
+&lt;li&gt;pre/post-scripts facile à rajouter&lt;/li&gt;
+&lt;li&gt;configuration aisée&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bref, ça à l&amp;rsquo;air cool. J&amp;rsquo;y reviendrais à la fin.&lt;/p&gt;</description>
     </item>
     
   </channel>

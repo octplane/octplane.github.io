@@ -1,6 +1,8 @@
 ---
 title: 'Un jour, à New York '
-date: '2014-09-11 11:00'
+type: blog
+type: blog
+date: '2014-09-11'
 content:
     items: '@self.children'
     limit: '5'

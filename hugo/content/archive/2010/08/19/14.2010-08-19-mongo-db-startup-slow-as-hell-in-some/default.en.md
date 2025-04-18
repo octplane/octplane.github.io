@@ -1,6 +1,7 @@
 ---
 title: 'Mongo DB Startup slow as hell (in some conditions)'
-date: '2010-08-19 08:52'
+type: blog
+date: '2010-08-19'
 layout: post
 permalink: /2010/08/mongo-db-startup-slow-as-hell-in-some.html
 uuid: '477182467467613943'

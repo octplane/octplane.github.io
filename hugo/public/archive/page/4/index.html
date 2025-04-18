@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://oct.zoy.org/archive/index.xml">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/">
 <noscript>
     <style>
         #theme-toggle,
@@ -121,6 +122,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -164,110 +167,42 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Rbenv, chef and bundler
+    <h2>RAID Forever
     </h2>
   </header>
   <div class="entry-content">
-    <p>What we aim We’re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:
-Use the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I’ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:
-require_recipe &#34;rbenv&#34; # Setup the rubies PICOR_RUBY=&#34;ree-1....</p>
+    <p>MegaCLI (LSI) PERC Command line client is here in case you’re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you’re almost done. The cheats sheet you can find on the internet is rather ok, except for the download link I just wrote down.
+...</p>
   </div>
-  <footer class="entry-footer">3 min</footer>
-  <a class="entry-link" aria-label="post link to Rbenv, chef and bundler" href="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-29 00:00:00 &#43;0000 UTC&#39;&gt;December 29, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to RAID Forever" href="https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Redundancy in Amazon EC2
+    <h2>COLLATE
     </h2>
   </header>
   <div class="entry-content">
-    <p>Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.
-AWS is the branch of a company everybody knows.
-Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world....</p>
+    <p>Never, never forget to add the COLLATION of your temporary tables when you write MS-SQL server stored procedures. If you forget to do that and you ever migrate from say SQL Server 2005 to SQL Server 2000 some database, you end up doing the following:
+</p>
   </div>
-  <footer class="entry-footer">7 min</footer>
-  <a class="entry-link" aria-label="post link to Redundancy in Amazon EC2" href="https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-11 00:00:00 &#43;0000 UTC&#39;&gt;December 11, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to COLLATE" href="https://oct.zoy.org/archive/2008/12/11/07.2008-12-11-collate/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Rigor Mortis
+    <h2>Crowded room.
     </h2>
   </header>
   <div class="entry-content">
-    <p>Vous avez pas parfois l’impression qu’on se fout de vous ?
-Cela fait une grosse dizaine d’années que je suis sur le marché du travail, et que j’ai donc l’occasion, en tant qu’adulte responsable, de payer mes impôts et d’avoir des interactions avec des gens qui m’appellent Monsieur (et que j’appelle aussi Monsieur ou Madame, parce que je suis poli). Chacune de ces intéractions montre comment les gens vous jugent, vous apprécient, ou vous ignorent et sont toujours très intéressantes au point de vue ethnologique....</p>
+    <p> The archive room where one of our poor intern is just trying to sort 4 years of MSDN CDs.
+We plan to keep only a few of these, but before, we need to know what we have here. It’s an interesting thing to do. At least on the organization point of view (Note the small tables under the main one :D).
+...</p>
   </div>
-  <footer class="entry-footer">2 min</footer>
-  <a class="entry-link" aria-label="post link to Rigor Mortis" href="https://oct.zoy.org/archive/2014/02/18/25.2014-02-18-rigor-mortis/default.fr/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>rman is clever
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Well, sort of. Today, after patching one of my oracle database server against a migration issue that prevented it from shutting down clean. I finally managed to run the magic command:
-alter database archivelog; That would enable me to backup the database. Unfortunately, the disk space on this server is too low to allow two full backups of the database. I wanted to delete the old backup before doing the new one in rman but rman is too clever: You cannot delete the last remaining backup!...</p>
-  </div>
-  <footer class="entry-footer">1 min</footer>
-  <a class="entry-link" aria-label="post link to rman is clever" href="https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Ruby-io-tail at version 0.0.3
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.
-As usual, the gem is available from: https://rubygems.org/gems/io-tail</p>
-  </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Ruby-io-tail at version 0.0.3" href="https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Rusty Racoon
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Je me suis mis à jouer avec Rust, le nouveau langage de Mozilla. C’est un changement intéressant, moi qui suis plutôt habitué aux langages moins stricts et plus « scripts » qu’à des langages compilés et à la tête dure.
-Rust a plusieurs caractéristiques intéressantes, outre le fait qu’il est encore en version instable et donc pas vraiment utilisable pour autre chose que du gros bidouillage (la bibliothèque standard change encore assez rapidement, et un morceau de code qui compile un jour peut vous péter à la figure le lendemain) : Il est fortement typé, tourne sans VM,** sans GC**, et possède quelques-uns des raffinements des taxonomy: tag: [backup] langages dit fonctionnels à la mode comme Scala, avec ses types optionnels, et son pattern matching pour le typage....</p>
-  </div>
-  <footer class="entry-footer">4 min</footer>
-  <a class="entry-link" aria-label="post link to Rusty Racoon" href="https://oct.zoy.org/archive/2015/01/26/35.2015-01-26-rusty-racoon/default/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Signify to GMail RSS signature Converter
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.
-It doesn’t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.
-Published under the WTFPL.
-´´´ import lxml.etree as et import sys import StringIO import codecs...</p>
-  </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Signify to GMail RSS signature Converter" href="https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Sortie de ruby io tail
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d’un fichier de journal ou la sortie d’un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.
-Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d’IO à suivre et appeler un seul point d’entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs....</p>
-  </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Sortie de ruby io tail" href="https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-10 00:00:00 &#43;0000 UTC&#39;&gt;December 10, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Crowded room." href="https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -276,9 +211,10 @@ Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d’IO à s
     </h2>
   </header>
   <div class="entry-content">
-    <p>We’re about to use the velocity engine soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</p>
+    <p>We’re about to use the velocity engine soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-10 00:00:00 &#43;0000 UTC&#39;&gt;December 10, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
   <a class="entry-link" aria-label="post link to The velocity engine" href="https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/"></a>
 </article>
 
@@ -291,19 +227,46 @@ Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d’IO à s
     <p>List of software I use daily at work :
 AutoHotkey: Autohotkey provides a scriptable way to automate most of the management of my Windows XP. I currently use one script that enable X-Windows style window dragging/resizing. Thunderbird Firefox Google Calendar Sync QuickMonth Calendar Putty SuperCopier Launchy </p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-10 00:00:00 &#43;0000 UTC&#39;&gt;December 10, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
   <a class="entry-link" aria-label="post link to Tools I use" href="https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Powerdns
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Powerdns is a very nice DNS server. It provides out of the box Geo sensitivity, enabling you to redirect your customer to different servers according to their origin. We use that we a quite complex zone setup.
+Also it can be plugged onto a SQL backend (such as mysql, postgresql or sqlite). The whole stuff can then be managed by dedicated web tools. We use pdnsadmin (php based, requires mysql) and this is enough for simple uses.
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-09 00:00:00 &#43;0000 UTC&#39;&gt;December 9, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Powerdns" href="https://oct.zoy.org/archive/2008/12/09/02.2008-12-09-powerdns/single/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>rman is clever
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Well, sort of. Today, after patching one of my oracle database server against a migration issue that prevented it from shutting down clean. I finally managed to run the magic command:
+alter database archivelog; That would enable me to backup the database. Unfortunately, the disk space on this server is too low to allow two full backups of the database. I wanted to delete the old backup before doing the new one in rman but rman is too clever: You cannot delete the last remaining backup! I now have to find larger disks.
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-09 00:00:00 &#43;0000 UTC&#39;&gt;December 9, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to rman is clever" href="https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://oct.zoy.org/archive/page/3/">« Prev</a>
-    <a class="next" href="https://oct.zoy.org/archive/page/5/">Next »</a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

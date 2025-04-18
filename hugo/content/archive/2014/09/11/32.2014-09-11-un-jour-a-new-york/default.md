@@ -1,5 +1,6 @@
 ---
 title: "Un jour, à New York "
+type: blog
 date: 2014-09-11 09:00:00
 layout: post
 taxonomy:

@@ -1,6 +1,7 @@
 ---
 title: 'RAID Forever'
-date: '2008-12-29 15:52'
+type: blog
+date: '2008-12-29'
 layout: post
 permalink: /2008/12/raid-forever.html
 uuid: '6617325369942685593'

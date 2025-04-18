@@ -1,6 +1,7 @@
 ---
 title: 'Blog Styling'
-date: '2012-03-28 09:30'
+type: blog
+date: '2012-03-28'
 layout: post
 permalink: /2012/03/blog-styling.html
 uuid: '7353438691744615084'

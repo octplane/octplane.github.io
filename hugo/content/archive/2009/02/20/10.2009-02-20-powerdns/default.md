@@ -1,10 +1,10 @@
 ---
 title: "PowerDNS"
-layout: "post"
 permalink: "/2009/02/powerdns.html"
 uuid: "1793486034498038427"
 guid: "tag:blogger.com,1999:blog-5365176712784435549.post-1793486034498038427"
-date: "2009-02-20 22:43:00"
+type: blog
+date: "2009-02-20"
 updated: "2009-02-20 22:52:20"
 description: 
 blogger:

@@ -7,13 +7,15 @@
 <meta name="robots" content="index, follow">
 <title>🚮 The Ad Blocking Problem | oct.zoy.org</title>
 <meta name="keywords" content="">
-<meta name="description" content="How I&rsquo;m currently blocking Ads at home, and why? In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
-Pi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint.">
+<meta name="description" content="How I&rsquo;m currently blocking Ads at home, and why?
+In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
+Pi-hole
+Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.">
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/posts/the-ad-blocking-problem/">
 <meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -22,6 +24,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
 <link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/posts/the-ad-blocking-problem/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,8 +62,10 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
 
     </style>
 </noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="🚮 The Ad Blocking Problem" />
-<meta property="og:description" content="How I&rsquo;m currently blocking Ads at home, and why? In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
-Pi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint." />
+<meta property="og:description" content="How I&rsquo;m currently blocking Ads at home, and why?
+In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
+Pi-hole
+Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oct.zoy.org/posts/the-ad-blocking-problem/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-23T00:00:00&#43;00:00" />
@@ -68,8 +73,10 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="🚮 The Ad Blocking Problem"/>
-<meta name="twitter:description" content="How I&rsquo;m currently blocking Ads at home, and why? In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
-Pi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint."/>
+<meta name="twitter:description" content="How I&rsquo;m currently blocking Ads at home, and why?
+In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
+Pi-hole
+Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated."/>
 
 
 <script type="application/ld+json">
@@ -98,7 +105,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
   "@type": "BlogPosting",
   "headline": "🚮 The Ad Blocking Problem",
   "name": "🚮 The Ad Blocking Problem",
-  "description": "How I\u0026rsquo;m currently blocking Ads at home, and why? In this article, I\u0026rsquo;m writing about the various solutions I\u0026rsquo;ve recently explored to block ads and I also describe the solution I\u0026rsquo;m currently using!\nPi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint.",
+  "description": "How I\u0026rsquo;m currently blocking Ads at home, and why? In this article, I\u0026rsquo;m writing about the various solutions I\u0026rsquo;ve recently explored to block ads and I also describe the solution I\u0026rsquo;m currently using!\nPi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.\n",
   "keywords": [
     
   ],
@@ -162,6 +169,8 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -201,7 +210,7 @@ Pi-hole Pi-hole is a cool open source project to block ads on your whole network
     <h1 class="post-title">
       🚮 The Ad Blocking Problem
     </h1>
-    <div class="post-meta"><span title='2022-01-23 00:00:00 +0000 UTC'>January 23, 2022</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta">&lt;span title=&#39;2022-01-23 00:00:00 &#43;0000 UTC&#39;&gt;January 23, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min
 
 </div>
   </header> 
@@ -240,7 +249,7 @@ They implement the standard filtering mechanism available on iOS and this works 
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

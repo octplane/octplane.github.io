@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>play on oct.zoy.org</title>
+    <title>Play on oct.zoy.org</title>
     <link>https://oct.zoy.org/tags/play/</link>
-    <description>Recent content in play on oct.zoy.org</description>
+    <description>Recent content in Play on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/play/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/play/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing the Flickr Attributor </title>
       <link>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</guid>
-      <description>Share and respect the license ! What&amp;rsquo;s wrong with Creative Commons picture sharing ? Since twitter started supporting images in post, most clients now have the ability to display these pictures along with the post.
-Adding a picture to a tweet increases clicks, retweets and favorites and will improve your social communication!
-Unfortunately, your photos might not be good enough to illustrate your point, so you might want to use other people&amp;rsquo;s photos.</description>
+      <description>&lt;h2 id=&#34;share-and-respect-the-license-&#34;&gt;Share and respect the license !&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;whats-wrong-with-creative-commons-picture-sharing-&#34;&gt;What&amp;rsquo;s wrong with Creative Commons picture sharing ?&lt;/h3&gt;
+&lt;p&gt;Since twitter started supporting images in post, most clients now have the ability to display these pictures along with the post.&lt;/p&gt;
+&lt;p&gt;Adding a picture to a tweet increases &lt;a href=&#34;http://blog.bufferapp.com/the-power-of-twitters-new-expanded-images-and-how-to-make-the-most-of-it&#34;&gt;clicks, retweets and favorites&lt;/a&gt; and will improve your social communication!&lt;/p&gt;
+&lt;p&gt;Unfortunately, your photos might not be good enough to illustrate your point, so you might want to use other people&amp;rsquo;s photos.&lt;/p&gt;</description>
     </item>
     
   </channel>

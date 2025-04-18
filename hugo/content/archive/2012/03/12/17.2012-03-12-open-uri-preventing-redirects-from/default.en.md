@@ -1,7 +1,7 @@
 ---
 title: 'Open-uri preventing redirects from https to http'
-published: true
-date: '2012-03-12 16:13'
+type: blog
+date: '2012-03-12'
 layout: post
 permalink: /2012/03/open-uri-preventing-redirects-from.html
 uuid: '3595971863622331023'

@@ -1,6 +1,7 @@
 ---
 title: 'The velocity engine'
-date: '2008-12-10 10:28'
+type: blog
+date: '2008-12-10'
 layout: post
 permalink: /2008/12/velocity-engine.html
 uuid: '1343499308604222479'

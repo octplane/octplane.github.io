@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>ruby | oct.zoy.org</title>
+<title>Ruby | oct.zoy.org</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://oct.zoy.org/categories/ruby/index.xml">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/categories/ruby/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,13 +57,13 @@
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="ruby" />
+</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="Ruby" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://oct.zoy.org/categories/ruby/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ruby"/>
+<meta name="twitter:title" content="Ruby"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -106,6 +107,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -140,7 +143,7 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a>&nbsp;»&nbsp;<a href="https://oct.zoy.org/categories/">Categories</a></div>
   <h1>
-    ruby
+    Ruby
   </h1>
 </header>
 
@@ -150,9 +153,10 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Because it assumes it’s insecure. That’s quite annoying and should be configurable. def OpenURI.redirectable?(uri1, uri2) true end This monkey-patch fixes the issue and remove the check. A bug exists for the stdlib http://bugs.ruby-lang.org/issues/859 but fixes just the other way round.</p>
+    <p>Because it assumes it’s insecure. That’s quite annoying and should be configurable. def OpenURI.redirectable?(uri1, uri2) true end This monkey-patch fixes the issue and remove the check. A bug exists for the stdlib http://bugs.ruby-lang.org/issues/859 but fixes just the other way round.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2012-03-12 00:00:00 &#43;0000 UTC&#39;&gt;March 12, 2012&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
   <a class="entry-link" aria-label="post link to Open-uri preventing redirects from https to http" href="https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/"></a>
 </article>
 
@@ -163,9 +167,10 @@
   </header>
   <div class="entry-content">
     <p>The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.
-As usual, the gem is available from: https://rubygems.org/gems/io-tail</p>
+As usual, the gem is available from: https://rubygems.org/gems/io-tail
+</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2012-03-12 00:00:00 &#43;0000 UTC&#39;&gt;March 12, 2012&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
   <a class="entry-link" aria-label="post link to Ruby-io-tail at version 0.0.3" href="https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/"></a>
 </article>
 
@@ -176,15 +181,16 @@ As usual, the gem is available from: https://rubygems.org/gems/io-tail</p>
   </header>
   <div class="entry-content">
     <p>Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d’un fichier de journal ou la sortie d’un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.
-Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d’IO à suivre et appeler un seul point d’entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs....</p>
+Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d’IO à suivre et appeler un seul point d’entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d’un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier. Ce project est un fork amical de Florian Frank ( l’auteur de https://github.com/flori/file-tail) auquel j’ai rajouté la possibilité de suivre la sortie d’un processus extérieur. Pour plus d’information:
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Sortie de ruby io tail" href="https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2012-03-11 00:00:00 &#43;0000 UTC&#39;&gt;March 11, 2012&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Sortie de ruby io tail" href="https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

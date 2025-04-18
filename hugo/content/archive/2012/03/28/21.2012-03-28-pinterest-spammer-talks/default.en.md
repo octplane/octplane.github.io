@@ -1,6 +1,7 @@
 ---
 title: 'A pinterest spammer talks'
-date: '2012-03-28 08:40'
+type: blog
+date: '2012-03-28'
 layout: post
 permalink: /2012/03/pinterest-spammer-talks.html
 uuid: '2628996342155043414'

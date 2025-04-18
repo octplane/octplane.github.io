@@ -1,6 +1,7 @@
 ---
 title: 'Build shell-FM on DS-210J'
-date: '2010-10-04 22:22'
+type: blog
+date: '2010-10-04'
 layout: post
 permalink: /2010/10/build-shell-fm-on-ds-210j.html
 uuid: '1248577752564243585'

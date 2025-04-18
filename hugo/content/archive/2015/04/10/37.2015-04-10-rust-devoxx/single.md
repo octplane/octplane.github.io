@@ -1,6 +1,7 @@
 ---
 title: 'Devoxx 2015 - Rust langage le plus excitant depuis Scala'
-date: '2015-04-10 14:05'
+type: blog
+date: '2015-04-10'
 layout: post
 tag:
     - devoxx

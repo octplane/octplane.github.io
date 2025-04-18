@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>joke on oct.zoy.org</title>
+    <title>Joke on oct.zoy.org</title>
     <link>https://oct.zoy.org/tags/joke/</link>
-    <description>Recent content in joke on oct.zoy.org</description>
+    <description>Recent content in Joke on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/joke/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Mar 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/joke/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bundler, oh, I hate thou</title>
       <link>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
-      <description>Another merry joke from my bundler friend. If you ever switch to deployment mode (using the bundle install &amp;ndash;deployment command), do not come and cry if bundler starts saying:
-When you have :
-gem list *** LOCAL GEMS *** gemname (version) Instead remove the lock:
-bundle install --no-deployment And voilà.
-Short post, but this issue made me mad for half an hour.</description>
+      <description>&lt;p&gt;Another merry joke from my bundler friend. If you ever switch to deployment mode
+(using the &lt;!-- raw HTML omitted --&gt;bundle install &amp;ndash;deployment&lt;!-- raw HTML omitted --&gt;
+command), do not come and cry if bundler starts saying:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;When you have :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gem list
+*** LOCAL GEMS ***
+gemname (version)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Instead remove the lock:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bundle install --no-deployment
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And voilà.&lt;/p&gt;
+&lt;p&gt;Short post, but this issue made me mad for half an hour.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,6 +1,8 @@
 ---
 title: 'Upstart, rc et Ubuntu 9.10'
-date: '2010-08-18 15:21'
+type: blog
+type: blog
+date: '2010-08-18'
 layout: post
 permalink: /2010/08/upstart-rc-et-ubuntu-910.html
 uuid: '8297468859675528727'

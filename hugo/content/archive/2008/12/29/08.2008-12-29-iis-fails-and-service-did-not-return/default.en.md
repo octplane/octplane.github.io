@@ -1,6 +1,7 @@
 ---
 title: 'IIS fails and "the service did not return an error"'
-date: '2008-12-29 08:51'
+type: blog
+date: '2008-12-29'
 layout: post
 permalink: /2008/12/iis-fails-and-service-did-not-return.html
 uuid: '6852133764700577752'

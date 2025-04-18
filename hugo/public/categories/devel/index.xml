@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>devel on oct.zoy.org</title>
+    <title>Devel on oct.zoy.org</title>
     <link>https://oct.zoy.org/categories/devel/</link>
-    <description>Recent content in devel on oct.zoy.org</description>
+    <description>Recent content in Devel on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oct.zoy.org/categories/devel/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/categories/devel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sortie de ruby io tail</title>
-      <link>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
+      <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</guid>
-      <description>Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.
-Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs.</description>
+      <guid>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
+      <description>&lt;p&gt;Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.&lt;/p&gt;
+&lt;p&gt;Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d&amp;rsquo;un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier.&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+Ce project est un fork amical de Florian Frank ( l&amp;rsquo;auteur de &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/flori/file-tail&#34;&gt;https://github.com/flori/file-tail&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;) auquel j&amp;rsquo;ai rajouté la possibilité de suivre la sortie d&amp;rsquo;un processus extérieur.&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+Pour plus d&amp;rsquo;information:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The velocity engine</title>
       <link>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</guid>
-      <description>We&amp;rsquo;re about to use the velocity engine soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the VTL. We will integrate the library with one of the latest Spring version and use it to render our view automatically.</description>
+      <description>&lt;p&gt;We&amp;rsquo;re about to use the &lt;!-- raw HTML omitted --&gt;velocity engine&lt;!-- raw HTML omitted --&gt; soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the &lt;!-- raw HTML omitted --&gt;VTL&lt;!-- raw HTML omitted --&gt;. We will integrate the library with one of the latest Spring version and use it to render our view automatically.&lt;/p&gt;</description>
     </item>
     
   </channel>

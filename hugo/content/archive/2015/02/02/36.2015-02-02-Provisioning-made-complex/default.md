@@ -1,6 +1,7 @@
 ---
 title: "Provisioning made more complex"
-date: "2015-02-02 18:00:00"
+type: blog
+date: "2015-02-02"
 layout: "post"
 tags:
 - code

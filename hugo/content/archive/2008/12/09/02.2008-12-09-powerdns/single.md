@@ -1,7 +1,7 @@
 ---
 title: Powerdns
-published: true
-date: '2008-12-09 13:02'
+type: blog
+date: '2008-12-09'
 layout: post
 taxonomy:
     tag: [backup]

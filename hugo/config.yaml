@@ -2,6 +2,8 @@ baseURL: 'https://oct.zoy.org/'
 languageCode: en-us
 title: oct.zoy.org
 theme: PaperMod
+ignoreLogs:
+  - warning-goldmark-raw-html
 menu:
   main:
     - identifier: archives

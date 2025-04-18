@@ -1,6 +1,7 @@
 ---
 title: 'rman is clever'
-date: '2008-12-09 15:55'
+type: blog
+date: '2008-12-09'
 layout: post
 updated: '2008-12-09 16:06:44'
 tags:

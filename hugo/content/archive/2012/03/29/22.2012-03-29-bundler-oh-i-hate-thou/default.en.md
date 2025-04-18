@@ -1,6 +1,7 @@
 ---
 title: 'Bundler, oh, I hate thou'
-date: '2012-03-29 08:08'
+type: blog
+date: '2012-03-29'
 layout: post
 permalink: /2012/03/bundler-oh-i-hate-thou.html
 uuid: '5424362764459069503'

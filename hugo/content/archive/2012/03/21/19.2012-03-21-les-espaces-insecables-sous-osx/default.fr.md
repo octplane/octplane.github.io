@@ -1,6 +1,8 @@
 ---
 title: 'Les espaces insécables sous OSX'
-date: '2012-03-21 09:25'
+type: blog
+type: blog
+date: '2012-03-21'
 layout: post
 permalink: /2012/03/les-espaces-insecables-sous-osx.html
 uuid: '8495883467517738919'

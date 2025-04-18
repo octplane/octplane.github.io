@@ -7,16 +7,49 @@
 <meta name="robots" content="index, follow">
 <title>Build shell-FM on DS-210J | oct.zoy.org</title>
 <meta name="keywords" content="">
-<meta name="description" content="How to build shell-fm on DS 210J Needed Package
+<meta name="description" content="How to build shell-fm on DS 210J
+Needed Package
+
 Checkout shell-fm sources
 git clone git://github.com/jkramer/shell-fm.git shell-fm&lt;
 Commands to run
-alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o getln.">
+alias cc=gcc
+cd shell-fm/source&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o playlist.o playlist.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o settings.o settings.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o xmlrpc.o xmlrpc.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c&lt;
+
+ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o&lt;
+Overwrite the libpthead library by the built-in one:">
 <meta name="author" content="map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]">
 <link rel="canonical" href="https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/">
 <meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -25,6 +58,7 @@ alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autob
 <link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -62,23 +96,89 @@ alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autob
 
     </style>
 </noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="Build shell-FM on DS-210J" />
-<meta property="og:description" content="How to build shell-fm on DS 210J Needed Package
+<meta property="og:description" content="How to build shell-fm on DS 210J
+Needed Package
+
 Checkout shell-fm sources
 git clone git://github.com/jkramer/shell-fm.git shell-fm&lt;
 Commands to run
-alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o getln." />
+alias cc=gcc
+cd shell-fm/source&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o playlist.o playlist.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o settings.o settings.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o xmlrpc.o xmlrpc.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c&lt;
+
+ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o&lt;
+Overwrite the libpthead library by the built-in one:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/" /><meta property="article:section" content="archive" />
-
-
+<meta property="article:published_time" content="2010-10-04T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2010-10-04T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Build shell-FM on DS-210J"/>
-<meta name="twitter:description" content="How to build shell-fm on DS 210J Needed Package
+<meta name="twitter:description" content="How to build shell-fm on DS 210J
+Needed Package
+
 Checkout shell-fm sources
 git clone git://github.com/jkramer/shell-fm.git shell-fm&lt;
 Commands to run
-alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o getln."/>
+alias cc=gcc
+cd shell-fm/source&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o playlist.o playlist.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o settings.o settings.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c&lt;
+cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o xmlrpc.o xmlrpc.c&lt;
+cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c&lt;
+
+ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o&lt;
+Overwrite the libpthead library by the built-in one:"/>
 
 
 <script type="application/ld+json">
@@ -107,15 +207,15 @@ alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autob
   "@type": "BlogPosting",
   "headline": "Build shell-FM on DS-210J",
   "name": "Build shell-FM on DS-210J",
-  "description": "How to build shell-fm on DS 210J Needed Package\nCheckout shell-fm sources\ngit clone git://github.com/jkramer/shell-fm.git shell-fm\u0026lt;\nCommands to run\nalias cc=gcc cd shell-fm/source\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o getln.",
+  "description": "How to build shell-fm on DS 210J Needed Package\nCheckout shell-fm sources\ngit clone git://github.com/jkramer/shell-fm.git shell-fm\u0026lt;\nCommands to run\nalias cc=gcc cd shell-fm/source\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c\u0026lt; cc -Os -Wall -MD -W -I./include/ \u0026amp;nbsp;-c -o playlist.o playlist.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c\u0026lt; cc -Os -Wall -MD -W -I./include/ \u0026amp;nbsp;-c -o settings.o settings.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c\u0026lt; cc -Os -Wall -MD -W -I./include/ \u0026amp;nbsp;-c -o xmlrpc.o xmlrpc.c\u0026lt; cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c\u0026lt; ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o\u0026lt; Overwrite the libpthead library by the built-in one:\n",
   "keywords": [
     
   ],
   "articleBody": "How to build shell-fm on DS 210J Needed Package\nCheckout shell-fm sources\ngit clone git://github.com/jkramer/shell-fm.git shell-fm\u003c\nCommands to run\nalias cc=gcc cd shell-fm/source\u003c cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c\u003c cc -Os -Wall -MD -W -I./include/ \u0026nbsp;-c -o playlist.o playlist.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c\u003c cc -Os -Wall -MD -W -I./include/ \u0026nbsp;-c -o settings.o settings.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c\u003c cc -Os -Wall -MD -W -I./include/ \u0026nbsp;-c -o xmlrpc.o xmlrpc.c\u003c cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c\u003c ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o\u003c Overwrite the libpthead library by the built-in one:\ncp /lib/libpthread.so.0 /opt/arm-none-linux-gnueabi/lib/libpthread-2.5.so gcc -o shell-fm -Os -Wall -MD -W -I./include/ main.c -lmad -lao -lpthread -ldl libshellfm.a Run shell-fm !\nOnce it is configured: (i use)\n./shell-fm -D /dev/dsp4 http://forum.buffalo.nas-central.org/viewtopic.php?f=69\u0026amp;t=17016\n",
   "wordCount" : "361",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2010-10-04T00:00:00Z",
+  "dateModified": "2010-10-04T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": {"image":"http://img2.blogblog.com/img/b16-rounded.gif","name":"Oct","url":"http://www.blogger.com/profile/10969884152933508554?rel=author"}
@@ -175,6 +275,8 @@ alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autob
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -207,74 +309,16 @@ alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autob
     </nav>
 </header>
 <main class="main">
+<header class="page-header">
+    <h1>Build shell-FM on DS-210J</h1>
+</header>
 
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a>&nbsp;»&nbsp;<a href="https://oct.zoy.org/archive/">Archives</a></div>
-    <h1 class="post-title">
-      Build shell-FM on DS-210J
-    </h1>
-    <div class="post-meta">2 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]
-
-</div>
-  </header> 
-  <div class="post-content"><h2 id="how-to-build-shell-fm-on-ds-210jspan">How to build shell-fm on DS 210J<!-- raw HTML omitted --><a hidden class="anchor" aria-hidden="true" href="#how-to-build-shell-fm-on-ds-210jspan">#</a></h2>
-<p><!-- raw HTML omitted -->Needed Package<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted -->Checkout shell-fm sources<!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted -->git clone git://github.com/jkramer/shell-fm.git shell-fm&lt;</p>
-<p><!-- raw HTML omitted -->Commands to run<!-- raw HTML omitted --></p>
-<pre tabindex="0"><code>alias cc=gcc
-cd shell-fm/source&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c&lt;
-cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o playlist.o playlist.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c&lt;
-cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o settings.o settings.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c&lt;
-cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o xmlrpc.o xmlrpc.c&lt;
-cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c&lt;
-
-ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o&lt;
-</code></pre><p>Overwrite the libpthead library by the built-in one:</p>
-<pre tabindex="0"><code>cp /lib/libpthread.so.0 /opt/arm-none-linux-gnueabi/lib/libpthread-2.5.so
-gcc -o shell-fm -Os -Wall -MD -W -I./include/ main.c -lmad -lao -lpthread -ldl libshellfm.a
-</code></pre><p><!-- raw HTML omitted -->Run shell-fm !<!-- raw HTML omitted --></p>
-<p>Once it is configured: (i use)</p>
-<pre tabindex="0"><code>./shell-fm -D /dev/dsp4
-</code></pre><p><a href="http://forum.buffalo.nas-central.org/viewtopic.php?f=69&amp;amp;t=17016">http://forum.buffalo.nas-central.org/viewtopic.php?f=69&amp;amp;t=17016</a></p>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
+<ul class="terms-tags">
+</ul>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

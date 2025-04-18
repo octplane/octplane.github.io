@@ -1,6 +1,7 @@
 ---
 title: COLLATE
-date: '2008-12-11 18:46'
+type: blog
+date: '2008-12-11'
 layout: post
 permalink: /2008/12/collate.html
 uuid: '3832825394751345562'

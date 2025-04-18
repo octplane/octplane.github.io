@@ -7,7 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>🚨 Git GPG and notifications | oct.zoy.org</title>
 <meta name="keywords" content="">
-<meta name="description" content="This article is pretty old, so be careful as its information could be out of date!
+<meta name="description" content="
+
+	This article is pretty old, so be careful as its information could be out of date!
+
+
 this article is for macOS only.
 If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.">
@@ -15,7 +19,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
 <link rel="canonical" href="https://oct.zoy.org/posts/git-gpg-and-notifications/">
 <meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -24,6 +28,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
 <link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/posts/git-gpg-and-notifications/">
 <noscript>
     <style>
         #theme-toggle,
@@ -61,7 +66,11 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
 
     </style>
 </noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="🚨 Git GPG and notifications" />
-<meta property="og:description" content="This article is pretty old, so be careful as its information could be out of date!
+<meta property="og:description" content="
+
+	This article is pretty old, so be careful as its information could be out of date!
+
+
 this article is for macOS only.
 If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these." />
@@ -72,7 +81,11 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="🚨 Git GPG and notifications"/>
-<meta name="twitter:description" content="This article is pretty old, so be careful as its information could be out of date!
+<meta name="twitter:description" content="
+
+	This article is pretty old, so be careful as its information could be out of date!
+
+
 this article is for macOS only.
 If you use git and gpg to sign your commits, then you&rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.
 Unfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these."/>
@@ -104,7 +117,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
   "@type": "BlogPosting",
   "headline": "🚨 Git GPG and notifications",
   "name": "🚨 Git GPG and notifications",
-  "description": "This article is pretty old, so be careful as its information could be out of date!\nthis article is for macOS only.\nIf you use git and gpg to sign your commits, then you\u0026rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.",
+  "description": " This article is pretty old, so be careful as its information could be out of date!\nthis article is for macOS only.\nIf you use git and gpg to sign your commits, then you\u0026rsquo;re probably used to sign you commits using a physical key that you have to insert and press with your finger when you are creating a commit.\nUnfortunately, there is no visible feedback in the console when git awaits for a yubikey touch and this means that you can sometime miss these.\n",
   "keywords": [
     
   ],
@@ -168,6 +181,8 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -207,7 +222,7 @@ Unfortunately, there is no visible feedback in the console when git awaits for a
     <h1 class="post-title">
       🚨 Git GPG and notifications
     </h1>
-    <div class="post-meta"><span title='2021-03-30 00:00:00 +0000 UTC'>March 30, 2021</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta">&lt;span title=&#39;2021-03-30 00:00:00 &#43;0000 UTC&#39;&gt;March 30, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min
 
 </div>
   </header> 
@@ -268,7 +283,7 @@ fatal: failed to write commit object
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

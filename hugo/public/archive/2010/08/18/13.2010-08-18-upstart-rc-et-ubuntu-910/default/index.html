@@ -7,12 +7,20 @@
 <meta name="robots" content="index, follow">
 <title>Upstart, rc et Ubuntu 9.10 | oct.zoy.org</title>
 <meta name="keywords" content="">
-<meta name="description" content="{% raw %}">
+<meta name="description" content="Comme vous le savez peut-être, la dernière version d&rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&rsquo;Upstart (ca s&rsquo;appelle comme ça) par rapport à rc.* sont multiples:
+
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &hellip;)
+parallélisme du démarrage des démons  (lié au premier point)
+monitoring des démons et respawn lorsqu&rsquo;ils meurent
+pre/post-scripts facile à rajouter
+configuration aisée
+
+Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
 <meta name="author" content="map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]">
 <link rel="canonical" href="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
 <meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -21,6 +29,7 @@
 <link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,15 +67,31 @@
 
     </style>
 </noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="Upstart, rc et Ubuntu 9.10" />
-<meta property="og:description" content="{% raw %}" />
+<meta property="og:description" content="Comme vous le savez peut-être, la dernière version d&rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&rsquo;Upstart (ca s&rsquo;appelle comme ça) par rapport à rc.* sont multiples:
+
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &hellip;)
+parallélisme du démarrage des démons  (lié au premier point)
+monitoring des démons et respawn lorsqu&rsquo;ils meurent
+pre/post-scripts facile à rajouter
+configuration aisée
+
+Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/" /><meta property="article:section" content="archive" />
-<meta property="article:published_time" content="2010-08-18T15:21:00&#43;00:00" />
-<meta property="article:modified_time" content="2010-08-18T15:21:00&#43;00:00" />
+<meta property="article:published_time" content="2010-08-18T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2010-08-18T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Upstart, rc et Ubuntu 9.10"/>
-<meta name="twitter:description" content="{% raw %}"/>
+<meta name="twitter:description" content="Comme vous le savez peut-être, la dernière version d&rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&rsquo;Upstart (ca s&rsquo;appelle comme ça) par rapport à rc.* sont multiples:
+
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &hellip;)
+parallélisme du démarrage des démons  (lié au premier point)
+monitoring des démons et respawn lorsqu&rsquo;ils meurent
+pre/post-scripts facile à rajouter
+configuration aisée
+
+Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin."/>
 
 
 <script type="application/ld+json">
@@ -95,15 +120,15 @@
   "@type": "BlogPosting",
   "headline": "Upstart, rc et Ubuntu 9.10",
   "name": "Upstart, rc et Ubuntu 9.10",
-  "description": "{% raw %}",
+  "description": "Comme vous le savez peut-être, la dernière version d\u0026rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d\u0026rsquo;Upstart (ca s\u0026rsquo;appelle comme ça) par rapport à rc.* sont multiples:\ndémarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, \u0026hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu\u0026rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l\u0026rsquo;air cool. J\u0026rsquo;y reviendrais à la fin.\n",
   "keywords": [
     
   ],
-  "articleBody": "{% raw %}\n",
-  "wordCount" : "3",
+  "articleBody": "Comme vous le savez peut-être, la dernière version d’Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d’Upstart (ca s’appelle comme ça) par rapport à rc.* sont multiples:\ndémarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, …) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu’ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l’air cool. J’y reviendrais à la fin.\nTout a commencé quand lors du reboot d’une machine dev’ à Fotopedia, je constate qu’un démon (un mongodb) a été killé -9 au lieu d’être arrêté normalement. Ce démon était géré par “runit”, un autre système de gestion de services qu’on utilise à Fotopédia depuis longtemps pour pallier les faiblesses des scripts rc* (en particulier, écrire les scripts pour init.d pour des démons qui ne forkent pas est un délicieux cauchemar que je laisse à l’exercice du lecteur). Bref, on utilisait runit, qui est super simple à configurer : un script dans /etc/sv/mondémon/run un lien depuis /etc/service vers ce folder, on attends 5 secondes et le démon démarre le système.\nVoyant que mon mongodb est KILL -9, j’enquête, je fais des expériences et je m’aperçois que visiblement, runit est aussi KILL -9 par le système lors du shutdown pour une raison que j’ignore (oui, le démon runit n’est pas très bavard sur ses conditions de vie et de mort).\nCa craint, surtout que mon mongo pourrait rester dans un état inconsistent si on le tue trop violemment. En plus, il pose un lock sur le fs et refuse de démarrer s’il est encore là plus tard (donc en particulier si on le KILL -9).\nEn ne cherchant pas les origines de la mort violent de runit lors du shutdown, je commets ma première erreur.\nJ’examine les alternatives, et je finis par me dire (et là, je commets ma deuxième erreur, liée à la première): Puisque c’est Upstart qui fait tourner runit sur mon Ubuntu (là pour le coup, je pense que c’est les packages de la distro qui font ca), et que j’utilise runit pour lancer mon mongodb, je vais faire tourner mon mongodb directement dans Runit. Comme dirait mon grand père, moins y a de code, moins y a de bug.\nAussitôt dit, aussitôt fait, je réécris un partie des règles Chef pour migrer d’un système à l’autre, je migre les 12 mongos qu’on a en testing, je teste, ça marche (enfin, les démons tournent dans Upstart sans trop de complication, mettent leurs logs au bon endroit et logrotatent correctement).\nFièrement, je reboote ma machine et au boot d’après, je m’aperçois que les mongodb ont été KILLés -9 lors du shutdown, encore une fois. Bref, quelque chose se moque de moi.\nJe rajoute du log dans mongodb, je recommence et je m’aperçois, vu les logs, que mongo s’arrête bien avant le reboot mais redémarre quasi aussitôt sans jamais finir sa séquence de démarrage (et tout ca AVANT que la machine ne reboote). Au boot d’après, le mongodb qui a été interrompu violemment (puisque les logs le sont aussi) a posé son lock et mon nouveau démon refuse de démarrer. Damned.\nJe me met donc à rajouter des informations de débug dans les post et les pré-scripts Upstart de mon démon pour voir par exemple ce qui est en train de se passer sur la machine lors du deuxième démarrage avant le reboot. Je m’aperçois avec horreur que le deuxième démarrage du",
+  "wordCount" : "940",
   "inLanguage": "en",
-  "datePublished": "2010-08-18T15:21:00Z",
-  "dateModified": "2010-08-18T15:21:00Z",
+  "datePublished": "2010-08-18T00:00:00Z",
+  "dateModified": "2010-08-18T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": {"image":"http://img2.blogblog.com/img/b16-rounded.gif","name":"Oct","url":"http://www.blogger.com/profile/10969884152933508554?rel=author"}
@@ -163,6 +188,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -202,12 +229,36 @@
     <h1 class="post-title">
       Upstart, rc et Ubuntu 9.10
     </h1>
-    <div class="post-meta"><span title='2010-08-18 15:21:00 +0000 UTC'>August 18, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]
+    <div class="post-meta">&lt;span title=&#39;2010-08-18 00:00:00 &#43;0000 UTC&#39;&gt;August 18, 2010&lt;/span&gt;&amp;nbsp;·&amp;nbsp;5 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]
 
 </div>
   </header> 
-  <div class="post-content"><p>{% raw %}</p>
-<!-- raw HTML omitted -->
+  <div class="post-content"><p>Comme vous le savez peut-être, la dernière version d&rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&rsquo;Upstart (ca s&rsquo;appelle comme ça) par rapport à rc.* sont multiples:</p>
+<ul>
+<li>démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &hellip;)</li>
+<li>parallélisme du démarrage des démons  (lié au premier point)</li>
+<li>monitoring des démons et respawn lorsqu&rsquo;ils meurent</li>
+<li>pre/post-scripts facile à rajouter</li>
+<li>configuration aisée</li>
+</ul>
+<p>Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.</p>
+<p>Tout a commencé quand lors du reboot d&rsquo;une machine dev&rsquo; à Fotopedia, je constate qu&rsquo;un démon (un mongodb) a été killé -9 au lieu d&rsquo;être arrêté normalement. Ce démon était géré par &ldquo;runit&rdquo;, un autre système de gestion de services qu&rsquo;on utilise à Fotopédia depuis longtemps pour pallier les faiblesses des scripts rc* (en particulier, écrire les scripts pour init.d pour des démons qui ne forkent pas est un délicieux cauchemar que je laisse à l&rsquo;exercice du lecteur). Bref, on utilisait runit, qui est super simple à configurer : un script dans /etc/sv/mondémon/run un lien depuis /etc/service vers ce folder, on attends 5 secondes et le démon démarre le système.</p>
+<p>Voyant que mon mongodb est KILL -9, j&rsquo;enquête, je fais des expériences et je m&rsquo;aperçois que visiblement, runit est aussi KILL -9 par le système lors du shutdown pour une raison que j&rsquo;ignore (oui, le démon runit n&rsquo;est pas très bavard sur ses conditions de vie et de mort).</p>
+<p>Ca craint, surtout que mon mongo pourrait rester dans un état inconsistent si on le tue trop violemment. En plus, il pose un lock sur le fs et refuse de démarrer s&rsquo;il est encore là plus tard (donc en particulier si on le KILL -9).</p>
+<p>En ne cherchant pas les origines de la mort violent de runit lors du<!-- raw HTML omitted -->
+shutdown, je commets ma première erreur.</p>
+<p>J&rsquo;examine les alternatives, et je finis par me dire (et là, je commets ma deuxième erreur, liée à la première): Puisque c&rsquo;est Upstart qui fait tourner runit sur mon Ubuntu (là pour le coup, je pense que c&rsquo;est les packages de la distro qui font ca), et que j&rsquo;utilise runit pour lancer mon mongodb, je vais faire tourner mon mongodb directement dans Runit. Comme dirait mon grand père, moins y a de code, moins y a de bug.</p>
+<p>Aussitôt dit, aussitôt fait, je réécris un partie des règles Chef pour migrer d&rsquo;un système à l&rsquo;autre, je migre les 12 mongos qu&rsquo;on a en testing, je teste, ça marche (enfin, les démons tournent dans Upstart sans trop de complication, mettent leurs logs au bon endroit et logrotatent correctement).</p>
+<p>Fièrement, je reboote ma machine et au boot d&rsquo;après, je m&rsquo;aperçois que les mongodb ont été KILLés -9 lors du shutdown, encore une fois. Bref, quelque chose se moque de moi.</p>
+<p>Je rajoute du log dans mongodb, je recommence et je m&rsquo;aperçois, vu les logs, que mongo s&rsquo;arrête bien avant le reboot mais redémarre quasi aussitôt sans jamais finir sa séquence de démarrage (et tout ca AVANT que la machine ne reboote). Au boot d&rsquo;après, le mongodb qui a été interrompu violemment (puisque les logs le sont aussi) a posé son lock et mon nouveau démon refuse de démarrer. Damned.</p>
+<p>Je me met donc à rajouter des informations de débug dans les post et les pré-scripts Upstart de mon démon pour voir par exemple ce qui est en train de se passer sur la machine lors du deuxième démarrage avant le reboot. Je m&rsquo;aperçois avec horreur que le deuxième démarrage du&lt;br Mongo a lieu en plein runlevel 6, alors que la machine est en plein shutdown et donc, normalement, que personne ne se lance.</p>
+<p>Je finis par tomber sur la directive <em>respawn</em> que j&rsquo;avais incluse dans les scripts Upstart pour mongo. Le doute jaillit dans mon esprit; je la commente, je teste. Tout marche bien. L&rsquo;explication:</p>
+<p>Sur Ubuntu 9.10, la gestion des runlevels et confiée à &ldquo;rc&rdquo; qui est un des démons gérés par Upstart. Lorsque la machine entre en runlevel 6, elle essaye de tuer tous les process avec un kill classique, celui-ci réussit. Cependant, Upstart s&rsquo;aperçoit que mon mongodb vient d&rsquo;être terminé et le relance aussitôt. Quelques instants plus tard le runlevel 6 envoie un KILL -9 aux démons qui n&rsquo;ont pas voulu s&rsquo;arrêter; tuant violemment le Mongo (et tout les démons qui sont en respawn dans Upstart).</p>
+<p>Morale numéro 1: j&rsquo;ai remplacé <em>respawn</em> de Upstart par un monit qui fait pareil mais à côté. Comme monit est lancé par rc, lorsque la machine se shutdowne les démons s&rsquo;arrêtent correctement.</p>
+<p>Morale numéro 2: J&rsquo;ai fini par modifier la conf Upstart de Runit qui précisait elle aussi <em>respawn</em>, ce paramètre expliquait que runit ne terminait par correctement et que mes mongodbs étaient aussi tués violemment. En enlevant le respawn de runit, rc 6 peut tuer runit correctement, celui-ci peut donc tuer ses démons enfants correctement et mes mongos sont proprement shutdownés. On peut donc bien utiliser runit (qui est quand même un poil plus confort que upstart à gérer).</p>
+<p>Evidemment, une fois qu&rsquo;on réalise ça, il faut rollbacker TOUTE la configuration de startup et de monitoring de mes mongos et remigrer mes 12 mongos sur mon environnement de test. Ca n&rsquo;a pris que 30 minutes avec Chef.</p>
+<p>Morale numéro 3: On dirait bien que l&rsquo;intégration d&rsquo;Upstart dans 9.10 n&rsquo;est pas complètement finie. Je ne dirais pas pourrie parce que si j&rsquo;avais fait attention, j&rsquo;aurai pas perdu 2 jours, mais bon. Quand même.</p>
+<p>Au final, même si c&rsquo;est relativement prometteur comme système, le fait que Canonical ait sortie la 9.10 pas complètement intégrée dans upstart est manifestement un énorme problème.</p>
 
 
   </div>
@@ -220,7 +271,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

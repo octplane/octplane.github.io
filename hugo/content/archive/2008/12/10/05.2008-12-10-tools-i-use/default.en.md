@@ -1,6 +1,7 @@
 ---
 title: 'Tools I use'
-date: '2008-12-10 12:29'
+type: blog
+date: '2008-12-10'
 layout: post
 permalink: /2008/12/tools-i-use.html
 uuid: '6116021433761771491'

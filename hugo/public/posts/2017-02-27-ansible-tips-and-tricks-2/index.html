@@ -13,7 +13,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
 <link rel="canonical" href="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/">
 <meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -22,6 +22,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
 <link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -98,7 +99,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
   "@type": "BlogPosting",
   "headline": "🎯 Ansible Tips and Tricks",
   "name": "🎯 Ansible Tips and Tricks",
-  "description": "If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.\nI assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.",
+  "description": "If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.\nI assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.\n",
   "keywords": [
     
   ],
@@ -162,6 +163,8 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -201,7 +204,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
     <h1 class="post-title">
       🎯 Ansible Tips and Tricks
     </h1>
-    <div class="post-meta"><span title='2017-02-27 00:00:00 +0000 UTC'>February 27, 2017</span>&nbsp;·&nbsp;10 min
+    <div class="post-meta">&lt;span title=&#39;2017-02-27 00:00:00 &#43;0000 UTC&#39;&gt;February 27, 2017&lt;/span&gt;&amp;nbsp;·&amp;nbsp;10 min
 
 </div>
   </header> 
@@ -364,7 +367,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">groups</span>: <span style="color:#ae81ff">wheel</span>
 </span></span></code></pre></div><p><strong>Extend role so that they can fulfil several tasks.</strong></p>
-<h3 id="8---be-careful-with-set_fact">8 - Be careful with <strong>set_fact</strong><a hidden class="anchor" aria-hidden="true" href="#8---be-careful-with-set_fact">#</a></h3>
+<h3 id="8---be-careful-with-set_">8 - Be careful with <strong>set_fact</strong><a hidden class="anchor" aria-hidden="true" href="#8---be-careful-with-set_">#</a></h3>
 <p><code>set_fact</code> creates variable in your Ansible script, at runtime, to have a mode dynamic behaviour. It&rsquo;s very useful. However, these on-the-fly-created variables have several drawbacks, and you need to carefully think about it before creating one:</p>
 <ul>
 <li>its priority is rather high</li>
@@ -422,7 +425,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

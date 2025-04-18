@@ -1,6 +1,7 @@
 ---
 title: 'Ruby-io-tail at version 0.0.3'
-date: '2012-03-12 14:08'
+type: blog
+date: '2012-03-12'
 layout: post
 permalink: /2012/03/ruby-io-tail-at-version-003.html
 uuid: '1607478211497839060'

@@ -1,6 +1,7 @@
 ---
 title: 'Intern Leaving'
-date: '2010-08-18 11:59'
+type: blog
+date: '2010-08-18'
 layout: post
 permalink: /2010/08/intern-leaving.html
 uuid: '1891641022417713959'

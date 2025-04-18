@@ -1,5 +1,6 @@
 ---
-date: '2016-03-04 09:03:07'
+type: blog
+date: '2016-03-04'
 generator: pinboard-to-md
 image: /images/map-846083_640.jpg
 taxonomy:

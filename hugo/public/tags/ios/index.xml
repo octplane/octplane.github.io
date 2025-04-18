@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ios on oct.zoy.org</title>
+    <title>Ios on oct.zoy.org</title>
     <link>https://oct.zoy.org/tags/ios/</link>
-    <description>Recent content in ios on oct.zoy.org</description>
+    <description>Recent content in Ios on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Dec 2015 13:12:42 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Must-Have iOS Apps, 2015 Edition</title>
       <link>https://oct.zoy.org/archive/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</link>
-      <pubDate>Tue, 29 Dec 2015 13:12:42 +0000</pubDate>
+      <pubDate>Tue, 29 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</guid>
-      <description>This article made me buy Workflow and Pythonista. There are numerous very useful tools for your iDevices.
-What are your essential applications?</description>
-    </item>
-    
-    <item>
-      <title>Heroes of loot</title>
-      <link>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default.fr/</guid>
-      <description>Heroes of Loot, un peu le Gauntlet des années 2010. Meurtres, projectiles et petits démons à la pelle.
-Encore un jeu que j&amp;rsquo;ai gardé dans mon radar toucharcade pendant longtemps avant qu&amp;rsquo;il ne se décide à devenir gratuit pendant quelques heures (sinon, c&amp;rsquo;est 1,79€ ma bonne dame). Ayant sauté sur l&amp;rsquo;occasion, je peux vous raconter ce que je pense de ce petit Rogue-like, Heroes of loot par OrangePixel. Au départ, ça ferait presque penser à Gauntlet, son mémorable ancêtre sur Atari St.</description>
-    </item>
-    
-    <item>
-      <title>Train Yard</title>
-      <link>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default.fr/</guid>
-      <description>Des trains, des gares et déraillent.
-Le petit train dans l&amp;rsquo;écran Train Yard par Matt Rix, au départ, on se dit que c&amp;rsquo;est vraiment un jeu pas très malin. On a la gare de départ, celle d&amp;rsquo;arrivée et entre les deux on place les rails pour que la petite locomotive arrive à destination. On place les rails là où on a envie, puis on clique sur le bouton marche et les trains se mettent en route et on ne peut plus rien changer avant que tout ne soit fini.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.macstories.net/roundups/my-must-have-ios-apps-2015-edition/&#34;&gt;This article&lt;/a&gt; made me buy Workflow and Pythonista. There are numerous very useful tools for your iDevices.&lt;/p&gt;
+&lt;p&gt;What are your essential applications?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Train Yard</title>
       <link>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default/</guid>
-      <description>Des trains, des gares et déraillent.
-Le petit train dans l&amp;rsquo;écran Train Yard par Matt Rix, au départ, on se dit que c&amp;rsquo;est vraiment un jeu pas très malin. On a la gare de départ, celle d&amp;rsquo;arrivée et entre les deux on place les rails pour que la petite locomotive arrive à destination. On place les rails là où on a envie, puis on clique sur le bouton marche et les trains se mettent en route et on ne peut plus rien changer avant que tout ne soit fini.</description>
+      <description>&lt;p&gt;Des trains, des gares et déraillent.&lt;/p&gt;
+&lt;h3 id=&#34;le-petit-train-dans-lécran&#34;&gt;Le petit train dans l&amp;rsquo;écran&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/fr/app/trainyard/id348719156?mt=8&amp;amp;uo=4&#34;&gt;Train Yard&lt;/a&gt; par &lt;a href=&#34;https://twitter.com/MattRix/&#34;&gt;Matt Rix&lt;/a&gt;, au départ, on se dit que c&amp;rsquo;est vraiment un jeu pas très malin. On a la gare de départ, celle d&amp;rsquo;arrivée et entre les deux on place les rails pour que la petite locomotive arrive à destination. On place les rails là où on a envie, puis on clique sur le bouton marche et les trains se mettent en route et on ne peut plus rien changer avant que tout ne soit fini. Si on interrompt le déroulement, tout est annulé et on peut modifier le parcours avant de relancer les locos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Heroes of loot</title>
+      <link>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</guid>
+      <description>&lt;p&gt;Heroes of Loot, un peu le Gauntlet des années 2010. Meurtres, projectiles et petits démons à la pelle.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;IMG_2877.PNG?cropResize=600,600&#34; alt=&#34;le jeu est entrecoupé de petites séquences avec des blagues pourries. Ca fait sourire.&#34;  /&gt;
+&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Encore un jeu que j&amp;rsquo;ai gardé dans mon radar &lt;a href=&#34;https://itunes.apple.com/fr/app/toucharcade-best-new-games/id509945427?mt=8&amp;amp;uo=4&#34;&gt;toucharcade&lt;/a&gt; pendant longtemps avant qu&amp;rsquo;il ne se décide à devenir gratuit pendant quelques heures (sinon, c&amp;rsquo;est 1,79€ ma bonne dame). Ayant sauté sur l&amp;rsquo;occasion, je peux vous raconter ce que je pense de ce petit Rogue-like, &lt;a href=&#34;https://itunes.apple.com/fr/app/heroes-of-loot/id688743207?mt=8&amp;amp;uo=4&#34;&gt;Heroes of loot&lt;/a&gt; par &lt;a href=&#34;http://www.orangepixel.net/heroesofloot/&#34;&gt;OrangePixel&lt;/a&gt;. Au départ, ça ferait presque penser à &lt;a href=&#34;http://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)&#34;&gt;Gauntlet&lt;/a&gt;, son mémorable ancêtre sur Atari St. De la 2D old-school avec des pixels parfois gros et gras mais bien agencés quand même. On choisit sa classe de personnage et c&amp;rsquo;est parti pour des explorations de donjons dans lesquelles on nous donne de plus en plus de fil à retordre. Petits monstres, puis monstres à projectiles, puis gros monstres qui font peur. Des coffres, des petits prisonniers à libérer, des magasins qui vendent (trop) cher des pièces d&amp;rsquo;équipement pour devenir invisible, se protéger, restaurer sa santé, des salles secrètes avec du butin à chaparder.&lt;/p&gt;</description>
     </item>
     
   </channel>

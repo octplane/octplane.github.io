@@ -1,6 +1,7 @@
 ---
 title: 'A propos'
-date: '2014-02-04 09:00'
+type: blog
+date: '2014-02-04'
 layout: post
 moot_legacy_id: 5
 taxonomy:

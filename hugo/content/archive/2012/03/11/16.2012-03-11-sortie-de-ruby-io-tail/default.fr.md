@@ -1,6 +1,8 @@
 ---
 title: 'Sortie de ruby io tail'
-date: '2012-03-11 11:19'
+type: blog
+type: blog
+date: '2012-03-11'
 layout: post
 permalink: /2012/03/sortie-de-ruby-io-tail.html
 uuid: '1160669586505724972'

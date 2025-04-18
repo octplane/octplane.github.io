@@ -5,16 +5,20 @@
     <link>https://oct.zoy.org/tags/aws/</link>
     <description>Recent content in AWS on oct.zoy.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oct.zoy.org/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redundancy in Amazon EC2</title>
       <link>https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/</guid>
-      <description>Redundancy in AWS EC2 This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.
-AWS is the branch of a company everybody knows.
-Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world.</description>
+      <description>&lt;h1 id=&#34;redundancy-in-aws-ec2&#34;&gt;Redundancy in AWS EC2&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;AWS is the branch of a company everybody knows.&lt;/p&gt;
+&lt;p&gt;Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all &lt;a href=&#34;http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html&#34;&gt;around the world&lt;/a&gt;. In each region, they own several data-centers connected together by high speed links, and to the internet via different peers. Their electric connectivity is also different and AWS calls that &lt;strong&gt;availability zones&lt;/strong&gt;. A given zone can communicate with its neighbors, but Amazon guarantees you that no two zones should break at the same time (although such issue has already arrived in the past).&lt;/p&gt;</description>
     </item>
     
   </channel>

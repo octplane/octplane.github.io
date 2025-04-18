@@ -1,6 +1,8 @@
 ---
 title: 'Heroes of loot'
-date: '2014-04-16 09:00'
+type: blog
+type: blog
+date: '2014-04-16'
 layout: post
 moot_legacy_id: 9
 cover_image: 'http://www.orangepixel.net/heroesofloot/wp-content/themes/OrangePixel/images/gs_wallpaper1.png'

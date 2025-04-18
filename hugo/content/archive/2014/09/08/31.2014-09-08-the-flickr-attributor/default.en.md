@@ -1,6 +1,7 @@
 ---
 title: 'Introducing the Flickr Attributor '
-date: '2014-09-08 09:00'
+type: blog
+date: '2014-09-08'
 layout: post
 tags:
     - flickr

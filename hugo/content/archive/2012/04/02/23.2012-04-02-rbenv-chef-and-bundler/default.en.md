@@ -1,6 +1,7 @@
 ---
 title: 'Rbenv, chef and bundler'
-date: '2012-04-02 16:03'
+type: blog
+date: '2012-04-02'
 layout: post
 permalink: /2012/04/rbenv-chef-and-bundler.html
 uuid: '7203413174712314813'

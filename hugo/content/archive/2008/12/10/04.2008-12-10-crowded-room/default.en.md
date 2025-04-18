@@ -1,6 +1,7 @@
 ---
 title: 'Crowded room.'
-date: '2008-12-10 13:04'
+type: blog
+date: '2008-12-10'
 layout: post
 tags:
     - admin

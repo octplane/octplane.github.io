@@ -1,6 +1,8 @@
 ---
 title: 'Démarrer Node.js en 8 secondes'
-date: '2014-03-07 09:00'
+type: blog
+type: blog
+date: '2014-03-07'
 layout: post
 moot_legacy_id: 8
 cover_image: 'http://nodejs.org/images/logos/nodejs-1280x1024.png'

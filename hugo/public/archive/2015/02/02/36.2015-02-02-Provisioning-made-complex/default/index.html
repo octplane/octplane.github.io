@@ -7,13 +7,14 @@
 <meta name="robots" content="index, follow">
 <title>Provisioning made more complex | oct.zoy.org</title>
 <meta name="keywords" content="code, rant">
-<meta name="description" content="Something’s going wrong.
+<meta name="description" content="
+Something’s going wrong.
 I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:">
 <meta name="author" content="">
 <link rel="canonical" href="https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
 <meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://oct.zoy.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
@@ -22,6 +23,7 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
 <link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,16 +61,18 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
 
     </style>
 </noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="Provisioning made more complex" />
-<meta property="og:description" content="Something’s going wrong.
+<meta property="og:description" content="
+Something’s going wrong.
 I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/" /><meta property="article:section" content="archive" />
-<meta property="article:published_time" content="2015-02-02T18:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2015-02-02T18:00:00&#43;00:00" />
+<meta property="article:published_time" content="2015-02-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2015-02-02T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Provisioning made more complex"/>
-<meta name="twitter:description" content="Something’s going wrong.
+<meta name="twitter:description" content="
+Something’s going wrong.
 I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:"/>
 
 
@@ -98,15 +102,15 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
   "@type": "BlogPosting",
   "headline": "Provisioning made more complex",
   "name": "Provisioning made more complex",
-  "description": "Something’s going wrong.\nI, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:",
+  "description": " Something’s going wrong.\nI, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:\n",
   "keywords": [
     "code", "rant"
   ],
   "articleBody": " Something’s going wrong.\nI, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:\nWHICH ONE AM I TO USE ?\nAnd the fact is that each of them has its niceties and weaknesses. Most of them are backed by more or less large companies that can deliver certifications, support and everything cash can buy. But the truth is that choosing the right framework is difficult without too much prior experience. Our choice includes:\ncfengine puppet chef ansible salt stack Each of these tools will have you deploy daemons, clients, SSL certificates, HTTP proxies and write some code before you can decide if the framework is for you. The technological price is quite huge and next times somebody trolls you with the fact that you are using 70% of the AWS services for your infrastructure, ask this ugly person whether its provisioning infrastructure is not « vendor-locked » too. Your provisioning tool must have some special abilities to be useful to you:\nIt should run quickly on your grid, without creating too much load on the master, if it needs a master. Most of the time is spent in I/O, but sometimes, synchronous starts will load the master a lot: the underlying technology can become a problem (I’m looking at you ruby). It should be able to run « on-demand » so that you can trigger a grid update any time you want. It should be resilient. On this point, I tend to favorize provisioning tools that are not using the same taxonomy: tag: [backup] language as my main platform application, if possible. This way, when you start messing with runtime versions, you can be sure your provisioning tools will still be running… Deploying a ruby include fix on 30 servers by hand is painful, especially if you don’t have any csshx configuration around. It should be able to do some magic for you: you want to be able to add a frontend server on your grid and have the whole cluster reconfigured to use this new server automatically. This usually requires a search-capable master server for your provisioning (incompatible with master-less tools ?). It should be able to generate all your monitoring configuration from its own state. It should converge quickly. 2 steps convergence can be a PITA when you are in a hurry (incompatible with imperative tools?). Its logs should be easily accessible, centralized and API-manageable so that you can build a dashboard (or have it built-in?) with the state of the runs on your grid, have the ability to restart individual runs on servers. Last time I checked, chef was almost the right tool and ansible, very close to it. But I’m still looking for the next tool…\nWhat’s your favorite provisioning tool? And Why?\n",
   "wordCount" : "513",
   "inLanguage": "en",
-  "datePublished": "2015-02-02T18:00:00Z",
-  "dateModified": "2015-02-02T18:00:00Z",
+  "datePublished": "2015-02-02T00:00:00Z",
+  "dateModified": "2015-02-02T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/"
@@ -162,6 +166,8 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -195,58 +201,25 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
 </header>
 <main class="main">
 
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a>&nbsp;»&nbsp;<a href="https://oct.zoy.org/archive/">Archives</a></div>
-    <h1 class="post-title">
-      Provisioning made more complex
+<header class="page-header">
+    <h1>Provisioning made more complex <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
     </h1>
-    <div class="post-meta"><span title='2015-02-02 18:00:00 +0000 UTC'>February 2, 2015</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"></div>
+</header>
 
+<div id="searchbox">
+    <input id="searchInput" autofocus placeholder="Provisioning made more complex ↵"
+        aria-label="search" type="search" autocomplete="off">
+    <ul id="searchResults" aria-label="search results"></ul>
 </div>
-  </header> 
-  <div class="post-content"><!-- raw HTML omitted -->
-<p>Something’s going wrong.</p>
-<p>I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:</p>
-<p><strong>WHICH ONE AM I TO USE ?</strong></p>
-<p>And the fact is that each of them has its niceties and weaknesses. Most of them are backed by more or less large companies that can deliver certifications, support and everything cash can buy. But the truth is that choosing the right framework is difficult without too much prior experience. Our choice includes:</p>
-<ul>
-<li><a href="http://cfengine.com/">cfengine</a></li>
-<li><a href="https://puppetlabs.com/">puppet</a></li>
-<li><a href="https://www.chef.io/chef/">chef</a></li>
-<li><a href="http://www.ansible.com/home">ansible</a></li>
-<li><a href="http://saltstack.com/">salt stack</a></li>
-</ul>
-<p>Each of these tools will have you deploy daemons, clients, SSL certificates, HTTP proxies and write some code before you can decide if the framework is for you. The technological price is quite huge and next times somebody trolls you with the fact that you are using 70% of the AWS services for your infrastructure, ask this ugly person whether its provisioning infrastructure is not « vendor-locked » too.
-Your provisioning tool must have some special abilities to be useful to you:</p>
-<ul>
-<li>It should run quickly on your grid, without creating too much load on the master, if it needs a master. Most of the time is spent in I/O, but sometimes, synchronous starts will load the master a lot: the underlying technology can become a problem (I’m looking at you ruby).</li>
-<li>It should be able to run « on-demand » so that you can trigger a grid update any time you want.</li>
-<li>It should be resilient. On this point, I tend to favorize provisioning tools that are not using the same taxonomy:
-tag: [backup]
-language as my main platform application, if possible. This way, when you start messing with runtime versions, you can be sure your provisioning tools will still be running… Deploying a ruby <code>include</code> fix on 30 servers by hand is painful, especially if you don’t have any <a href="https://code.google.com/p/csshx/">csshx</a> configuration around.</li>
-<li>It should be able to do some magic for you: you want to be able to add a frontend server on your grid and have the whole cluster reconfigured to use this new server automatically. This usually requires a search-capable master server for your provisioning (incompatible with master-less tools ?).</li>
-<li>It should be able to generate all your monitoring configuration from its own state.</li>
-<li>It should converge quickly. 2 steps convergence can be a PITA when you are in a hurry (incompatible with imperative tools?).</li>
-<li>Its logs should be easily accessible, centralized and API-manageable so that you can build a dashboard (or have it built-in?) with the state of the runs on your grid, have the ability to restart individual runs on servers.</li>
-</ul>
-<p>Last time I checked, <code>chef</code> was almost the right tool and <code>ansible</code>, very close to it. But I’m still looking for the next tool…</p>
-<p>What’s your favorite provisioning tool? And Why?</p>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://oct.zoy.org/tags/code/">code</a></li>
-      <li><a href="https://oct.zoy.org/tags/rant/">rant</a></li>
-    </ul>
-  </footer>
-</article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

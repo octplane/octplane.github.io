@@ -1,6 +1,7 @@
 ---
 title: 'Catchup TV sous OSX (ou comment faire du replay facile)'
-date: '2015-10-08 14:05'
+type: blog
+date: '2015-10-08'
 layout: post
 tags:
     - python

@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://oct.zoy.org/archive/index.xml">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/">
 <noscript>
     <style>
         #theme-toggle,
@@ -121,6 +122,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -164,42 +167,60 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Intern Leaving
+    <h2>Open-uri preventing redirects from https to http
     </h2>
   </header>
   <div class="entry-content">
-    <p>Today, our intern Wilfred is going away after 5 or 6 weeks of internship. He worked on monitoring the Google page rank of our pages, and of given keywords we want to follow at Fotopedia. Of course, he mainly did ruby code, with mongo, redis/resque and protoviz graphs.
-We are now almost able to identify the progress of the rank of most of our page across time. This will be very useful in a near future....</p>
+    <p>Because it assumes it’s insecure. That’s quite annoying and should be configurable. def OpenURI.redirectable?(uri1, uri2) true end This monkey-patch fixes the issue and remove the check. A bug exists for the stdlib http://bugs.ruby-lang.org/issues/859 but fixes just the other way round.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Intern Leaving" href="https://oct.zoy.org/archive/2010/08/18/12.2010-08-18-intern-leaving/default/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2012-03-12 00:00:00 &#43;0000 UTC&#39;&gt;March 12, 2012&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Open-uri preventing redirects from https to http" href="https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Introducing the Flickr Attributor 
+    <h2>Ruby-io-tail at version 0.0.3
     </h2>
   </header>
   <div class="entry-content">
-    <p>Share and respect the license ! What’s wrong with Creative Commons picture sharing ? Since twitter started supporting images in post, most clients now have the ability to display these pictures along with the post.
-Adding a picture to a tweet increases clicks, retweets and favorites and will improve your social communication!
-Unfortunately, your photos might not be good enough to illustrate your point, so you might want to use other people’s photos....</p>
+    <p>The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.
+As usual, the gem is available from: https://rubygems.org/gems/io-tail
+</p>
   </div>
-  <footer class="entry-footer">2 min</footer>
-  <a class="entry-link" aria-label="post link to Introducing the Flickr Attributor " href="https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2012-03-12 00:00:00 &#43;0000 UTC&#39;&gt;March 12, 2012&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Ruby-io-tail at version 0.0.3" href="https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Les espaces insécables sous OSX
+    <h2>Sortie de ruby io tail
     </h2>
   </header>
   <div class="entry-content">
-    <p>Hej, J’ai lu hier l’article de Bruno Michel qui parle des espaces insécables pour les développeurs et je me suis rappelé de l’horreur qu’il y a à taper sous OSX, avec un clavier français les commandes suivantes:
-ps aux | grep toto En général, on relache les touches alt&#43;shift un tout petit peu trop tard et le clavier OSX nous colle alors un joli espace insécable à la place de l’espace classique juste après le pipe :...</p>
+    <p>Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d’un fichier de journal ou la sortie d’un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.
+Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d’IO à suivre et appeler un seul point d’entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d’un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier. Ce project est un fork amical de Florian Frank ( l’auteur de https://github.com/flori/file-tail) auquel j’ai rajouté la possibilité de suivre la sortie d’un processus extérieur. Pour plus d’information:
+...</p>
   </div>
-  <footer class="entry-footer">1 min</footer>
-  <a class="entry-link" aria-label="post link to Les espaces insécables sous OSX" href="https://oct.zoy.org/archive/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default.fr/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2012-03-11 00:00:00 &#43;0000 UTC&#39;&gt;March 11, 2012&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Sortie de ruby io tail" href="https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Build shell-FM on DS-210J
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to build shell-fm on DS 210J Needed Package
+Checkout shell-fm sources
+git clone git://github.com/jkramer/shell-fm.git shell-fm&lt;
+Commands to run
+alias cc=gcc cd shell-fm/source&lt; cc -Os -Wall -MD -W -I./include/ -c -o autoban.o autoban.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o bookmark.o bookmark.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o completion.o completion.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o feeds.o feeds.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o getln.o getln.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o hash.o hash.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o history.o history.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o http.o http.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o interface.o interface.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o md5.o md5.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o pipe.o pipe.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o play.o play.c&lt; cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o playlist.o playlist.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o radio.o radio.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o readline.o readline.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o recommend.o recommend.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o ropen.o ropen.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o sckif.o sckif.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o service.o service.c&lt; cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o settings.o settings.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o split.o split.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o strary.o strary.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o submit.o submit.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o tag.o tag.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o util.o util.c&lt; cc -Os -Wall -MD -W -I./include/ &amp;nbsp;-c -o xmlrpc.o xmlrpc.c&lt; cc -Os -Wall -MD -W -I./include/ -c -o select.o select.c&lt; ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o history.o http.o interface.o md5.o pipe.o play.o playlist.o radio.o readline.o remend.o ropen.o sckif.o service.o settings.o split.o strary.o submit.o tag.o util.o xmlrpc.o select.o&lt; Overwrite the libpthead library by the built-in one:
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2010-10-04 00:00:00 &#43;0000 UTC&#39;&gt;October 4, 2010&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Build shell-FM on DS-210J" href="https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -211,60 +232,53 @@ ps aux | grep toto En général, on relache les touches alt&#43;shift un tout pe
     <p>We are now in the process of switching to Mongo DB 1.6.1 in order to use Sharding and Replicat Sets.
 Yesterday, I found out that when Mongo was printing:
 I opened a bug at Mongo (http://jira.mongodb.org/browse/SERVER-1637) and Eliot pointed me to a fs configuration change that could help.
-We have now opted for XFS local disks (instead of 8 RAID-1 EBS disks in Ext3). XFS is supported by the kernel of the instance we use while Ext4 is NOT....</p>
+We have now opted for XFS local disks (instead of 8 RAID-1 EBS disks in Ext3). XFS is supported by the kernel of the instance we use while Ext4 is NOT.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2010-08-19 00:00:00 &#43;0000 UTC&#39;&gt;August 19, 2010&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
   <a class="entry-link" aria-label="post link to Mongo DB Startup slow as hell (in some conditions)" href="https://oct.zoy.org/archive/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Mongo DB Startup slow as hell (in some conditions)
+    <h2>Intern Leaving
     </h2>
   </header>
   <div class="entry-content">
-    <p>We are now in the process of switching to Mongo DB 1.6.1 in order to use Sharding and Replicat Sets. Yesterday, I found out that when Mongo was printing: </p>
+    <p>Today, our intern Wilfred is going away after 5 or 6 weeks of internship. He worked on monitoring the Google page rank of our pages, and of given keywords we want to follow at Fotopedia. Of course, he mainly did ruby code, with mongo, redis/resque and protoviz graphs.
+We are now almost able to identify the progress of the rank of most of our page across time. This will be very useful in a near future.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Mongo DB Startup slow as hell (in some conditions)" href="https://oct.zoy.org/archive/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default.fr/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2010-08-18 00:00:00 &#43;0000 UTC&#39;&gt;August 18, 2010&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Intern Leaving" href="https://oct.zoy.org/archive/2010/08/18/12.2010-08-18-intern-leaving/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Monoprix, tu abuses  
+    <h2>Upstart, rc et Ubuntu 9.10
     </h2>
   </header>
   <div class="entry-content">
-    <p>Non sérieux, Monoprix, tu abuses… Au début, c’était comme une belle histoire d’amour. Tu avais un joli site ouaib, avec de belles couleurs, plein de produits à commander, un moteur de recherche performant, des délais de livraison pas bien longs, des tarifs oui-peut-être-un-peu-élevés-mais-bon.
-Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce que c’était les vacances, et que, ben oui, y à moins d’activité en été et que je comprends bien qu’il faut faire du business aussi en cette saison....</p>
+    <p>Comme vous le savez peut-être, la dernière version d’Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d’Upstart (ca s’appelle comme ça) par rapport à rc.* sont multiples:
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, …) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu’ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l’air cool. J’y reviendrais à la fin.
+...</p>
   </div>
-  <footer class="entry-footer">5 min</footer>
-  <a class="entry-link" aria-label="post link to Monoprix, tu abuses  " href="https://oct.zoy.org/archive/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default.fr/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2010-08-18 00:00:00 &#43;0000 UTC&#39;&gt;August 18, 2010&lt;/span&gt;&amp;nbsp;·&amp;nbsp;5 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Upstart, rc et Ubuntu 9.10" href="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Open-uri preventing redirects from https to http
+    <h2>Signify to GMail RSS signature Converter
     </h2>
   </header>
   <div class="entry-content">
-    <p>Because it assumes it’s insecure. That’s quite annoying and should be configurable. def OpenURI.redirectable?(uri1, uri2) true end This monkey-patch fixes the issue and remove the check. A bug exists for the stdlib http://bugs.ruby-lang.org/issues/859 but fixes just the other way round.</p>
+    <p>Just wanted to share this small python code that naïvely converts a signify parameter file into a RSS file that can be used in GMail with the Random Signature Appender lab feature.
+It doesn’t support any magical option of Signify (alignment, variable replacement). However, current lab feature has limitation to 96 chars in signature. This definitively sucks.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to Open-uri preventing redirects from https to http" href="https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Powerdns
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Powerdns is a very nice DNS server. It provides out of the box Geo sensitivity, enabling you to redirect your customer to different servers according to their origin. We use that we a quite complex zone setup.
-Also it can be plugged onto a SQL backend (such as mysql, postgresql or sqlite). The whole stuff can then be managed by dedicated web tools. We use pdnsadmin (php based, requires mysql) and this is enough for simple uses....</p>
-  </div>
-  <footer class="entry-footer">1 min</footer>
-  <a class="entry-link" aria-label="post link to Powerdns" href="https://oct.zoy.org/archive/2008/12/09/02.2008-12-09-powerdns/default/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2009-07-14 00:00:00 &#43;0000 UTC&#39;&gt;July 14, 2009&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to Signify to GMail RSS signature Converter" href="https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -273,23 +287,26 @@ Also it can be plugged onto a SQL backend (such as mysql, postgresql or sqlite).
     </h2>
   </header>
   <div class="entry-content">
-    <p>We use PowerDNS for one of our new domain name. We plan to use the geo backend of PowerDNS to provide some geo-targeting feature and automatically redirect our fellows users to the closest server available. This was quite easy to setup. Once you have found a good PowerDNS administration tool (such as pdns admin), this is much easier.
-Let’s wait until this go in production (first website is http://www.macmillandictionary.com)!</p>
+    <p>{% raw %}
+</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2009-02-20 00:00:00 &#43;0000 UTC&#39;&gt;February 20, 2009&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
   <a class="entry-link" aria-label="post link to PowerDNS" href="https://oct.zoy.org/archive/2009/02/20/10.2009-02-20-powerdns/default/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>RAID Forever
+    <h2>IIS fails and &#34;the service did not return an error&#34;
     </h2>
   </header>
   <div class="entry-content">
-    <p>MegaCLI (LSI) PERC Command line client is here in case you’re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you’re almost done. The cheats sheet you can find on the internet is rather ok, except for the download link I just wrote down.</p>
+    <p>If your IIS doesn’t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.
+Made my day.
+Kudos to the databaseforum for the fix I was looking for in the internet.
+</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
-  <a class="entry-link" aria-label="post link to RAID Forever" href="https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/"></a>
+  <footer class="entry-footer">&lt;span title=&#39;2008-12-29 00:00:00 &#43;0000 UTC&#39;&gt;December 29, 2008&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]</footer>
+  <a class="entry-link" aria-label="post link to IIS fails and &#34;the service did not return an error&#34;" href="https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -300,7 +317,7 @@ Let’s wait until this go in production (first website is http://www.macmilland
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -1,6 +1,7 @@
 ---
 title: 'Rusty Racoon'
-date: '2015-01-26 09:00'
+type: blog
+date: '2015-01-26'
 layout: post
 tags:
     - code
