@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Provisioning made more complex | oct.zoy.org</title>
 <meta name="keywords" content="code, rant">
 <meta name="description" content="
 Something’s going wrong.
 I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
+<link rel="canonical" href="https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,7 +57,68 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/">
+  <meta property="og:site_name" content="oct.zoy.org">
+  <meta property="og:title" content="Provisioning made more complex">
+  <meta property="og:description" content=" Something’s going wrong.
+I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="archive">
+    <meta property="article:published_time" content="2015-02-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2015-02-02T00:00:00+00:00">
+    <meta property="article:tag" content="Code">
+    <meta property="article:tag" content="Rant">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Provisioning made more complex">
+<meta name="twitter:description" content="
+Something’s going wrong.
+I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Provisioning made more complex",
+      "item": "https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Provisioning made more complex",
+  "name": "Provisioning made more complex",
+  "description": " Something’s going wrong.\nI, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:\n",
+  "keywords": [
+    "code", "rant"
+  ],
+  "articleBody": " Something’s going wrong.\nI, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:\nWHICH ONE AM I TO USE ?\nAnd the fact is that each of them has its niceties and weaknesses. Most of them are backed by more or less large companies that can deliver certifications, support and everything cash can buy. But the truth is that choosing the right framework is difficult without too much prior experience. Our choice includes:\ncfengine puppet chef ansible salt stack Each of these tools will have you deploy daemons, clients, SSL certificates, HTTP proxies and write some code before you can decide if the framework is for you. The technological price is quite huge and next times somebody trolls you with the fact that you are using 70% of the AWS services for your infrastructure, ask this ugly person whether its provisioning infrastructure is not « vendor-locked » too. Your provisioning tool must have some special abilities to be useful to you:\nIt should run quickly on your grid, without creating too much load on the master, if it needs a master. Most of the time is spent in I/O, but sometimes, synchronous starts will load the master a lot: the underlying technology can become a problem (I’m looking at you ruby). It should be able to run « on-demand » so that you can trigger a grid update any time you want. It should be resilient. On this point, I tend to favorize provisioning tools that are not using the same taxonomy: tag: [backup] language as my main platform application, if possible. This way, when you start messing with runtime versions, you can be sure your provisioning tools will still be running… Deploying a ruby include fix on 30 servers by hand is painful, especially if you don’t have any csshx configuration around. It should be able to do some magic for you: you want to be able to add a frontend server on your grid and have the whole cluster reconfigured to use this new server automatically. This usually requires a search-capable master server for your provisioning (incompatible with master-less tools ?). It should be able to generate all your monitoring configuration from its own state. It should converge quickly. 2 steps convergence can be a PITA when you are in a hurry (incompatible with imperative tools?). Its logs should be easily accessible, centralized and API-manageable so that you can build a dashboard (or have it built-in?) with the state of the runs on your grid, have the ability to restart individual runs on servers. Last time I checked, chef was almost the right tool and ansible, very close to it. But I’m still looking for the next tool…\nWhat’s your favorite provisioning tool? And Why?\n",
+  "wordCount" : "513",
+  "inLanguage": "en",
+  "datePublished": "2015-02-02T00:00:00Z",
+  "dateModified": "2015-02-02T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -75,8 +136,8 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="https://oct.zoy.org/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
@@ -103,27 +164,27 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about" title="🪞 about">
+                <a href="https://oct.zoy.org/about" title="🪞 about">
                     <span>🪞 about</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/as-a-speaker" title="📢 speaker">
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
                     <span>📢 speaker</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="🔖 tags">
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archive/" title="🕸️ old stuff">
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
                     <span>🕸️ old stuff</span>
                 </a>
             </li>
@@ -134,7 +195,7 @@ I, as devops, or root, or whoever is in charge of configuring these servers, hav
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/archive/">Archives</a></div>
+    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a></div>
     <h1 class="post-title entry-hint-parent">
       Provisioning made more complex
     </h1>
@@ -175,15 +236,15 @@ language as my main platform application, if possible. This way, when you start 
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/code/">Code</a></li>
-      <li><a href="http://localhost:1313/tags/rant/">Rant</a></li>
+      <li><a href="https://oct.zoy.org/tags/code/">Code</a></li>
+      <li><a href="https://oct.zoy.org/tags/rant/">Rant</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
+        <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span> · 
 
     <span>
         Powered by

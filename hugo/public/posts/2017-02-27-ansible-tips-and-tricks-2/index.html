@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>🎯 Ansible Tips and Tricks | oct.zoy.org</title>
 <meta name="keywords" content="">
 <meta name="description" content="If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
 I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/2017-02-27-ansible-tips-and-tricks-2/">
+<link rel="canonical" href="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2017-02-27-ansible-tips-and-tricks-2/">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,7 +56,71 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/">
+  <meta property="og:site_name" content="oct.zoy.org">
+  <meta property="og:title" content="🎯 Ansible Tips and Tricks">
+  <meta property="og:description" content="If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
+I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-02-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-02-27T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="🎯 Ansible Tips and Tricks">
+<meta name="twitter:description" content="If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.
+I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://oct.zoy.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🎯 Ansible Tips and Tricks",
+      "item": "https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "🎯 Ansible Tips and Tricks",
+  "name": "🎯 Ansible Tips and Tricks",
+  "description": "If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.\nI assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.\nI assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.\n1 - Always name everything. It is possible to run Playbooks or Tasks without ever naming them:\n--- - hosts: local tasks: - user: name: testuser1 state: present groups: wheel Gives:\nPLAY *************************************************************************** TASK [user] ******************************************************************* [...] This log is not particularly interesting. We can probably do better.\nFor example:\n--- - name: \"Prepare localhost\" hosts: local tasks: - name: \"Create testuser1\" user: name: testuser1 state: present groups: wheel Will print out:\nPLAY [Prepare localhost] ****************************************************** TASK [Create testuser1] ******************************************************* [...] It’s much more readable. To to even better, you can add more DEBUG informations in the Tasks names, such as:\n- name: \"Create folder {{ target_folder }}\" file: path: \"{{ target_folder }}\" recurse: yes state: directory As always, the message should contain as much information as possible to allow the developer to DEBUG in case of error. I always try to do that so that future analysis is easier to do. You never know: you might really be in a hurry next time you want to understand why your code fails.\nAlways name your Ansible Tasks.\n2 - Use the YAML syntax, not the Ansible one With Ansible, you can use a mix of two syntax when writing code. Either pure YAML:\n- name: add user testuser1 user: name: testuser1 state: present groups: wheel Or the hybrid YAML/Ansible syntax:\n- name: add user testuser1 user: name=testuser1 state=present groups=wheel These two examples are identical in terms of Ansible description. In the first case, Ansible will parse the YAML document and then run the code. In the second case, Ansible will also parse name=testuser1 state=present groups=wheel before running the task user. This syntax is useful but forces you to do some intellectual work (= or :, YAML or inline, …) before being able to write working code, especially when it is complex.\nMy suggestion is to use the YAML syntax every time, avoiding the = syntax. It will help you detect errors earlier, and a make your Ansible code easier to read.\nWith some practise, it also becomes easier to write than the usual Ansible/YAML mix\nAlways use the YAML syntax.\n3 - Document your variables Ansible supports variable overriding according to where it finds their declaration. In the official documentation, the priority of these declarations is as follow:\nrole defaults inventory vars inventory group_vars inventory host_vars playbook group_vars playbook host_vars host facts play vars play vars_prompt play vars_files registered vars set_facts role and include vars block vars (only for tasks in block) task vars (only for the task) extra vars (always win precedence) As you can see, the list is rather long and allows you to override a variable almost anywhere. This means that you have to be careful:\nnot to spread your variable in your code too much. If you are the only author/use of your code, it’s easier to do than if you use someone’s code (roles from Galaxy, for example) to document all the variables you use, wherever you declare them. I tend to use use group and roles variable as much as possible before resorting to other declaration levels.\nI also try to document these settings (for example, with a real life file):\n--- # file: group_vars/all # For data synchronisation from the server to localhost local_source_folder: /Users/octplane/src/wiseman_r remote_production_folder: /home/oct/prod # app name to look for in the local registry app_name: wiseman # image name to search for in the local image registry image_name: \"octplane/{{ app_name }}\" # version to search for in the local image registry version: 4 # where to export the docker image export_folder: /tmp # Exported file from docker after zipping artefact_name: \"{{ app_name }}-{{ version }}.docker.gz\" # where to copy the data on the remote server # where is deployed the test application remote: landing_folder: /home/oct/tmp test_folder: /home/oct/data/wiseman.test/ This way, when I’ll come back on this code, or if anybody (such as you) reads it, it’s easier to understand how it’s working rather than switching between roles and variables all the time.\nAlways document your variables.\nTry to minimise where you declare your variables.\n4 - Use asserts to validate the parameters With the documentation you’ve just written, you can check the parameters before using them and avoid many pitfalls. Not running things that will break down is a good thing to do.\n- name: \"Validate version is a number, \u003e 0\" assert: that: - \"{{ version | int }} \u003e 0\" msg: \"'version' must be a number and \u003e 0, is \\\"{{version}}\\\"\" As always, write meaningful error messages. There is a huge difference between a generic error message printed by Ansible and something you might have written yourself such as: 'version' must be a number and \u003e 0, got \"coucou\".\nUse assert to bail early in case of error.\nWrite meaningful error messages.\n5 - Change the stdout default logger The default stdout Ansible logger kinda sucks. It lacks useful timing information, takes a lot of screen estate. That’s why I’d like to suggest you try an alternate logger:\nhttps://github.com/octplane/ansible_stdout_compact_logger\nI am the author of this logger and here are some of its features:\nits output is more compact by default it displays the execution duration and current time in verbose mode, it displays the tasks content in a structure and readable way (indented YAML and \\n in text are actually converted to carriage returns…) important fields are displayed first (stdout, stderr, to name a few) if you use a higher verbosity, the regular ansible logger is used instead it contains bugs, but it is open-source! Don’t forget to see what’s new on the internet\nIf you use open-source code, contribute back, please.\n6 - Write roles in a product-oriented way As soon as you start writing an Ansible role, it’s very tempting to put everything inside the same role in order to have some kind of reusable toolbox.\nYou actually need to separate role content by technical object: one role for MongoDB, one for HAProxy, another for Tomcat, and then use the playbook-provided glue to assemble and describe the behaviour you are looking for.\nThis segregation allows you to merge together all the administrative tasks you might need for a given component: installation, configuration, startup, halt, update, maintenance… and only for this component.\nIf you code needs to act on another technical component, try to move it to another role as soon as possible. If you really really need to orchestrate these tasks from a role, write a role whose sole purpose is to call others roles’ actions.\nThe goal of this separation is to lower the dependency between the roles and the technical products, lowering the number of needed variable to run it. In the end, this will allows you to reuse roles much more quickly, which is really what we are looking for.\nA role must only handle a single technical component.\nWrite abstract role to call the technical ones when needed.\n7 - Use the same role for several operations Technically, a role presents a single entry point, its tasks/main.yml. Because of this design, one might think it’s difficult to have a role accomplish several actions (without using tags, cf below, or includes).\nAnd still, there is a way to write re-usable role easily, including different unrelated operations.\nUsing a variable to decide which action to perform, you can have a small operation router inside your role:\n--- # roles/service/vars/main.yml # by default, we ensure that service is present, configured and running. # allowed values: present, absent, install, configure, start, stop state: present --- # roles/service/tasks/main.yml - include: \"{{ state }}.yml\" --- # roles/service/tasks/present.yml - include: \"install.yml\" - include: \"configure.yml\" - include: \"start.yml\" --- # roles/service/tasks/install.yml - name: add user testuser1 user: name: testuser1 state: present groups: wheel Extend role so that they can fulfil several tasks.\n8 - Be careful with set_fact set_fact creates variable in your Ansible script, at runtime, to have a mode dynamic behaviour. It’s very useful. However, these on-the-fly-created variables have several drawbacks, and you need to carefully think about it before creating one:\nits priority is rather high it’s created dynamically: you must ensure its creation won’t fail and give a curious result (for example, shell might sometimes give you something unexpected) it’s created dynamically: it doesn’t exist until you create it. This might seem obvious but most other Ansible variables are available during the whole run. your code user might not be able to override it, even when she absolutely needs it. Moral of the story: be careful with there set_fact that can, like the proverbial poisoned apple, explode at your face at the worst time.\nLimit the set_fact to where they are absolutely necessary.\n9 - Use tag with moderation As soon as you write a role with several uses, it’s very tempting to use tags to filter out some tasks at runtime. It works in most case and allows you to run your deployments using the -t option (or --skip-tags to ignore them).\nHowever, at least two problems can rise when using these in Ansible:\nthe same tag can be used over and over in many role and collide, preventing you from using exactly the tag you want to use this dispersal of tags makes it difficult to understand exactly what they do In the end, I strongly encourage you to use the routing system presented higher. It does not use another functionality in Ansible and forces the role developer to clearly separate its role functionalities. Tags will be reserved for the interactive use of Ansible in CLI, by opposition to the one driven though a script or an orchestrator.\nUse the tags, but wisely.\n10 - Don’t hesitate to reconfigure Ansible Thanks to a very simple overloading model, it’s possible to give Ansible an ansible.cfg in which you can reconfigure parts of Ansible according to your needs: for an alternative hostfile (no need to -i myhosts in CLI every time), to remove the useless .retry files, or anything else, you can just create an ansible.cfg file where you run your playbooks so that Ansible can automatically fetch and merge its content with the global configuration. The precedence order is as follow:\n* ANSIBLE_CONFIG (an environment variable) * ansible.cfg (in the current directory) * .ansible.cfg (in the home directory) * /etc/ansible/ansible.cfg (source http://docs.ansible.com/ansible/intro_configuration.html)\nCustomise your Ansible experience.\nWrap-up We saw together that the regular use of Ansible allows the emergence of good practices that will make the use of this tool easier every day. These tips are obviously extracted from my own personal experience and chats with developers. I probably over-simplified some of these things and forgotten others. Let’s recap’ together:\nAlways name your Ansible Tasks. Always use the YAML syntax. Always document your variables. Try to minimise where you declare your variables. Use assert to bail early in case of error. Write meaningful error messages. Don’t forget to see what’s new on the internet If you use open-source code, contribute back, please. A role must only handle a single technical component. Write abstract roles to call the technical ones when needed. Extend roles so that they can fulfil several tasks. Limit the set_fact to where they are absolutely necessary. Use the tags, but wisely. Customise your Ansible experience using ansible.cfg And you? How do you use Ansible? Got any tip to share? Now is your turn!\n",
+  "wordCount" : "1959",
+  "inLanguage": "en",
+  "datePublished": "2017-02-27T00:00:00Z",
+  "dateModified": "2017-02-27T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -74,8 +138,8 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="https://oct.zoy.org/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
@@ -102,27 +166,27 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about" title="🪞 about">
+                <a href="https://oct.zoy.org/about" title="🪞 about">
                     <span>🪞 about</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/as-a-speaker" title="📢 speaker">
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
                     <span>📢 speaker</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="🔖 tags">
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archive/" title="🕸️ old stuff">
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
                     <span>🕸️ old stuff</span>
                 </a>
             </li>
@@ -133,7 +197,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a>&nbsp;»&nbsp;<a href="https://oct.zoy.org/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       🎯 Ansible Tips and Tricks
     </h1>
@@ -358,7 +422,7 @@ I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galax
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
+        <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span> · 
 
     <span>
         Powered by

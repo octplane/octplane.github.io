@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Upstart, rc et Ubuntu 9.10 | oct.zoy.org</title>
 <meta name="keywords" content="">
 <meta name="description" content="Comme vous le savez peut-être, la dernière version d&rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&rsquo;Upstart (ca s&rsquo;appelle comme ça) par rapport à rc.* sont multiples:
@@ -17,16 +17,16 @@ configuration aisée
 
 Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
 <meta name="author" content="map[image:http://img2.blogblog.com/img/b16-rounded.gif name:Oct url:http://www.blogger.com/profile/10969884152933508554?rel=author]">
-<link rel="canonical" href="http://localhost:1313/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
+<link rel="canonical" href="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -63,7 +63,76 @@ Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/">
+  <meta property="og:site_name" content="oct.zoy.org">
+  <meta property="og:title" content="Upstart, rc et Ubuntu 9.10">
+  <meta property="og:description" content="Comme vous le savez peut-être, la dernière version d’Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d’Upstart (ca s’appelle comme ça) par rapport à rc.* sont multiples:
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, …) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu’ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l’air cool. J’y reviendrais à la fin.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="archive">
+    <meta property="article:published_time" content="2010-08-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2010-08-18T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Upstart, rc et Ubuntu 9.10">
+<meta name="twitter:description" content="Comme vous le savez peut-être, la dernière version d&rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&rsquo;Upstart (ca s&rsquo;appelle comme ça) par rapport à rc.* sont multiples:
+
+démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &hellip;)
+parallélisme du démarrage des démons  (lié au premier point)
+monitoring des démons et respawn lorsqu&rsquo;ils meurent
+pre/post-scripts facile à rajouter
+configuration aisée
+
+Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Upstart, rc et Ubuntu 9.10",
+      "item": "https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Upstart, rc et Ubuntu 9.10",
+  "name": "Upstart, rc et Ubuntu 9.10",
+  "description": "Comme vous le savez peut-être, la dernière version d\u0026rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d\u0026rsquo;Upstart (ca s\u0026rsquo;appelle comme ça) par rapport à rc.* sont multiples:\ndémarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, \u0026hellip;) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu\u0026rsquo;ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l\u0026rsquo;air cool. J\u0026rsquo;y reviendrais à la fin.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Comme vous le savez peut-être, la dernière version d’Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d’Upstart (ca s’appelle comme ça) par rapport à rc.* sont multiples:\ndémarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, …) parallélisme du démarrage des démons (lié au premier point) monitoring des démons et respawn lorsqu’ils meurent pre/post-scripts facile à rajouter configuration aisée Bref, ça à l’air cool. J’y reviendrais à la fin.\nTout a commencé quand lors du reboot d’une machine dev’ à Fotopedia, je constate qu’un démon (un mongodb) a été killé -9 au lieu d’être arrêté normalement. Ce démon était géré par “runit”, un autre système de gestion de services qu’on utilise à Fotopédia depuis longtemps pour pallier les faiblesses des scripts rc* (en particulier, écrire les scripts pour init.d pour des démons qui ne forkent pas est un délicieux cauchemar que je laisse à l’exercice du lecteur). Bref, on utilisait runit, qui est super simple à configurer : un script dans /etc/sv/mondémon/run un lien depuis /etc/service vers ce folder, on attends 5 secondes et le démon démarre le système.\nVoyant que mon mongodb est KILL -9, j’enquête, je fais des expériences et je m’aperçois que visiblement, runit est aussi KILL -9 par le système lors du shutdown pour une raison que j’ignore (oui, le démon runit n’est pas très bavard sur ses conditions de vie et de mort).\nCa craint, surtout que mon mongo pourrait rester dans un état inconsistent si on le tue trop violemment. En plus, il pose un lock sur le fs et refuse de démarrer s’il est encore là plus tard (donc en particulier si on le KILL -9).\nEn ne cherchant pas les origines de la mort violent de runit lors du shutdown, je commets ma première erreur.\nJ’examine les alternatives, et je finis par me dire (et là, je commets ma deuxième erreur, liée à la première): Puisque c’est Upstart qui fait tourner runit sur mon Ubuntu (là pour le coup, je pense que c’est les packages de la distro qui font ca), et que j’utilise runit pour lancer mon mongodb, je vais faire tourner mon mongodb directement dans Runit. Comme dirait mon grand père, moins y a de code, moins y a de bug.\nAussitôt dit, aussitôt fait, je réécris un partie des règles Chef pour migrer d’un système à l’autre, je migre les 12 mongos qu’on a en testing, je teste, ça marche (enfin, les démons tournent dans Upstart sans trop de complication, mettent leurs logs au bon endroit et logrotatent correctement).\nFièrement, je reboote ma machine et au boot d’après, je m’aperçois que les mongodb ont été KILLés -9 lors du shutdown, encore une fois. Bref, quelque chose se moque de moi.\nJe rajoute du log dans mongodb, je recommence et je m’aperçois, vu les logs, que mongo s’arrête bien avant le reboot mais redémarre quasi aussitôt sans jamais finir sa séquence de démarrage (et tout ca AVANT que la machine ne reboote). Au boot d’après, le mongodb qui a été interrompu violemment (puisque les logs le sont aussi) a posé son lock et mon nouveau démon refuse de démarrer. Damned.\nJe me met donc à rajouter des informations de débug dans les post et les pré-scripts Upstart de mon démon pour voir par exemple ce qui est en train de se passer sur la machine lors du deuxième démarrage avant le reboot. Je m’aperçois avec horreur que le deuxième démarrage du",
+  "wordCount" : "940",
+  "inLanguage": "en",
+  "datePublished": "2010-08-18T00:00:00Z",
+  "dateModified": "2010-08-18T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": {"image":"http://img2.blogblog.com/img/b16-rounded.gif","name":"Oct","url":"http://www.blogger.com/profile/10969884152933508554?rel=author"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -81,8 +150,8 @@ Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="https://oct.zoy.org/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
@@ -109,27 +178,27 @@ Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about" title="🪞 about">
+                <a href="https://oct.zoy.org/about" title="🪞 about">
                     <span>🪞 about</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/as-a-speaker" title="📢 speaker">
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
                     <span>📢 speaker</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="🔖 tags">
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archive/" title="🕸️ old stuff">
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
                     <span>🕸️ old stuff</span>
                 </a>
             </li>
@@ -140,7 +209,7 @@ Bref, ça à l&rsquo;air cool. J&rsquo;y reviendrais à la fin.">
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/archive/">Archives</a></div>
+    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a></div>
     <h1 class="post-title entry-hint-parent">
       Upstart, rc et Ubuntu 9.10
     </h1>
@@ -186,7 +255,7 @@ shutdown, je commets ma première erreur.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
+        <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span> · 
 
     <span>
         Powered by

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Rbenv, chef and bundler | oct.zoy.org</title>
 <meta name="keywords" content="ruby">
 <meta name="description" content="What we aim
@@ -16,16 +16,16 @@ Prepare the migration to rails 3 and Ruby 1.9 for the main web application
 
 So far, I&rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
+<link rel="canonical" href="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://oct.zoy.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
+<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -62,7 +62,72 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
+  <meta property="og:site_name" content="oct.zoy.org">
+  <meta property="og:title" content="Rbenv, chef and bundler">
+  <meta property="og:description" content="What we aim We’re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:
+Use the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I’ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="archive">
+    <meta property="article:published_time" content="2012-04-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2012-04-02T00:00:00+00:00">
+    <meta property="article:tag" content="Ruby">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rbenv, chef and bundler">
+<meta name="twitter:description" content="What we aim
+We&rsquo;re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:
+
+Use the latest REE ruby runtime
+Switch to Ruby 1.9 for chef
+Prepare the migration to rails 3 and Ruby 1.9 for the main web application
+
+So far, I&rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rbenv, chef and bundler",
+      "item": "https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Rbenv, chef and bundler",
+  "name": "Rbenv, chef and bundler",
+  "description": "What we aim We\u0026rsquo;re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:\nUse the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I\u0026rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:\n",
+  "keywords": [
+    "ruby"
+  ],
+  "articleBody": "What we aim We’re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:\nUse the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I’ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:\nrequire_recipe \"rbenv\" # Setup the rubies PICOR_RUBY=\"ree-1.8.7-2012.02\" CHEF_RUBY=\"1.9.2-p318\" OPINL_RUBY=\"1.9.2-p318\" rbenv_ruby PICOR_RUBY rbenv_ruby CHEF_RUBY in a chef cookbook, automatically download and install these versions of Ruby in the system wide rbenv. Because I’m not ready to switch, I’m not yet setting up automatic rbenv switching:\n# File \"/home/apps/.rbenv-version\" do # owner \"apps\" # group \"apps\" # backup false # content PICOR_RUBY # end # File \"/root/.rbenv-version\" do # owner \"root\" # group \"root\" # backup false # content CHEF_RUBY # end But this should go in action as soon as things works ok.\nNext step, Gems Because Bundle has some kind of memory, you should not use it to deploy gems from a given user if you plan to deploy another gemset in another environement with the SAME user later.\nAt fotopedia, we use GEM_HOME and GEM_PATH to change gemset because it works and it’s really simple (for binaries, we use a combination of symlinks in /usr/local/bin and alternative selection provided by our Debian OS). So we actually install several gemset with the same user. The workaround to have bundler work correctly is to change its HOME when running. Ugly, but efficient:\nscript \"Bundle picor gems\" do interpreter \"bash\" user \"root\" cwd \"/tmp/\" environment rbenv_as_hash code \u003c\u003c-EOS # Discard previous forced state rm -rf .bundle export HOME=$PWD export RBENV_VERSION=ree-1.8.7-2012.02 rbenv exec gem list bundler | grep 'bundler' || gem install bundler cd /etc/bundler rbenv exec bundle install --shebang ruby-local-exec --binstubs /usr/local/picorstubs EOS action :nothing end This script is run when the Gemfile changes in /etc/bundler (our current location for the Picor gems). the gems chefs are installed almost the same way:\nscript \"Bundle chef gems\" do interpreter \"bash\" user \"root\" cwd \"/root/\" environment rbenv_as_hash code \u0026lt;\u0026lt;-EOS export RBENV_VERSION=ree-1.8.7-2012.02 rbenv execgem list bundler | grep 'bundler' || rbenv exec gem install bundler # Use this because bundle in path is 1.8 bundle rbenv exec bundle install --deployment --shebang ruby-local-exec --binstubs /usr/local/chefstubs EOS action :nothing end Once this has run, /usr/local/picotstubs contains the picor binary stubs ready to be used and the chefstubs the one for chef.\nNext Step. Rewiring daemons to use one gemset according to what I need. Once the stubs are there, this might be straighforward…\n",
+  "wordCount" : "430",
+  "inLanguage": "en",
+  "datePublished": "2012-04-02T00:00:00Z",
+  "dateModified": "2012-04-02T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oct.zoy.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oct.zoy.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -80,8 +145,8 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
+            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="https://oct.zoy.org/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
@@ -108,27 +173,27 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about" title="🪞 about">
+                <a href="https://oct.zoy.org/about" title="🪞 about">
                     <span>🪞 about</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/as-a-speaker" title="📢 speaker">
+                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
                     <span>📢 speaker</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
+                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="🔖 tags">
+                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archive/" title="🕸️ old stuff">
+                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
                     <span>🕸️ old stuff</span>
                 </a>
             </li>
@@ -139,7 +204,7 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/archive/">Archives</a></div>
+    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a></div>
     <h1 class="post-title entry-hint-parent">
       Rbenv, chef and bundler
     </h1>
@@ -220,14 +285,14 @@ end
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/ruby/">Ruby</a></li>
+      <li><a href="https://oct.zoy.org/tags/ruby/">Ruby</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
+        <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span> · 
 
     <span>
         Powered by

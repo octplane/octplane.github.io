@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ruby on oct.zoy.org</title>
-    <link>http://localhost:1313/tags/ruby/</link>
+    <link>https://oct.zoy.org/tags/ruby/</link>
     <description>Recent content in Ruby on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Apr 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oct.zoy.org/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rbenv, chef and bundler</title>
-      <link>http://localhost:1313/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</link>
+      <link>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</link>
       <pubDate>Mon, 02 Apr 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</guid>
+      <guid>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</guid>
       <description>&lt;h4 id=&#34;what-we-aim&#34;&gt;What we aim&lt;/h4&gt;
 &lt;p&gt;We&amp;rsquo;re trying to use &lt;!-- raw HTML omitted --&gt;rbenv&lt;!-- raw HTML omitted --&gt; in our infrastructure in order to achieve the following multiple goals:&lt;/p&gt;
 &lt;ul&gt;
@@ -24,9 +24,9 @@
     </item>
     <item>
       <title>Bundler, oh, I hate thou</title>
-      <link>http://localhost:1313/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
+      <link>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
       <pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
+      <guid>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
       <description>&lt;p&gt;Another merry joke from my bundler friend. If you ever switch to deployment mode
 (using the &lt;!-- raw HTML omitted --&gt;bundle install &amp;ndash;deployment&lt;!-- raw HTML omitted --&gt;
 command), do not come and cry if bundler starts saying:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
