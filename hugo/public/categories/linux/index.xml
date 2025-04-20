@@ -2,29 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on oct.zoy.org</title>
-    <link>https://oct.zoy.org/categories/linux/</link>
+    <link>http://localhost:1313/categories/linux/</link>
     <description>Recent content in Linux on oct.zoy.org</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Feb 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Feb 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerDNS</title>
-      <link>https://oct.zoy.org/archive/2009/02/20/10.2009-02-20-powerdns/default/</link>
+      <link>http://localhost:1313/archive/2009/02/20/10.2009-02-20-powerdns/default/</link>
       <pubDate>Fri, 20 Feb 2009 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2009/02/20/10.2009-02-20-powerdns/default/</guid>
+      <guid>http://localhost:1313/archive/2009/02/20/10.2009-02-20-powerdns/default/</guid>
       <description>&lt;p&gt;{% raw %}&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;</description>
     </item>
-    
     <item>
       <title>RAID Forever</title>
-      <link>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</link>
+      <link>http://localhost:1313/archive/2008/12/29/09.2008-12-29-raid-forever/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
+      <guid>http://localhost:1313/archive/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
       <description>&lt;p&gt;MegaCLI (LSI) PERC Command line client is &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt; in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The &lt;!-- raw HTML omitted --&gt;cheats sheet you can find on the internet&lt;!-- raw HTML omitted --&gt; is rather ok, except for the download link I just wrote down.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

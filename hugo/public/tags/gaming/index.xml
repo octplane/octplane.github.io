@@ -2,24 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Gaming on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/gaming/</link>
+    <link>http://localhost:1313/tags/gaming/</link>
     <description>Recent content in Gaming on oct.zoy.org</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Heroes of loot</title>
-      <link>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</link>
+      <link>http://localhost:1313/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</link>
       <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</guid>
+      <guid>http://localhost:1313/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</guid>
       <description>&lt;p&gt;Heroes of Loot, un peu le Gauntlet des années 2010. Meurtres, projectiles et petits démons à la pelle.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;IMG_2877.PNG?cropResize=600,600&#34; alt=&#34;le jeu est entrecoupé de petites séquences avec des blagues pourries. Ca fait sourire.&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;le jeu est entrecoupé de petites séquences avec des blagues pourries. Ca fait sourire.&#34; loading=&#34;lazy&#34; src=&#34;IMG_2877.PNG?cropResize=600,600&#34;&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Encore un jeu que j&amp;rsquo;ai gardé dans mon radar &lt;a href=&#34;https://itunes.apple.com/fr/app/toucharcade-best-new-games/id509945427?mt=8&amp;amp;uo=4&#34;&gt;toucharcade&lt;/a&gt; pendant longtemps avant qu&amp;rsquo;il ne se décide à devenir gratuit pendant quelques heures (sinon, c&amp;rsquo;est 1,79€ ma bonne dame). Ayant sauté sur l&amp;rsquo;occasion, je peux vous raconter ce que je pense de ce petit Rogue-like, &lt;a href=&#34;https://itunes.apple.com/fr/app/heroes-of-loot/id688743207?mt=8&amp;amp;uo=4&#34;&gt;Heroes of loot&lt;/a&gt; par &lt;a href=&#34;http://www.orangepixel.net/heroesofloot/&#34;&gt;OrangePixel&lt;/a&gt;. Au départ, ça ferait presque penser à &lt;a href=&#34;http://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)&#34;&gt;Gauntlet&lt;/a&gt;, son mémorable ancêtre sur Atari St. De la 2D old-school avec des pixels parfois gros et gras mais bien agencés quand même. On choisit sa classe de personnage et c&amp;rsquo;est parti pour des explorations de donjons dans lesquelles on nous donne de plus en plus de fil à retordre. Petits monstres, puis monstres à projectiles, puis gros monstres qui font peur. Des coffres, des petits prisonniers à libérer, des magasins qui vendent (trop) cher des pièces d&amp;rsquo;équipement pour devenir invisible, se protéger, restaurer sa santé, des salles secrètes avec du butin à chaparder.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

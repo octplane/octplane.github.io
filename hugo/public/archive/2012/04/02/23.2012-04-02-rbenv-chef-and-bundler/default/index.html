@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Rbenv, chef and bundler | oct.zoy.org</title>
 <meta name="keywords" content="ruby">
 <meta name="description" content="What we aim
@@ -16,19 +16,16 @@ Prepare the migration to rails 3 and Ruby 1.9 for the main web application
 
 So far, I&rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:">
 <meta name="author" content="">
-<link rel="canonical" href="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
-<meta name="google-site-verification" content="y8HjH28HsDJmfXel6OVWYfVTlOaM5Y0qt1sSIu4ncXo">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9ece5999c00778a03c710e924aee5d11de71124f4ac26fb1046ad663031d846b.css" integrity="sha256-ns5ZmcAHeKA8cQ6SSu5dEd5xEk9Kwm&#43;xBGrWYwMdhGs=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://oct.zoy.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
-<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/">
 <noscript>
     <style>
         #theme-toggle,
@@ -46,7 +43,7 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -65,81 +62,7 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:title" content="Rbenv, chef and bundler" />
-<meta property="og:description" content="What we aim
-We&rsquo;re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:
-
-Use the latest REE ruby runtime
-Switch to Ruby 1.9 for chef
-Prepare the migration to rails 3 and Ruby 1.9 for the main web application
-
-So far, I&rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/" /><meta property="article:section" content="archive" />
-<meta property="article:published_time" content="2012-04-02T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2012-04-02T00:00:00&#43;00:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Rbenv, chef and bundler"/>
-<meta name="twitter:description" content="What we aim
-We&rsquo;re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:
-
-Use the latest REE ruby runtime
-Switch to Ruby 1.9 for chef
-Prepare the migration to rails 3 and Ruby 1.9 for the main web application
-
-So far, I&rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Archives",
-      "item": "https://oct.zoy.org/archive/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Rbenv, chef and bundler",
-      "item": "https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Rbenv, chef and bundler",
-  "name": "Rbenv, chef and bundler",
-  "description": "What we aim We\u0026rsquo;re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:\nUse the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I\u0026rsquo;ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:\n",
-  "keywords": [
-    "ruby"
-  ],
-  "articleBody": "What we aim We’re trying to use rbenv in our infrastructure in order to achieve the following multiple goals:\nUse the latest REE ruby runtime Switch to Ruby 1.9 for chef Prepare the migration to rails 3 and Ruby 1.9 for the main web application So far, I’ve managed to install rbenv system wide on the servers using Riot Games excellent cookbook. A simple:\nrequire_recipe \"rbenv\" # Setup the rubies PICOR_RUBY=\"ree-1.8.7-2012.02\" CHEF_RUBY=\"1.9.2-p318\" OPINL_RUBY=\"1.9.2-p318\" rbenv_ruby PICOR_RUBY rbenv_ruby CHEF_RUBY in a chef cookbook, automatically download and install these versions of Ruby in the system wide rbenv. Because I’m not ready to switch, I’m not yet setting up automatic rbenv switching:\n# File \"/home/apps/.rbenv-version\" do # owner \"apps\" # group \"apps\" # backup false # content PICOR_RUBY # end # File \"/root/.rbenv-version\" do # owner \"root\" # group \"root\" # backup false # content CHEF_RUBY # end But this should go in action as soon as things works ok.\nNext step, Gems Because Bundle has some kind of memory, you should not use it to deploy gems from a given user if you plan to deploy another gemset in another environement with the SAME user later.\nAt fotopedia, we use GEM_HOME and GEM_PATH to change gemset because it works and it’s really simple (for binaries, we use a combination of symlinks in /usr/local/bin and alternative selection provided by our Debian OS). So we actually install several gemset with the same user. The workaround to have bundler work correctly is to change its HOME when running. Ugly, but efficient:\nscript \"Bundle picor gems\" do interpreter \"bash\" user \"root\" cwd \"/tmp/\" environment rbenv_as_hash code \u003c\u003c-EOS # Discard previous forced state rm -rf .bundle export HOME=$PWD export RBENV_VERSION=ree-1.8.7-2012.02 rbenv exec gem list bundler | grep 'bundler' || gem install bundler cd /etc/bundler rbenv exec bundle install --shebang ruby-local-exec --binstubs /usr/local/picorstubs EOS action :nothing end This script is run when the Gemfile changes in /etc/bundler (our current location for the Picor gems). the gems chefs are installed almost the same way:\nscript \"Bundle chef gems\" do interpreter \"bash\" user \"root\" cwd \"/root/\" environment rbenv_as_hash code \u0026lt;\u0026lt;-EOS export RBENV_VERSION=ree-1.8.7-2012.02 rbenv execgem list bundler | grep 'bundler' || rbenv exec gem install bundler # Use this because bundle in path is 1.8 bundle rbenv exec bundle install --deployment --shebang ruby-local-exec --binstubs /usr/local/chefstubs EOS action :nothing end Once this has run, /usr/local/picotstubs contains the picor binary stubs ready to be used and the chefstubs the one for chef.\nNext Step. Rewiring daemons to use one gemset according to what I need. Once the stubs are there, this might be straighforward…\n",
-  "wordCount" : "430",
-  "inLanguage": "en",
-  "datePublished": "2012-04-02T00:00:00Z",
-  "dateModified": "2012-04-02T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "oct.zoy.org",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://oct.zoy.org/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -157,17 +80,17 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="https://oct.zoy.org/bandana.png" alt="logo" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
-            <span class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -181,33 +104,31 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
-            </span>
+            </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="https://oct.zoy.org/about" title="🪞 about">
+                <a href="http://localhost:1313/about" title="🪞 about">
                     <span>🪞 about</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/as-a-speaker" title="📢 speaker">
+                <a href="http://localhost:1313/as-a-speaker" title="📢 speaker">
                     <span>📢 speaker</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                <a href="http://localhost:1313/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/archive/" title="🕸️ old stuff">
+                <a href="http://localhost:1313/archive/" title="🕸️ old stuff">
                     <span>🕸️ old stuff</span>
                 </a>
             </li>
@@ -216,182 +137,103 @@ So far, I&rsquo;ve managed to install rbenv system wide on the servers using Rio
 </header>
 <main class="main">
 
-<header class="page-header">
-  <h1>Rbenv, chef and bundler</h1>
-</header>
-<div class="archive-year">
-  <h2 class="archive-year-header">2025<sup class="archive-count">&nbsp;&nbsp;1</sup>
-  </h2>
-  <div class="archive-month">
-    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">Devoxx FR 2025
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2025-04-18 00:00:00 &#43;0000 UTC&#39;&gt;April 18, 2025&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min</div>
-        <a class="entry-link" aria-label="post link to Devoxx FR 2025" href="https://oct.zoy.org/posts/2025-04-18-devoxx/"></a>
-      </div>
-    </div>
-  </div>
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/archive/">Archives</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Rbenv, chef and bundler
+    </h1>
+    <div class="post-meta"><span title='2012-04-02 00:00:00 +0000 UTC'>April 2, 2012</span>&nbsp;·&nbsp;3 min
+
 </div>
-<div class="archive-year">
-  <h2 class="archive-year-header">2024<sup class="archive-count">&nbsp;&nbsp;3</sup>
-  </h2>
-  <div class="archive-month">
-    <h3 class="archive-month-header">September<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">📙 Rebuilding Computer Lib
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2024-09-04 00:00:00 &#43;0000 UTC&#39;&gt;September 4, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min</div>
-        <a class="entry-link" aria-label="post link to 📙 Rebuilding Computer Lib" href="https://oct.zoy.org/posts/2024-09-04-computer-lib/"></a>
-      </div>
-    </div>
+  </header> 
+  <div class="post-content"><h4 id="what-we-aim">What we aim<a hidden class="anchor" aria-hidden="true" href="#what-we-aim">#</a></h4>
+<p>We&rsquo;re trying to use <!-- raw HTML omitted -->rbenv<!-- raw HTML omitted --> in our infrastructure in order to achieve the following multiple goals:</p>
+<ul>
+<li>Use the latest REE ruby runtime</li>
+<li>Switch to Ruby 1.9 for chef</li>
+<li>Prepare the migration to rails 3 and Ruby 1.9 for the main web application</li>
+</ul>
+<p>So far, I&rsquo;ve managed to install rbenv system wide on the servers using <!-- raw HTML omitted -->Riot Games excellent cookbook<!-- raw HTML omitted -->. A simple:</p>
+<pre tabindex="0"><code>require_recipe &#34;rbenv&#34;
+# Setup the rubies
+PICOR_RUBY=&#34;ree-1.8.7-2012.02&#34;
+CHEF_RUBY=&#34;1.9.2-p318&#34;
+OPINL_RUBY=&#34;1.9.2-p318&#34;
+
+rbenv_ruby PICOR_RUBY
+rbenv_ruby CHEF_RUBY
+</code></pre><p>in a chef cookbook, automatically download and install these versions of Ruby in the system wide rbenv. Because I&rsquo;m not ready to switch, I&rsquo;m not yet setting up automatic rbenv switching:</p>
+<pre tabindex="0"><code># File &#34;/home/apps/.rbenv-version&#34; do
+#   owner &#34;apps&#34;
+#   group &#34;apps&#34;
+#   backup false
+#   content PICOR_RUBY
+# end
+
+# File &#34;/root/.rbenv-version&#34; do
+#   owner &#34;root&#34;
+#   group &#34;root&#34;
+#   backup false
+#   content CHEF_RUBY
+# end
+</code></pre><p>But this should go in action as soon as things works ok.</p>
+<h4 id="next-step-gems">Next step, Gems<a hidden class="anchor" aria-hidden="true" href="#next-step-gems">#</a></h4>
+<p>Because <!-- raw HTML omitted -->Bundle<!-- raw HTML omitted --> has some <!-- raw HTML omitted -->kind of memory<!-- raw HTML omitted -->, you should not use it to <!-- raw HTML omitted -->deploy<!-- raw HTML omitted --> gems from a given user if you plan to deploy another gemset in another environement with the <!-- raw HTML omitted -->SAME<!-- raw HTML omitted --> user later.</p>
+<p>At fotopedia, we use <code>GEM_HOME</code> and <code>GEM_PATH</code> to change gemset because it works and it&rsquo;s really simple (for binaries, we use a combination of symlinks in <code>/usr/local/bin</code> and <code>alternative</code> selection provided by our Debian OS). So we actually install several gemset with the same user. The workaround to have bundler work correctly is to change its HOME when running. Ugly, but efficient:</p>
+<pre tabindex="0"><code>script &#34;Bundle picor gems&#34; do
+  interpreter &#34;bash&#34;
+  user &#34;root&#34;
+  cwd  &#34;/tmp/&#34;
+  environment rbenv_as_hash
+  code &lt;&lt;-EOS
+# Discard previous forced state
+rm -rf .bundle
+export HOME=$PWD
+export RBENV_VERSION=ree-1.8.7-2012.02
+rbenv exec gem list bundler | grep &#39;bundler&#39; || gem install bundler
+cd /etc/bundler
+rbenv exec bundle install --shebang ruby-local-exec --binstubs /usr/local/picorstubs
+EOS
+  action :nothing
+end
+</code></pre><p>This script is run when the Gemfile changes in <!-- raw HTML omitted -->/etc/bundler<!-- raw HTML omitted --> (our current location for the Picor gems).
+the gems chefs are installed almost the same way:</p>
+<pre tabindex="0"><code>script &#34;Bundle chef gems&#34; do
+  interpreter &#34;bash&#34;
+  user &#34;root&#34;
+  cwd &#34;/root/&#34;
+  environment rbenv_as_hash
+  code &amp;lt;&amp;lt;-EOS
+export RBENV_VERSION=ree-1.8.7-2012.02
+rbenv execgem list bundler | grep &#39;bundler&#39; || rbenv exec  gem install bundler
+# Use this because bundle in path is 1.8 bundle
+rbenv exec bundle install --deployment --shebang ruby-local-exec --binstubs /usr/local/chefstubs
+EOS
+  action :nothing
+end
+</code></pre><p>Once this has run, <!-- raw HTML omitted -->/usr/local/picotstubs<!-- raw HTML omitted --> contains the picor binary stubs ready to be used and the <!-- raw HTML omitted -->chefstubs<!-- raw HTML omitted --> the one for chef.</p>
+<p>Next Step. Rewiring daemons to use one gemset according to what I need. Once the stubs are there, this might be straighforward&hellip;</p>
+
+
   </div>
-  <div class="archive-month">
-    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🚀 Arca ou la nouvelle Eden
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2024-08-31 00:00:00 &#43;0000 UTC&#39;&gt;August 31, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to 🚀 Arca ou la nouvelle Eden" href="https://oct.zoy.org/posts/2024-09-01-arca/"></a>
-      </div>
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">⚔️ Zorro - d&rsquo;entre les morts
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2024-08-29 00:00:00 &#43;0000 UTC&#39;&gt;August 29, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to ⚔️ Zorro - d&#39;entre les morts" href="https://oct.zoy.org/posts/2024-08-29-zorro/"></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="archive-year">
-  <h2 class="archive-year-header">2023<sup class="archive-count">&nbsp;&nbsp;3</sup>
-  </h2>
-  <div class="archive-month">
-    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">📚 Lecture d&rsquo;été
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2023-08-18 00:00:00 &#43;0000 UTC&#39;&gt;August 18, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min</div>
-        <a class="entry-link" aria-label="post link to 📚 Lecture d&#39;été" href="https://oct.zoy.org/posts/2023-08-18-lecture-dete/"></a>
-      </div>
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🔆 Summer 2023 - links
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2023-08-02 00:00:00 &#43;0000 UTC&#39;&gt;August 2, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to 🔆 Summer 2023 - links" href="https://oct.zoy.org/posts/2023-08-02-links/"></a>
-      </div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🏴‍☠️ Anna&rsquo;s Archive
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2023-07-01 00:00:00 &#43;0000 UTC&#39;&gt;July 1, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to 🏴‍☠️ Anna&#39;s Archive" href="https://oct.zoy.org/posts/2023-07-01-annas-archive/"></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="archive-year">
-  <h2 class="archive-year-header">2022<sup class="archive-count">&nbsp;&nbsp;3</sup>
-  </h2>
-  <div class="archive-month">
-    <h3 class="archive-month-header">June<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🚘 Remote: my setup
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2022-06-29 00:00:00 &#43;0000 UTC&#39;&gt;June 29, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min</div>
-        <a class="entry-link" aria-label="post link to 🚘 Remote: my setup" href="https://oct.zoy.org/posts/2022-06-29-remote-my-setup/"></a>
-      </div>
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🏢 Hiring at Datadog
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2022-06-26 00:00:00 &#43;0000 UTC&#39;&gt;June 26, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;9 min</div>
-        <a class="entry-link" aria-label="post link to 🏢 Hiring at Datadog" href="https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/"></a>
-      </div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <h3 class="archive-month-header">January<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🚮 The Ad Blocking Problem
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2022-01-23 00:00:00 &#43;0000 UTC&#39;&gt;January 23, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min</div>
-        <a class="entry-link" aria-label="post link to 🚮 The Ad Blocking Problem" href="https://oct.zoy.org/posts/the-ad-blocking-problem/"></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="archive-year">
-  <h2 class="archive-year-header">2021<sup class="archive-count">&nbsp;&nbsp;1</sup>
-  </h2>
-  <div class="archive-month">
-    <h3 class="archive-month-header">March<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🚨 Git GPG and notifications
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2021-03-30 00:00:00 &#43;0000 UTC&#39;&gt;March 30, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min</div>
-        <a class="entry-link" aria-label="post link to 🚨 Git GPG and notifications" href="https://oct.zoy.org/posts/git-gpg-and-notifications/"></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="archive-year">
-  <h2 class="archive-year-header">2017<sup class="archive-count">&nbsp;&nbsp;4</sup>
-  </h2>
-  <div class="archive-month">
-    <h3 class="archive-month-header">December<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">4️⃣ four links
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2017-12-28 00:00:00 &#43;0000 UTC&#39;&gt;December 28, 2017&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to 4️⃣ four links" href="https://oct.zoy.org/posts/2017-12-28-4-links/"></a>
-      </div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">5️⃣ five short links
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2017-04-21 00:00:00 &#43;0000 UTC&#39;&gt;April 21, 2017&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to 5️⃣ five short links" href="https://oct.zoy.org/posts/2017-04-21-five-short-links/"></a>
-      </div>
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">6️⃣ six short links
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2017-04-14 00:00:00 &#43;0000 UTC&#39;&gt;April 14, 2017&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min</div>
-        <a class="entry-link" aria-label="post link to 6️⃣ six short links" href="https://oct.zoy.org/posts/2017-04-14/"></a>
-      </div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <h3 class="archive-month-header">February<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">🎯 Ansible Tips and Tricks
-        </h3>
-        <div class="archive-meta">&lt;span title=&#39;2017-02-27 00:00:00 &#43;0000 UTC&#39;&gt;February 27, 2017&lt;/span&gt;&amp;nbsp;·&amp;nbsp;10 min</div>
-        <a class="entry-link" aria-label="post link to 🎯 Ansible Tips and Tricks" href="https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/"></a>
-      </div>
-    </div>
-  </div>
-</div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/ruby/">Ruby</a></li>
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="https://oct.zoy.org/">oct.zoy.org</a></span>
+        <span>&copy; 2025 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

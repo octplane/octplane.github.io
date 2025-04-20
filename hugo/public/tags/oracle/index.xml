@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Oracle on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/oracle/</link>
+    <link>http://localhost:1313/tags/oracle/</link>
     <description>Recent content in Oracle on oct.zoy.org</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Dec 2008 00:00:00 +0000</lastBuildDate><atom:link href="https://oct.zoy.org/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Dec 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rman is clever</title>
-      <link>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</link>
+      <link>http://localhost:1313/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</link>
       <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
-      
-      <guid>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</guid>
+      <guid>http://localhost:1313/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</guid>
       <description>&lt;p&gt;Well, sort of. Today, after &lt;!-- raw HTML omitted --&gt;patching one of my oracle database server&lt;!-- raw HTML omitted --&gt; against a migration issue that prevented it from shutting down clean. I finally managed to run&lt;!-- raw HTML omitted --&gt; the magic command&lt;!-- raw HTML omitted --&gt;:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;alter database archivelog;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That would enable me to backup the database. Unfortunately, the disk space on this server is too low to allow two full backups of the database. I wanted to delete the old backup before doing the new one in &lt;code&gt;rman&lt;/code&gt; but &lt;code&gt;rman&lt;/code&gt; is too clever: You cannot delete the last remaining backup! I now have to find larger disks.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
