@@ -10,9 +10,9 @@
     <atom:link href="https://oct.zoy.org/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upstart, rc et Ubuntu 9.10</title>
-      <link>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
       <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
       <description>&lt;p&gt;Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;)&lt;/li&gt;

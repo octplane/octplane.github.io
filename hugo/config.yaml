@@ -24,7 +24,7 @@ menu:
       weight: 2
     - identifier: oldies
       name: 🕸️ old stuff
-      url: /archive/
+      url: /old-stuff/
       weight: 50
 imaging:
   anchor: Smart

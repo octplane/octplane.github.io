@@ -53,19 +53,22 @@
     <loc>https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/</loc>
     <lastmod>2017-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2016/03/04/40.2016-03-04-09-03/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://oct.zoy.org/old-stuff/2016/03/04/40.2016-03-04-09-03/default/</loc>
     <lastmod>2016-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/ios/</loc>
     <lastmod>2015-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</loc>
     <lastmod>2015-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/</loc>
     <lastmod>2015-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</loc>
     <lastmod>2015-10-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/code/</loc>
@@ -74,16 +77,16 @@
     <loc>https://oct.zoy.org/tags/python/</loc>
     <lastmod>2015-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2015/04/10/37.2015-04-10-rust-devoxx/single/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2015/04/10/37.2015-04-10-rust-devoxx/single/</loc>
     <lastmod>2015-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/rant/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2015/01/26/35.2015-01-26-rusty-racoon/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</loc>
     <lastmod>2015-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/aws/</loc>
@@ -92,13 +95,13 @@
     <loc>https://oct.zoy.org/tags/ha/</loc>
     <lastmod>2014-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/09/15/33.2014-09-15-redundancy-aws/default/</loc>
     <lastmod>2014-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/flickr/</loc>
     <lastmod>2014-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</loc>
     <lastmod>2014-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/opensource/</loc>
@@ -110,10 +113,10 @@
     <loc>https://oct.zoy.org/tags/gna-gna/</loc>
     <lastmod>2014-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</loc>
     <lastmod>2014-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/07/01/29.2014-07-01-wikquote1/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</loc>
     <lastmod>2014-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/wikipedia/</loc>
@@ -122,28 +125,28 @@
     <loc>https://oct.zoy.org/tags/jeu/</loc>
     <lastmod>2014-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/04/24/28.2014-04-24-trainyard/default/</loc>
     <lastmod>2014-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/gaming/</loc>
     <lastmod>2014-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default/</loc>
     <lastmod>2014-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</loc>
     <lastmod>2014-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/02/18/25.2014-02-18-rigor-mortis/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</loc>
     <lastmod>2014-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/users/</loc>
     <lastmod>2014-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2014/02/14/24.2014-02-14-ouaich/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2014/02/14/24.2014-02-14-ouaich/default/</loc>
     <lastmod>2014-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</loc>
     <lastmod>2012-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/ruby/</loc>
@@ -152,19 +155,19 @@
     <loc>https://oct.zoy.org/tags/bundler/</loc>
     <lastmod>2012-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</loc>
     <lastmod>2012-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/joke/</loc>
     <lastmod>2012-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</loc>
     <lastmod>2012-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/28/20.2012-03-28-blog-styling/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/28/20.2012-03-28-blog-styling/default/</loc>
     <lastmod>2012-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</loc>
     <lastmod>2012-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/bug/</loc>
@@ -179,13 +182,13 @@
     <loc>https://oct.zoy.org/categories/open-uri/</loc>
     <lastmod>2012-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</loc>
     <lastmod>2012-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/ruby/</loc>
     <lastmod>2012-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</loc>
     <lastmod>2012-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/devel/</loc>
@@ -194,28 +197,28 @@
     <loc>https://oct.zoy.org/categories/fran%C3%A7ais/</loc>
     <lastmod>2012-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</loc>
     <lastmod>2012-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</loc>
     <lastmod>2010-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/</loc>
     <lastmod>2010-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2010/08/18/12.2010-08-18-intern-leaving/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2010/08/18/12.2010-08-18-intern-leaving/default/</loc>
     <lastmod>2010-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/ubuntu/</loc>
     <lastmod>2010-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</loc>
     <lastmod>2010-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/python/</loc>
     <lastmod>2009-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</loc>
     <lastmod>2009-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/admin/</loc>
@@ -224,25 +227,25 @@
     <loc>https://oct.zoy.org/categories/linux/</loc>
     <lastmod>2009-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2009/02/20/10.2009-02-20-powerdns/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</loc>
     <lastmod>2009-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/iis/</loc>
     <lastmod>2008-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</loc>
     <lastmod>2008-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/monitoring/</loc>
     <lastmod>2008-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</loc>
     <lastmod>2008-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/windows/</loc>
     <lastmod>2008-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/11/07.2008-12-11-collate/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/11/07.2008-12-11-collate/default/</loc>
     <lastmod>2008-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/devel-mssql/</loc>
@@ -251,7 +254,7 @@
     <loc>https://oct.zoy.org/tags/admin/</loc>
     <lastmod>2008-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/10/04.2008-12-10-crowded-room/default/</loc>
     <lastmod>2008-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/tags/fun/</loc>
@@ -260,10 +263,10 @@
     <loc>https://oct.zoy.org/categories/java/</loc>
     <lastmod>2008-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/10/06.2008-12-10-velocity-engine/default/</loc>
     <lastmod>2008-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/10/05.2008-12-10-tools-i-use/default/</loc>
     <lastmod>2008-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/categories/user/</loc>
@@ -272,10 +275,10 @@
     <loc>https://oct.zoy.org/tags/oracle/</loc>
     <lastmod>2008-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/09/02.2008-12-09-powerdns/single/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/09/02.2008-12-09-powerdns/single/</loc>
     <lastmod>2008-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</loc>
+    <loc>https://oct.zoy.org/old-stuff/2008/12/09/03.2008-12-09-rman-is-clever/default/</loc>
     <lastmod>2008-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://oct.zoy.org/posts/2024-08-28-more-books/</loc>

@@ -10,18 +10,18 @@
     <atom:link href="https://oct.zoy.org/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IIS fails and &#34;the service did not return an error&#34;</title>
-      <link>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
       <description>&lt;p&gt;If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.&lt;/p&gt;
 &lt;p&gt;Made my day.&lt;/p&gt;
 &lt;p&gt;Kudos to the &lt;!-- raw HTML omitted --&gt;databaseforum&lt;!-- raw HTML omitted --&gt; for the fix I was looking for in the internet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tools I use</title>
-      <link>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/10/05.2008-12-10-tools-i-use/default/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/10/05.2008-12-10-tools-i-use/default/</guid>
       <description>&lt;p&gt;List of software I use daily at work :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AutoHotkey: Autohotkey provides a scriptable way to automate most of the management of my Windows XP. I currently use one script that enable X-Windows style window dragging/resizing.&lt;/li&gt;

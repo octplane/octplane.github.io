@@ -10,9 +10,9 @@
     <atom:link href="https://oct.zoy.org/categories/bug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open-uri preventing redirects from https to http</title>
-      <link>https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
       <description>&lt;p&gt;Because it assumes it&amp;rsquo;s insecure. That&amp;rsquo;s quite annoying and should be configurable.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;

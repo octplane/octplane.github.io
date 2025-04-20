@@ -9,7 +9,7 @@
     <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://oct.zoy.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Devoxx FR 2025</title>
+      <title>💬 Devoxx FR 2025</title>
       <link>https://oct.zoy.org/posts/2025-04-18-devoxx/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://oct.zoy.org/posts/2025-04-18-devoxx/</guid>
@@ -166,9 +166,9 @@
     </item>
     <item>
       <title>Le scraping pour les nuls</title>
-      <link>https://oct.zoy.org/archive/2016/03/04/40.2016-03-04-09-03/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2016/03/04/40.2016-03-04-09-03/default/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2016/03/04/40.2016-03-04-09-03/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2016/03/04/40.2016-03-04-09-03/default/</guid>
       <description>&lt;p&gt;Mes slides sur la présentation scraping que j&amp;rsquo;ai faite hier chez Ippon Technologies, avec Fabien Vauchelles.&lt;/p&gt;
 &lt;p&gt;Elle a été suivie de la présentation du framework Scrappy :&lt;/p&gt;
 &lt;ul&gt;
@@ -182,26 +182,26 @@
     </item>
     <item>
       <title>Must-Have iOS Apps, 2015 Edition</title>
-      <link>https://oct.zoy.org/archive/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</link>
       <pubDate>Tue, 29 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2015/12/29/39.2015-12-29-13-12-workflow-pythonista/default/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.macstories.net/roundups/my-must-have-ios-apps-2015-edition/&#34;&gt;This article&lt;/a&gt; made me buy Workflow and Pythonista. There are numerous very useful tools for your iDevices.&lt;/p&gt;
 &lt;p&gt;What are your essential applications?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Catchup TV sous OSX (ou comment faire du replay facile)</title>
-      <link>https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</link>
       <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2015/10/08/38.2015-10-08-weboob-osx/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</guid>
       <description>&lt;h1 id=&#34;le-catchup-cest-chouette&#34;&gt;Le Catchup, c&amp;rsquo;est chouette&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;Cet article explique comment installer facilement Weboob sur OSX et s&amp;rsquo;en servir pour télécharger vos émissions préférées en différé.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&amp;rsquo;hier matin, je m&amp;rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&amp;rsquo;ai raté. J&amp;rsquo;aimerai bien le revoir, voir même avoir l&amp;rsquo;enregistrement de l&amp;rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devoxx 2015 - Rust langage le plus excitant depuis Scala</title>
-      <link>https://oct.zoy.org/archive/2015/04/10/37.2015-04-10-rust-devoxx/single/</link>
+      <link>https://oct.zoy.org/old-stuff/2015/04/10/37.2015-04-10-rust-devoxx/single/</link>
       <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2015/04/10/37.2015-04-10-rust-devoxx/single/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2015/04/10/37.2015-04-10-rust-devoxx/single/</guid>
       <description>&lt;p&gt;Présentation faite par &lt;a href=&#34;http://www.poumeyrol.fr&#34;&gt;@kalizoy&lt;/a&gt; et moi-même chez Ippon, lors de l&amp;rsquo;un IPEvent, et à l&amp;rsquo;occasion de la quatrième édition de &lt;a href=&#34;http://www.devoxx.fr/&#34;&gt;Devoxx France&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;La vidéo de notre intervention filmée chez &lt;a href=&#34;http://www.ippon.fr/&#34;&gt;Ippon&lt;/a&gt; est disponible sur &lt;a href=&#34;https://www.youtube.com/watch?v=TZmJC6uRTCQ&#34;&gt;Youtube&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;La présentation est visible sur &lt;a href=&#34;https://oct.zoy.org/presentations/rust-devoxx/&#34;&gt;au bout de ce lien&lt;/a&gt;.&lt;/p&gt;
@@ -217,18 +217,18 @@
     </item>
     <item>
       <title>Provisioning made more complex</title>
-      <link>https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Something’s going wrong.&lt;/p&gt;
 &lt;p&gt;I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rusty Racoon</title>
-      <link>https://oct.zoy.org/archive/2015/01/26/35.2015-01-26-rusty-racoon/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2015/01/26/35.2015-01-26-rusty-racoon/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Je me suis mis à jouer avec &lt;a href=&#34;http://fr.wikipedia.org/wiki/Rust_(taxonomy:&#34;&gt;Rust&lt;/a&gt;, le nouveau langage de Mozilla. C’est un changement intéressant, moi qui suis plutôt habitué aux langages moins stricts et plus « scripts » qu’à des langages compilés et à la tête dure.&lt;/p&gt;
 &lt;p&gt;Rust a plusieurs caractéristiques intéressantes, outre le fait qu’il est encore en version instable et donc pas vraiment utilisable pour autre chose que du gros bidouillage (la bibliothèque standard change encore assez rapidement, et un morceau de code qui compile un jour peut vous péter à la figure le lendemain) : Il est &lt;strong&gt;fortement typé&lt;/strong&gt;, tourne &lt;strong&gt;sans VM&lt;/strong&gt;,** sans GC**, et possède quelques-uns des raffinements des taxonomy:
@@ -237,9 +237,9 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Redundancy in Amazon EC2</title>
-      <link>https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/09/15/33.2014-09-15-redundancy-aws/default/</link>
       <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/09/15/33.2014-09-15-redundancy-aws/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/09/15/33.2014-09-15-redundancy-aws/default/</guid>
       <description>&lt;h1 id=&#34;redundancy-in-aws-ec2&#34;&gt;Redundancy in AWS EC2&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -249,9 +249,9 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Introducing the Flickr Attributor </title>
-      <link>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</link>
       <pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/09/08/31.2014-09-08-the-flickr-attributor/default/</guid>
       <description>&lt;h2 id=&#34;share-and-respect-the-license-&#34;&gt;Share and respect the license !&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h3 id=&#34;whats-wrong-with-creative-commons-picture-sharing-&#34;&gt;What&amp;rsquo;s wrong with Creative Commons picture sharing ?&lt;/h3&gt;
@@ -261,9 +261,9 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Monoprix, tu abuses  </title>
-      <link>https://oct.zoy.org/archive/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;non-sérieux-monoprix-tu-abuses&#34;&gt;Non sérieux, Monoprix, tu abuses…&lt;/h1&gt;
 &lt;p&gt;Au début, c’était comme une belle histoire d’amour. Tu avais un joli site ouaib, avec de belles couleurs, plein de produits à commander, un moteur de recherche performant, des délais de livraison pas bien longs, des tarifs oui-peut-être-un-peu-élevés-mais-bon.&lt;/p&gt;
@@ -271,27 +271,27 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Analyse de fr.wikiquote.org</title>
-      <link>https://oct.zoy.org/archive/2014/07/01/29.2014-07-01-wikquote1/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/07/01/29.2014-07-01-wikquote1/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</guid>
       <description>&lt;p&gt;Cet article évoque l&amp;rsquo;analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.&lt;/p&gt;
 &lt;h2 id=&#34;wikiquote-&#34;&gt;Wikiquote ?&lt;/h2&gt;
 &lt;p&gt;Si vous l&amp;rsquo;ignoriez encore, &lt;a href=&#34;http://fr.wikiquote.org&#34;&gt;wikiquote&lt;/a&gt; est un des projets Wikimedia qui contient entre autres la très connue &lt;a href=&#34;http://fr.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;, l&amp;rsquo;encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Train Yard</title>
-      <link>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/04/24/28.2014-04-24-trainyard/default/</link>
       <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/04/24/28.2014-04-24-trainyard/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/04/24/28.2014-04-24-trainyard/default/</guid>
       <description>&lt;p&gt;Des trains, des gares et déraillent.&lt;/p&gt;
 &lt;h3 id=&#34;le-petit-train-dans-lécran&#34;&gt;Le petit train dans l&amp;rsquo;écran&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/fr/app/trainyard/id348719156?mt=8&amp;amp;uo=4&#34;&gt;Train Yard&lt;/a&gt; par &lt;a href=&#34;https://twitter.com/MattRix/&#34;&gt;Matt Rix&lt;/a&gt;, au départ, on se dit que c&amp;rsquo;est vraiment un jeu pas très malin. On a la gare de départ, celle d&amp;rsquo;arrivée et entre les deux on place les rails pour que la petite locomotive arrive à destination. On place les rails là où on a envie, puis on clique sur le bouton marche et les trains se mettent en route et on ne peut plus rien changer avant que tout ne soit fini. Si on interrompt le déroulement, tout est annulé et on peut modifier le parcours avant de relancer les locos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heroes of loot</title>
-      <link>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default/</link>
       <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/04/16/27.2014-04-16-heros-of-loote/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default/</guid>
       <description>&lt;p&gt;Heroes of Loot, un peu le Gauntlet des années 2010. Meurtres, projectiles et petits démons à la pelle.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;img alt=&#34;le jeu est entrecoupé de petites séquences avec des blagues pourries. Ca fait sourire.&#34; loading=&#34;lazy&#34; src=&#34;IMG_2877.PNG?cropResize=600,600&#34;&gt;&lt;/p&gt;
@@ -300,26 +300,26 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Démarrer Node.js en 8 secondes</title>
-      <link>https://oct.zoy.org/archive/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</link>
       <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</guid>
       <description>&lt;p&gt;Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.&lt;/p&gt;
 &lt;p&gt;Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu&amp;rsquo;est node.js. Les pré-requis sont &lt;strong&gt;un cerveau&lt;/strong&gt;, &lt;strong&gt;un ordinateur&lt;/strong&gt;, &lt;strong&gt;une connexion internet&lt;/strong&gt; et une tout petite connaissance de &lt;strong&gt;javascript&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rigor Mortis</title>
-      <link>https://oct.zoy.org/archive/2014/02/18/25.2014-02-18-rigor-mortis/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</link>
       <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/02/18/25.2014-02-18-rigor-mortis/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</guid>
       <description>&lt;p&gt;Vous avez pas parfois l’impression qu’on se fout de vous ?&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Cela fait une grosse dizaine d&amp;rsquo;années que je suis sur le marché du travail, et que j&amp;rsquo;ai donc l&amp;rsquo;occasion, en tant qu&amp;rsquo;adulte responsable, de payer mes impôts et d&amp;rsquo;avoir des interactions avec des gens qui m&amp;rsquo;appellent Monsieur (et que j&amp;rsquo;appelle aussi Monsieur ou Madame, parce que je suis poli). Chacune de ces intéractions montre comment les gens vous jugent, vous apprécient, ou vous ignorent et sont toujours très intéressantes au point de vue ethnologique.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A propos</title>
-      <link>https://oct.zoy.org/archive/2014/02/14/24.2014-02-14-ouaich/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/02/14/24.2014-02-14-ouaich/default/</link>
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2014/02/14/24.2014-02-14-ouaich/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/02/14/24.2014-02-14-ouaich/default/</guid>
       <description>&lt;p&gt;Une nouvelle expérience de blog/site perso ou autre espace d&amp;rsquo;expression personnelle.&lt;/p&gt;
 &lt;p&gt;Pour le moment, je ne suis pas du tout certain de maintenir quelque cadence que ce soit. Bonne lecture, et si vous vous êtes perdus par ici, je tâcherai de vous donner des petites blagues à manger.&lt;/p&gt;
 &lt;p&gt;Ce site est propulsé par Jekyll. Ses sources sont disponibles  &lt;a href=&#34;https://github.com/octplane/octplane.github.io&#34;&gt;ici&lt;/a&gt;. Avant, c&amp;rsquo;était Ghost avec du Node.js, mais ça, c&amp;rsquo;était avant.&lt;/p&gt;
@@ -327,9 +327,9 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Rbenv, chef and bundler</title>
-      <link>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</link>
       <pubDate>Mon, 02 Apr 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/04/02/23.2012-04-02-rbenv-chef-and-bundler/default/</guid>
       <description>&lt;h4 id=&#34;what-we-aim&#34;&gt;What we aim&lt;/h4&gt;
 &lt;p&gt;We&amp;rsquo;re trying to use &lt;!-- raw HTML omitted --&gt;rbenv&lt;!-- raw HTML omitted --&gt; in our infrastructure in order to achieve the following multiple goals:&lt;/p&gt;
 &lt;ul&gt;
@@ -341,9 +341,9 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Bundler, oh, I hate thou</title>
-      <link>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
       <pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
       <description>&lt;p&gt;Another merry joke from my bundler friend. If you ever switch to deployment mode
 (using the &lt;!-- raw HTML omitted --&gt;bundle install &amp;ndash;deployment&lt;!-- raw HTML omitted --&gt;
 command), do not come and cry if bundler starts saying:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
@@ -360,16 +360,16 @@ gemname (version)
     </item>
     <item>
       <title>A pinterest spammer talks</title>
-      <link>https://oct.zoy.org/archive/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</link>
       <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/28/21.2012-03-28-pinterest-spammer-talks/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Blog Styling</title>
-      <link>https://oct.zoy.org/archive/2012/03/28/20.2012-03-28-blog-styling/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/28/20.2012-03-28-blog-styling/default/</link>
       <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/28/20.2012-03-28-blog-styling/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/28/20.2012-03-28-blog-styling/default/</guid>
       <description>&lt;p&gt;This article describes the way I style things in this blog.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -391,9 +391,9 @@ blockquote :last-child{margin-bottom:0;}
     </item>
     <item>
       <title>Les espaces insécables sous OSX</title>
-      <link>https://oct.zoy.org/archive/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</link>
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</guid>
       <description>&lt;p&gt;Hej,&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 J&amp;rsquo;ai lu &lt;!-- raw HTML omitted --&gt;hier l&amp;rsquo;article&lt;!-- raw HTML omitted --&gt; de &lt;!-- raw HTML omitted --&gt;Bruno Michel&lt;!-- raw HTML omitted --&gt; qui parle des espaces insécables pour les développeurs et je me suis rappelé de l&amp;rsquo;horreur qu&amp;rsquo;il y a à taper sous OSX, avec un clavier français les commandes suivantes:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
@@ -402,9 +402,9 @@ J&amp;rsquo;ai lu &lt;!-- raw HTML omitted --&gt;hier l&amp;rsquo;article&lt;!--
     </item>
     <item>
       <title>Open-uri preventing redirects from https to http</title>
-      <link>https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
       <description>&lt;p&gt;Because it assumes it&amp;rsquo;s insecure. That&amp;rsquo;s quite annoying and should be configurable.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
@@ -418,17 +418,17 @@ A bug exists for the stdlib &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http
     </item>
     <item>
       <title>Ruby-io-tail at version 0.0.3</title>
-      <link>https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</guid>
       <description>&lt;p&gt;The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.&lt;/p&gt;
 &lt;p&gt;As usual, the gem is available from: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://rubygems.org/gems/io-tail&#34;&gt;https://rubygems.org/gems/io-tail&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sortie de ruby io tail</title>
-      <link>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
       <description>&lt;p&gt;Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.&lt;/p&gt;
 &lt;p&gt;Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d&amp;rsquo;un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -438,9 +438,9 @@ Pour plus d&amp;rsquo;information:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Build shell-FM on DS-210J</title>
-      <link>https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</link>
       <pubDate>Mon, 04 Oct 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/10/04/15.2010-10-04-build-shell-fm-on-ds-210j/default/</guid>
       <description>&lt;h2 id=&#34;how-to-build-shell-fm-on-ds-210j&#34;&gt;How to build shell-fm on DS 210J&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;Needed Package&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -482,9 +482,9 @@ ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o hi
     </item>
     <item>
       <title>Mongo DB Startup slow as hell (in some conditions)</title>
-      <link>https://oct.zoy.org/archive/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/</link>
       <pubDate>Thu, 19 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/08/19/14.2010-08-19-mongo-db-startup-slow-as-hell-in-some/default/</guid>
       <description>&lt;p&gt;We are now in the process of switching to Mongo DB 1.6.1 in order to use Sharding and Replicat Sets.&lt;/p&gt;
 &lt;p&gt;Yesterday, I found out that when Mongo was printing:&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -493,17 +493,17 @@ ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o hi
     </item>
     <item>
       <title>Intern Leaving</title>
-      <link>https://oct.zoy.org/archive/2010/08/18/12.2010-08-18-intern-leaving/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/08/18/12.2010-08-18-intern-leaving/default/</link>
       <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2010/08/18/12.2010-08-18-intern-leaving/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/08/18/12.2010-08-18-intern-leaving/default/</guid>
       <description>&lt;p&gt;Today, our intern Wilfred is going away after 5 or 6 weeks of internship. He worked on monitoring the Google page rank of our pages, and of given keywords we want to follow at Fotopedia. Of course, he mainly did ruby code, with mongo, redis/resque and protoviz graphs.&lt;/p&gt;
 &lt;p&gt;We are now almost able to identify the progress of the rank of most of our page across time. This will be very useful in a near future.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upstart, rc et Ubuntu 9.10</title>
-      <link>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
       <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
       <description>&lt;p&gt;Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;)&lt;/li&gt;
@@ -516,65 +516,65 @@ ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o hi
     </item>
     <item>
       <title>Signify to GMail RSS signature Converter</title>
-      <link>https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</link>
       <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</guid>
       <description>&lt;p&gt;Just wanted to share this small python code that naïvely converts a &lt;!-- raw HTML omitted --&gt;signify &lt;!-- raw HTML omitted --&gt; parameter file into a RSS file that can be used in &lt;!-- raw HTML omitted --&gt;GMail&lt;!-- raw HTML omitted --&gt; with the Random Signature Appender lab feature.&lt;/p&gt;
 &lt;p&gt;It doesn&amp;rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature &lt;!-- raw HTML omitted --&gt;has limitation to 96 chars in signature&lt;!-- raw HTML omitted --&gt;. This definitively sucks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PowerDNS</title>
-      <link>https://oct.zoy.org/archive/2009/02/20/10.2009-02-20-powerdns/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</link>
       <pubDate>Fri, 20 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2009/02/20/10.2009-02-20-powerdns/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</guid>
       <description>&lt;p&gt;{% raw %}&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>IIS fails and &#34;the service did not return an error&#34;</title>
-      <link>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
       <description>&lt;p&gt;If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.&lt;/p&gt;
 &lt;p&gt;Made my day.&lt;/p&gt;
 &lt;p&gt;Kudos to the &lt;!-- raw HTML omitted --&gt;databaseforum&lt;!-- raw HTML omitted --&gt; for the fix I was looking for in the internet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RAID Forever</title>
-      <link>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
       <description>&lt;p&gt;MegaCLI (LSI) PERC Command line client is &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt; in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The &lt;!-- raw HTML omitted --&gt;cheats sheet you can find on the internet&lt;!-- raw HTML omitted --&gt; is rather ok, except for the download link I just wrote down.&lt;/p&gt;</description>
     </item>
     <item>
       <title>COLLATE</title>
-      <link>https://oct.zoy.org/archive/2008/12/11/07.2008-12-11-collate/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/11/07.2008-12-11-collate/default/</link>
       <pubDate>Thu, 11 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/11/07.2008-12-11-collate/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/11/07.2008-12-11-collate/default/</guid>
       <description>&lt;p&gt;Never, never forget to add the &lt;!-- raw HTML omitted --&gt;COLLATION &lt;!-- raw HTML omitted --&gt;of your temporary tables when you write MS-SQL server stored procedures. If you forget to do that and you ever migrate from say SQL Server 2005 to SQL Server 2000 some database, you end up doing the following:&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Crowded room.</title>
-      <link>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/10/04.2008-12-10-crowded-room/default/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/10/04.2008-12-10-crowded-room/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/10/04.2008-12-10-crowded-room/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The archive room where one of our poor intern is just trying to sort 4 years of &lt;!-- raw HTML omitted --&gt;MSDN&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;CDs&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
 &lt;p&gt;We plan to keep only a few of these, but before, we need to know what we have here. It&amp;rsquo;s an interesting thing to do. At least on the organization point of view (Note the small tables under the main one :D).&lt;/p&gt;</description>
     </item>
     <item>
       <title>The velocity engine</title>
-      <link>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/10/06.2008-12-10-velocity-engine/default/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/10/06.2008-12-10-velocity-engine/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/10/06.2008-12-10-velocity-engine/default/</guid>
       <description>&lt;p&gt;We&amp;rsquo;re about to use the &lt;!-- raw HTML omitted --&gt;velocity engine&lt;!-- raw HTML omitted --&gt; soon in one of our project. The velocity engine is a java library that performs template rendering for your applications. It uses a custom language to populate the template called the &lt;!-- raw HTML omitted --&gt;VTL&lt;!-- raw HTML omitted --&gt;. We will integrate the library with one of the latest Spring version and use it to render our view automatically.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tools I use</title>
-      <link>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/10/05.2008-12-10-tools-i-use/default/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/10/05.2008-12-10-tools-i-use/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/10/05.2008-12-10-tools-i-use/default/</guid>
       <description>&lt;p&gt;List of software I use daily at work :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AutoHotkey: Autohotkey provides a scriptable way to automate most of the management of my Windows XP. I currently use one script that enable X-Windows style window dragging/resizing.&lt;/li&gt;
@@ -589,17 +589,17 @@ ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o hi
     </item>
     <item>
       <title>Powerdns</title>
-      <link>https://oct.zoy.org/archive/2008/12/09/02.2008-12-09-powerdns/single/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/09/02.2008-12-09-powerdns/single/</link>
       <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/09/02.2008-12-09-powerdns/single/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/09/02.2008-12-09-powerdns/single/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.powerdns.com/&#34;&gt;Powerdns&lt;/a&gt; is a very nice DNS server. It provides out of the box Geo sensitivity, enabling you to redirect your customer to different servers according to their origin. We use that we a quite complex zone setup.&lt;/p&gt;
 &lt;p&gt;Also it can be plugged onto a SQL backend (such as mysql, postgresql or sqlite). The whole stuff can then be managed by dedicated web tools. We use &lt;a href=&#34;https://www.openhub.net/p/pdnsadmin&#34;&gt;pdnsadmin&lt;/a&gt; (php based, requires mysql) and this is enough for simple uses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>rman is clever</title>
-      <link>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/09/03.2008-12-09-rman-is-clever/default/</link>
       <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/09/03.2008-12-09-rman-is-clever/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/09/03.2008-12-09-rman-is-clever/default/</guid>
       <description>&lt;p&gt;Well, sort of. Today, after &lt;!-- raw HTML omitted --&gt;patching one of my oracle database server&lt;!-- raw HTML omitted --&gt; against a migration issue that prevented it from shutting down clean. I finally managed to run&lt;!-- raw HTML omitted --&gt; the magic command&lt;!-- raw HTML omitted --&gt;:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;alter database archivelog;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That would enable me to backup the database. Unfortunately, the disk space on this server is too low to allow two full backups of the database. I wanted to delete the old backup before doing the new one in &lt;code&gt;rman&lt;/code&gt; but &lt;code&gt;rman&lt;/code&gt; is too clever: You cannot delete the last remaining backup! I now have to find larger disks.&lt;/p&gt;</description>

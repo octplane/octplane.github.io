@@ -10,9 +10,9 @@
     <atom:link href="https://oct.zoy.org/categories/monitoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RAID Forever</title>
-      <link>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/archive/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
       <description>&lt;p&gt;MegaCLI (LSI) PERC Command line client is &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt; in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The &lt;!-- raw HTML omitted --&gt;cheats sheet you can find on the internet&lt;!-- raw HTML omitted --&gt; is rather ok, except for the download link I just wrote down.&lt;/p&gt;</description>
     </item>
   </channel>
