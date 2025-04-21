@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bug on oct.zoy.org</title>
-    <link>https://oct.zoy.org/categories/bug/</link>
+    <link>http://localhost:1313/categories/bug/</link>
     <description>Recent content in Bug on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/categories/bug/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/bug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open-uri preventing redirects from https to http</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
+      <link>http://localhost:1313/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
       <description>&lt;p&gt;Because it assumes it&amp;rsquo;s insecure. That&amp;rsquo;s quite annoying and should be configurable.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;

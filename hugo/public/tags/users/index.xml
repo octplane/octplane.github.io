@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Users on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/users/</link>
+    <link>http://localhost:1313/tags/users/</link>
     <description>Recent content in Users on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/tags/users/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/users/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rigor Mortis</title>
-      <link>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</link>
+      <link>http://localhost:1313/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</link>
       <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</guid>
       <description>&lt;p&gt;Vous avez pas parfois l’impression qu’on se fout de vous ?&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Cela fait une grosse dizaine d&amp;rsquo;années que je suis sur le marché du travail, et que j&amp;rsquo;ai donc l&amp;rsquo;occasion, en tant qu&amp;rsquo;adulte responsable, de payer mes impôts et d&amp;rsquo;avoir des interactions avec des gens qui m&amp;rsquo;appellent Monsieur (et que j&amp;rsquo;appelle aussi Monsieur ou Madame, parce que je suis poli). Chacune de ces intéractions montre comment les gens vous jugent, vous apprécient, ou vous ignorent et sont toujours très intéressantes au point de vue ethnologique.&lt;/p&gt;</description>

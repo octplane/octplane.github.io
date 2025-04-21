@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on oct.zoy.org</title>
-    <link>https://oct.zoy.org/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💬 Devoxx FR 2025</title>
-      <link>https://oct.zoy.org/posts/2025-04-18-devoxx/</link>
+      <link>http://localhost:1313/posts/2025-04-18-devoxx/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2025-04-18-devoxx/</guid>
+      <guid>http://localhost:1313/posts/2025-04-18-devoxx/</guid>
       <description>&lt;h1 id=&#34;devoxx-2025&#34;&gt;&lt;a href=&#34;https://www.devoxx.fr/agenda-2025&#34;&gt;Devoxx 2025&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Un petit résumé des conférences Devoxx auxquelles j&amp;rsquo;ai pu assister cette année.&lt;/p&gt;
 &lt;h3 id=&#34;iceberg&#34;&gt;&lt;a href=&#34;https://www.devoxx.fr/agenda-2025/talk/iceberg-pourquoi-devez-vous-connaitre-ce-nouveau-format-de-stockage-de-donnees&#34;&gt;Iceberg&lt;/a&gt;&lt;/h3&gt;
@@ -20,9 +20,9 @@
     </item>
     <item>
       <title>📙 Rebuilding Computer Lib</title>
-      <link>https://oct.zoy.org/posts/2024-09-04-computer-lib/</link>
+      <link>http://localhost:1313/posts/2024-09-04-computer-lib/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2024-09-04-computer-lib/</guid>
+      <guid>http://localhost:1313/posts/2024-09-04-computer-lib/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://archive.org/details/computer-lib-dream-machines/mode/1up&#34;&gt;Computer Lib - Dream Machines&lt;/a&gt; is a book by &lt;a href=&#34;https://en.wikipedia.org/wiki/Ted_Nelson&#34;&gt;Ted Nelson&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;After I was introduced to the book, I became obsessed by the amazing layout and style of the book, that reminded me a bit of the style of &lt;a href=&#34;https://en.wikipedia.org/wiki/Why_the_lucky_stiff&#34;&gt;why the lucky stiff&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://poignant.guide&#34;&gt;Poignant Guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have pulled the PDF, reordered it to have its two parts correctly. Then I extracted all text with a simple OCR engine.&lt;/p&gt;
@@ -36,58 +36,58 @@
     </item>
     <item>
       <title>🚀 Arca ou la nouvelle Eden</title>
-      <link>https://oct.zoy.org/posts/2024-09-01-arca/</link>
+      <link>http://localhost:1313/posts/2024-09-01-arca/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2024-09-01-arca/</guid>
+      <guid>http://localhost:1313/posts/2024-09-01-arca/</guid>
       <description>Un vaisseau pour sauver l&amp;rsquo;humanité, vraiment ?</description>
     </item>
     <item>
       <title>⚔️ Zorro - d&#39;entre les morts</title>
-      <link>https://oct.zoy.org/posts/2024-08-29-zorro/</link>
+      <link>http://localhost:1313/posts/2024-08-29-zorro/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2024-08-29-zorro/</guid>
+      <guid>http://localhost:1313/posts/2024-08-29-zorro/</guid>
       <description>Un Zorro modernisé&amp;hellip; mais sans le sergent Garcia.</description>
     </item>
     <item>
       <title>📚 Lecture d&#39;été</title>
-      <link>https://oct.zoy.org/posts/2023-08-18-lecture-dete/</link>
+      <link>http://localhost:1313/posts/2023-08-18-lecture-dete/</link>
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2023-08-18-lecture-dete/</guid>
+      <guid>http://localhost:1313/posts/2023-08-18-lecture-dete/</guid>
       <description>Ce que je lis en ce moment</description>
     </item>
     <item>
       <title>🔆 Summer 2023 - links</title>
-      <link>https://oct.zoy.org/posts/2023-08-02-links/</link>
+      <link>http://localhost:1313/posts/2023-08-02-links/</link>
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2023-08-02-links/</guid>
+      <guid>http://localhost:1313/posts/2023-08-02-links/</guid>
       <description>A few links for the summer</description>
     </item>
     <item>
       <title>🏴‍☠️ Anna&#39;s Archive</title>
-      <link>https://oct.zoy.org/posts/2023-07-01-annas-archive/</link>
+      <link>http://localhost:1313/posts/2023-07-01-annas-archive/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2023-07-01-annas-archive/</guid>
+      <guid>http://localhost:1313/posts/2023-07-01-annas-archive/</guid>
       <description>Où l&amp;rsquo;on découvre avec émerveillement Anna&amp;rsquo;s Archive</description>
     </item>
     <item>
       <title>🚘 Remote: my setup</title>
-      <link>https://oct.zoy.org/posts/2022-06-29-remote-my-setup/</link>
+      <link>http://localhost:1313/posts/2022-06-29-remote-my-setup/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2022-06-29-remote-my-setup/</guid>
+      <guid>http://localhost:1313/posts/2022-06-29-remote-my-setup/</guid>
       <description>Just like The Setup, but more amateur.</description>
     </item>
     <item>
       <title>🏢 Hiring at Datadog</title>
-      <link>https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/</link>
+      <link>http://localhost:1313/posts/2022-06-26-hiring-at-datadog/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2022-06-26-hiring-at-datadog/</guid>
+      <guid>http://localhost:1313/posts/2022-06-26-hiring-at-datadog/</guid>
       <description>Hiring is tough. This article describes my interviewer&amp;rsquo;s experience at Datadog.</description>
     </item>
     <item>
       <title>🚮 The Ad Blocking Problem</title>
-      <link>https://oct.zoy.org/posts/the-ad-blocking-problem/</link>
+      <link>http://localhost:1313/posts/the-ad-blocking-problem/</link>
       <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/the-ad-blocking-problem/</guid>
+      <guid>http://localhost:1313/posts/the-ad-blocking-problem/</guid>
       <description>&lt;h1 id=&#34;how-im-currently-blocking-ads-at-home-and-why&#34;&gt;How I&amp;rsquo;m currently blocking Ads at home, and why?&lt;/h1&gt;
 &lt;p&gt;In this article, I&amp;rsquo;m writing about the various solutions I&amp;rsquo;ve recently explored to block ads and I also describe the solution I&amp;rsquo;m currently using!&lt;/p&gt;
 &lt;h1 id=&#34;pi-hole&#34;&gt;Pi-hole&lt;/h1&gt;
@@ -95,11 +95,11 @@
     </item>
     <item>
       <title>🚨 Git GPG and notifications</title>
-      <link>https://oct.zoy.org/posts/git-gpg-and-notifications/</link>
+      <link>http://localhost:1313/posts/git-gpg-and-notifications/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/git-gpg-and-notifications/</guid>
+      <guid>http://localhost:1313/posts/git-gpg-and-notifications/</guid>
       <description>&lt;div class=&#34;notices warning&#34; &gt;
-&lt;img class=&#34;floating-label&#34; src=&#34;https://oct.zoy.org/warning.svg&#34;/&gt;
+&lt;img class=&#34;floating-label&#34; src=&#34;http://localhost:1313/warning.svg&#34;/&gt;
 	&lt;p&gt;This article is pretty old, so be careful as its information could be out of date!&lt;/p&gt;
 
 &lt;/div&gt;
@@ -109,9 +109,9 @@
     </item>
     <item>
       <title>4️⃣ four links</title>
-      <link>https://oct.zoy.org/posts/2017-12-28-4-links/</link>
+      <link>http://localhost:1313/posts/2017-12-28-4-links/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2017-12-28-4-links/</guid>
+      <guid>http://localhost:1313/posts/2017-12-28-4-links/</guid>
       <description>&lt;h2 id=&#34;4-noteworthy-links-from-this-week&#34;&gt;4 noteworthy links from this week:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://engineering.instagram.com/let-your-code-type-hint-itself-introducing-open-source-monkeytype-a855c7284881&#34;&gt;Let your code type-hint itself: introducing open source MonkeyType&lt;/a&gt;: an excellent occasion to revisit &lt;a href=&#34;https://docs.python.org/3/library/typing.html&#34;&gt;type hinting in Python&lt;/a&gt;&lt;/li&gt;
@@ -122,12 +122,12 @@
     </item>
     <item>
       <title>5️⃣ five short links</title>
-      <link>https://oct.zoy.org/posts/2017-04-21-five-short-links/</link>
+      <link>http://localhost:1313/posts/2017-04-21-five-short-links/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2017-04-21-five-short-links/</guid>
+      <guid>http://localhost:1313/posts/2017-04-21-five-short-links/</guid>
       <description>&lt;h2 id=&#34;tech&#34;&gt;Tech&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://argus-sec.com/remote-attack-bosch-drivelog-connector-dongle/&#34;&gt;remote attack on an ODB dongle&lt;/a&gt;, follow-up of &lt;a href=&#34;https://oct.zoy.org/blog/2017-04-14&#34;&gt;last week links&lt;/a&gt;:  It was obvious this will lead to some dirty exploitation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://argus-sec.com/remote-attack-bosch-drivelog-connector-dongle/&#34;&gt;remote attack on an ODB dongle&lt;/a&gt;, follow-up of &lt;a href=&#34;http://localhost:1313/blog/2017-04-14&#34;&gt;last week links&lt;/a&gt;:  It was obvious this will lead to some dirty exploitation.&lt;/li&gt;
 &lt;li&gt;on &lt;a href=&#34;http://eli.thegreenplace.net/2017/on-recursion-continuations-and-trampolines/&#34;&gt;Recursion, Continuations and Trampolines&lt;/a&gt;, an excellent in-depth article that speaks about tail call optimization and all these way to avoid exhausting the stack.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/programming/comments/656z8t/how_we_built_rplace/&#34;&gt;how r/places&lt;/a&gt; was built for reddit 1st of April event. Technical and inspiring. Real life challenges :)&lt;/li&gt;
 &lt;/ul&gt;
@@ -141,9 +141,9 @@
     </item>
     <item>
       <title>6️⃣ six short links</title>
-      <link>https://oct.zoy.org/posts/2017-04-14/</link>
+      <link>http://localhost:1313/posts/2017-04-14/</link>
       <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2017-04-14/</guid>
+      <guid>http://localhost:1313/posts/2017-04-14/</guid>
       <description>&lt;h1 id=&#34;tech&#34;&gt;Tech&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ellie-app.com&#34;&gt;Ellie&lt;/a&gt; is a nice webapp that allows prototyping of Elm-lang based applications. &lt;a href=&#34;http://elm-lang.org/&#34;&gt;Elm&lt;/a&gt; is a javascript alternative, looks a lot like Haskell.&lt;/li&gt;
@@ -158,17 +158,17 @@
     </item>
     <item>
       <title>🎯 Ansible Tips and Tricks</title>
-      <link>https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/</link>
+      <link>http://localhost:1313/posts/2017-02-27-ansible-tips-and-tricks-2/</link>
       <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2017-02-27-ansible-tips-and-tricks-2/</guid>
+      <guid>http://localhost:1313/posts/2017-02-27-ansible-tips-and-tricks-2/</guid>
       <description>&lt;p&gt;If you have been doing a bit of Ansible, there is probably some coding style that has emerged from your work, especially if you work in a team around the same code. During my time as an Ansible developer, I had the opportunity to collect some tips I use on a regular basis when writing scripts. These tips will probably help you save some time.&lt;/p&gt;
 &lt;p&gt;I assume that you already know Ansible, Playbooks, YAML syntax and Ansible Galaxy roles.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://oct.zoy.org/posts/2024-08-28-more-books/</link>
+      <link>http://localhost:1313/posts/2024-08-28-more-books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/posts/2024-08-28-more-books/</guid>
+      <guid>http://localhost:1313/posts/2024-08-28-more-books/</guid>
       <description>&lt;h2 id=&#34;draft-true&#34;&gt;draft: true&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A la gorge - Max Monnehay

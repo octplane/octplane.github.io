@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Code on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/code/</link>
+    <link>http://localhost:1313/tags/code/</link>
     <description>Recent content in Code on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Oct 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catchup TV sous OSX (ou comment faire du replay facile)</title>
-      <link>https://oct.zoy.org/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</link>
+      <link>http://localhost:1313/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</link>
       <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2015/10/08/38.2015-10-08-weboob-osx/default/</guid>
       <description>&lt;h1 id=&#34;le-catchup-cest-chouette&#34;&gt;Le Catchup, c&amp;rsquo;est chouette&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;Cet article explique comment installer facilement Weboob sur OSX et s&amp;rsquo;en servir pour télécharger vos émissions préférées en différé.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;La télé publique contient parfois des émissions intéressantes. Pas plus tard qu&amp;rsquo;hier matin, je m&amp;rsquo;aperçois que ce documentaire sur cette banque est passé sur France 3 et que je l&amp;rsquo;ai raté. J&amp;rsquo;aimerai bien le revoir, voir même avoir l&amp;rsquo;enregistrement de l&amp;rsquo;émission sous le coude. Pour la montrer à mes amis ou la regarder dans le train.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Provisioning made more complex</title>
-      <link>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</link>
+      <link>http://localhost:1313/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Something’s going wrong.&lt;/p&gt;
 &lt;p&gt;I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rusty Racoon</title>
-      <link>https://oct.zoy.org/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</link>
+      <link>http://localhost:1313/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2015/01/26/35.2015-01-26-rusty-racoon/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Je me suis mis à jouer avec &lt;a href=&#34;http://fr.wikipedia.org/wiki/Rust_(taxonomy:&#34;&gt;Rust&lt;/a&gt;, le nouveau langage de Mozilla. C’est un changement intéressant, moi qui suis plutôt habitué aux langages moins stricts et plus « scripts » qu’à des langages compilés et à la tête dure.&lt;/p&gt;
 &lt;p&gt;Rust a plusieurs caractéristiques intéressantes, outre le fait qu’il est encore en version instable et donc pas vraiment utilisable pour autre chose que du gros bidouillage (la bibliothèque standard change encore assez rapidement, et un morceau de code qui compile un jour peut vous péter à la figure le lendemain) : Il est &lt;strong&gt;fortement typé&lt;/strong&gt;, tourne &lt;strong&gt;sans VM&lt;/strong&gt;,** sans GC**, et possède quelques-uns des raffinements des taxonomy:
@@ -39,18 +39,18 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Analyse de fr.wikiquote.org</title>
-      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</link>
+      <link>http://localhost:1313/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</guid>
       <description>&lt;p&gt;Cet article évoque l&amp;rsquo;analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.&lt;/p&gt;
 &lt;h2 id=&#34;wikiquote-&#34;&gt;Wikiquote ?&lt;/h2&gt;
 &lt;p&gt;Si vous l&amp;rsquo;ignoriez encore, &lt;a href=&#34;http://fr.wikiquote.org&#34;&gt;wikiquote&lt;/a&gt; est un des projets Wikimedia qui contient entre autres la très connue &lt;a href=&#34;http://fr.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;, l&amp;rsquo;encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Démarrer Node.js en 8 secondes</title>
-      <link>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</link>
+      <link>http://localhost:1313/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</link>
       <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</guid>
       <description>&lt;p&gt;Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.&lt;/p&gt;
 &lt;p&gt;Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu&amp;rsquo;est node.js. Les pré-requis sont &lt;strong&gt;un cerveau&lt;/strong&gt;, &lt;strong&gt;un ordinateur&lt;/strong&gt;, &lt;strong&gt;une connexion internet&lt;/strong&gt; et une tout petite connaissance de &lt;strong&gt;javascript&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>

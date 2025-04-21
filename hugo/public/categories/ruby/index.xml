@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ruby on oct.zoy.org</title>
-    <link>https://oct.zoy.org/categories/ruby/</link>
+    <link>http://localhost:1313/categories/ruby/</link>
     <description>Recent content in Ruby on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open-uri preventing redirects from https to http</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
+      <link>http://localhost:1313/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2012/03/12/17.2012-03-12-open-uri-preventing-redirects-from/default/</guid>
       <description>&lt;p&gt;Because it assumes it&amp;rsquo;s insecure. That&amp;rsquo;s quite annoying and should be configurable.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
@@ -26,17 +26,17 @@ A bug exists for the stdlib &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http
     </item>
     <item>
       <title>Ruby-io-tail at version 0.0.3</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</link>
+      <link>http://localhost:1313/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2012/03/12/18.2012-03-12-ruby-io-tail-at-version-003/default/</guid>
       <description>&lt;p&gt;The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.&lt;/p&gt;
 &lt;p&gt;As usual, the gem is available from: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://rubygems.org/gems/io-tail&#34;&gt;https://rubygems.org/gems/io-tail&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sortie de ruby io tail</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
+      <link>http://localhost:1313/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
       <description>&lt;p&gt;Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.&lt;/p&gt;
 &lt;p&gt;Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d&amp;rsquo;un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
