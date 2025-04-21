@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Admin on oct.zoy.org</title>
-    <link>http://localhost:1313/categories/admin/</link>
+    <link>https://oct.zoy.org/categories/admin/</link>
     <description>Recent content in Admin on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Feb 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/admin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oct.zoy.org/categories/admin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerDNS</title>
-      <link>http://localhost:1313/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</link>
       <pubDate>Fri, 20 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2009/02/20/10.2009-02-20-powerdns/default/</guid>
       <description>&lt;p&gt;{% raw %}&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>IIS fails and &#34;the service did not return an error&#34;</title>
-      <link>http://localhost:1313/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
       <description>&lt;p&gt;If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.&lt;/p&gt;
 &lt;p&gt;Made my day.&lt;/p&gt;
 &lt;p&gt;Kudos to the &lt;!-- raw HTML omitted --&gt;databaseforum&lt;!-- raw HTML omitted --&gt; for the fix I was looking for in the internet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RAID Forever</title>
-      <link>http://localhost:1313/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
       <description>&lt;p&gt;MegaCLI (LSI) PERC Command line client is &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt; in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The &lt;!-- raw HTML omitted --&gt;cheats sheet you can find on the internet&lt;!-- raw HTML omitted --&gt; is rather ok, except for the download link I just wrote down.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on oct.zoy.org</title>
-    <link>http://localhost:1313/categories/python/</link>
+    <link>https://oct.zoy.org/categories/python/</link>
     <description>Recent content in Python on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jul 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oct.zoy.org/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Signify to GMail RSS signature Converter</title>
-      <link>http://localhost:1313/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</link>
       <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2009/07/14/11.2009-07-14-signify-to-gmail-rss-signature/default/</guid>
       <description>&lt;p&gt;Just wanted to share this small python code that naïvely converts a &lt;!-- raw HTML omitted --&gt;signify &lt;!-- raw HTML omitted --&gt; parameter file into a RSS file that can be used in &lt;!-- raw HTML omitted --&gt;GMail&lt;!-- raw HTML omitted --&gt; with the Random Signature Appender lab feature.&lt;/p&gt;
 &lt;p&gt;It doesn&amp;rsquo;t support any magical option of Signify (alignment, variable replacement). However, current lab feature &lt;!-- raw HTML omitted --&gt;has limitation to 96 chars in signature&lt;!-- raw HTML omitted --&gt;. This definitively sucks.&lt;/p&gt;</description>
     </item>

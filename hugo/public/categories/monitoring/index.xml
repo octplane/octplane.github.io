@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Monitoring on oct.zoy.org</title>
-    <link>http://localhost:1313/categories/monitoring/</link>
+    <link>https://oct.zoy.org/categories/monitoring/</link>
     <description>Recent content in Monitoring on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Dec 2008 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oct.zoy.org/categories/monitoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RAID Forever</title>
-      <link>http://localhost:1313/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/09.2008-12-29-raid-forever/default/</guid>
       <description>&lt;p&gt;MegaCLI (LSI) PERC Command line client is &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt; in case you&amp;rsquo;re looking for it too. This is a zip containing a zip containing an rpm file. Just alien it and you&amp;rsquo;re almost done. The &lt;!-- raw HTML omitted --&gt;cheats sheet you can find on the internet&lt;!-- raw HTML omitted --&gt; is rather ok, except for the download link I just wrote down.&lt;/p&gt;</description>
     </item>
   </channel>
