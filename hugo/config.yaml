@@ -26,7 +26,7 @@ menu:
     - identifier: écrits
       name: 🖋️ Écrits
       url: /écrits
-      weight: 2
+      weight: 40
     - identifier: oldies
       name: 🕸️ old stuff
       url: /old-stuff/
