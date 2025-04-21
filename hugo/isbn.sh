@@ -28,7 +28,7 @@ titles=$(rg -o '<a href="/livres/[^"]*" class="titre1" >[^<]+</a>' pageu.html | 
 authors=$(rg -o '<a href="/auteur/[^"]*" class="libelle" >[^<]+</a>' pageu.html | sed -E 's/.*class="libelle" >([^<]+)<.*/\1/')
 
 # Extract book URLs
-urls=$(rg -o '<a href="/livres/[^"]*' pageu.html | sed -E 's/<a href="([^"]*)/\1/')
+urls=$(rg -o '<a href="/livres/[^"]*' pageu.html | sed -E 's/<a href="([^"]*)/https:\/\/www.babelio.com\1/')
 
 # Extract book thumbnail URLs
 thumbnails=$(rg -o '<img loading="lazy" src="[^"]*"' pageu.html | sed -E 's/.*src="([^"]*)"/\1/')

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on oct.zoy.org</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 Lecture</title>
+      <link>http://localhost:1313/posts/2025-04-21-lectures/</link>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-21-lectures/</guid>
+      <description>Ce que je lis</description>
+    </item>
     <item>
       <title>💬 Devoxx FR 2025</title>
       <link>http://localhost:1313/posts/2025-04-18-devoxx/</link>
