@@ -2,6 +2,7 @@ baseURL: 'https://oct.zoy.org/'
 languageCode: en-us
 title: oct.zoy.org
 theme: PaperMod
+env: production
 ignoreLogs:
   - warning-goldmark-raw-html
 menu:
@@ -21,6 +22,10 @@ menu:
     - identifier: speaker
       name: 📢 speaker
       url: /as-a-speaker
+      weight: 2
+    - identifier: écrits
+      name: 🖋️ Écrits
+      url: /écrits
       weight: 2
     - identifier: oldies
       name: 🕸️ old stuff
@@ -48,8 +53,19 @@ params:
   homeInfoParams:
     title: Welcome to my site!
     content: | 
-      Hello,
-      This is _Pierre Baillet_'s homepage. A place where I write less often than I would like. I'm an old programmer that's been coding since he was young (started on Atari ST with GFA-Basic) and still loves coding. This inner fire is still burning and pushes me to write a lot of unfinished and slightly broken projects that run in production for my use or tend to die after a while.
+      I'm Pierre Baillet (aka _Oct_), a programmer who's been in love with coding since my early days tinkering with an Atari ST and GFA-Basic.
+
+      My digital playground is a bit chaotic - I create projects that are part passion, part experiment. Some stick around in production, some quietly fade away. But that's the beauty of coding, right? Always exploring, always learning.
+
+      What you'll find here:
+
+      * Bits of code and tech musings,
+      * Projects that are more "works in progress" than polished gems
+      * Thoughts shared in both English and French 🇬🇧🇫🇷
+
+      Welcome to my little corner of the internet - where imperfect code meets endless curiosity!
+
+      Coding isn't just what I do, it's who I am. 🖥️
   profileMode:
     enabled: false
     buttons:
