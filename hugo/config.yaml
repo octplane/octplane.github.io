@@ -7,6 +7,18 @@ ignoreLogs:
   - warning-goldmark-raw-html
 menu:
   main:
+    - identifier: about
+      name: 🪞 About
+      url: /about
+      weight: 1
+    - identifier: speaker
+      name: 📢 As a Speaker
+      url: /as-a-speaker
+      weight: 2
+    - identifier: compos
+      name: 🎼 Compos
+      url: /compos
+      weight: 3
     - identifier: archives
       name: 🕰️ Post Archive
       url: /archives/
@@ -15,20 +27,12 @@ menu:
       name: 🔖 tags
       url: /tags/
       weight: 20
-    - identifier: about
-      name: 🪞 about
-      url: /about
-      weight: 1
-    - identifier: speaker
-      name: 📢 speaker
-      url: /as-a-speaker
-      weight: 2
     - identifier: écrits
       name: 🖋️ Écrits
       url: /écrits
       weight: 40
     - identifier: oldies
-      name: 🕸️ old stuff
+      name: 🕸️ Old stuff
       url: /old-stuff/
       weight: 50
 imaging:
