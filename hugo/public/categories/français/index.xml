@@ -4,15 +4,15 @@
     <title>Français on oct.zoy.org</title>
     <link>https://oct.zoy.org/categories/fran%C3%A7ais/</link>
     <description>Recent content in Français on oct.zoy.org</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Mar 2012 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://oct.zoy.org/categories/fran%C3%A7ais/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sortie de ruby io tail</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</guid>
       <description>&lt;p&gt;Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.&lt;/p&gt;
 &lt;p&gt;Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d&amp;rsquo;un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -22,9 +22,9 @@ Pour plus d&amp;rsquo;information:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upstart, rc et Ubuntu 9.10</title>
-      <link>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</link>
       <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</guid>
       <description>&lt;p&gt;Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;)&lt;/li&gt;

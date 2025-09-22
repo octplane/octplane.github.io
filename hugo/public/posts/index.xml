@@ -4,7 +4,7 @@
     <title>Posts on oct.zoy.org</title>
     <link>https://oct.zoy.org/posts/</link>
     <description>Recent content in Posts on oct.zoy.org</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://oct.zoy.org/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://oct.zoy.org/posts/2025-04-21-lectures/</link>
       <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://oct.zoy.org/posts/2025-04-21-lectures/</guid>
-      <description>Ce que je lis</description>
+      <description>Ce que je lis&amp;hellip;</description>
     </item>
     <item>
       <title>💬 Devoxx FR 2025</title>

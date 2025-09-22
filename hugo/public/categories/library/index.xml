@@ -4,7 +4,7 @@
     <title>Library on oct.zoy.org</title>
     <link>https://oct.zoy.org/categories/library/</link>
     <description>Recent content in Library on oct.zoy.org</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Mar 2012 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://oct.zoy.org/categories/library/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
     </item>
     <item>
       <title>Sortie de ruby io tail</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</guid>
       <description>&lt;p&gt;Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.&lt;/p&gt;
 &lt;p&gt;Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d&amp;rsquo;un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;

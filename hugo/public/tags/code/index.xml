@@ -4,7 +4,7 @@
     <title>Code on oct.zoy.org</title>
     <link>https://oct.zoy.org/tags/code/</link>
     <description>Recent content in Code on oct.zoy.org</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://oct.zoy.org/tags/code/index.xml" rel="self" type="application/rss+xml" />
@@ -39,18 +39,18 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Analyse de fr.wikiquote.org</title>
-      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</guid>
       <description>&lt;p&gt;Cet article évoque l&amp;rsquo;analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.&lt;/p&gt;
 &lt;h2 id=&#34;wikiquote-&#34;&gt;Wikiquote ?&lt;/h2&gt;
 &lt;p&gt;Si vous l&amp;rsquo;ignoriez encore, &lt;a href=&#34;http://fr.wikiquote.org&#34;&gt;wikiquote&lt;/a&gt; est un des projets Wikimedia qui contient entre autres la très connue &lt;a href=&#34;http://fr.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;, l&amp;rsquo;encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Démarrer Node.js en 8 secondes</title>
-      <link>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default.fr/</link>
       <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default.fr/</guid>
       <description>&lt;p&gt;Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.&lt;/p&gt;
 &lt;p&gt;Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu&amp;rsquo;est node.js. Les pré-requis sont &lt;strong&gt;un cerveau&lt;/strong&gt;, &lt;strong&gt;un ordinateur&lt;/strong&gt;, &lt;strong&gt;une connexion internet&lt;/strong&gt; et une tout petite connaissance de &lt;strong&gt;javascript&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>

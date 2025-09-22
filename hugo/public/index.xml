@@ -4,7 +4,7 @@
     <title>oct.zoy.org</title>
     <link>https://oct.zoy.org/</link>
     <description>Recent content on oct.zoy.org</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://oct.zoy.org/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://oct.zoy.org/posts/2025-04-21-lectures/</link>
       <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://oct.zoy.org/posts/2025-04-21-lectures/</guid>
-      <description>Ce que je lis</description>
+      <description>Ce que je lis&amp;hellip;</description>
     </item>
     <item>
       <title>💬 Devoxx FR 2025</title>
@@ -269,7 +269,7 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     <item>
       <title>Monoprix, tu abuses  </title>
       <link>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</link>
-      <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Sep 2014 09:00:00 +0000</pubDate>
       <guid>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;non-sérieux-monoprix-tu-abuses&#34;&gt;Non sérieux, Monoprix, tu abuses…&lt;/h1&gt;
@@ -277,13 +277,32 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
 &lt;p&gt;Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce que c’était les vacances, et que, ben oui, y à moins d’activité en été et que je comprends bien qu’il faut faire du business aussi en cette saison. En plus, c’était l’assurance d’être livré à l’heure, hein !?&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Monoprix, tu abuses  </title>
+      <link>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default.fr/</link>
+      <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://oct.zoy.org/old-stuff/2014/09/03/30.2014-09-03-monoprix-tu-abuses/default.fr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;non-sérieux-monoprix-tu-abuses&#34;&gt;Non sérieux, Monoprix, tu abuses…&lt;/h1&gt;
+&lt;p&gt;Au début, c’était comme une belle histoire d’amour. Tu avais un joli site ouaib, avec de belles couleurs, plein de produits à commander, un moteur de recherche performant, des délais de livraison pas bien longs, des tarifs oui-peut-être-un-peu-élevés-mais-bon.&lt;/p&gt;
+&lt;p&gt;Alors j’ai commandé chez toi. J’avais droit à la livraison gratuite, parce que c’était les vacances, et que, ben oui, y à moins d’activité en été et que je comprends bien qu’il faut faire du business aussi en cette saison. En plus, c’était l’assurance d’être livré à l’heure, hein !?&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Analyse de fr.wikiquote.org</title>
-      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</guid>
       <description>&lt;p&gt;Cet article évoque l&amp;rsquo;analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.&lt;/p&gt;
 &lt;h2 id=&#34;wikiquote-&#34;&gt;Wikiquote ?&lt;/h2&gt;
 &lt;p&gt;Si vous l&amp;rsquo;ignoriez encore, &lt;a href=&#34;http://fr.wikiquote.org&#34;&gt;wikiquote&lt;/a&gt; est un des projets Wikimedia qui contient entre autres la très connue &lt;a href=&#34;http://fr.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;, l&amp;rsquo;encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Train Yard</title>
+      <link>https://oct.zoy.org/old-stuff/2014/04/24/28.2014-04-24-trainyard/default.fr/</link>
+      <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://oct.zoy.org/old-stuff/2014/04/24/28.2014-04-24-trainyard/default.fr/</guid>
+      <description>&lt;p&gt;Des trains, des gares et déraillent.&lt;/p&gt;
+&lt;h3 id=&#34;le-petit-train-dans-lécran&#34;&gt;Le petit train dans l&amp;rsquo;écran&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/fr/app/trainyard/id348719156?mt=8&amp;amp;uo=4&#34;&gt;Train Yard&lt;/a&gt; par &lt;a href=&#34;https://twitter.com/MattRix/&#34;&gt;Matt Rix&lt;/a&gt;, au départ, on se dit que c&amp;rsquo;est vraiment un jeu pas très malin. On a la gare de départ, celle d&amp;rsquo;arrivée et entre les deux on place les rails pour que la petite locomotive arrive à destination. On place les rails là où on a envie, puis on clique sur le bouton marche et les trains se mettent en route et on ne peut plus rien changer avant que tout ne soit fini. Si on interrompt le déroulement, tout est annulé et on peut modifier le parcours avant de relancer les locos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Train Yard</title>
@@ -296,9 +315,9 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Heroes of loot</title>
-      <link>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default.fr/</link>
       <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/04/16/27.2014-04-16-heros-of-loote/default.fr/</guid>
       <description>&lt;p&gt;Heroes of Loot, un peu le Gauntlet des années 2010. Meurtres, projectiles et petits démons à la pelle.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;img alt=&#34;le jeu est entrecoupé de petites séquences avec des blagues pourries. Ca fait sourire.&#34; loading=&#34;lazy&#34; src=&#34;IMG_2877.PNG?cropResize=600,600&#34;&gt;&lt;/p&gt;
@@ -307,17 +326,17 @@ langages dit fonctionnels à la mode comme Scala, avec ses &lt;strong&gt;types o
     </item>
     <item>
       <title>Démarrer Node.js en 8 secondes</title>
-      <link>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default.fr/</link>
       <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/03/07/26.2014-03-07-demarrer-node-js-en-8-secondes/default.fr/</guid>
       <description>&lt;p&gt;Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.&lt;/p&gt;
 &lt;p&gt;Dans cet article, je vous explique comment tester rapidement du code javascript dans node.js sans aucune connaissance préalable de ce monde farfelu et curieux qu&amp;rsquo;est node.js. Les pré-requis sont &lt;strong&gt;un cerveau&lt;/strong&gt;, &lt;strong&gt;un ordinateur&lt;/strong&gt;, &lt;strong&gt;une connexion internet&lt;/strong&gt; et une tout petite connaissance de &lt;strong&gt;javascript&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rigor Mortis</title>
-      <link>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default.fr/</link>
       <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2014/02/18/25.2014-02-18-rigor-mortis/default.fr/</guid>
       <description>&lt;p&gt;Vous avez pas parfois l’impression qu’on se fout de vous ?&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Cela fait une grosse dizaine d&amp;rsquo;années que je suis sur le marché du travail, et que j&amp;rsquo;ai donc l&amp;rsquo;occasion, en tant qu&amp;rsquo;adulte responsable, de payer mes impôts et d&amp;rsquo;avoir des interactions avec des gens qui m&amp;rsquo;appellent Monsieur (et que j&amp;rsquo;appelle aussi Monsieur ou Madame, parce que je suis poli). Chacune de ces intéractions montre comment les gens vous jugent, vous apprécient, ou vous ignorent et sont toujours très intéressantes au point de vue ethnologique.&lt;/p&gt;</description>
@@ -398,9 +417,9 @@ blockquote :last-child{margin-bottom:0;}
     </item>
     <item>
       <title>Les espaces insécables sous OSX</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default.fr/</link>
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/21/19.2012-03-21-les-espaces-insecables-sous-osx/default.fr/</guid>
       <description>&lt;p&gt;Hej,&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 J&amp;rsquo;ai lu &lt;!-- raw HTML omitted --&gt;hier l&amp;rsquo;article&lt;!-- raw HTML omitted --&gt; de &lt;!-- raw HTML omitted --&gt;Bruno Michel&lt;!-- raw HTML omitted --&gt; qui parle des espaces insécables pour les développeurs et je me suis rappelé de l&amp;rsquo;horreur qu&amp;rsquo;il y a à taper sous OSX, avec un clavier français les commandes suivantes:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
@@ -433,9 +452,9 @@ A bug exists for the stdlib &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http
     </item>
     <item>
       <title>Sortie de ruby io tail</title>
-      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/11/16.2012-03-11-sortie-de-ruby-io-tail/default.fr/</guid>
       <description>&lt;p&gt;Ruby-io-tail est une bibliothèque qui vous permet de lire automatiquement la fin d&amp;rsquo;un fichier de journal ou la sortie d&amp;rsquo;un processus, depuis Ruby en utilisant des blocks comme Ruby peut en proposer. Le code est libéré sous license GPL et la documentation en anglais est également disponible.&lt;/p&gt;
 &lt;p&gt;Parmi les fonctionnalités disponibles, vous pouvez créer un groupe d&amp;rsquo;IO à suivre et appeler un seul point d&amp;rsquo;entrée qui vous rappelle à chaque nouvelle ligne à lire dans un des ces IOs. De plus, en cas de fermeture abrupte d&amp;rsquo;un fichier, ou si le processus meurt, vous avez la possibilité de réouvrir automatiquement le fichier ou de relancer automatique le fichier.&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -508,9 +527,9 @@ ar -cvq libshellfm.a autoban.o bookmark.o completion.o feeds.o getln.o hash.o hi
     </item>
     <item>
       <title>Upstart, rc et Ubuntu 9.10</title>
-      <link>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</link>
       <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2010/08/18/13.2010-08-18-upstart-rc-et-ubuntu-910/default.fr/</guid>
       <description>&lt;p&gt;Comme vous le savez peut-être, la dernière version d&amp;rsquo;Ubuntu intègre un système révolutionnaire de boot parallèle pour remplacer les vieux scripts rc.* qui existent sur nos vénérés serveurs depuis bien longtemps. Sur le papier les avantages d&amp;rsquo;Upstart (ca s&amp;rsquo;appelle comme ça) par rapport à rc.* sont multiples:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;démarrage/arrêt des démons conditionnés à des évènements (réseau-up,démon foo-démarré, &amp;hellip;)&lt;/li&gt;
@@ -705,9 +724,9 @@ Date de parution: 21/06/2024
     </item>
     <item>
       <title>Journalisme</title>
-      <link>https://oct.zoy.org/%C3%A9crits/default/</link>
+      <link>https://oct.zoy.org/%C3%A9crits/default.fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/%C3%A9crits/default/</guid>
+      <guid>https://oct.zoy.org/%C3%A9crits/default.fr/</guid>
       <description>&lt;h2 id=&#34;7-mai&#34;&gt;7 mai&lt;/h2&gt;
 &lt;p&gt;Le soleil s&amp;rsquo;est levé ce matin et j&amp;rsquo;ai su que c&amp;rsquo;était aujourd&amp;rsquo;hui qu&amp;rsquo;il allait passer.&lt;/p&gt;
 &lt;p&gt;J&amp;rsquo;avais raison et à 9:30, il a sonné pour déposer un paquet. Le temps que j&amp;rsquo;attrape le fusil et que je sorte, il était presque à sa voiture. Il s&amp;rsquo;est retourné et a du croire que j&amp;rsquo;étais infecté, il est parti aussitôt sans écouter mon appel. J&amp;rsquo;ai essayé de courir après sa voiture en vain. Dans le colis, j&amp;rsquo;ai encore trouvé une rose fanée par le voyage sûrement. Et toujours aucun mot. Cette fois-ci, j&amp;rsquo;ai décidé d&amp;rsquo;aller cet après-midi au bureau de poste. Si je pars assez tôt, je devrais y être avant la nuit.&lt;/p&gt;</description>
