@@ -8,7 +8,7 @@ tags:
 - HA
 taxonomy:
     tag: [backup]
-lang: us
+ us
 ---
 
 *This article deals with redundancy in multi-AZ setup on EC2. Deal efficiently with AZs outages. Applicable to many others deployment styles.*

@@ -2,150 +2,150 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on oct.zoy.org</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ios</title>
-      <link>https://oct.zoy.org/tags/ios/</link>
+      <link>http://localhost:1313/tags/ios/</link>
       <pubDate>Tue, 29 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/ios/</guid>
+      <guid>http://localhost:1313/tags/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Code</title>
-      <link>https://oct.zoy.org/tags/code/</link>
+      <link>http://localhost:1313/tags/code/</link>
       <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/code/</guid>
+      <guid>http://localhost:1313/tags/code/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://oct.zoy.org/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Rant</title>
-      <link>https://oct.zoy.org/tags/rant/</link>
+      <link>http://localhost:1313/tags/rant/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/rant/</guid>
+      <guid>http://localhost:1313/tags/rant/</guid>
       <description></description>
     </item>
     <item>
       <title>AWS</title>
-      <link>https://oct.zoy.org/tags/aws/</link>
+      <link>http://localhost:1313/tags/aws/</link>
       <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/aws/</guid>
+      <guid>http://localhost:1313/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>HA</title>
-      <link>https://oct.zoy.org/tags/ha/</link>
+      <link>http://localhost:1313/tags/ha/</link>
       <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/ha/</guid>
+      <guid>http://localhost:1313/tags/ha/</guid>
       <description></description>
     </item>
     <item>
       <title>Flickr</title>
-      <link>https://oct.zoy.org/tags/flickr/</link>
+      <link>http://localhost:1313/tags/flickr/</link>
       <pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/flickr/</guid>
+      <guid>http://localhost:1313/tags/flickr/</guid>
       <description></description>
     </item>
     <item>
       <title>Opensource</title>
-      <link>https://oct.zoy.org/tags/opensource/</link>
+      <link>http://localhost:1313/tags/opensource/</link>
       <pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/opensource/</guid>
+      <guid>http://localhost:1313/tags/opensource/</guid>
       <description></description>
     </item>
     <item>
       <title>Play</title>
-      <link>https://oct.zoy.org/tags/play/</link>
+      <link>http://localhost:1313/tags/play/</link>
       <pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/play/</guid>
+      <guid>http://localhost:1313/tags/play/</guid>
       <description></description>
     </item>
     <item>
       <title>Gna-Gna</title>
-      <link>https://oct.zoy.org/tags/gna-gna/</link>
+      <link>http://localhost:1313/tags/gna-gna/</link>
       <pubDate>Wed, 03 Sep 2014 09:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/gna-gna/</guid>
+      <guid>http://localhost:1313/tags/gna-gna/</guid>
       <description></description>
     </item>
     <item>
       <title>Wikipedia</title>
-      <link>https://oct.zoy.org/tags/wikipedia/</link>
+      <link>http://localhost:1313/tags/wikipedia/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/wikipedia/</guid>
+      <guid>http://localhost:1313/tags/wikipedia/</guid>
       <description></description>
     </item>
     <item>
       <title>Jeu</title>
-      <link>https://oct.zoy.org/tags/jeu/</link>
+      <link>http://localhost:1313/tags/jeu/</link>
       <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/jeu/</guid>
+      <guid>http://localhost:1313/tags/jeu/</guid>
       <description></description>
     </item>
     <item>
       <title>Gaming</title>
-      <link>https://oct.zoy.org/tags/gaming/</link>
+      <link>http://localhost:1313/tags/gaming/</link>
       <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/gaming/</guid>
+      <guid>http://localhost:1313/tags/gaming/</guid>
       <description></description>
     </item>
     <item>
       <title>Users</title>
-      <link>https://oct.zoy.org/tags/users/</link>
+      <link>http://localhost:1313/tags/users/</link>
       <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/users/</guid>
+      <guid>http://localhost:1313/tags/users/</guid>
       <description></description>
     </item>
     <item>
       <title>Ruby</title>
-      <link>https://oct.zoy.org/tags/ruby/</link>
+      <link>http://localhost:1313/tags/ruby/</link>
       <pubDate>Mon, 02 Apr 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/ruby/</guid>
+      <guid>http://localhost:1313/tags/ruby/</guid>
       <description></description>
     </item>
     <item>
       <title>Bundler</title>
-      <link>https://oct.zoy.org/tags/bundler/</link>
+      <link>http://localhost:1313/tags/bundler/</link>
       <pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/bundler/</guid>
+      <guid>http://localhost:1313/tags/bundler/</guid>
       <description></description>
     </item>
     <item>
       <title>Joke</title>
-      <link>https://oct.zoy.org/tags/joke/</link>
+      <link>http://localhost:1313/tags/joke/</link>
       <pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/joke/</guid>
+      <guid>http://localhost:1313/tags/joke/</guid>
       <description></description>
     </item>
     <item>
       <title>Admin</title>
-      <link>https://oct.zoy.org/tags/admin/</link>
+      <link>http://localhost:1313/tags/admin/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/admin/</guid>
+      <guid>http://localhost:1313/tags/admin/</guid>
       <description></description>
     </item>
     <item>
       <title>Fun</title>
-      <link>https://oct.zoy.org/tags/fun/</link>
+      <link>http://localhost:1313/tags/fun/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/fun/</guid>
+      <guid>http://localhost:1313/tags/fun/</guid>
       <description></description>
     </item>
     <item>
       <title>Oracle</title>
-      <link>https://oct.zoy.org/tags/oracle/</link>
+      <link>http://localhost:1313/tags/oracle/</link>
       <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/tags/oracle/</guid>
+      <guid>http://localhost:1313/tags/oracle/</guid>
       <description></description>
     </item>
   </channel>

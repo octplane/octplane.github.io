@@ -81,3 +81,7 @@ params:
       url: "https://mastodon.xyz/@octplane"
     - name: Github
       url: 'https://github.com/octplane'
+    - name: blogger
+      url: 'https://au43demarue.blogspot.com/'
+    - name: omg
+      url: 'https://oct.omg.lol/'

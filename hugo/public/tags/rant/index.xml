@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rant on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/rant/</link>
+    <link>http://localhost:1313/tags/rant/</link>
     <description>Recent content in Rant on oct.zoy.org</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/rant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Provisioning made more complex</title>
-      <link>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</link>
+      <link>http://localhost:1313/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
+      <guid>http://localhost:1313/old-stuff/2015/02/02/36.2015-02-02-provisioning-made-complex/default/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Something’s going wrong.&lt;/p&gt;
 &lt;p&gt;I, as devops, or root, or whoever is in charge of configuring these servers, have to admit that there are now a LOT of provisionning tools available for us to work. This is probably a good thing in general (although looking at the number of js frameworks and the state of js development shows that this can be a bad thing) although one can but wonder:&lt;/p&gt;</description>
