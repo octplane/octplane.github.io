@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Iis on oct.zoy.org</title>
-    <link>http://localhost:1313/categories/iis/</link>
+    <link>https://oct.zoy.org/categories/iis/</link>
     <description>Recent content in Iis on oct.zoy.org</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Dec 2008 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/iis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oct.zoy.org/categories/iis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IIS fails and &#34;the service did not return an error&#34;</title>
-      <link>http://localhost:1313/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2008/12/29/08.2008-12-29-iis-fails-and-service-did-not-return/default/</guid>
       <description>&lt;p&gt;If your IIS doesn&amp;rsquo;t want to start and does not give you any error. Just try to reinstall it: uninstall it from the add/remove programs and add it again.&lt;/p&gt;
 &lt;p&gt;Made my day.&lt;/p&gt;
 &lt;p&gt;Kudos to the &lt;!-- raw HTML omitted --&gt;databaseforum&lt;!-- raw HTML omitted --&gt; for the fix I was looking for in the internet.&lt;/p&gt;</description>

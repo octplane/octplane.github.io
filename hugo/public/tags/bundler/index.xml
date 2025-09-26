@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bundler on oct.zoy.org</title>
-    <link>http://localhost:1313/tags/bundler/</link>
+    <link>https://oct.zoy.org/tags/bundler/</link>
     <description>Recent content in Bundler on oct.zoy.org</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/bundler/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oct.zoy.org/tags/bundler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bundler, oh, I hate thou</title>
-      <link>http://localhost:1313/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
+      <link>https://oct.zoy.org/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</link>
       <pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
+      <guid>https://oct.zoy.org/old-stuff/2012/03/29/22.2012-03-29-bundler-oh-i-hate-thou/default/</guid>
       <description>&lt;p&gt;Another merry joke from my bundler friend. If you ever switch to deployment mode
 (using the &lt;!-- raw HTML omitted --&gt;bundle install &amp;ndash;deployment&lt;!-- raw HTML omitted --&gt;
 command), do not come and cry if bundler starts saying:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
