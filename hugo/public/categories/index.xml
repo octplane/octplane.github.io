@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on oct.zoy.org</title>
-    <link>https://oct.zoy.org/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on oct.zoy.org</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bug</title>
-      <link>https://oct.zoy.org/categories/bug/</link>
+      <link>http://localhost:1313/categories/bug/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/bug/</guid>
+      <guid>http://localhost:1313/categories/bug/</guid>
       <description></description>
     </item>
     <item>
       <title>Library</title>
-      <link>https://oct.zoy.org/categories/library/</link>
+      <link>http://localhost:1313/categories/library/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/library/</guid>
+      <guid>http://localhost:1313/categories/library/</guid>
       <description></description>
     </item>
     <item>
       <title>Open-Uri</title>
-      <link>https://oct.zoy.org/categories/open-uri/</link>
+      <link>http://localhost:1313/categories/open-uri/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/open-uri/</guid>
+      <guid>http://localhost:1313/categories/open-uri/</guid>
       <description></description>
     </item>
     <item>
       <title>Ruby</title>
-      <link>https://oct.zoy.org/categories/ruby/</link>
+      <link>http://localhost:1313/categories/ruby/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/ruby/</guid>
+      <guid>http://localhost:1313/categories/ruby/</guid>
       <description></description>
     </item>
     <item>
       <title>Devel</title>
-      <link>https://oct.zoy.org/categories/devel/</link>
+      <link>http://localhost:1313/categories/devel/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/devel/</guid>
+      <guid>http://localhost:1313/categories/devel/</guid>
       <description></description>
     </item>
     <item>
       <title>Français</title>
-      <link>https://oct.zoy.org/categories/fran%C3%A7ais/</link>
+      <link>http://localhost:1313/categories/fran%C3%A7ais/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/fran%C3%A7ais/</guid>
+      <guid>http://localhost:1313/categories/fran%C3%A7ais/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>https://oct.zoy.org/categories/ubuntu/</link>
+      <link>http://localhost:1313/categories/ubuntu/</link>
       <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/ubuntu/</guid>
+      <guid>http://localhost:1313/categories/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://oct.zoy.org/categories/python/</link>
+      <link>http://localhost:1313/categories/python/</link>
       <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/python/</guid>
+      <guid>http://localhost:1313/categories/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Admin</title>
-      <link>https://oct.zoy.org/categories/admin/</link>
+      <link>http://localhost:1313/categories/admin/</link>
       <pubDate>Fri, 20 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/admin/</guid>
+      <guid>http://localhost:1313/categories/admin/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>https://oct.zoy.org/categories/linux/</link>
+      <link>http://localhost:1313/categories/linux/</link>
       <pubDate>Fri, 20 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/linux/</guid>
+      <guid>http://localhost:1313/categories/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Iis</title>
-      <link>https://oct.zoy.org/categories/iis/</link>
+      <link>http://localhost:1313/categories/iis/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/iis/</guid>
+      <guid>http://localhost:1313/categories/iis/</guid>
       <description></description>
     </item>
     <item>
       <title>Monitoring</title>
-      <link>https://oct.zoy.org/categories/monitoring/</link>
+      <link>http://localhost:1313/categories/monitoring/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/monitoring/</guid>
+      <guid>http://localhost:1313/categories/monitoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>https://oct.zoy.org/categories/windows/</link>
+      <link>http://localhost:1313/categories/windows/</link>
       <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/windows/</guid>
+      <guid>http://localhost:1313/categories/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>Devel Mssql</title>
-      <link>https://oct.zoy.org/categories/devel-mssql/</link>
+      <link>http://localhost:1313/categories/devel-mssql/</link>
       <pubDate>Thu, 11 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/devel-mssql/</guid>
+      <guid>http://localhost:1313/categories/devel-mssql/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>https://oct.zoy.org/categories/java/</link>
+      <link>http://localhost:1313/categories/java/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/java/</guid>
+      <guid>http://localhost:1313/categories/java/</guid>
       <description></description>
     </item>
     <item>
       <title>User</title>
-      <link>https://oct.zoy.org/categories/user/</link>
+      <link>http://localhost:1313/categories/user/</link>
       <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/categories/user/</guid>
+      <guid>http://localhost:1313/categories/user/</guid>
       <description></description>
     </item>
   </channel>

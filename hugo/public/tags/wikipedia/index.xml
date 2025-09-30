@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wikipedia on oct.zoy.org</title>
-    <link>https://oct.zoy.org/tags/wikipedia/</link>
+    <link>http://localhost:1313/tags/wikipedia/</link>
     <description>Recent content in Wikipedia on oct.zoy.org</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jul 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oct.zoy.org/tags/wikipedia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/wikipedia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analyse de fr.wikiquote.org</title>
-      <link>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</link>
+      <link>http://localhost:1313/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://oct.zoy.org/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</guid>
+      <guid>http://localhost:1313/old-stuff/2014/07/01/29.2014-07-01-wikquote1/default.fr/</guid>
       <description>&lt;p&gt;Cet article évoque l&amp;rsquo;analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.&lt;/p&gt;
 &lt;h2 id=&#34;wikiquote-&#34;&gt;Wikiquote ?&lt;/h2&gt;
 &lt;p&gt;Si vous l&amp;rsquo;ignoriez encore, &lt;a href=&#34;http://fr.wikiquote.org&#34;&gt;wikiquote&lt;/a&gt; est un des projets Wikimedia qui contient entre autres la très connue &lt;a href=&#34;http://fr.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;, l&amp;rsquo;encyclopédie libre et à laquelle tout le monde peut participer. Wikiquote, lui, vise à rassembler des citations, et à les organiser par auteur et par thème.&lt;/p&gt;</description>
