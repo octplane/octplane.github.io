@@ -6,7 +6,7 @@ cover:
 
 I'm an occasional technical speaker.
 
-I speak for the French organization [Brown Bag Lunch](http://www.brownbaglunch.fr/). Feel [free to contact me](mailto:speech@contact.baillet.name) to setup talks about any subject I know about. This will be a pleasure!
+I speak for the French organization [Brown Bag Lunch](http://lunchandlearn.htm-fr.com). Feel [free to contact me](mailto:speaker@contact.baillet.name) to setup talks about any subject I know about. This will be a pleasure!
 
 #### Datadog, from Rake to CNAD, a history of deploy tools
 

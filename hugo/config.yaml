@@ -27,6 +27,10 @@ menu:
       name: 🖋️ Écrits
       url: /écrits
       weight: 40
+    - identifier: écoutes
+      name: 🎧 Écoutes
+      url: /écoutes
+      weight: 45
     - identifier: oldies
       name: 🕸️ Old stuff
       url: /old-stuff/
