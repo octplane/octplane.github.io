@@ -171,17 +171,17 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">How to create a synology downloaad station search plugin
+    <h2 class="entry-hint-parent">How to create a synology download station search plugin
     </h2>
   </header>
   <div class="entry-content">
-    <p>How to Create a Synology Download Station Search Plugin (.dlm) A .dlm file is a gzip-compressed tar archive containing two files that Synology’s Download Station uses to search torrent sites.
+    <p>A .dlm file is a gzip-compressed tar archive containing two files that Synology’s Download Station uses to search torrent sites.
 Archive Structure my_plugin.dlm (tar.gz) ├── INFO # Plugin metadata (JSON) └── search.php # Search logic (PHP class) INFO File A JSON file describing the plugin. Example:
 { &#34;name&#34;: &#34;my_plugin&#34;, &#34;displayname&#34;: &#34;My Torrent Site&#34;, &#34;description&#34;: &#34;Search torrents on example.com&#34;, &#34;version&#34;: &#34;1.0&#34;, &#34;site&#34;: &#34;https://example.com/&#34;, &#34;module&#34;: &#34;search.php&#34;, &#34;type&#34;: &#34;search&#34;, &#34;class&#34;: &#34;SynoDLMSearchMyPlugin&#34; } Fields Field Required Description name Yes Internal identifier (no spaces) displayname Yes Name shown in Download Station UI description Yes Short description version Yes Plugin version string site Yes URL of the torrent site module Yes PHP filename (always search.php) type Yes Always search class Yes PHP class name — must match exactly in both files accountsupport No true if the site requires login (changes prepare() signature) search.php A PHP class implementing two required methods: prepare() and parse().
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2026-03-27 00:00:00 +0000 UTC'>March 27, 2026</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to How to create a synology downloaad station search plugin" href="https://oct.zoy.org/posts/2026-03-27-syno-custom-search/"></a>
+  <a class="entry-link" aria-label="post link to How to create a synology download station search plugin" href="https://oct.zoy.org/posts/2026-03-27-syno-custom-search/"></a>
 </article>
 
 <article class="post-entry"> 

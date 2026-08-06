@@ -16,12 +16,11 @@
       <description>Notes d&amp;rsquo;écoute de l&amp;rsquo;épisode 418 du Mel Robbins Podcast, qui n&amp;rsquo;existe pas en français.</description>
     </item>
     <item>
-      <title>How to create a synology downloaad station search plugin</title>
+      <title>How to create a synology download station search plugin</title>
       <link>https://oct.zoy.org/posts/2026-03-27-syno-custom-search/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://oct.zoy.org/posts/2026-03-27-syno-custom-search/</guid>
-      <description>&lt;h1 id=&#34;how-to-create-a-synology-download-station-search-plugin-dlm&#34;&gt;How to Create a Synology Download Station Search Plugin (.dlm)&lt;/h1&gt;
-&lt;p&gt;A &lt;code&gt;.dlm&lt;/code&gt; file is a &lt;strong&gt;gzip-compressed tar archive&lt;/strong&gt; containing two files that Synology&amp;rsquo;s Download Station uses to search torrent sites.&lt;/p&gt;
+      <description>&lt;p&gt;A &lt;code&gt;.dlm&lt;/code&gt; file is a &lt;strong&gt;gzip-compressed tar archive&lt;/strong&gt; containing two files that Synology&amp;rsquo;s Download Station uses to search torrent sites.&lt;/p&gt;
 &lt;h2 id=&#34;archive-structure&#34;&gt;Archive Structure&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_plugin.dlm (tar.gz)
 ├── INFO          # Plugin metadata (JSON)

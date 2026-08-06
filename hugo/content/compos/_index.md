@@ -14,14 +14,15 @@ Right now, my setup is:
 - A [Roland SH-4D](https://amzn.to/46BTerG), 4 voice Synth with a kit track. Powerful and deep, it's a very nice and polished machine I'm still exploring (a new firmware went out this year and I'm still digging in the docs),
 - A [Pocket Operator Arcade](https://amzn.to/4gxq4hL), blip-blop machine, outputting nice 8bits sounds. Very fun,
 - A [Korg Volca Drum](https://amzn.to/4221WOy) I bought almost randomly. Seems like a very nice synthetic drum machine, full of potential,
-- A [Novation Circuit Rhythm](https://amzn.to/3IzDfCe) (second hand), bought for its sampling capabilities, I enjoy its simple but OK sequencer with its song mode. A bit too much on the Hip Hop side for me, but still very fun to use,
 - A [Livetrak l6](https://amzn.to/423Lopc) to connect all these things together and to my Mac. I love this mixer,
 - A pair of [DT900 Pro X](https://amzn.to/427Cabv) (second hand) to monitor all that. The Open version so that my wife can talk to me when I'm working without having to shout through the sounds.
-- A newly arrived (M8 Tracker model:02](https://dirtywave.com/products/m8-tracker-model-02), a real joy!
+- A [M8 Tracker model:02](https://dirtywave.com/products/m8-tracker-model-02), a real joy!
+- A [Digitakt2](https://amzn.to/3RxoULp), amazing sampler, very deep and complex but so nice to use
 
 
 Gear I sold:
 - [Novation Mininova](https://amzn.to/47UC8HH). Too much of a piano for me and with my low skills, it was mostly useless (and too large for my Desk).
+- A [Novation Circuit Rhythm](https://amzn.to/3IzDfCe) (second hand), bought for its sampling capabilities, I enjoy its simple but OK sequencer with its song mode. A bit too much on the Hip Hop side for me, but still very fun to use,
 
 ## Software
 
