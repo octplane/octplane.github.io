@@ -1,7 +1,6 @@
 ---
 title: 'Les espaces insécables sous OSX'
 type: blog
-type: blog
 date: '2012-03-21'
 layout: post
 permalink: /2012/03/les-espaces-insecables-sous-osx.html

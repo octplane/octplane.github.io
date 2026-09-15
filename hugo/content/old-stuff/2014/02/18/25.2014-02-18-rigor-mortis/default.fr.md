@@ -1,7 +1,6 @@
 ---
 title: 'Rigor Mortis'
 type: blog
-type: blog
 date: '2014-02-18'
 layout: post
 tags:

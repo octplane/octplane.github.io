@@ -1,7 +1,6 @@
 ---
 title: 'Monoprix, tu abuses  '
 type: blog
-type: blog
 date: '2014-09-03'
 layout: post
 tags:

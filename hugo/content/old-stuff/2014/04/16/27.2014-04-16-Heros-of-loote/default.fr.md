@@ -1,7 +1,6 @@
 ---
 title: 'Heroes of loot'
 type: blog
-type: blog
 date: '2014-04-16'
 layout: post
 moot_legacy_id: 9

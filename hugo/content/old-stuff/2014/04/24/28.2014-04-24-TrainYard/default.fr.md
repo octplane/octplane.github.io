@@ -1,7 +1,6 @@
 ---
 title: 'Train Yard'
 type: blog
-type: blog
 date: '2014-04-24'
 layout: post
 tags:

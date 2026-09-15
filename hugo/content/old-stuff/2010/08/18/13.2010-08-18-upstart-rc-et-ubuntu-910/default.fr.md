@@ -1,7 +1,6 @@
 ---
 title: 'Upstart, rc et Ubuntu 9.10'
 type: blog
-type: blog
 date: '2010-08-18'
 layout: post
 permalink: /2010/08/upstart-rc-et-ubuntu-910.html

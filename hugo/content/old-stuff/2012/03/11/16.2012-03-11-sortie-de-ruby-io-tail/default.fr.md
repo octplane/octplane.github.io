@@ -1,7 +1,6 @@
 ---
 title: 'Sortie de ruby io tail'
 type: blog
-type: blog
 date: '2012-03-11'
 layout: post
 permalink: /2012/03/sortie-de-ruby-io-tail.html

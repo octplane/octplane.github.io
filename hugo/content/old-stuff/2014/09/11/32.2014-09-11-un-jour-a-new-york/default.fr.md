@@ -1,7 +1,6 @@
 ---
 title: 'Un jour, à New York '
 type: blog
-type: blog
 date: '2014-09-11'
 content:
     items: '@self.children'

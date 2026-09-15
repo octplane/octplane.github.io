@@ -1,7 +1,6 @@
 ---
 title: 'Démarrer Node.js en 8 secondes'
 type: blog
-type: blog
 date: '2014-03-07'
 layout: post
 moot_legacy_id: 8
