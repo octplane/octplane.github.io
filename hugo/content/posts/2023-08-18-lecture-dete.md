@@ -1,7 +1,7 @@
 ---
 title: "📚 Lecture d'été"
 date: 2023-08-18
-lang: fr
+
 summary: Ce que je lis en ce moment
 ---
 Cet année, après avoir fini cet hiver la sage des [Jack Reacher](https://en.wikipedia.org/wiki/Jack_Reacher), environ 24 tomes de gros bras et d'américanisme à toute les sauces, j'ai fait un petit passage par quelques Quais des orfèvres puis je me suis décidé à reprendre un peu mon style de prédilection : la SF. Dans ce domaine, et surtout si on est lecteur Kindle Prime, il est facile de tomber dans la facilité des livres qu'on peut emprunter pour les lire. On se retrouve alors avec des collections d'ouvrages de qualité malheureusement variable. J'ai fini souvent déçu.

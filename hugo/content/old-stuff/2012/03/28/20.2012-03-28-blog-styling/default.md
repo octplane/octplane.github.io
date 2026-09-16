@@ -9,7 +9,7 @@ date: "2012-03-28"
 updated: "2012-03-28 09:30:52"
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 {% raw %}

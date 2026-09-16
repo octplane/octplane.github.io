@@ -13,7 +13,7 @@ tags:
     - bundler
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 Another merry joke from my bundler friend. If you ever switch to deployment mode

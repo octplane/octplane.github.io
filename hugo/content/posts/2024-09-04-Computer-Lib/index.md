@@ -1,7 +1,7 @@
 ---
 title: 📙 Rebuilding Computer Lib
 date: 2024-09-04
-lang: en
+
 ShowReadingTime: true
 ---
 

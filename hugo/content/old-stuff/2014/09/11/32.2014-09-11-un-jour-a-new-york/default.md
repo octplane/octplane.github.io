@@ -5,7 +5,7 @@ date: 2014-09-11 09:00:00
 layout: post
 taxonomy:
     tag: [backup]
-lang: fr
+
 draft: true
 ---
 # UN JOUR, J'AI ÉTÉ À NEW YORK AVEC TOI...

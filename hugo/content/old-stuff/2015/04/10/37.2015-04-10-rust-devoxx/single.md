@@ -7,7 +7,7 @@ tag:
     - devoxx
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Présentation faite par [@kalizoy](http://www.poumeyrol.fr) et moi-même chez Ippon, lors de l'un IPEvent, et à l'occasion de la quatrième édition de [Devoxx France](http://www.devoxx.fr/).

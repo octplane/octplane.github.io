@@ -1,7 +1,7 @@
 ---
 title: 5️⃣ five short links
 date: 2017-04-21
-lang: en
+
 ---
 
 ## Tech

@@ -2,7 +2,7 @@
 title: "⚔️ Zorro - d'entre les morts"
 summary: 'Un Zorro modernisé... mais sans le sergent Garcia.'
 date: 2024-08-29
-lang: fr
+
 ---
 
 Une couverture qui attire l'oeil et nous fait directement penser à la série de notre enfance (pour les vieux comme moi)...

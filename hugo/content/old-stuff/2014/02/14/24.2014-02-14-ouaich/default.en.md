@@ -6,7 +6,7 @@ layout: post
 moot_legacy_id: 5
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Une nouvelle expérience de blog/site perso ou autre espace d'expression personnelle.

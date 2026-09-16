@@ -1,7 +1,7 @@
 ---
 title: How to create a synology download station search plugin
 date: 2026-03-27
-lang: en
+
 ---
 A `.dlm` file is a **gzip-compressed tar archive** containing two files that Synology's Download Station uses to search torrent sites.
 

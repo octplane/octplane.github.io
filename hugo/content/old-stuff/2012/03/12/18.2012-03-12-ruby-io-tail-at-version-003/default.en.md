@@ -20,7 +20,7 @@ author:
     image: 'http://img2.blogblog.com/img/b16-rounded.gif'
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 The new version of ruby-io-tail will start to tail files from the end, and not from the first line available. This is useful to ensure no lines is sent twice to the Tailing application.

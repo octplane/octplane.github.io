@@ -9,7 +9,7 @@ guid: 'tag:blogger.com,1999:blog-5365176712784435549.post-2628996342155043414'
 updated: '2012-03-28 09:19:40'
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 <div class="css-full-post-content js-full-post-content">

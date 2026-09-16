@@ -8,7 +8,7 @@ tags:
     - code
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 # Le Catchup, c'est chouette

@@ -11,7 +11,7 @@ cover_image: 'https://farm5.staticflickr.com/4150/5028432487\_d461ccd14c\_b\_d.j
 cover_credit: 'Trains Stresa-Mottarone (Italie) by Alain GAVILLET @ Flickr'
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Des trains, des gares et déraillent.

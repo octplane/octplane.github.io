@@ -13,7 +13,7 @@ blogger:
     comments: '0'
 taxonomy:
     tag: [backup]
-lang: us
+
 categories:
     - ruby
     - bug

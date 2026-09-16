@@ -9,7 +9,7 @@ guid: 'tag:blogger.com,1999:blog-5365176712784435549.post-7353438691744615084'
 updated: '2012-03-28 09:30:52'
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 This article describes the way I style things in this blog.<br />

@@ -1,7 +1,7 @@
 ---
 title: 🎯 Ansible Tips and Tricks
 date: 2017-02-27
-lang: en
+
 ShowReadingTime: true
 ---
 

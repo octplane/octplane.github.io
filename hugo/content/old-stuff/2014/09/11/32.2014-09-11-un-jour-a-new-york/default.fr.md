@@ -13,7 +13,7 @@ content:
 layout: blog
 taxonomy:
     tag: [backup]
-lang: fr
+
 draft: true
 ---
 

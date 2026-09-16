@@ -1,7 +1,7 @@
 ---
 title: 🏢 Hiring at Datadog
 date: 2022-06-26
-lang: en
+
 draft: false
 summary: Hiring is tough. This article describes my interviewer's experience at Datadog.
 ---

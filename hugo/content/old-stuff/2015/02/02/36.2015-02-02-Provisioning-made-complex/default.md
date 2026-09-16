@@ -8,7 +8,7 @@ tags:
 - rant
 taxonomy:
     tag: [backup]
-lang: us
+
 proofreaders:
 - Alexis
 - Aymerick

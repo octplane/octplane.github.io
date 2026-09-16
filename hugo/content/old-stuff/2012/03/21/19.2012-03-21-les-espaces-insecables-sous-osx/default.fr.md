@@ -9,7 +9,7 @@ guid: 'tag:blogger.com,1999:blog-5365176712784435549.post-8495883467517738919'
 updated: '2012-03-21 09:25:18'
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Hej,<br />

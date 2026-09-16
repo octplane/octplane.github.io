@@ -5,7 +5,7 @@ generator: pinboard-to-md
 image: https://pixabay.com/static/uploads/photo/2015/01/21/14/14/imac-606765_960_720.jpg
 taxonomy:
     tag: [backup]
-lang: us
+
 layout: pinboard
 reference: 
 tags:

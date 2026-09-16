@@ -17,7 +17,7 @@ categories:
     - iis
 taxonomy:
     tag: [backup]
-lang: us
+
 author:
     name: Oct
     url: 'http://www.blogger.com/profile/10969884152933508554?rel=author'

@@ -10,7 +10,7 @@ tags:
     - code
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Ce tutoriel est inspiré des aventures de Bernardo, mon chef bien aimé, au pays de Node.js. Il est destiné à vous expliquer comment démarrer du développement en node.js le plus rapidement possible.

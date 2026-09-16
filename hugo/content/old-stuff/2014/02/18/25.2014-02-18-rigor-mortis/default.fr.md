@@ -9,7 +9,7 @@ tags:
 moot_legacy_id: 3
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Vous avez pas parfois l’impression qu’on se fout de vous ?

@@ -8,7 +8,7 @@ tags:
     - HA
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 # Redundancy in AWS EC2

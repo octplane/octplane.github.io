@@ -5,7 +5,7 @@ generator: pinboard-to-md
 image: /images/map-846083_640.jpg
 taxonomy:
     tag: [backup]
-lang: fr
+
 layout: pinboard
 reference: https://docs.google.com/presentation/d/1ukr73LxJzHlEHjfMlXBFaBDL81pOw3uSNDSnRntlUok/
 tags: []

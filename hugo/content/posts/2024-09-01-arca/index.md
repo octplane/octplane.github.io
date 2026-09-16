@@ -2,7 +2,7 @@
 title: "🚀 Arca ou la nouvelle Eden"
 summary: "Un vaisseau pour sauver l'humanité, vraiment ?"
 date: 2024-08-31
-lang: fr
+
 ---
 
 {{< figure src="arca.jpg#center" title="la couverture du livre Arca">}}

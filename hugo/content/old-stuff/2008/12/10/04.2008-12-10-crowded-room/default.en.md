@@ -8,7 +8,7 @@ tags:
     - fun
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 <center markdown='1'>

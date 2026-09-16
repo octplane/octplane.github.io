@@ -9,7 +9,7 @@ tags:
     - opensource
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 ## Share and respect the license !

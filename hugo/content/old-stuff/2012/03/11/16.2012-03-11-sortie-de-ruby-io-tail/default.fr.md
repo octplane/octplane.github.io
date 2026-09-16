@@ -18,7 +18,7 @@ categories:
     - français
 taxonomy:
     tag: [backup]
-lang: fr
+
 author:
     name: Oct
     url: 'http://www.blogger.com/profile/10969884152933508554?rel=author'

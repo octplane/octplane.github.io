@@ -11,7 +11,7 @@ tags:
     - wikipedia
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 Cet article évoque l'analyse technique du contenu des articles de la version française de Wikiquote. Elle donne un éclairage instructif sur la qualité du contenu de cette base en terme structurel.

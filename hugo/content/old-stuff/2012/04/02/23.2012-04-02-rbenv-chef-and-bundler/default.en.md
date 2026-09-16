@@ -11,7 +11,7 @@ tags:
     - ruby
 taxonomy:
     tag: [backup]
-lang: us
+
 ---
 
 #### What we aim

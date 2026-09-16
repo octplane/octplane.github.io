@@ -8,7 +8,7 @@ tags:
 taxonomy:
     tag:
         - backup
-lang: fr
+
 ---
 
 <center markdown='1' markdown="1">

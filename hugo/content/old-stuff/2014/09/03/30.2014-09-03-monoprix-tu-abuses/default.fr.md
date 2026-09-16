@@ -7,7 +7,7 @@ tags:
     - gna-gna
 taxonomy:
     tag: [backup]
-lang: fr
+
 ---
 
 <center markdown='1'>

@@ -1,7 +1,7 @@
 ---
 title: "🏴‍☠️ Anna's Archive"
 date: 2023-07-01
-lang: fr
+
 summary: Où l'on découvre avec émerveillement Anna's Archive
 ---
 
