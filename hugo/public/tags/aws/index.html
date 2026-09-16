@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>AWS | oct.zoy.org</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://oct.zoy.org/tags/aws/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://oct.zoy.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
-<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/tags/aws/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://oct.zoy.org/tags/aws/index.xml">
-<link rel="alternate" hreflang="en" href="https://oct.zoy.org/tags/aws/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/aws/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/aws/">
 <noscript>
     <style>
         #theme-toggle,
@@ -40,59 +40,48 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:url" content="https://oct.zoy.org/tags/aws/">
-  <meta property="og:site_name" content="oct.zoy.org">
-  <meta property="og:title" content="AWS">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AWS">
-<meta name="twitter:description" content="">
-
-</head>
-
-<body class="list" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
-</script>
-
-<header class="header">
-    <nav class="nav">
+</script><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="https://oct.zoy.org/bandana.png" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -108,39 +97,39 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://oct.zoy.org/about" title="🪞 About">
+                <a href="http://localhost:1313/about" title="🪞 About">
                     <span>🪞 About</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/compos" title="🎼 Compos">
+                <a href="http://localhost:1313/compos" title="🎼 Compos">
                     <span>🎼 Compos</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                <a href="http://localhost:1313/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/%C3%A9crits" title="🖋️ Écrits">
+                <a href="http://localhost:1313/%C3%A9crits" title="🖋️ Écrits">
                     <span>🖋️ Écrits</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/%C3%A9coutes" title="🎧 Écoutes">
+                <a href="http://localhost:1313/%C3%A9coutes" title="🎧 Écoutes">
                     <span>🎧 Écoutes</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/old-stuff/" title="🕸️ Old stuff">
+                <a href="http://localhost:1313/old-stuff/" title="🕸️ Old stuff">
                     <span>🕸️ Old stuff</span>
                 </a>
             </li>
@@ -148,7 +137,18 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a>&nbsp;»&nbsp;<a href="https://oct.zoy.org/tags/">Tags</a></div>
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/tags/">Tags</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
   <h1>
     AWS
   </h1>
@@ -165,30 +165,41 @@ AWS is the branch of a company everybody knows.
 Amazon, not only selling books, DVDs and shoes has also one of the greatest numbers of virtual servers to rent in the world. Some say that the name Cloud has been invented because of AWS. Their servers are located all around the world. In each region, they own several data-centers connected together by high speed links, and to the internet via different peers. Their electric connectivity is also different and AWS calls that availability zones. A given zone can communicate with its neighbors, but Amazon guarantees you that no two zones should break at the same time (although such issue has already arrived in the past).
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2014-09-15 00:00:00 +0000 UTC'>September 15, 2014</span>&nbsp;·&nbsp;7 min</footer>
-  <a class="entry-link" aria-label="post link to Redundancy in Amazon EC2" href="https://oct.zoy.org/old-stuff/2014/09/15/33.2014-09-15-redundancy-aws/default/"></a>
+  <footer class="entry-footer">
+
+<span title='2014-09-15 00:00:00 +0000 UTC'>September 15, 2014</span>&nbsp;·&nbsp;<span>7 min</span></footer>
+  <a class="entry-link" aria-label="post link to Redundancy in Amazon EC2" href="http://localhost:1313/old-stuff/2014/09/15/33.2014-09-15-redundancy-aws/default/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://oct.zoy.org/">oct.zoy.org</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -215,25 +226,25 @@ Amazon, not only selling books, DVDs and shoes has also one of the greatest numb
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

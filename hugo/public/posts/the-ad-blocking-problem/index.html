@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>🚮 The Ad Blocking Problem | oct.zoy.org</title>
 <meta name="keywords" content="">
 <meta name="description" content="How I&rsquo;m currently blocking Ads at home, and why?
@@ -12,16 +12,16 @@ In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recent
 Pi-hole
 Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.">
 <meta name="author" content="">
-<link rel="canonical" href="https://oct.zoy.org/posts/the-ad-blocking-problem/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://oct.zoy.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://oct.zoy.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://oct.zoy.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://oct.zoy.org/apple-touch-icon.png">
-<link rel="mask-icon" href="https://oct.zoy.org/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/posts/the-ad-blocking-problem/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://oct.zoy.org/posts/the-ad-blocking-problem/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/the-ad-blocking-problem/">
 <noscript>
     <style>
         #theme-toggle,
@@ -42,117 +42,48 @@ Pi-hole is a cool open source project to block ads on your whole network. You se
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script><meta property="og:url" content="https://oct.zoy.org/posts/the-ad-blocking-problem/">
-  <meta property="og:site_name" content="oct.zoy.org">
-  <meta property="og:title" content="🚮 The Ad Blocking Problem">
-  <meta property="og:description" content="How I’m currently blocking Ads at home, and why? In this article, I’m writing about the various solutions I’ve recently explored to block ads and I also describe the solution I’m currently using!
-Pi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2022-01-23T00:00:00+00:00">
-    <meta property="article:modified_time" content="2022-01-23T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="🚮 The Ad Blocking Problem">
-<meta name="twitter:description" content="How I&rsquo;m currently blocking Ads at home, and why?
-In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!
-Pi-hole
-Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://oct.zoy.org/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "🚮 The Ad Blocking Problem",
-      "item": "https://oct.zoy.org/posts/the-ad-blocking-problem/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "🚮 The Ad Blocking Problem",
-  "name": "🚮 The Ad Blocking Problem",
-  "description": "How I\u0026rsquo;m currently blocking Ads at home, and why? In this article, I\u0026rsquo;m writing about the various solutions I\u0026rsquo;ve recently explored to block ads and I also describe the solution I\u0026rsquo;m currently using!\nPi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "How I’m currently blocking Ads at home, and why? In this article, I’m writing about the various solutions I’ve recently explored to block ads and I also describe the solution I’m currently using!\nPi-hole Pi-hole is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.\nThis failed for me because it requires a running Pi somewhere and I did not had the space and time to set that up (akin to setting up a Unifi controller on a dedicate Pi, but this is another story). I trie to setup the app on a Synology, with the Docker bridging, port-forwarding annoying setup and the fact that my Orange box does not provide network wide DNS override, probably because they don’t want us to access the Pirate Bay made the setup clunky. I also encountered slow response times, which are when you want to reach a site, extremely annoying. So this is a NO ⛔.\nAdlock It’s one of these services that remains on sale forever, and makes you immediately suspicious of it. I bought a 5 years/5 devices licence to them for a very cheap price (around 50€). Adlock comes with an nice-ish iOS application. In some places, the 🇫🇷 translation is slightly broken and often, it just feels like you’re staring at an embedded WebView. They implement the standard filtering mechanism available on iOS and this works well. For laptops and if you want the advanced protection they also provide a VPN that is used to tunnel, I think, all the traffic from your device to the internet.\nThat’s a working way to filter all ads system-wide but it comes with some horrible privacy and performance concerns that quickly made the use of this product very difficult for me. The performance hit, although it seems that the VPN is just going to localhost was atrocious, so I quickly stopped using the tool. ⛔\nNextDNS This tool arrived in my Twitter stream and I was immediately interested. This is a 3rd party DNS, which is certainly a bit annoying on the privacy standpoint, but certainly not really worse than using Orange’s DNS.\nNextDNS setup is very easy on a macOS laptop as they provide a dedicate App that will use a VPN profile to setup their custom DNS configuration.\nIf you don’t want to use the, and if you have ipv6. You can start using them without any account by just going to their setup page. They’ll give you ipv6 DNS server names you can add to your network panel in a few clicks and keys and off you go! The UI will immediately refresh to indicate you are using the correct Setup. The same also exists with ipv4 and DNS over HTTP. In all cases, their documentation is extensive and pretty good.\nAfter that, they provide a nice view of your blocked traffic with many statistics directly on their website.\nThe reporting UI On iOS, they also provide a DNS provider app that will allow you to enable NextDNS globally.\nThey offer a generous quota of 300k requests per month and their paid plans seem reasonable. If you ever want to try it, this affiliated link might or might not be useful.\nSo far, this is a yes! ✅\n",
-  "wordCount" : "601",
-  "inLanguage": "en",
-  "datePublished": "2022-01-23T00:00:00Z",
-  "dateModified": "2022-01-23T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://oct.zoy.org/posts/the-ad-blocking-problem/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "oct.zoy.org",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://oct.zoy.org/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
-</script>
-
-<header class="header">
-    <nav class="nav">
+</script><script defer data-domain="oct.zoy.org" src="https://plausible.io/js/script.js"></script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://oct.zoy.org/" accesskey="h" title="oct.zoy.org (Alt + H)">
-                <img src="https://oct.zoy.org/bandana.png" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="oct.zoy.org (Alt + H)">
+                <img src="http://localhost:1313/bandana.png" alt="" aria-label="logo"
                     height="30">oct.zoy.org</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -168,39 +99,39 @@ Pi-hole is a cool open source project to block ads on your whole network. You se
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://oct.zoy.org/about" title="🪞 About">
+                <a href="http://localhost:1313/about" title="🪞 About">
                     <span>🪞 About</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/compos" title="🎼 Compos">
+                <a href="http://localhost:1313/compos" title="🎼 Compos">
                     <span>🎼 Compos</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/archives/" title="🕰️ Post Archive">
+                <a href="http://localhost:1313/archives/" title="🕰️ Post Archive">
                     <span>🕰️ Post Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/tags/" title="🔖 tags">
+                <a href="http://localhost:1313/tags/" title="🔖 tags">
                     <span>🔖 tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/%C3%A9crits" title="🖋️ Écrits">
+                <a href="http://localhost:1313/%C3%A9crits" title="🖋️ Écrits">
                     <span>🖋️ Écrits</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/%C3%A9coutes" title="🎧 Écoutes">
+                <a href="http://localhost:1313/%C3%A9coutes" title="🎧 Écoutes">
                     <span>🎧 Écoutes</span>
                 </a>
             </li>
             <li>
-                <a href="https://oct.zoy.org/old-stuff/" title="🕸️ Old stuff">
+                <a href="http://localhost:1313/old-stuff/" title="🕸️ Old stuff">
                     <span>🕸️ Old stuff</span>
                 </a>
             </li>
@@ -211,15 +142,28 @@ Pi-hole is a cool open source project to block ads on your whole network. You se
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://oct.zoy.org/">Home</a>&nbsp;»&nbsp;<a href="https://oct.zoy.org/posts/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
     <h1 class="post-title entry-hint-parent">
       🚮 The Ad Blocking Problem
     </h1>
-    <div class="post-meta"><span title='2022-01-23 00:00:00 +0000 UTC'>January 23, 2022</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta">
+
+<span title='2022-01-23 00:00:00 +0000 UTC'>January 23, 2022</span>&nbsp;·&nbsp;<span>3 min</span>
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="how-im-currently-blocking-ads-at-home-and-why">How I&rsquo;m currently blocking Ads at home, and why?<a hidden class="anchor" aria-hidden="true" href="#how-im-currently-blocking-ads-at-home-and-why">#</a></h1>
+  <div class="post-content md-content"><h1 id="how-im-currently-blocking-ads-at-home-and-why">How I&rsquo;m currently blocking Ads at home, and why?<a hidden class="anchor" aria-hidden="true" href="#how-im-currently-blocking-ads-at-home-and-why">#</a></h1>
 <p>In this article, I&rsquo;m writing about the various solutions I&rsquo;ve recently explored to block ads and I also describe the solution I&rsquo;m currently using!</p>
 <h1 id="pi-hole">Pi-hole<a hidden class="anchor" aria-hidden="true" href="#pi-hole">#</a></h1>
 <p><a href="https://pi-hole.net/">Pi-hole</a> is a cool open source project to block ads on your whole network. You set this up on a small Raspberry Pi (hence the name, heh), and then reconfigure your internet to use the pi-hole as your primary DNS, it will then nuke carefully all DNS requests sent to this tracking and ads endpoint. Make sure you whitelist your company corporate domain names or else working will get a little more complicated.</p>
@@ -254,24 +198,33 @@ They implement the standard filtering mechanism available on iOS and this works 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://oct.zoy.org/">oct.zoy.org</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">oct.zoy.org</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -298,25 +251,25 @@ They implement the standard filtering mechanism available on iOS and this works 
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
